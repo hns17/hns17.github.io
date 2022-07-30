@@ -10,15 +10,15 @@ remote_theme             : "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "ko-KR"
-title                    : "HNS"
+locale                   : "en-US"
+title                    : "HNS GitPage"
 title_separator          : "-"
-subtitle                 : "Organize Personal Documents"
-name                     : &name "HNS" # &name is a YAML anchor which can be *referenced later
-description              : &description "Organize Personal Documents."
+subtitle                 : "Organize Personal Document"
+name                     : &name "Michael Rose" # &name is a YAML anchor which can be *referenced later
+description              : &description "A flexible Jekyll theme for your blog or site with a minimalist aesthetic."
 url                      : https://hns17.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : #
+repository               : "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -98,30 +98,36 @@ analytics:
 # Site Author
 author:
   name             : *name # *name is a YAML reference pointing to the &anchor earlier
-  avatar           : "/assets/images/ProfileIcon.png"
+  avatar           : "/assets/images/michael-rose.jpg"
   bio              : "Just another *boring*, *tattooed*, *time traveling*, *designer*."
-  location         : "Korea"
+  location         : "Buffalo, NY"
   links:
-    - label: "Tistory"
+    - label: "Made Mistakes"
       icon: "fas fa-fw fa-link"
-      url: "https://hns17.tistory.com/"
+      url: "https://mademistakes.com"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/mmistakes"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/hns17"
-    - label: "Youtube"
-      icon: "fab fa-fw fa-youtube"
-      url: "https://www.youtube.com/channel/UCgxOTMVIqXC4n7r38GjJhQg"
+      url: "https://github.com/mmistakes"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/mmistakes"
 
 
 # Site Footer
 footer:
   links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/mmistakes"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/hns17
-    - label: "Youtube"
-      icon: "fab fa-fw fa-youtube"
-      url: "https://www.youtube.com/channel/UCgxOTMVIqXC4n7r38GjJhQg"
+      url: "https://github.com/mmistakes"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/mmistakes"
 
 
 # Reading Files
