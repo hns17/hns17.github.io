@@ -210,3 +210,6 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+recents:
+  type: liquid
+  path: /recents/
