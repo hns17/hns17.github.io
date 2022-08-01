@@ -6,6 +6,7 @@ categories:
 tags:
   - GitHub
 published: true
+sidebar : true
 ---
 
 # Test Category
