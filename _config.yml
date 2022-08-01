@@ -160,6 +160,7 @@ defaults:
     values:
       layout: single
       author_profile: true
+      sidebar: false
   
 
 # Sass/SCSS
