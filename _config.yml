@@ -151,9 +151,8 @@ defaults:
       comments: true
       share: true
       related: true
-      sidebar_main: true
       sidebar:
-        nav: "sidebar-sample"
+        nav: "main"
   # _pages
   - scope:
       path: "_pages"
