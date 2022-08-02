@@ -7,7 +7,7 @@ main:
     url: /tags/
    
    
-docs:
+_posts:
     - title: "IT"
       children:
       - title: "Knowledge"

@@ -2,9 +2,6 @@
 title: "Knowledge"
 permalink: /archive-single-knowledge/
 layout: archive
-author_profile: true
-sidebar:
- nav: "docs"
 ---
 
 

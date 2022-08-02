@@ -2,9 +2,6 @@
 title: "News"
 permalink: /archive-single-news/
 layout: archive
-author_profile: true
-sidebar:
- nav: "docs"
 ---
 
 

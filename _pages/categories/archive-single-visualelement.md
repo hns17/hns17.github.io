@@ -2,9 +2,6 @@
 title: "VisualElement"
 permalink: /archive-single-visualelement/
 layout: archive
-author_profile: true
-sidebar:
- nav: "docs"
 ---
 
 

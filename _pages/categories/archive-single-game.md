@@ -2,9 +2,6 @@
 title: "Game"
 permalink: /archive-single-game/
 layout: archive
-author_profile: true
-sidebar:
- nav: "docs"
 ---
 
 

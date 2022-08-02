@@ -2,9 +2,6 @@
 title: "C#"
 permalink: /archive-single-csharp/
 layout: archive
-author_profile: true
-sidebar:
- nav: "docs"
 ---
 
 

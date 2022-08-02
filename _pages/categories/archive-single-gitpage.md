@@ -2,9 +2,6 @@
 title: "GitPage"
 permalink: /archive-single-gitpage/
 layout: archive
-author_profile: true
-sidebar:
- nav: "docs"
 ---
 
 

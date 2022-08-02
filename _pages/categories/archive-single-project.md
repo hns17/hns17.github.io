@@ -2,9 +2,6 @@
 title: "Project"
 permalink: /archive-single-project/
 layout: archive
-author_profile: true
-sidebar:
- nav: "docs"
 ---
 
 
