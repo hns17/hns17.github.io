@@ -151,7 +151,7 @@ defaults:
       comments: true
       share: true
       related: true
-      permalink: _posts/:path
+      permalink: _posts/:path/
       sidebar:
        nav: "docs"
   # _pages
