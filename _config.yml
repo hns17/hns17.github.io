@@ -142,7 +142,7 @@ kramdown:
 defaults:
   # _posts
   - scope:
-      path: ""
+      path: "_posts"
       type: posts
     values:
       layout: single
@@ -152,7 +152,7 @@ defaults:
       share: true
       related: true
       sidebar:
-        nav: "docs"
+       nav: "docs"
   # _pages
   - scope:
       path: "_pages"
@@ -160,7 +160,8 @@ defaults:
     values:
       layout: single
       author_profile: true
-      sidebar: false
+      sidebar:
+       nav: "docs"
   
 
 # Sass/SCSS
@@ -170,7 +171,7 @@ sass:
 
 
 # Outputting
-permalink: /:categories/:title/
+permalink: _posts/:path/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
 timezone: Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones

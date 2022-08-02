@@ -8,12 +8,27 @@ main:
    
    
 docs:
-    - title: "CS"
-      url:
-    - title: "C++/C#"
-      url:
+    - title: "IT"
+      children:
+      - title: "Knowledge"
+        url: /archive-single-knowledge/
+      - title: "GitPage"
+        url: /archive-single-gitpage/
+    - title: "Programming"
+      children:
+      - title: C#
+        url: /archive-single-csharp/
     - title: "Unity"
-      url:
-    - title: "Life"
-      url:
-      
+      children:
+      - title: "Project"
+        url: /archive-single-project/
+      - title: "VisualElement"
+        url: /archive-single-visualelement/
+      - title: "Issue"
+        url: /archive-single-issue/
+      - title: "News"
+        url: /archive-single-news/
+    - title: "Daily"
+      children:
+      - title: Game
+        url: /archive-single-game/
