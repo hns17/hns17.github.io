@@ -1,6 +1,6 @@
 ---
-title: "Daily/Game"
-permalink: /category/daily/game/
+title: "Daily/Life"
+permalink: /category/daily/life/
 layout: archive
 ---
 

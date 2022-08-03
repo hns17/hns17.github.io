@@ -30,5 +30,5 @@ _posts:
         url: /category/unity/news/
     - title: "Daily"
       children:
-      - title: Game
-        url: /category/daily/game
+      - title: Life
+        url: /category/daily/life
