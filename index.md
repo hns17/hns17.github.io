@@ -1,13 +1,40 @@
 ---
 author_profile: true
 layout : single
-title : 2022-07-31
+title : IndexPage
 ---
 
 
 
-# 많이 더워요....
+<section>
 
+{% assign filter_category = "Daily" %}
 
+{% if filter_category == "" %}
 
-![screen](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/screen.gif)
+​	{{ site.posts[0].content }}
+
+{% else %}
+
+​	{% for post in site.posts %}
+
+​		{% assign categories = post.categories | split: "/" %}
+
+​		{% assign str_cnt = categories[0] | size %}
+
+​		{% assign head_category = categories[0] | slice: 2, str_cnt %}
+
+​			{% if head_category == filter_category %}
+
+​				{% assign content = post.content %}
+
+​				{{ content }}
+
+​			{% break %}
+
+​		{% endif %}
+
+​	{% endfor %}
+
+{% endif %}
+
