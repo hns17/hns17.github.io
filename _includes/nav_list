@@ -9,6 +9,7 @@
     <li>
         📂 <span style="font-family:'Cafe24Oneprettynight';">전체 글 수</style> <span style="font-family:'Coming Soon';">{{sum}}</style> <span style="font-family:'Cafe24Oneprettynight';">개</style> 
     </li>
+	
     {% for nav in navigation %}
       <li>
         {% if nav.url %}
@@ -20,7 +21,8 @@
         {% if nav.children != null %}
         <ul>
           {% for child in nav.children %}
-			{% assign category = site.categories[child.title] %}
+			{% assign index_key = nav.title | append: "/"  | append: child.title %}
+			{% assign category = site.categories[index_key] %}
 			{% if category %}
 				<li><a href="{{ child.url | relative_url }}"{% if child.url == page.url %} class="active"{% endif %}>{{ child.title }}({{ category.size }})</a></li>
 			{% else %}

@@ -11,24 +11,24 @@ _posts:
     - title: "IT"
       children:
       - title: "Knowledge"
-        url: /archive-single-knowledge/
+        url: /category/it/knowledge/
       - title: "GitPage"
-        url: /archive-single-gitpage/
+        url: /category/it/gitpage/
     - title: "Programming"
       children:
       - title: C#
-        url: /archive-single-csharp/
+        url: /category/programming/csharp/
     - title: "Unity"
       children:
       - title: "Project"
-        url: /archive-single-project/
+        url: /category/unity/project/
       - title: "VisualElement"
-        url: /archive-single-visualelement/
+        url: /category/unity/visualelement/
       - title: "Issue"
-        url: /archive-single-issue/
+        url: /category/unity/issue
       - title: "News"
-        url: /archive-single-news/
+        url: /category/unity/news/
     - title: "Daily"
       children:
       - title: Game
-        url: /archive-single-game/
+        url: /category/daily/game
