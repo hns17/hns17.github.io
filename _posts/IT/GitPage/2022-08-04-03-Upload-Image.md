@@ -40,27 +40,31 @@ tags: ["GitPage"]
 
 #### (3) Test
 
-![assets/images/test_image.png](/assets/images/test_image.png)
+- [GitHub에서 문서 확인하기](https://github.com/hns17/hns17.github.io/blob/main/_posts/IT/GitPage/2022-08-04-03-Upload-Image.md)
 
-![/assets/images/test_image.png](/assets/images/test_image.png)
+- ![assets/images/test_image.png](/assets/images/test_image.png)
+- ![/assets/images/test_image.png](/assets/images/test_image.png)
+- ![/_posts/IT/GitPage/Images/test_image.png](/assets/images/test_image.png)
+- ![Image/test_image.png](Image/test_image.png)
+- ![/Image/test_image.png](/Image/test_image.png)
+- ![./Image/test_image.png](./Image/test_image.png)
+- Result
+  - Root Relative URL은 이미지가 표시되지만, Document Relative URL은 Github에서만 표시됨
 
-![/_posts/IT/GitPage/Images/test_image.png](/assets/images/test_image.png)
-
-![Image/test_image.png](Image/test_image.png)
-
-![/Image/test_image.png](Image/test_image.png)
-
-![./Image/test_image.png](Image/test_image.png)
-
-| Link | GitPage | GitHub |
-| ---- | ------- | ------ |
-|      | Failed  | Good   |
-|      | Failed  | Good   |
-|      | Failed  | Good   |
+| Link                                     | GitPage | GitHub |
+| ---------------------------------------- | ------- | ------ |
+| assets/images/test_image.png             | good    | Good   |
+| /assets/images/test_image.png            | good    | Good   |
+| /_posts/IT/GitPage/Images/test_image.png | good    | Good   |
+| Image/test_image.png                     | Failed  | Good   |
+| /Image/test_image.png                    | Failed  | Good   |
+| ./Image/test_image.png                   | Failed  | Good   |
 
 
 
 ## 2. Absoulte URL
+
+- 웹에 저장된 이미지 링크를 사용
 
 #### (1) Github Issue 활용하기
 
@@ -75,3 +79,11 @@ tags: ["GitPage"]
 - 현재 사용중인 방법으로 가장 편한것 같다.
 - Page용으로만 문서를 작성하는  경우 GitPage Repository를 연결하면 됨
   - 나 같은 경우는 다른 문서에 사용될 이미지도 같이 관리하기 위해 Image 저장용 레포지토리를 따로 구성함
+
+
+
+
+
+# Ref
+
+- [https://mademistakes.com/mastering-jekyll/how-to-link/](https://mademistakes.com/mastering-jekyll/how-to-link/)
