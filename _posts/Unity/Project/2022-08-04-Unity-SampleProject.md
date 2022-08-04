@@ -124,7 +124,7 @@ tag : ["Unity", "Project", "Puzzle"]
 
   [수정 전]
 
-  ![image-20220708225911538](Image/image-20220708225911538.png)
+  ![image-20220708225911538](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20220708225911538.png)
 
   [수정후]
 
