@@ -143,6 +143,4 @@ tag : ["Unity", "Project", "Puzzle"]
 
 # Ref
 
-- Youtube
-  - [![](https://i9.ytimg.com/vi/301SUVtgiM0/mq3.jpg?sqp=CPDcrZcG&rs=AOn4CLDLz4neDVoKqSH-mDbhcvxaDMXFaA)](https://youtu.be/301SUVtgiM0)
-
+- Youtube : [https://youtu.be/yKh607hPXl0](https://youtu.be/yKh607hPXl0)
