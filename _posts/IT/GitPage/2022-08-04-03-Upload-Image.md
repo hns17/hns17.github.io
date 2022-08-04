@@ -57,7 +57,7 @@ tags: ["GitPage"]
 | /assets/images/test_image.png            | good    | Good   |
 | /_posts/IT/GitPage/Images/test_image.png | good    | Good   |
 | Image/test_image.png                     | Failed  | Good   |
-| /Image/test_image.png                    | Failed  | Good   |
+| /Image/test_image.png                    | Failed  | failed |
 | ./Image/test_image.png                   | Failed  | Good   |
 
 
