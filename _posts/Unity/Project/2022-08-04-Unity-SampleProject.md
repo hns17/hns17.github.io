@@ -10,14 +10,11 @@ tag : ["Unity", "Project", "Puzzle"]
 
 ### 1. 개요
 
-<figure class="third">
-    <image src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/ThreeMatch.gif" /><image src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/OneTouch.gif" />
-    <img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/CubicPuzzleEdit.gif" width = "38%" />
+<figure class="half">
+    <image src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/ThreeMatch.gif"/>
+    <image src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/OneTouch.gif"/>
+    <img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/CubicPuzzleEdit.gif" allign = "left" />
 </figure>
-
-
-
-
 - 소개 : 매치 퍼즐 기능 및 툴 개발
 
 - 목적 : 샘플 코드 및 포트폴리오 제출

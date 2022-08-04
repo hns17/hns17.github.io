@@ -12,8 +12,9 @@ body {
   margin: 0;
   padding: 0;
   color: $text-color;
-  font-family: $global-font-family;
-  line-height: 1.8;
+  font-family: $sans-serif;
+  line-height: 1.4;
+  font-size: $type-size-6;
 
   &.overflow--hidden {
     /* when primary navigation is visible, the content in the background won't scroll */
@@ -29,8 +30,9 @@ h5,
 h6 {
   margin: 2em 0 0.5em;
   line-height: 1.2;
-  font-family: $header-font-family;
+  font-family: $helvetica;
   font-weight: bold;
+  font-size: $h-size-5;
 }
 
 h1 {
@@ -60,7 +62,7 @@ h6 {
 
 small,
 .small {
-  font-size: $type-size-6;
+  font-size: $type-size-5;
 }
 
 summary {
