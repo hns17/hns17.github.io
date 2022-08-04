@@ -43,24 +43,31 @@ tags: ["GitPage"]
 - [GitHub에서 문서 확인하기](https://github.com/hns17/hns17.github.io/blob/main/_posts/IT/GitPage/2022-08-04-03-Upload-Image.md)
 
 - ![assets/images/test_image.png](/assets/images/test_image.png)
+
 - ![/assets/images/test_image.png](/assets/images/test_image.png)
+
 - ![/_posts/IT/GitPage/Images/test_image.png](/assets/images/test_image.png)
+
 - ![Image/test_image.png](Image/test_image.png)
+
 - ![/Image/test_image.png](/Image/test_image.png)
+
 - ![./Image/test_image.png](./Image/test_image.png)
+
 - Result
+
   - Root Relative URL은 이미지가 표시되지만, Document Relative URL은 Github에서만 표시됨
 
-| Link                                     | GitPage | GitHub |
-| ---------------------------------------- | ------- | ------ |
-| assets/images/test_image.png             | good    | Good   |
-| /assets/images/test_image.png            | good    | Good   |
-| /_posts/IT/GitPage/Images/test_image.png | good    | Good   |
-| Image/test_image.png                     | Failed  | Good   |
-| /Image/test_image.png                    | Failed  | failed |
-| ./Image/test_image.png                   | Failed  | Good   |
+    | Link                                     | GitPage | GitHub |
+    | :--------------------------------------- | ------- | ------ |
+    | assets/images/test_image.png             | good    | Good   |
+    | /assets/images/test_image.png            | good    | Good   |
+    | /_posts/IT/GitPage/Images/test_image.png | good    | Good   |
+    | Image/test_image.png                     | Failed  | Good   |
+    | /Image/test_image.png                    | Failed  | failed |
+    | ./Image/test_image.png                   | Failed  | Good   |
 
-
+    
 
 ## 2. Absoulte URL
 
