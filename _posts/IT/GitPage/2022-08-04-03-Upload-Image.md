@@ -71,11 +71,28 @@ tags: ["GitPage"]
 
 ## 2. Absoulte URL
 
-- 웹에 저장된 이미지 링크를 사용
+- 웹 이미지 링크를 사용
 
 #### (1) Github Issue 활용하기
 
-- Github의 이슈 트래커에 이미지를 끌어다 놓을 경우 나오는 Link를 문서에 사용
+- Github Repo의 이슈 트래커에 이미지를 끌어다 놓을 경우 나오는 Link를 문서에 사용
+
+- [Procedure]
+
+  - Repository의 Issues 탭에 접근
+
+  - 오른쪽 하단의 Newissue 버튼 클릭
+
+    ![image-20220804124821663](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20220804124821663.png)
+
+  - 삽입 하려는 이미지를 Drag & Drop하면 나오는 내용을 Copy
+
+    ![image-20220804125113829](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20220804125113829.png)
+
+  - 원하는 문서 위치에(아래와 같이) 삽입한다.
+
+    ![test_image](https://user-images.githubusercontent.com/35824406/182759080-211266cc-7ba0-4366-9636-368ab09f2a9f.png)
+
 - 편리한 방법이라고 여기저기 소개되어 있는데.... 이게 편한가?
 
 
@@ -83,9 +100,13 @@ tags: ["GitPage"]
 #### (2) Typora Upload
 
 - Typora를 사용하는 경우 문서에 사용된 이미지를 Github의 레포지토리와 연결해 Upload가 가능하다.
+
 - 현재 사용중인 방법으로 가장 편한것 같다.
+
 - Page용으로만 문서를 작성하는  경우 GitPage Repository를 연결하면 됨
   - 나 같은 경우는 다른 문서에 사용될 이미지도 같이 관리하기 위해 Image 저장용 레포지토리를 따로 구성함
+  
+  
 
 
 
