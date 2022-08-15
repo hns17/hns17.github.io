@@ -34,7 +34,7 @@ tag : ["Unity", "Project", "Puzzle"]
 
 - Detail
 
-  - Unity 2020.3 사용
+  - ~~Unity 2020.3 사용~~ -> Unity 2021.3으로 변경
   - Reactive Programming을 위해 UniRx 사용
 
   - Dependency Injection을 위해 ZenJect 사용
@@ -78,9 +78,9 @@ tag : ["Unity", "Project", "Puzzle"]
       - Object를 비활성화 하기 보다는 화면 밖으로 이동시킴
   
 - Memory
-  - Native Memory를 사용 중.
+  - ~~Native Memory를 사용 중.~~
     
-    - 원래 목적은 StackAlloc을 통해 Stack Base 자료구조 사용에 있었으나, Nuget Dll 이나 Unsafe Base의 Pointer를 사용하기 꺼려져 힙을 직접 관리하는 NativeArray를 사용.
+    - ~~원래 목적은 StackAlloc을 통해 Stack Base 자료구조 사용에 있었으나, Nuget Dll 이나 Unsafe Base의 Pointer를 사용하기 꺼려져 힙을 직접 관리하는 NativeArray를 사용.~~
     
     - IL2CPP Build 시 NativeArray가 StackAlloc 다음으로 접근이  빠르다. [#Ref](https://qiita.com/pCYSl5EDgo/items/2901604b72cbb2764940)
     
@@ -108,7 +108,7 @@ tag : ["Unity", "Project", "Puzzle"]
 
 ### 4. 이후 변경사항
 
-##### [2022.07.26]
+#### [2022.07.26]
 
 - UniTask 종료 문제 수정
 
@@ -137,7 +137,12 @@ tag : ["Unity", "Project", "Puzzle"]
   - Physic2D SimulationMode를 Fixed Update -> Script로 변경
     - Script를 통해 Simulation
 
+#### [2022.08.15]
 
+- Unity Version 2020에서 2021로 변경
+- 기존의 NativeArray를 사용한 코드 삭제
+  - stackalloc : 2021 버전에서 지원되는 Span 타입을 이용해 stack 영역을 사용하도록 수정
+  - objectpool : 2021 버전에서 추가된 ObjectPool을 이용하도록 수정
 
 
 
