@@ -1,6 +1,6 @@
 ---
-title: "Unity/News"
-permalink: /category/unity/news/
+title: "Unity/Script"
+permalink: /category/unity/script/
 layout: archive
 ---
 
