@@ -26,8 +26,8 @@ _posts:
         url: /category/unity/visualelement/
       - title: "Issue"
         url: /category/unity/issue
-      - title: "News"
-        url: /category/unity/news/
+      - title: "Script"
+        url: /category/unity/script/
     - title: "Daily"
       children:
       - title: Life

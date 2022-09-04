@@ -1,6 +1,6 @@
 ---
 title: "Unity Span< T > Type"
-categories: [Unity/News]
+categories: [Unity/Script]
 tags: ["Unity", "Unity Span<T>"]
 ---
 
