@@ -168,6 +168,16 @@ tag : ["Unity", "Project", "Puzzle"]
 
 
 
+#### [2022.09.06]
+
+- Square Board 추가
+
+  - 기존 Hex Style에 Square Style 추가
+
+  - SquareEvaluator, SquareDropdown, SquareBoard 기능 
+
+    ![Square](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/Square.gif)
+
 # Ref
 
 - Youtube : [https://youtu.be/yKh607hPXl0](https://youtu.be/yKh607hPXl0)
