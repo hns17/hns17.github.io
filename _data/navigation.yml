@@ -22,8 +22,8 @@ _posts:
       children:
       - title: "Project"
         url: /category/unity/project/
-      - title: "VisualElement"
-        url: /category/unity/visualelement/
+      - title: "SupportFeatures"
+        url: /category/unity/supportfeatures/
       - title: "Issue"
         url: /category/unity/issue
       - title: "Script"

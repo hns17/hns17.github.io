@@ -1,6 +1,6 @@
 ---
 title: "Unity/VisualElement"
-permalink: /category/unity/visualelement/
+permalink: /category/unity/supportfeatures/
 layout: archive
 ---
 
