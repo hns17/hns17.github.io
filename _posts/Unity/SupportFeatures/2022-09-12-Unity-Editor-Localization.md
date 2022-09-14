@@ -138,7 +138,7 @@ tags: ["Unity", "Editor Localization", "Localization", "Editor", "L10n", "*.po"]
 
 # Ref
 
-- [https://forum.unity.com/threads/package-ui-localization-is-available-in-2020-2.957173/]("https://forum.unity.com/threads/package-ui-localization-is-available-in-2020-2.957173/")
-- [https://caitsithware.com/wordpress/archives/2227#Localization]("https://caitsithware.com/wordpress/archives/2227#Localization")
-- [https://docs.unity3d.com/ScriptReference/L10n.Tr.html]("https://docs.unity3d.com/ScriptReference/L10n.Tr.html")
-- [https://qiita.com/sator_imaging/items/81c9066caa9e21feda8c]("https://qiita.com/sator_imaging/items/81c9066caa9e21feda8c")
+- [https://forum.unity.com/threads/package-ui-localization-is-available-in-2020-2.957173/](https://forum.unity.com/threads/package-ui-localization-is-available-in-2020-2.957173/)
+- [https://caitsithware.com/wordpress/archives/2227#Localization](https://caitsithware.com/wordpress/archives/2227#Localization)
+- [https://docs.unity3d.com/ScriptReference/L10n.Tr.html](https://docs.unity3d.com/ScriptReference/L10n.Tr.html)
+- [https://qiita.com/sator_imaging/items/81c9066caa9e21feda8c](https://qiita.com/sator_imaging/items/81c9066caa9e21feda8c)

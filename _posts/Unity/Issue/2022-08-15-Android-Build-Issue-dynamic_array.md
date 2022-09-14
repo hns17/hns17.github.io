@@ -56,4 +56,4 @@ tag : ["Unity", "Android_Build_Issue"]
 
 # Ref
 
-https://forum.unity.com/threads/im-able-to-build-both-production-and-development-but-not-script-debugging-on.1187170/
+[https://forum.unity.com/threads/im-able-to-build-both-production-and-development-but-not-script-debugging-on.1187170/](https://forum.unity.com/threads/im-able-to-build-both-production-and-development-but-not-script-debugging-on.1187170/)
