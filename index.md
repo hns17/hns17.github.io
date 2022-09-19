@@ -1,7 +1,7 @@
 ---
 author_profile: true
 layout : single
-title : IndexPage
+title : Current
 ---
 
 
@@ -21,6 +21,5 @@ title : IndexPage
 		{% endif %}
 	{% endfor %}
 {% endif %}
-
 
 

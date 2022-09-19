@@ -32,3 +32,5 @@ _posts:
       children:
       - title: Life
         url: /category/daily/life
+      - title: Work
+        url: /category/daily/work
