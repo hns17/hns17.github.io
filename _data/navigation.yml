@@ -28,6 +28,8 @@ _posts:
         url: /category/unity/issue
       - title: "Script"
         url: /category/unity/script/
+      - title: "External(Asset/Lib/Etc)"
+        url: /category/unity/external/
     - title: "Daily"
       children:
       - title: Life

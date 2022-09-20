@@ -1,6 +1,6 @@
 ---
-title: "Unity/SupportFeatures"
-permalink: /category/unity/supportfeatures/
+title: "Unity/External(Asset/Lib/Etc)"
+permalink: /category/unity/external/
 layout: archive
 ---
 
