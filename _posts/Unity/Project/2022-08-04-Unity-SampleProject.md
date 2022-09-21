@@ -177,6 +177,10 @@ tag : ["Unity", "Project", "Puzzle"]
   - SquareEvaluator, SquareDropdown, SquareBoard 기능 
 
     ![Square](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/Square.gif)
+    
+  - Square Board 제작용 보드 및 패턴 에디터 기능 추가
+  
+    ![image-20220921204152215](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20220921204152215.png)
 
 # Ref
 
