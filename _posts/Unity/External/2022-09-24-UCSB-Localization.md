@@ -35,20 +35,20 @@ tag : ["Unity", "UCSB", "SpringBone", "UnityChanSpringBone", "JiggleBone", "Loca
 
 - 한글 언어 Pack은 UnityHub를 통해 확인 및 설치가 가능
 
-![image-20220924114009763](C:/Users/hns17/AppData/Roaming/Typora/typora-user-images/image-20220924114009763.png)
+![image-20220924114009763](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20220924114009763.png)
 
 ##### 다. Unity 언어 한글로 사용하기
 
 - 언어는 Preferences-Language에서 수정 가능
 
-  ![image-20220924114342569](C:/Users/hns17/AppData/Roaming/Typora/typora-user-images/image-20220924114342569.png)
+  ![image-20220924114342569](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20220924114342569.png)
 
 ##### 라. Unity Pacakge Manager를 통해 UCSB 설치
 
 - 패키지매니저에서 GitURL 추가하기
   - url : https://github.com/hns17/UnityChanSpringBone.git
 
-![image-20220924115138007](C:/Users/hns17/AppData/Roaming/Typora/typora-user-images/image-20220924115138007.png)
+![image-20220924115138007](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20220924115138007.png)
 
 
 
@@ -56,4 +56,4 @@ tag : ["Unity", "UCSB", "SpringBone", "UnityChanSpringBone", "JiggleBone", "Loca
 
 - SpringBone Editor Window는 [Window-Animation-SpringBone] 메뉴에서 열수 있다.
 
-![image-20220924115343407](C:/Users/hns17/AppData/Roaming/Typora/typora-user-images/image-20220924115343407.png)
+![image-20220924115343407](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20220924115343407.png)
