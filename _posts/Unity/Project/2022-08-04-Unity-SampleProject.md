@@ -10,11 +10,8 @@ tag : ["Unity", "Project", "Puzzle"]
 
 ### 1. 개요
 
-<figure class="half">
-    <image src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/ThreeMatch.gif"/>
-    <image src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/OneTouch.gif"/>
-    <img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/CubicPuzzleEdit.gif" allign = "left" />
-</figure>
+<iframe mozallowfullscreen="true" allow="autoplay; fullscreen"  src="https://hns17.github.io/webGL_SamplePuzzle/" style="border:0px #000000 none;" msallowfullscreen="true" allowfullscreen="true" webkitallowfullscreen="true" allowtransparency="true" frameborder="0" marginheight="px" marginwidth="320px" height="620px" width="960px"></iframe>
+
 - 소개 : 매치 퍼즐 기능 및 툴 개발
 
 - 목적 : 샘플 코드 및 포트폴리오 제출
@@ -104,9 +101,13 @@ tag : ["Unity", "Project", "Puzzle"]
 
 
 
+### 4. Editor
 
+- Stage 제작용 Editor 
 
-### 4. 이후 변경사항
+<img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/CubicPuzzleEdit.gif" allign = "left" />
+
+### 5. 이후 변경사항
 
 #### [2022.07.26]
 
