@@ -18,8 +18,6 @@ tag : ["Unity", "Project", "Puzzle", "CubicPuzzle"]
 
 
 
-#### 
-
 - Extra Pattern Editor 구현
 
   - 예정에 없던 기능 추가로 전체적인 에디터 구성 변경

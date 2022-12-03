@@ -76,3 +76,9 @@ tag : ["Unity", "Project", "Puzzle", "CubicPuzzle"]
 - Stage 제작용 Editor 
 
 <img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/CubicPuzzleEdit.gif" allign = "left" />
+
+
+
+# Ref
+
+- Youtube : [https://www.youtube.com/watch?v=yKh607hPXl0&ab_channel=JSH](https://www.youtube.com/watch?v=yKh607hPXl0&ab_channel=JSH)
