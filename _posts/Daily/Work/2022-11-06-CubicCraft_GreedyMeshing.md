@@ -35,11 +35,15 @@ tag : ["Unity", "Project", "Voxel", "Block", "CubicCraft", "GreedyMeshing"]
   - Mesh의 경우 12개의 쿼드 메쉬로 표현됨
   - Mesh 단위는 눈에 보이는 표면 만을 대상으로 하기에 내부를 신경 쓸 필요없지만 각 방향(6 방향)에 대해 연산이 필요
   
-  <img src="https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20221205115415969.png" alt="image-20221205115415969" style="zoom:50%;" />
-  
+
+<img src="https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20221205115415969.png" alt="image-20221205115415969" style="zoom:50%;" />
+
+
+
 - GreedyMeshing의 적용된 결과
 
-  <img src="https://raw.githubusercontent.com/hns17/ImageContainer/main/img/Greedy.PNG" alt="Greedy" style="zoom:67%;" />
+
+<img src="https://raw.githubusercontent.com/hns17/ImageContainer/main/img/Greedy.PNG" alt="Greedy" style="zoom:67%;" />
 
 ### 2. Texturing
 
@@ -48,25 +52,23 @@ tag : ["Unity", "Project", "Voxel", "Block", "CubicCraft", "GreedyMeshing"]
 ##### (1)  Atlas Texture
 
 - 아틀라스 텍스처를 만들어 대응되는 UV 좌표를 계산하는 방법
-
 - 오래전부터 사용되던 방법으로 사용에 따른 플랫폼 간 문제가 크게 없음
-
 - Mipmap과 엮어서 사용할 경우 Level 간의 Issue를 포함해 경계선과 Texture Bleeding  문제가 커짐
 
   - 별도의 Level 처리나 샘플링 등으로 어느정도 문제가 해결되지만 Mipmap의 장점을 최대화하기는 어려워보인다
-
   - 아래는 기본 Sampling을 통한 비교, [NoMip & Mip, Sampler - Point]
-
+  
     - Mipmap을 쓴 경우 멀리있는 색과 타일 사이의 색이 뭉게지는 것을 볼수 있다
+  
 
-    <div class='cocoen'>
-        <img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/No_mip_point.png" alt="Lazy" style="max-width: none;">
-        <img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/mip_point.png" alt="Lazy" style="max-width: 100%;">
+<div class='cocoen'>
+    <img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/No_mip_point.png" alt="Lazy" style="max-width: none;">
+    <img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/mip_point.png" alt="Lazy" style="max-width: 100%;">
 
-    
-       </div>
-    
-    
+
+   </div>
+
+
 
 - [Atlas Texture와 Mipmap에 대한 정리]
 
@@ -84,24 +86,26 @@ tag : ["Unity", "Project", "Voxel", "Block", "CubicCraft", "GreedyMeshing"]
     
     - 저사양의 모바일 이나 기타 그래픽스 API가 지원하지 않는 플랫폼에서 사용할 수 없다
     
-      ![image-20221209214559396](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20221209214559396.png)
-    
-      [https://docs.unity3d.com/kr/2019.4/Manual/class-Texture2DArray.html](https://docs.unity3d.com/kr/2019.4/Manual/class-Texture2DArray.html)
   
+
+![image-20221209214559396](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20221209214559396.png)
+
+[https://docs.unity3d.com/kr/2019.4/Manual/class-Texture2DArray.html](https://docs.unity3d.com/kr/2019.4/Manual/class-Texture2DArray.html)
+
 - 시트를 Texture2d로 변환하는 기능을 제공하며 시트화 하기 싫은 경우 별도의 스크립팅을 통해 텍스처를 묶어 Asset으로 만들수 있다.
   - Array화 할 Texture는 모두 통일된 유형의 Texture야 함
-  
 - 아래는 Texture2DArray를 사용해 Sampling한 결과
 
   - [NoMip & Mip, Sampler - Point]
 
     - Atlas와 달리 깔끔하게 Mipmap 효과가 적용되어 Mipmap을 사용하지 않은 것과 크게 차이나지 않는 것을 확인할 수 있다
 
-    <div class='cocoen'>
-        <img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/No_mip_point.png" alt="Lazy" style="max-width: none;">
-    	<img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/array2d_point.png" alt="Lazy" style="max-width: 100%;">
 
-    </div>
+<div class='cocoen'>
+    <img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/No_mip_point.png" alt="Lazy" style="max-width: none;">
+	<img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/array2d_point.png" alt="Lazy" style="max-width: 100%;">
+
+</div>
 
 
 ​    

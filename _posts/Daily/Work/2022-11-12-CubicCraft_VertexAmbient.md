@@ -52,29 +52,28 @@ tag : ["Unity", "Project", "Voxel", "Block", "CubicCraft", "Ambient"]
   - 간단한 과정으로 괜찮은 수준의 화면 품질 향상을 가져옴
   - 데이터 생성과정이 CPU 연산이므로 Forward Base Render에 잘 맞음
   - Mesh 생성시 Data를 만들기 때문에 동적이고 넓은 환경에 대해 크게 신경 쓸 필요 없음
-  
+
 - 단점
   - Mesh 생성시 주변 블럭 정보를 고려하여 데이터를 만드는 과정이 요구됨
-  
+
   - Ambient 정보에 대한 추가적인 Buffer 사용
-  
+
   - Greedy Meshing 효율이 떨어짐
     - Vertex 단위로 Ambient 정보가 저장되므로 서로 다른 Ambient 정보를 가진 Vertex는 Merge 대상이 될 수 없음
-    
+
     - [VertexAmbient가 적용된 Mesh와 비교]
-    
+
       - AO가 적용된 Mesh의 경우 차폐 구역이 Merge되지 않고 분할 되어있다
-    
-        <div class = "cocoen">
-            <img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/Greedy.PNG" style="max-width: none;">
-            <img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/GreedyAmbi.PNG">
-        </div>
-        
-        
-        
-        
-        
-         
+
+<div class = "cocoen">
+    <img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/Greedy.PNG" style="max-width: none;">
+    <img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/GreedyAmbi.PNG">
+</div>
+
+
+
+
+
 
 
 # Ref
