@@ -61,12 +61,12 @@ tag : ["Unity", "Project", "Voxel", "Block", "CubicCraft", "Ambient"]
       - AO가 적용된 Mesh의 경우 차폐 구역이 Merge되지 않고 분할 되어있다
     
         <div class = "cocoen">
-            <img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/Greedy.PNG">
+            <img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/Greedy.PNG" >
             <img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/GreedyAmbi.PNG">
         </div>
-    
         
-    
+        
+        
         
          
 
