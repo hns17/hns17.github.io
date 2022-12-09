@@ -60,11 +60,12 @@ tag : ["Unity", "Project", "Voxel", "Block", "CubicCraft", "GreedyMeshing"]
     - Mipmap을 쓴 경우 멀리있는 색과 타일 사이의 색이 뭉게지는 것을 볼수 있다
 
     <div class='cocoen'>
-        <img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/No_mip_point.png" alt="Lazy">
-        <img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/mip_point.png" alt="Lazy">
+        <img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/No_mip_point.png" alt="Lazy" style="max-width: none;">
+        <img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/mip_point.png" alt="Lazy" style="max-width: 100%;">
 
+    
        </div>
-
+    
     
 
 - [Atlas Texture와 Mipmap에 대한 정리]
@@ -97,8 +98,8 @@ tag : ["Unity", "Project", "Voxel", "Block", "CubicCraft", "GreedyMeshing"]
     - Atlas와 달리 깔끔하게 Mipmap 효과가 적용되어 Mipmap을 사용하지 않은 것과 크게 차이나지 않는 것을 확인할 수 있다
 
     <div class='cocoen'>
-        <img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/No_mip_point.png" alt="Lazy">
-    	<img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/array2d_point.png" alt="Lazy">
+        <img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/No_mip_point.png" alt="Lazy" style="max-width: none;">
+    	<img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/array2d_point.png" alt="Lazy" style="max-width: 100%;">
 
     </div>
 

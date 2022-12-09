@@ -9,7 +9,12 @@ tag : ["Unity", "Project", "Voxel", "Block", "CubicCraft", "Ambient"]
 
 # CubicCraft - Vertex Ambient
 
-[이미지 추가]
+<div class = "cocoen">
+    <img src="https://raw.githubusercontent.com/hns17/ImageContainer/main/img/no_ambi.png" alt="array2d_linear" style="max-width: none;" />
+    <img src="https://raw.githubusercontent.com/hns17/ImageContainer/main/img/array2d_linear.png" alt="array2d_linear" />
+</div>
+
+
 
 - 화면 품질 향상을 위해 사용되는 대표적인 것중 하나가 Ambient Occlusion.
 
@@ -61,9 +66,10 @@ tag : ["Unity", "Project", "Voxel", "Block", "CubicCraft", "Ambient"]
       - AO가 적용된 Mesh의 경우 차폐 구역이 Merge되지 않고 분할 되어있다
     
         <div class = "cocoen">
-            <img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/Greedy.PNG" >
+            <img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/Greedy.PNG" style="max-width: none;">
             <img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/GreedyAmbi.PNG">
         </div>
+        
         
         
         
