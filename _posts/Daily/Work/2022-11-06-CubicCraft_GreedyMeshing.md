@@ -80,11 +80,14 @@ tag : ["Unity", "Project", "Voxel", "Block", "CubicCraft", "GreedyMeshing"]
 - 단점을 생각해보면
   - 우선 지원하지 않는 장비에 대해 알아봐야 하는데
     - OpenGL 기준 SM3.0에서 부분적으로 사용이 가능했고 4.0에서 부터는 제대로 기능을 지원하기 때문에 현 시대의 PC에서는 신경 쓸 필요없음
-    - 모바일 이나 기타 그래픽스 API가 지원하지 않는 플랫폼에서 사용할 수 없다
+    
+    - 저사양의 모바일 이나 기타 그래픽스 API가 지원하지 않는 플랫폼에서 사용할 수 없다
+    
+      ![image-20221209214559396](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20221209214559396.png)
+    
+      [https://docs.unity3d.com/kr/2019.4/Manual/class-Texture2DArray.html](https://docs.unity3d.com/kr/2019.4/Manual/class-Texture2DArray.html)
   
-- 최근에는 아래와 같이 Atlas Texture를 2D Array Type으로 설정하는 기능을 제공한다.
-
-- 시트화 하기 싫은 경우 별도의 스크립팅을 통해 단일 텍스처를 Asset으로 만들수 있다.
+- 시트를 Texture2d로 변환하는 기능을 제공하며 시트화 하기 싫은 경우 별도의 스크립팅을 통해 텍스처를 묶어 Asset으로 만들수 있다.
   - Array화 할 Texture는 모두 통일된 유형의 Texture야 함
   
 - 아래는 Texture2DArray를 사용해 Sampling한 결과
@@ -100,7 +103,7 @@ tag : ["Unity", "Project", "Voxel", "Block", "CubicCraft", "GreedyMeshing"]
     </div>
 
 
-    
+​    
 
 ##### (3) Greedy에서 UV 처리
 
