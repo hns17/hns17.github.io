@@ -64,13 +64,9 @@ tag : ["Unity", "Project", "Voxel", "Block", "CubicCraft", "GreedyMeshing"]
 <div class='cocoen'>
     <img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/No_mip_point.png" alt="Lazy" style="max-width: none;">
     <img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/mip_point.png" alt="Lazy" style="max-width: 100%;">
-
-
    </div>
 
-
-
-- [Atlas Texture와 Mipmap에 대한 정리]
+[[Atlas Texture와 Mipmap에 관한 내용]](https://hns17.github.io/it/knowledge/02-Mipmap_Atlas/)
 
 ##### (2) Texture Array
 
@@ -104,11 +100,10 @@ tag : ["Unity", "Project", "Voxel", "Block", "CubicCraft", "GreedyMeshing"]
 <div class='cocoen'>
     <img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/No_mip_point.png" alt="Lazy" style="max-width: none;">
 	<img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/array2d_point.png" alt="Lazy" style="max-width: 100%;">
-
 </div>
 
 
-​    
+<p> </p>
 
 ##### (3) Greedy에서 UV 처리
 
