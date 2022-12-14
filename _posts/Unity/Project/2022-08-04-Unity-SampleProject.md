@@ -15,32 +15,30 @@ tag : ["Unity", "Project", "Puzzle"]
 <iframe mozallowfullscreen="true" allow="autoplay; fullscreen"  src="https://hns17.github.io/webGL_SamplePuzzle/" style="border:0px #000000 none;" msallowfullscreen="true" allowfullscreen="true" webkitallowfullscreen="true" allowtransparency="true" frameborder="0" marginheight="px" marginwidth="320px" height="620px" width="960px"></iframe>
 
 - 소개 : 매치 퍼즐 기능 및 툴 개발
-
 - 목적 : 샘플 코드 및 포트폴리오 제출
-
 - 개발 기능 
 
     - ThreeMatch
-      - 라인 매치(세로, 대각선, 역대각선), Square 매치,
+      - 라인 매치(세로, 대각선, 역대각선),  Square 매치
+      - ExtraMatch
     - OneTouchMatch
       - 이웃 블럭 매치
-
     - Drop & Fill Event
-
-    - Stage Data Editor
-
-    - 기타 효과 및 구성
-
+    - DropDown, Slide, Fill
+    - Stage Editor
+      - Stage의 보드(Hex, Quard) 구성
+      - 보드 블럭 및 셀 구성
+      - ExtraMatch 구성
+    - 기타 효과 및 기능
 - Detail
 
   - ~~Unity 2020.3 사용~~ -> Unity 2021.3으로 변경
+    - Span, CollectionPool API로 전환
   - Reactive Programming을 위해 UniRx 사용
-
   - Dependency Injection을 위해 ZenJect 사용
   - MVP 패턴 중심으로 개발 진행
-
   - 확장성을 고려한 설계에 중점을 두고 개발 진행
-    - 매치 퍼즐 형태의 게임 추가 및 보드 추가
+    - 퍼즐 형태의 게임 추가 및 보드 추가
   - 추가 사용 패키지 : InputSystem
 
 
@@ -53,7 +51,61 @@ tag : ["Unity", "Project", "Puzzle"]
 
 ![CubicPuzzle_Stage](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/CubicPuzzle_Stage.png)
 
-### 3. Simulation
+
+
+### 3. 게임 기능
+
+##### BoardType
+
+- HexType과 QuadType Board 제공
+
+<div>
+    <img src = "https://raw.githubusercontent.com/hns17/ImageContainer/9b72e213e2ddcf490fdf96211c76a9d858c57915/img/ThreeMatch.gif"
+/>
+        <img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/Square.gif"
+/>
+</div>
+
+<p></p>
+
+
+
+##### PlayType
+
+- Three Match와 OneTouch Match 기능 추가
+
+
+<div>
+    <img src = "https://raw.githubusercontent.com/hns17/ImageContainer/9b72e213e2ddcf490fdf96211c76a9d858c57915/img/ThreeMatch.gif"
+>
+    <img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/OneTouch.gif">
+</div>
+
+<p></p>
+
+
+
+##### ExtraPattern 추가
+
+![](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/ExtraPattern_match.gif)
+
+
+
+### 4. Editor
+
+##### Stage 및 Board 제작용 Editor 
+
+<img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/CubicPuzzleEdit.gif" allign = "left" />
+
+
+
+##### ExtraPattern 제작용 Editor
+
+![](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/ExtraPattern_editor.gif)
+
+
+
+### 5. Simulation
 
 ![gif_animation_002](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/gif_animation_002-1657289632295.gif)
 
@@ -100,14 +152,6 @@ tag : ["Unity", "Project", "Puzzle"]
       ![image-20220708235434335](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20220708235434335.png)
   
   - NativeArray는 기능적으로 불편하고 대용량 메모리 사용 같은 특정 상황이 아닌 경우 크게 의미가 없어 보이므로 다음 프로젝트 진행시에는 잡 시스템 사용을 제외하면 사용하지 않을 생각.
-
-
-
-### 4. Editor
-
-- Stage 제작용 Editor 
-
-<img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/CubicPuzzleEdit.gif" allign = "left" />
 
 
 
