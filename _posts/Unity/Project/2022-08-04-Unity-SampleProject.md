@@ -93,6 +93,12 @@ tag : ["Unity", "Project", "Puzzle"]
 
 ### 4. Editor
 
+- VisualElement를 이용해 노드 기반 에디터 제작
+
+- Stage, BoardType, ExtraPattern 등
+
+  
+
 ##### Stage 및 Board 제작용 Editor 
 
 <img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/CubicPuzzleEdit.gif" allign = "left" />
