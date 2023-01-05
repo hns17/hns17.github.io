@@ -1,7 +1,7 @@
 ---
 title: "CubicPuzzle - Start PuzzleProject"
 categories: [Daily/Work]
-tag : ["Unity", "Project", "Puzzle", "CubicPuzzle"]
+tag : ["Unity", "Project", "Puzzle", "CubicPuzzle", "CubicGraph"]
 ---
 
 

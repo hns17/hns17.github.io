@@ -1,7 +1,7 @@
 ---
 title: "CubicPuzzle - SquareBoard 추가"
 categories: [Daily/Work]
-tag : ["Unity", "Project", "Puzzle", "CubicPuzzle"]
+tag : ["Unity", "Project", "Puzzle", "CubicPuzzle", "CubicGraph"]
 ---
 
 
