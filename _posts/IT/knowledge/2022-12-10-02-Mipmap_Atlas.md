@@ -99,7 +99,7 @@ Linear에서 오류가 심해지는 것을 알 수 있다.
 
 <br>
 
-[Mipmap Point, Linear]
+[Mipmap Point, Linear SampleGradBias]
 
 <div class = "cocoen">
     <img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/grad_02_point.png" style = "max-width:none;">

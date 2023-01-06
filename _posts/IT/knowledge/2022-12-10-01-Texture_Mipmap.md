@@ -218,7 +218,7 @@ Grad_Bias : Bias 값을 이용해 상황에 맞게 선택할 Level을 적절하�
 ### (2) Memory Bandwidth
 
 - Mipmap 사용의 또 다른 장점은 메모리 대역폭의 최적화이다.
-- GPU가 Texture를 읽을때 Pixel에 Origianl Texture가 아닌 Pixel 대응되는 적절한 Mip Level을 읽어들이면 된다.
+- GPU가 Texture를 읽을때 Origianl Texture가 아닌 Pixel 대응되는 적절한 Mip Level을 읽어들이면 된다.
 - 일반적으로 Texture는 비디오 메모리에 로드된 상태이며 Sampling시 L1 캐시로 정보를 가져오게 되는데 이때 항상 데이터가 큰 Origianal Texture를 가져올 필요가 없어진다. 쉽게 말해 매우 작게 표시되는 메쉬에 굳이 데이터가 큰 Original Texture를 읽을 필요가 없다는 이야기
 
 
