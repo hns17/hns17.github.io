@@ -1,6 +1,8 @@
+---
 title: "UI Toolkit"
 categories: [Unity/SupportFeatures]
-tags: ["Unity", "UI Element", "UI Toolkit", "VisualElement",]
+tags: ["Unity", "UI Element", "UI Toolkit", "VisualElement"]
+---
 
 
 
@@ -17,7 +19,7 @@ tags: ["Unity", "UI Element", "UI Toolkit", "VisualElement",]
 
 - 아래는 초기 [Unity 2018 문서 내용](https://docs.unity3d.com/kr/2018.4/Manual/UIElements.html)
 
-![image-20230106151413118](C:\Users\hns17\AppData\Roaming\Typora\typora-user-images\image-20230106151413118.png)
+![image-20230106151413118](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20230106151413118.png)
 
 
 
