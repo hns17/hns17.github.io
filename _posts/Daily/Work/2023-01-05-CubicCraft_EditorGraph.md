@@ -23,6 +23,10 @@ tag : ["Unity", "Project", "CubicCraft", "VisualElement", "CubicGraph"]
   - CubicVoxelGenerator Graph 생성
   - WorldNode, LayersNode, LayerNode, GenerateNode 추가
 
+
+
+#### [GenerateNode & PreviewContainer]
+
 ![Noise](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/Noise.gif)
 
 ```
@@ -32,6 +36,8 @@ Noise Option이 많아서 NodeView가 상당히 복잡함
 
 
 
+#### [Blending Option]
+
 ![Blend](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/Blend.gif)
 
 ```
@@ -40,6 +46,8 @@ BlendType에 따라 Child Noise를 Main에 Blending
 ```
 
 
+
+#### [Layers Node]
 
 ![Layers](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/Layers.gif)
 
