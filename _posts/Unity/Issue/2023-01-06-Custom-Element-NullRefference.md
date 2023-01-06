@@ -70,3 +70,9 @@ tag : ["Unity", "Custom VisualElement", "Null Refference Issue"]
 ![image-20230106214301675](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20230106214301675.png)
 
 ![image-20230106214322819](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20230106214322819.png)
+
+
+
+# Ref
+
+[https://forum.unity.com/threads/bug-in-ui-builder-nullref-when-building-custom-element-tree-from-uxml-unity-2021-2-6f1.1217169/](https://forum.unity.com/threads/bug-in-ui-builder-nullref-when-building-custom-element-tree-from-uxml-unity-2021-2-6f1.1217169/)
