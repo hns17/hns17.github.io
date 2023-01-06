@@ -43,7 +43,7 @@ tags: ["Unity", "UI Element", "UI Toolkit", "VisualElement"]
 - VisualElement는 UI 컨트롤의 가장 기본이되는 클래스
 - 제공되는 컨트롤 대부분이 VisualElement의 파생 클래스라 생각하면 된다
 - 프로그래머 입장에서 보면 핵심은 VisualElement이며, 나머지 툴킷 기능이나 파일들은 VisualElement를 표현하기 위한 도구로 볼 수 있다
-- VisualElement는 Sytle, Layout, EventHandler와 같은 Property를 가진다![image-20230106162051212](C:\Users\hns17\AppData\Roaming\Typora\typora-user-images\image-20230106162051212.png)
+- VisualElement는 Sytle, Layout, EventHandler와 같은 Property를 가진다![image-20230106162051212](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20230106162051212.png)
 
 
 
