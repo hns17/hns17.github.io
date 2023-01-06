@@ -1,12 +1,12 @@
 ---
-title: "Unity Android Build Issue ~dynamic_array"
+title: "Custom VisualElement Null Refference Exception"
 categories: [Unity/Issue]
 tag : ["Unity", "Custom VisualElement", "Null Refference Issue"]
 ---
 
 
 
-# Unity 2021 Custom VisualElement Null Refference Exception
+# Unity Custom VisualElement Null Refference Exception
 
 - Unity Version : 2021.3
 
