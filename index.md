@@ -1,7 +1,7 @@
 ---
 author_profile: true
 layout : single
-title : Current
+title : 근황
 ---
 
 
