@@ -8,8 +8,6 @@ tag : ["Unity", "Project", "UIElement", "CubicGraph"]
 
 ### 1. 개요
 
-![CubicGraph](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/CubicGraph.gif)
-
 - Project에 사용될 Data를 Node 기반으로 구성하는 Editor 만들기
 - Node 추가 및 변경 등의 확장을 고려해서 작업
 - Detail
@@ -56,3 +54,24 @@ tag : ["Unity", "Project", "UIElement", "CubicGraph"]
 
 
 
+# PuzzleGame Editor
+
+- PuzzleBoard Stage 및 패턴 제작용 에디터로 확장
+
+### [Stage Editor]
+
+<img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/CubicPuzzleEdit.gif" allign = "left" />
+
+### [Extra Pattern Editor]
+
+<img src="https://raw.githubusercontent.com/hns17/ImageContainer/main/img/ExtraPattern_editor.gif" alt="ExtraPattern_editor" style="zoom: 80%;" />
+
+
+
+# Block based Voxel Editor
+
+- 블럭 기반 복셀 커스텀 에디터로 확장
+
+![Noise](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/Noise.gif)
+
+![BlendTexture](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/BlendTexture.gif)
