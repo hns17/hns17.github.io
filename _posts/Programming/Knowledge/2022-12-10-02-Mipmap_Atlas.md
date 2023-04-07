@@ -1,6 +1,6 @@
 ---
 title: Mip과 Atlas
-categories: IT/Knowledge
+categories: Programming/Knowledge
 tags: ["Mipmap", "Texture", "AtlasSheet", "Atlas"]
 ---
 

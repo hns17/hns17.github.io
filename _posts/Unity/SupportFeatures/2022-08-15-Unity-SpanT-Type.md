@@ -1,6 +1,6 @@
 ---
 title: "Unity Span< T > Type"
-categories: [Unity/Script]
+categories: [Unity/SupportFeatures]
 tags: ["Unity", "Unity Span<T>"]
 ---
 

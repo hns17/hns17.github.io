@@ -1,6 +1,6 @@
 ---
-title: "IT/Knowledge"
-permalink: /category/it/knowledge/
+title: "Unity/Knowledge"
+permalink: /category/unity/knowledge/
 layout: archive
 ---
 

@@ -10,24 +10,24 @@ main:
 _posts:
     - title: "IT"
       children:
-      - title: "Knowledge"
-        url: /category/it/knowledge/
       - title: "GitPage"
         url: /category/it/gitpage/
     - title: "Programming"
       children:
+      - title: "Knowledge"
+        url: /category/programming/knowledge/
       - title: C#
         url: /category/programming/csharp/
     - title: "Unity"
       children:
       - title: "Project"
         url: /category/unity/project/
+      - title: "Knowledge"
+        url: /category/unity/knowledge/
       - title: "SupportFeatures"
         url: /category/unity/supportfeatures/
       - title: "Issue"
         url: /category/unity/issue
-      - title: "Script"
-        url: /category/unity/script/
       - title: "External(Asset/Lib/Etc)"
         url: /category/unity/external/
     - title: "Daily"

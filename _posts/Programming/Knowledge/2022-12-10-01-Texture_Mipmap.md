@@ -1,6 +1,6 @@
 ---
 title: Texture와 Mipmap
-categories: IT/Knowledge
+categories: Programming/Knowledge
 tags: ["Mipmap", "Texture", "Sampling", "Texel"]
 ---
 

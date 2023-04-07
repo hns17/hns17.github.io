@@ -1,6 +1,6 @@
 ---
-title: "Unity/Script"
-permalink: /category/unity/script/
+title: "Programming/Knowledge"
+permalink: /category/programming/knowledge/
 layout: archive
 ---
 
