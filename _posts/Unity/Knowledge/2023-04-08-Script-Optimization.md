@@ -2,13 +2,11 @@
 title: "Unity Script Optimization"
 categories: [Unity/Knowledge]
 tag : ["Unity", "Script", "Optimization", "Performance", "Memory"]
-
-
 ---
 
 
 
-# Unity Script Optimization [작성 중]
+# Unity Script Optimization
 
 - 프로그래밍을 할 때 신경써야 할 것은 크게 처리 속도와 메모리 사용 두 가지로 나누어 볼 수 있다.
 
@@ -20,19 +18,26 @@ tag : ["Unity", "Script", "Optimization", "Performance", "Memory"]
 
 - [Performance](#performance)
   - [사용하지 않는 이벤트 함수 제거](#사용하지-않는-이벤트-함수-제거)
-  - [Start, Awake, OnEnable 이벤트 함수](#start,-awake,-onenable-이벤트-함수)
+  - [시작 이벤트 함수에서 무거운 작업 피하기](#시작-이벤트-함수에서-무거운-작업-피하기)
   - [무거운 함수의 반복적인 사용 최소화하기](#무거운-함수의-반복적인-사용-최소화하기)
-  - [Debug Log 구문 제거](#debug-log-구문-제거)
+  - [Debug.Log 구문 제거](#debuglog-구문-제거)
   - [프레임 단위로 실행되는 코드 최소화](#프레임-단위로-실행되는-코드-최소화)
+  - [Native 호출 최소화](#native-호출-최소화)
   - [런타임 시 컴포넌트 추가 X](#런타임-시-컴포넌트-추가-x)
   - [Transform 연산 최소화](#transform-연산-최소화)
   - [수학 연산 최적화](#수학-연산-최적화)
   - [Target Frame 지정](#target-frame-지정)
+  - [For, Foreach, List, Array](#for-foreach-list-array)
 - [Memory](#memory)
-
-
-
-
+  - [공간복잡도 문제](#공간복잡도-문제)
+  - [가비지 컬렉터 문제](#가비지-컬렉터-문제)
+    - [불 필요한 힙 사용 줄이기](#1-불-필요한-힙-사용-줄이기)
+    - [메모리 풀](#2-메모리-풀)
+    - [가비지 컬렉터 강제 호출](#3-가비지-컬렉터-강제-호출)
+- [기타](#기타)
+  - [Target Frame 지정](#target-frame-지정)
+  - [LINQ 사용시 주의가 필요하다](#linq-사용시-주의가-필요하다)
+  - [명시적 파기가 필요한 유니티 클래스](#명시적-파기가-필요한-유니티-클래스)
 
 <br>
 
@@ -49,12 +54,13 @@ tag : ["Unity", "Script", "Optimization", "Performance", "Memory"]
 
 
 
-## Start, Awake, OnEnable 이벤트 함수
+## 시작 이벤트 함수에서 무거운 작업 피하기
 
-- 첫 번째 프레임이 렌더링되기 전 비용이 많이 드는 로직을 수행할 경우 필요 이상으로 로딩 시간이 길어질 수 있다. 
-- 너무 무거운 작업은 피하는게 좋다.
-  - 무거운 작업이 필요할 경우 Non-Blocking 형태의 함수로 분할하는 것도 좋은 방법이다.
-    - UniTask, Coroutine 등
+- Start, Awake, OnEnable와 같은 이벤트 함수에서 시간이 많이 소비되는 너무 무거운 작업은 피하는 것이 좋다.
+
+- 첫 번째 프레임이 렌더링되기 전 비용이 많이 드는 로직을 수행할 경우 필요 이상으로 로딩 시간이 길어질 수 있기 때문이다.
+- 무거운 작업이 필요할 경우 Non-Blocking 형태의 함수로 분할하는 것도 좋은 방법이다.
+  - UniTask, Coroutine 등
 
 
 
@@ -65,7 +71,7 @@ tag : ["Unity", "Script", "Optimization", "Performance", "Memory"]
 
 
 
-## Debug Log 구문 제거
+## Debug.Log 구문 제거
 
 - Log 구문, 특히 Update, LateUpdate 또는 FixedUpdate에 있는 Log 구문은 성능에 악영향을 준다.
 - 빌드를 만들기 전에 Log 구문을 비활성화해야 한다.
@@ -172,6 +178,8 @@ List의 foreach는 for와 달리 내부적으로 MoveNext() 와 Current 속성�
 ```
 
 
+
+<br>
 
 # Memory
 
@@ -315,6 +323,7 @@ List의 foreach는 for와 달리 내부적으로 MoveNext() 와 Current 속성�
 
 - 많은 량의 힙 공간을 미리 할당하여 사용가능한 힙공간을 크게 늘려 GC 호출 가능성을 줄인다.
 - 아래는 유니티 문서에서 안내하고 있는 내용이다.
+- [https://docs.unity3d.com/kr/2018.4/Manual/UnderstandingAutomaticMemoryManagement.html](https://docs.unity3d.com/kr/2018.4/Manual/UnderstandingAutomaticMemoryManagement.html)
 
 ![image-20230422164340785](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20230422164340785.png)
 
@@ -332,11 +341,9 @@ List의 foreach는 for와 달리 내부적으로 MoveNext() 와 Current 속성�
 
 ![image-20230422164545244](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20230422164545244.png)
 
-
+<br>
 
 # 기타
-
-
 
 ## Target Frame 지정
 
@@ -378,13 +385,15 @@ List의 foreach는 for와 달리 내부적으로 MoveNext() 와 Current 속성�
 
 
 
-##  명시적 파기가 필요한 클래스
+##  명시적 파기가 필요한 유니티 클래스
 
 - 유니티에서 제공되는 일부 클래스는 명시적으로 파기하지 않으면 해제되지 않는다.
 
 ![image-20230423152015248](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20230423152015248.png)
 
 
+
+<br>
 
 # Ref
 
