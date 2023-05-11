@@ -46,7 +46,7 @@ tag : ["Unity", "UCSB", "SpringBone", "UnityChanSpringBone", "JiggleBone", "Loca
 ##### 라. Unity Pacakge Manager를 통해 UCSB 설치
 
 - 패키지매니저에서 GitURL 추가하기
-  - url : https://github.com/hns17/UnityChanSpringBone.git
+  - url : https://github.com/hns17/UnityChanSpringBone.git?path=Assets/ucsb_kor#ucsb_kor
 
 ![image-20220924115138007](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20220924115138007.png)
 
@@ -54,6 +54,6 @@ tag : ["Unity", "UCSB", "SpringBone", "UnityChanSpringBone", "JiggleBone", "Loca
 
 ##### 마. SpringBone Editor Window 확인
 
-- SpringBone Editor Window는 [Window-Animation-SpringBone] 메뉴에서 열수 있다.
+- SpringBone Editor Window는 [HNS17-SpringBone_kor-SpringBone] 메뉴에서 열수 있다.
 
 ![image-20220924115343407](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20220924115343407.png)
