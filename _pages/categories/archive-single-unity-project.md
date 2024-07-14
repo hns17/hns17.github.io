@@ -1,6 +1,6 @@
 ---
-title: "Unity/Project"
-permalink: /category/unity/project/
+title: "Project/Portfolio"
+permalink: /category/project/portfolio/
 layout: archive
 ---
 

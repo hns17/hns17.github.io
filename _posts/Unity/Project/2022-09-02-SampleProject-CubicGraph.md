@@ -1,6 +1,6 @@
 ---
-title: "CubicGraph"
-categories: [Unity/Project]
+title: "SampleProject_CubicGraph"
+categories: [Project/Portfolio]
 tag : ["Unity", "Project", "UIElement", "CubicGraph"]
 ---
 
