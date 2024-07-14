@@ -166,3 +166,7 @@ tag : ["Unity", "Project", "Puzzle"]
 - Work : [https://hns17.github.io/tags/#cubicpuzzle](https://hns17.github.io/tags/#cubicpuzzle)
 
 - Youtube : [https://youtu.be/yKh607hPXl0](https://youtu.be/yKh607hPXl0)
+
+- SampleCode : [https://drive.google.com/drive/folders/1ypitNbBZzH69fE6C8329yfNTXpGAH7ZY](https://drive.google.com/drive/folders/1ypitNbBZzH69fE6C8329yfNTXpGAH7ZY)
+
+- Github : [https://github.com/hns17/Sample_CubicPuzzle](https://github.com/hns17/Sample_CubicPuzzle)
