@@ -1,12 +1,12 @@
 ---
 title: "SampleProject_CubicPuzzle"
-categories: [Unity/Project]
+categories: [Project/Portfolio]
 tag : ["Unity", "Project", "Puzzle"]
 ---
 
 
 
-# SampleProject_CubicPuzzle
+# CubicPuzzle
 
 ### 1. 개요
 

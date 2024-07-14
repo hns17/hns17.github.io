@@ -20,8 +20,6 @@ _posts:
         url: /category/programming/csharp/
     - title: "Unity"
       children:
-      - title: "Project"
-        url: /category/unity/project/
       - title: "Knowledge"
         url: /category/unity/knowledge/
       - title: "SupportFeatures"
@@ -36,3 +34,7 @@ _posts:
         url: /category/daily/life
       - title: Work
         url: /category/daily/work
+    - title: "Project"
+      children:
+      - title: "Portfolio"
+        url: /category/project/portfolio/
