@@ -1,8 +1,7 @@
 ---
-title: GitPage 사용을 위해 Local에 Jekyll 환경 설정하기 
-categories: IT/GitPage
+title: GitPage 사용을 위한 Jekyll 환경설정 
+categories: Git/GitPage
 tags: ["Jekyll"]
-
 
 ---
 

@@ -8,10 +8,12 @@ main:
    
    
 _posts:
-    - title: "IT"
+    - title: "Git"
       children:
+      - title: "Git"
+        url: /category/git/git/
       - title: "GitPage"
-        url: /category/it/gitpage/
+        url: /category/git/gitpage/
     - title: "Programming"
       children:
       - title: "Knowledge"
