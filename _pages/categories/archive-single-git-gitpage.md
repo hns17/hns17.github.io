@@ -1,6 +1,6 @@
 ---
-title: "IT/GitPage"
-permalink: /category/it/gitpage/
+title: "Git/GitPage"
+permalink: /category/git/gitpage/
 layout: archive
 ---
 

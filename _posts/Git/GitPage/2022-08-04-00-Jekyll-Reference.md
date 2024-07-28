@@ -1,6 +1,6 @@
 ---
 title: Jekyll 관련 사이트
-categories: IT/GitPage
+categories: Git/GitPage
 tags: ["GitPage", "Jekyll"]
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: GitPage 이미지 관리하기
-categories: IT/GitPage
+categories: Git/GitPage
 tags: ["GitPage"]
 ---
 

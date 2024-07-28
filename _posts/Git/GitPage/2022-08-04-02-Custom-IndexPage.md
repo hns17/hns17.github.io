@@ -1,6 +1,6 @@
 ---
 title: IndexPage를 Custom 하기
-categories: IT/GitPage
+categories: Git/GitPage
 tags: ["GitPage"]
 ---
 
