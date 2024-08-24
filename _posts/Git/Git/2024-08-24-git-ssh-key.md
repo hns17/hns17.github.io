@@ -70,7 +70,7 @@ ssh-keygen -t rsa -b 4096 -C "user email"
 
 - 아래 메시지가 출력되는지 확인
 
-  ![image-20240824124016458](C:\Users\Hns1n7\AppData\Roaming\Typora\typora-user-images\image-20240824124016458.png)
+  ![image-20240824124016458](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20240824124016458.png)
 
 
 
