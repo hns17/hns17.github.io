@@ -1,5 +1,5 @@
 ---
-title: git에 ssh key 등록하기
+title: Git에 ssh key 등록하기
 categories: Git/Git
 tags: ["Git", "ssh"]
 
