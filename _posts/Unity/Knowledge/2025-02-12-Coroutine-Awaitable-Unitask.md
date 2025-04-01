@@ -15,7 +15,7 @@ Unity에서 비동기 프로그래밍을 처리하는 세 가지 주요 방식�
 
 ------
 
-## **1️⃣ Coroutine (`IEnumerator`)**
+## **1. Coroutine (`IEnumerator`)**
 
 ### ✅ **특징**
 
@@ -63,7 +63,7 @@ public class CoroutineExample : MonoBehaviour
 
 
 
-## **2️⃣ Awaitable (Unity 6)**
+## **2. Awaitable (Unity 6)**
 
 ### ✅ **특징**
 
@@ -105,7 +105,7 @@ public class AwaitableExample : MonoBehaviour
 
 
 
-## **3️⃣ UniTask (외부 라이브러리)**
+## **3. UniTask (외부 라이브러리)**
 
 ### ✅ **특징**
 
@@ -150,7 +150,7 @@ public class UniTaskExample : MonoBehaviour
 | 기능                         | Coroutine (`IEnumerator`)         | Awaitable (Unity 6) | UniTask                    |
 | ---------------------------- | --------------------------------- | ------------------- | -------------------------- |
 | **`async/await` 지원**       | ❌ 불가능                          | ✅ 지원              | ✅ 지원                     |
-| **힙 할당 (GC 부담)**        | ❌ 실행시 발생                     | ❌ 일부 발생         | ✅ 없음 (값 타입 기반)      |
+| **힙 할당 (GC 부담)**        | ⚡⚡ 실행시 발생                    | ⚡ 일부 발생         | ✅ 없음 (값 타입 기반)      |
 | **Unity 프레임 루프와 통합** | ✅ 기본 제공                       | ✅ 기본 제공         | ✅ 기본 제공                |
 | **비동기 반환값 처리**       | ❌ 불가능                          | ✅ 가능              | ✅ 가능                     |
 | **성능 (최적화)**            | ⚡ 보통                            | 🚀 빠름              | 🚀🚀 가장 빠름 (GC-Free)     |
@@ -195,8 +195,8 @@ public class UniTaskExample : MonoBehaviour
 
 ------
 
-- https://www.unitysquare.co.kr/growwith/unityblog/webinarView?id=566
-- https://hns17.github.io/unity/external(asset/lib/etc)/UniTask/
+- [https://www.unitysquare.co.kr/growwith/unityblog/webinarView?id=566](https://www.unitysquare.co.kr/growwith/unityblog/webinarView?id=566)
+- [https://hns17.github.io/unity/external(asset/lib/etc)/UniTask/](https://hns17.github.io/unity/external(asset/lib/etc)/UniTask/)
 
 
 
