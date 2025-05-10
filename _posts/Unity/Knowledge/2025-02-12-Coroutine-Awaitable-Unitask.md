@@ -162,19 +162,19 @@ public class UniTaskExample : MonoBehaviour
 
 ## 🎯 **언제 무엇을 사용할까?**
 
-✅ **Coroutine 사용 추천 (간단한 게임 루프 제어)**
+✅ **Coroutine**
 
 - `yield return`을 사용한 간단한 애니메이션, 타이머, UI 애니메이션 제어 시
 - Unity 기본 기능에 잘 맞음
 - 단, 복잡한 비동기 로직에는 부적합
 
-✅ **Awaitable 사용 추천 (Unity 6 이상, 간단한 `async/await` 필요 시)**
+✅ **Awaitable**
 
 - Unity 6의 `async/await`을 활용하고 싶을 때
 - Coroutine보다 더 직관적인 코드가 필요할 때
 - 하지만 **같은 인스턴스를 여러 번 `await` 하면 문제가 생길 수 있음**
 
-✅ **UniTask 사용 추천 (최고 성능 & 확장성이 필요할 때)**
+✅ **UniTask**
 
 - **GC-Free**가 필요할 때 (메모리 최적화가 중요한 경우)
 - 멀티스레드 환경에서도 **안전하게 비동기 처리**를 해야 할 때
@@ -198,5 +198,6 @@ public class UniTaskExample : MonoBehaviour
 - [https://www.unitysquare.co.kr/growwith/unityblog/webinarView?id=566](https://www.unitysquare.co.kr/growwith/unityblog/webinarView?id=566)
 - [https://hns17.github.io/unity/external(asset/lib/etc)/UniTask/](https://hns17.github.io/unity/external(asset/lib/etc)/UniTask/)
 
+- [https://github.com/Cysharp/UniTask/discussions/627](https://github.com/Cysharp/UniTask/discussions/627)
 
-
+- [https://docs.unity3d.com/kr/2023.2/Manual/AwaitSupport.html](https://docs.unity3d.com/kr/2023.2/Manual/AwaitSupport.html)
