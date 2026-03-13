@@ -1,5 +1,5 @@
 ---
 title:
 permalink: /recents/
-layout: home
+layout: posts
 ---
