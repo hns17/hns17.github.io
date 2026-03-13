@@ -1,0 +1,46 @@
+.nav__title {
+  padding-left: 0;
+}
+
+.nav__summary {
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.6rem;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--docs-text-soft);
+  border-bottom: 1px solid var(--docs-border);
+}
+
+.nav__summary-count {
+  font-weight: 700;
+  color: var(--docs-heading);
+}
+
+.sidebar.sticky,
+.sidebar__right.sticky .toc .toc__menu {
+  scrollbar-width: thin;
+  scrollbar-color: var(--docs-scrollbar-thumb) transparent;
+}
+
+.sidebar.sticky::-webkit-scrollbar,
+.sidebar__right.sticky .toc .toc__menu::-webkit-scrollbar {
+  width: 10px;
+}
+
+.sidebar.sticky::-webkit-scrollbar-track,
+.sidebar__right.sticky .toc .toc__menu::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar.sticky::-webkit-scrollbar-thumb,
+.sidebar__right.sticky .toc .toc__menu::-webkit-scrollbar-thumb {
+  background-color: var(--docs-scrollbar-thumb);
+  border: 2px solid transparent;
+  border-radius: 999px;
+  background-clip: content-box;
+}
+
+.sidebar.sticky:hover::-webkit-scrollbar-thumb,
+.sidebar__right.sticky .toc .toc__menu:hover::-webkit-scrollbar-thumb {
+  background-color: var(--docs-scrollbar-thumb-hover);
+}

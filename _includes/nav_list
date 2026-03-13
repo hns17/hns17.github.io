@@ -6,10 +6,10 @@
   <input id="ac-toc" name="accordion-toc" type="checkbox" />
   <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle Menu" }}</label>
   <ul class="nav__items">
-    <li>
-        📂 <span style="font-family:'Cafe24Oneprettynight';">전체 글 수</style> <span style="font-family:'Coming Soon';">{{sum}}</style> <span style="font-family:'Cafe24Oneprettynight';">개</style> 
+    <li class="nav__summary">
+      📂 전체 글 수 <span class="nav__summary-count">{{ sum }}</span>개
     </li>
-	
+
     {% for nav in navigation %}
       <li>
         {% if nav.url %}
@@ -21,14 +21,14 @@
         {% if nav.children != null %}
         <ul>
           {% for child in nav.children %}
-			{% assign index_key = nav.title | append: "/"  | append: child.title %}
-			{% assign category = site.categories[index_key] %}
-			{% if category %}
-				<li><a href="{{ child.url | relative_url }}"{% if child.url == page.url %} class="active"{% endif %}>{{ child.title }}({{ category.size }})</a></li>
-			{% else %}
-				<li><a href="{{ child.url | relative_url }}"{% if child.url == page.url %} class="active"{% endif %}>{{ child.title }}(0)</a></li>
-			{% endif %}
-		  {% endfor %}
+            {% assign index_key = nav.title | append: "/" | append: child.title %}
+            {% assign category = site.categories[index_key] %}
+            {% if category %}
+              <li><a href="{{ child.url | relative_url }}"{% if child.url == page.url %} class="active"{% endif %}>{{ child.title }}({{ category.size }})</a></li>
+            {% else %}
+              <li><a href="{{ child.url | relative_url }}"{% if child.url == page.url %} class="active"{% endif %}>{{ child.title }}(0)</a></li>
+            {% endif %}
+          {% endfor %}
         </ul>
         {% endif %}
       </li>

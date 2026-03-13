@@ -1,0 +1,61 @@
+:root {
+  --docs-bg: #252a34;
+  --docs-bg-alt: #20242c;
+  --docs-surface: #2c323d;
+  --docs-surface-strong: #343b47;
+  --docs-surface-soft: rgba(255, 255, 255, 0.03);
+  --docs-border: rgba(255, 255, 255, 0.08);
+  --docs-border-strong: rgba(255, 255, 255, 0.14);
+  --docs-text: #eef2f7;
+  --docs-text-soft: #ced5df;
+  --docs-text-muted: #97a4b5;
+  --docs-heading: #f8fafc;
+  --docs-link: #92d6d8;
+  --docs-link-hover: #c9edef;
+  --docs-focus: rgba(146, 214, 216, 0.45);
+  --docs-tag-bg: rgba(255, 255, 255, 0.05);
+  --docs-tag-border: rgba(255, 255, 255, 0.1);
+  --docs-scrollbar-thumb: rgba(206, 213, 223, 0.24);
+  --docs-scrollbar-thumb-hover: rgba(206, 213, 223, 0.4);
+  --docs-shadow: 0 18px 38px rgba(0, 0, 0, 0.18);
+  --docs-card-shadow: 0 12px 30px rgba(0, 0, 0, 0.14);
+  --docs-radius: 18px;
+  --docs-card-gap: 0.9rem;
+}
+
+@include breakpoint($medium) {
+  :root {
+    --docs-card-gap: 1.1rem;
+  }
+}
+
+html {
+  font-size: 16px;
+
+  @include breakpoint($medium) {
+    font-size: 17px;
+  }
+
+  @include breakpoint($large) {
+    font-size: 18px;
+  }
+
+  @include breakpoint($x-large) {
+    font-size: 18px;
+  }
+}
+
+body {
+  background: linear-gradient(180deg, var(--docs-bg) 0%, var(--docs-bg-alt) 100%);
+  color: var(--docs-text);
+}
+
+::selection {
+  color: #fff;
+  background: rgba(146, 214, 216, 0.28);
+}
+
+::-moz-selection {
+  color: #fff;
+  background: rgba(146, 214, 216, 0.28);
+}
