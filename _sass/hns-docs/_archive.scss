@@ -16,6 +16,10 @@
   margin-bottom: 0;
 }
 
+.archive > .list__item + .list__item {
+  margin-top: var(--docs-card-gap);
+}
+
 .list__item .archive__item,
 .page__related .archive__item {
   padding: 1rem 1.05rem 1.05rem;
