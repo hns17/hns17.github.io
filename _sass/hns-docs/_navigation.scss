@@ -16,6 +16,27 @@
   color: var(--docs-heading);
 }
 
+.nav__items > li > ul {
+  margin-top: 0.35rem;
+  padding-left: 0.3rem;
+}
+
+.nav__items > li > ul > li > a {
+  display: block;
+  padding-left: 0;
+}
+
+.nav__items > li > a {
+  display: block;
+}
+
+.nav__items > li > a > .nav__sub-title,
+.nav__items > li > .nav__sub-title {
+  display: block;
+  width: 100%;
+  margin-left: 0;
+}
+
 .sidebar.sticky,
 .sidebar__right.sticky .toc .toc__menu {
   scrollbar-width: thin;
