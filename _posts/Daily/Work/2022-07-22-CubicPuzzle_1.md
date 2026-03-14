@@ -11,7 +11,7 @@ tags: ["Unity", "Project", "Puzzle", "CubicPuzzle", "CubicGraph"]
 
 ## 1. 목적
 
-- 아래의 목적을 위해 간단한 Puzzel Project 진행
+- 아래 목적을 위해 간단한 Puzzle Project를 진행했다.
   - Dependency Injection을 위해 Zenject 사용하기
   - 비동기 프로그래밍을 위해 Unitask 사용하기
   - MVP 아키텍처 패턴으로 구조 설계하기
@@ -68,13 +68,13 @@ tags: ["Unity", "Project", "Puzzle", "CubicPuzzle", "CubicGraph"]
 
       ![image-20220708235434335](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20220708235434335.png)
 
-  - NativeArray는 기능적으로 불편하고 대용량 메모리 사용 같은 특정 상황이 아닌 경우 크게 의미가 없어 보이므로 다음 프로젝트 진행시에는 잡 시스템 사용을 제외하면 사용하지 않을 생각.
+  - NativeArray는 기능적으로 불편하고 대용량 메모리 사용 같은 특정 상황이 아닌 경우 크게 의미가 없어 보이므로 다음 프로젝트 진행 시에는 잡 시스템 사용을 제외하면 사용하지 않을 생각.
 
-### 2. Editor
+### 3. Editor
 
 - Stage 제작용 Editor
 
-<img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/CubicPuzzleEdit.gif" allign = "left" />
+<img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/CubicPuzzleEdit.gif" align = "left" />
 
 ## 참고
 

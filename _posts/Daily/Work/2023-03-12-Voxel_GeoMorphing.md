@@ -23,7 +23,7 @@ tags: ["Unity", "Project", "Voxel", "Vertex Morphing", "Morphing", "Geometry"]
 3. LOD 값 변경
 ```
 
-## 1. 장점, 단점
+## 2. 장점과 단점
 
 ### 장점
 

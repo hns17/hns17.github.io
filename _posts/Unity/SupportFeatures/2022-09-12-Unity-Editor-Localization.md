@@ -115,7 +115,7 @@ tags: ["Unity", "Editor Localization", "Localization", "Editor", "L10n", "*.po"]
   - Unity 2019와 2020 이후 버전의 API가 달라 Unity 버전을 신경써서 만들어야함
   - 필요한 경우 Unity Engine 언어설정이 아닌 Custom Editor 자체에 언어설정 값을 두고 사용할 것 같음
     - 다른 Package나 Editor 간 통일된 기능의 작성을 생각한다면 Unity Package의 Localization 기능을 사용하면 되지 않을까...
-  - 가장 큰 이유는 해당 기능에 대한 제대로된 문서가 없음
+  - 가장 큰 이유는 해당 기능에 대한 제대로 된 문서가 없음
     - Unity에서도 단순 편의성을 위한 기능 정도로 생각하는 느낌?
   - 유니티 엔진상의 이슈
     - 언어 변경시 엔진의 언어가 정상적으로 변경되지 않는 경우가 있으며 이 경우 CustomEditor도 변경되지 않음

@@ -100,7 +100,7 @@ tags: ["Mipmap", "Texture", "Sampling", "Texel"]
 ```
 위는 Point와 Linear 필터의 차이를 보여준다
 Point는 선명하나 Texel이 손실되어 계단처럼 층이 생기며, 이런 계단현상을 Aliasing 이라고 한다.
-반대로 Linear는 흐리게 보이지만 Point와 비교했을때 Aliasing 문제가 어느정도 해결된 것을 볼수 있다.
+반대로 Linear는 흐리게 보이지만 Point와 비교했을 때 Aliasing 문제가 어느 정도 해결된 것을 볼 수 있다.
 이렇게 Texel의 손실이나 보간을 통해 Aliasing이 생기거나 흐려져 품질이 변하는 현상을 Texture Bleeding이라고 한다.
 
 또한 필터는 Min(Texture보다 Mesh가 작은 경우), Mag(Texture보다 Mesh가 큰 경우),

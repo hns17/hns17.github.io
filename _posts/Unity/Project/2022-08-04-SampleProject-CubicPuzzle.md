@@ -88,7 +88,7 @@ tags: ["Unity", "Project", "Puzzle"]
 
 ##### Stage 및 Board 제작용 Editor
 
-<img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/CubicPuzzleEdit.gif" allign = "left" />
+<img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/CubicPuzzleEdit.gif" align = "left" />
 
 ##### ExtraPattern 제작용 Editor
 

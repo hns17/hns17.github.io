@@ -14,7 +14,7 @@ tags: ["Unity", "Project", "Voxel", "Block", "CubicCraft", "GreedyMeshing"]
 
 ### 1. Greedy Meshing
 
-- Voxel 단위 처리와 Mesh 단위 처리로 나눠 생각해볼수 있음
+- Voxel 단위 처리와 Mesh 단위 처리로 나눠 생각해볼 수 있음
 
 - Mesh 단위
 
@@ -53,7 +53,7 @@ tags: ["Unity", "Project", "Voxel", "Block", "CubicCraft", "GreedyMeshing"]
   - 별도의 Level 처리나 샘플링 등으로 어느정도 문제가 해결되지만 Mipmap의 장점을 최대화하기는 어려워보인다
   - 아래는 기본 Sampling을 통한 비교, [NoMip & Mip, Sampler - Point]
 
-    - Mipmap을 쓴 경우 멀리있는 색과 타일 사이의 색이 뭉게지는 것을 볼수 있다
+    - Mipmap을 쓴 경우 멀리 있는 색과 타일 사이의 색이 뭉개지는 것을 볼 수 있다
 
 <div class='cocoen'>
     <img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/No_mip_point.png" alt="Lazy" style="max-width: none;">

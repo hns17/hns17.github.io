@@ -55,7 +55,7 @@ tags: ["Unity", "Project", "UIElement", "CubicGraph"]
 
 ### Stage Editor
 
-<img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/CubicPuzzleEdit.gif" allign = "left" />
+<img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/CubicPuzzleEdit.gif" align = "left" />
 
 ### Extra Pattern Editor
 
