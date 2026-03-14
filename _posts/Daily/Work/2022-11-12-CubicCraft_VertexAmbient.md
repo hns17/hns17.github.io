@@ -1,20 +1,19 @@
 ---
 title: "CubicCraft - VertexAmbient"
 categories: [Daily/Work]
-tag : ["Unity", "Project", "Voxel", "Block", "CubicCraft", "Ambient"]
+tags: ["Unity", "Project", "Voxel", "Block", "CubicCraft", "Ambient"]
 
 ---
 
-
-
-# CubicCraft - Vertex Ambient
+> 핵심 요약
+> - 이 글은 `CubicCraft - VertexAmbient` 작업에서 진행한 내용을 기록한다.
+> - 구현한 기능, 확인한 결과, 남은 과제를 중심으로 정리한다.
+> - 프로젝트 로그를 빠르게 훑을 수 있게 핵심을 먼저 배치한다.
 
 <div class = "cocoen">
     <img src="https://raw.githubusercontent.com/hns17/ImageContainer/main/img/no_ambi.png" alt="array2d_linear" style="max-width: none;" />
     <img src="https://raw.githubusercontent.com/hns17/ImageContainer/main/img/array2d_linear.png" alt="array2d_linear" />
 </div>
-
-
 
 - 화면 품질 향상을 위해 사용되는 대표적인 것중 하나가 Ambient Occlusion.
 
@@ -28,8 +27,6 @@ tag : ["Unity", "Project", "Voxel", "Block", "CubicCraft", "Ambient"]
 
   - 라이트맵은 넓은 공간의 데이터를 Dynamic하게 생성하는 과정에서 사용하기 어려움
 
-
-
 ### 1. Calculate Ambient Data
 
 <img src="https://0fps.files.wordpress.com/2013/07/aovoxel2.png" style="zoom:50%;" />
@@ -42,9 +39,7 @@ tag : ["Unity", "Project", "Voxel", "Block", "CubicCraft", "Ambient"]
 
 ### 2. Anisotropy Problem
 
--  
-
-
+-
 
 ### 3. 장/단점
 
@@ -70,13 +65,6 @@ tag : ["Unity", "Project", "Voxel", "Block", "CubicCraft", "Ambient"]
     <img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/GreedyAmbi.PNG">
 </div>
 
-
-
-
-
-
-
-# Ref
+## 참고
 
 - [https://0fps.net/2013/07/03/ambient-occlusion-for-minecraft-like-worlds/](https://0fps.net/2013/07/03/ambient-occlusion-for-minecraft-like-worlds/)
-

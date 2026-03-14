@@ -1,12 +1,15 @@
 ---
 title: "CubicPuzzle - 기능 개선"
 categories: [Daily/Work]
-tag : ["Unity", "Project", "Puzzle", "CubicPuzzle"]
+tags: ["Unity", "Project", "Puzzle", "CubicPuzzle"]
 ---
 
+> 핵심 요약
+> - 이 글은 `CubicPuzzle - 기능 개선` 작업에서 진행한 내용을 기록한다.
+> - 구현한 기능, 확인한 결과, 남은 과제를 중심으로 정리한다.
+> - 프로젝트 로그를 빠르게 훑을 수 있게 핵심을 먼저 배치한다.
 
-
-#### [2022.07.26]
+### 2022.07.26
 
 - UniTask 종료 문제 수정
 
@@ -42,5 +45,3 @@ tag : ["Unity", "Project", "Puzzle", "CubicPuzzle"]
   - Physic2D SimulationMode를 Fixed Update -> Script로 변경
 
     - Script를 통해 Simulation
-
-      

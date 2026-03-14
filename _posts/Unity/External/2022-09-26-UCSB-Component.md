@@ -1,17 +1,18 @@
 ---
 title: "UnityChanSpringBone(UCSB) Component Manual"
 categories: [Unity/External(Asset/Lib/Etc)]
-tag : ["Unity", "UCSB", "SpringBone", "UnityChanSpringBone", "UCSB Component", "Manual"]
+tags: ["Unity", "UCSB", "SpringBone", "UnityChanSpringBone", "UCSB Component", "Manual"]
 ---
 
+> 핵심 요약
+> - 이 글은 `UnityChanSpringBone(UCSB) Component Manual` 기능이나 라이브러리의 사용 포인트를 정리한다.
+> - 핵심 개념과 적용 방법을 중심으로 살펴본다.
+> - 실제로 사용할 때 주의할 점도 함께 정리한다.
 
-
-# UCSB 컴포넌트 매뉴얼
+## UCSB 컴포넌트 매뉴얼
 
 - UnityChanSpringBone 패키지에서 제공하는 컴포넌트들 정리
 - UnityChan에 포함된 일본어 매뉴얼을 기반으로 작성
-
-
 
 ## 1. SpringBone Window
 
@@ -21,8 +22,6 @@ Spring Manager 컴포넌트의 '스프링 윈도우 열기' 버튼 또는 메뉴
 ```
 
 ![image-20220925233246315](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20220925233246315.png)
-
-
 
 #### (1) Show
 
@@ -42,8 +41,6 @@ Spring Manager 컴포넌트의 '스프링 윈도우 열기' 버튼 또는 메뉴
   - Scene뷰에 본 이름을 표시.
   - 이쪽도 Spring Bone이 많으면 무거워지므로 필요할 때 이외에는 숨기는 것을 권장합니다.
 
-
-
 #### (2) Dynamic CSV
 
 ```
@@ -56,8 +53,6 @@ Spring Manager 컴포넌트의 '스프링 윈도우 열기' 버튼 또는 메뉴
 
 - 저장하기
   캐릭터의 다이나믹 정보를 CSV에 저장합니다.
-
-  
 
 #### (3) 스프링본
 
@@ -86,8 +81,6 @@ Spring Manager 컴포넌트의 '스프링 윈도우 열기' 버튼 또는 메뉴
 
 - 선택된 본 및 자식 본 본 삭제
   - 선택된 오브젝트 이하의 전체 Spring Bone과 Spring Manager를 삭제합니다.
-
-
 
 #### (4) 콜라이더
 
@@ -119,8 +112,6 @@ Spring Manager 컴포넌트의 '스프링 윈도우 열기' 버튼 또는 메뉴
 
   - 또한 전체 Spring Bone 컴포넌트의 콜라이더 목록에 None이 있다면 목록에서 제거합니다.
 
-    
-
 ## 2. SpringManager
 
 ```
@@ -141,13 +132,11 @@ Spring Manager 컴포넌트의 '스프링 윈도우 열기' 버튼 또는 메뉴
 - 스프링본 리스트 업데이트 : 매니저에서 누락된 스프링본 컴포넌트 정보 전부 찾아서 추가
   - 스크립트 또는 인스펙터를 통해 스프링본 컴포넌트를 추가할 경우 업데이트 하지 않으면 매니저에 추가되지 않음
 
-
-
 #### (2) properties
 
 ![image-20220925113549338](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20220925113549338.png)
 
-- Automatic Update(자동 갱신) 
+- Automatic Update(자동 갱신)
 
   - (프로그래머용) 자동 갱신을 유효하게 합니다. 처음에는 켜져 있는데 스크립트 측에서 다이내믹스 처리 타이밍을 컨트롤 할 때는 체크를 제거하고, SpringManager의 Update Dynamics() 메서드를 수동으로 호출할 수 있습니다.
 
@@ -163,9 +152,8 @@ Spring Manager 컴포넌트의 '스프링 윈도우 열기' 버튼 또는 메뉴
   - 1로 하면 Time.delta Time과 같은 간격으로 움직이지만 프레임 레이트가 변동되면 다소 날뛰게 될 가능성이 있습니다.
   안정을 위해 60으로 설정하는 것이 좋습니다.
 
-
 - Dynamic Ratio(다이나믹스 비율)[실험 중]
-  - (프로그래머용) 모션과 다이내믹스를 블렌딩하는 비율. 
+  - (프로그래머용) 모션과 다이내믹스를 블렌딩하는 비율.
   - 단, 모션으로 흔들림 본의 모션을 붙이는 경우는 평소 없기 때문에 Spring Manager의 Update Bone Is Animated States () 메서드에서 어떤 흔들림 본이 모션으로 움직일지를 그 모션의 재생시 등에 지정해야 합니다.
 
 - Gravity (중력)
@@ -175,8 +163,6 @@ Spring Manager 컴포넌트의 '스프링 윈도우 열기' 버튼 또는 메뉴
   - 콜리젼에 맞았을 때의 뛰는 비율. (현재 실험 단계에서 본래 각 본에 붙이는 파라미터가 될 예정입니다.)
 - Friction (마찰)[실험 중]
   충돌시 마찰 비율. (현재 실험 단계에서 본래 각 본에 붙이는 파라미터가 될 예정입니다.)
-
-
 
 #### (3) Constraints(제한 기능)
 
@@ -192,8 +178,6 @@ Spring Manager 컴포넌트의 '스프링 윈도우 열기' 버튼 또는 메뉴
   - 거리 제한 활성화
 
 ※ SpringBone Component에서 설정한 제한 기능을 일괄적으로 On/Off할 때 사용
-
-
 
 #### (4) Ground Collision
 
@@ -212,17 +196,13 @@ Scene뷰의 Gizmo에서 발밑의 사각 테두리로 표시됩니다.
 대상의 위치가 GroundHeigt 보다 아래로 내려가면 다이나믹 움직임도 낙하 상태처럼 변화함
 ```
 
-
-
 #### (5) Bones
 
 ![image-20220925121351225](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20220925121351225.png)
 
 - Spring Bones
-  - 등록된 Spring Bone 목록. 
+  - 등록된 Spring Bone 목록.
   - Spring Bone Window나 SpringBoneListUpdate버튼을 쓰다 보면 평소에 이걸 직접 손으로 만질 필요는 없음
-
-
 
 #### (6) Gizmo
 
@@ -242,8 +222,6 @@ Scene뷰의 Gizmo에서 발밑의 사각 테두리로 표시됩니다.
 
 ※ 각 요소의 Gizmo 및 Handle 색상과 각도 제한 크기를 지정합니다.에디터에서만 사용됩니다.
 
-
-
 ## 3. SpringBone
 
 ![image-20220925121920805](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20220925121920805.png)
@@ -258,8 +236,6 @@ Scene뷰의 Gizmo에서 발밑의 사각 테두리로 표시됩니다.
   - 이 Spring Bone이 등록된 Spring Manager를 나타냅니다.
 - Enable
   - 이 본의 다이내믹스 On/Off
-
-
 
 #### (2) 힘
 
@@ -282,8 +258,6 @@ Scene뷰의 Gizmo에서 발밑의 사각 테두리로 표시됩니다.
   - 바람의영향치.
   - 범위는 0~1이고, 0이면 영향을 받지 않으며 1이면 100% 영향을 받습니다.
   - 바람은 WindVolume Component에서 Control
-  
-  
 
 #### (3) 각도제한
 
@@ -301,8 +275,6 @@ Scene뷰의 Gizmo에서 발밑의 사각 테두리로 표시됩니다.
 
 ![image-20220925191915471](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20220925191915471.png)
 
-
-
 - Pivot
   - Pivot Object는 처음에는 그 Spring Bone의 부모로 설정되기 때문에 다른 오브젝트의 아이로 만들거나 방향을 바꾸거나 하려면 SpringBon 창에서 'Pivot 설정' 버튼을 눌러주세요.
   - 대상 Spring Bone에 대한 새로운 Spring Bone Pivot이라고 하는 컴포넌트가 있는 Game Object가 생성됩니다.
@@ -318,37 +290,28 @@ Scene뷰의 Gizmo에서 발밑의 사각 테두리로 표시됩니다.
     - 상한으로 통일 : 하한선의 값을 상한선의 값과 동일하게
     - 반전 : 상한선과 하한선의 값이 반전됩니다.
 
-
-
 #### (4) 거리제한 [※ 실험 중]
-
 
 ![image-20220925193435685](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20220925193435685.png)
 
 - 뼈가 거리를 유지하고자 하는 타겟을 지정합니다.
 - 예를 들어 스커트의 본 사이의 거리가 너무 늘어나는 걸 해결하기위한  파라미터였지만, 현재는 제대로 작동하지 않으므로 사용하지 말 것을 권장합니다.
 
-
-
 #### (5) 충돌판정
 
 ```
-Spring Bone의 충돌 설정. 
+Spring Bone의 충돌 설정.
 각 Spring Bone은 Sphere 형태의 콜라이더를 가지며, UCSB의 콜라이더 컴포넌트와 상호작용 합니다.
 UCSB 콜라이더 컴포넌트는 Sphere, Capsule, Panel 3 종류가 있습니다.
 ```
 
 ![image-20220925193652137](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20220925193652137.png)
 
-
-
 - Radius
   - SpringBone 콜라이더의 Radius
 
 - Sphere, Capsule, Panel
   - SpringBone 콜라이더와 상호작용할 UCSB 콜라이더  컴포넌트가 포함된 객체
-
-
 
 #### (6) 각도제한 표시
 
@@ -382,8 +345,6 @@ Inspector 맨 아래에 각도 제한이 표시됩니다.
 예를 들어, 모션에 의해 검 칼집이 숨겨지거나 하는 경우, 그 콜리젼을 동시에 무효화할 수 있습니다.
 ```
 
-
-
 #### (1) Spring Sphere Collider
 
 - 사용 예 : 머리, 허리 등
@@ -400,9 +361,7 @@ Inspector 맨 아래에 각도 제한이 표시됩니다.
 - Panel는 가로와 세로 폭이 있고 자신의 Z축을 위의 법선 벡터라고 합니다.
 - 충돌된 Spring Bone은 Panel의 뒤로 이동하지 않으며 반드시 Panel의 앞쪽(판의 로컬+Z)으로 움직입니다.
 
-※ SpringCollider는 설치후 영향을 받을 SpringBone 컴포넌트의 충돌판정에 추가해야 반영됩니다. 
-
-
+※ SpringCollider는 설치후 영향을 받을 SpringBone 컴포넌트의 충돌판정에 추가해야 반영됩니다.
 
 ## 5. High Leg
 
@@ -420,8 +379,6 @@ High Leg에 허리와 양 다리 양쪽 끝의 본를 지정하고 허리보다 
 - Legs
   - 다리본을 지정합니다. 각 다리의 부모(start)와 자녀(end)를 지정해야 합니다.
 
-
-
 ## 6. 외력
 
 ```
@@ -431,8 +388,6 @@ High Leg에 허리와 양 다리 양쪽 끝의 본를 지정하고 허리보다 
 
 샘플에는 두 개의 클래스(ForceVolume, WindVolume)가 준비되어 있습니다.
 ```
-
-
 
 #### (1) ForceVolume
 
@@ -444,8 +399,6 @@ High Leg에 허리와 양 다리 양쪽 끝의 본를 지정하고 허리보다 
 ![image-20220925220545542](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20220925220545542.png)
 
 - 강도 : 세기
-
-
 
 #### (2) WindVolume
 

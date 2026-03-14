@@ -4,15 +4,14 @@ categories: [Unity/SupportFeatures]
 tags: ["Unity", "Editor Localization", "Localization", "Editor", "L10n", "*.po"]
 ---
 
-
-
-# Editor Localization
+> 핵심 요약
+> - 이 글은 `Unity Editor Localization` 기능이나 라이브러리의 사용 포인트를 정리한다.
+> - 핵심 개념과 적용 방법을 중심으로 살펴본다.
+> - 실제로 사용할 때 주의할 점도 함께 정리한다.
 
 - Custom Editor의 텍스트를 Unity Language 설정에 맞춰 변경 할 수 있다.
 - 유니티 2019 버전과 이후 버전에서 사용하는 API가 다르므로 가능하면 2020 이후 버전을 사용
 - 해당 문서는 2021.3 버전 기준으로 작성
-
-
 
 ## 1. Unity Editor Language
 
@@ -23,8 +22,6 @@ tags: ["Unity", "Editor Localization", "Localization", "Editor", "L10n", "*.po"]
 - 언어 모듈은 허브를 통하여 추가 가능
 
 ![image-20220912105424428](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20220912105424428.png)
-
-
 
 ## 2. po 파일 만들기
 
@@ -43,33 +40,29 @@ tags: ["Unity", "Editor Localization", "Localization", "Editor", "L10n", "*.po"]
     msgid ""
     msgstr ""
     "Language: ko\n"
-    
+
     //아래부터 Localization StringTable
     msgid "Hello Localization"
     msgstr "안녕 현지화 테스트 중이야!"
-    
+
     msgid "Write Test Code"
     msgstr "테스트 코드 작성"
-    
+
     msgid "Finish"
     msgstr "마무리"
     ```
-
-  
 
 ## 3. Assembly Definition 생성
 
 - po 파일은 유니티 MainEditor 뿐만 아니라, 패키지 및 기타 커스텀 에디터에서도 사용되기 때문에 해당 파일의 사용 범위를 지정해야 한다.
 
-- 범위 지정을 위해 AssemblyDefinition 파일을 생성해야 한다. 
+- 범위 지정을 위해 AssemblyDefinition 파일을 생성해야 한다.
 
   - AssemblyDefinition은 Unity QuickMenu를 통해 생성
 
   - Editor 용이므로 범위는 Editor로 지정
 
     ![image-20220912111845349](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20220912111845349.png)
-
-
 
 ## 4. Set Editor Localization Attribute
 
@@ -83,8 +76,6 @@ tags: ["Unity", "Editor Localization", "Localization", "Editor", "L10n", "*.po"]
     [assembly: UnityEditor.Localization]
     ```
 
-    
-
 ## 5. Editor Localization API
 
 - 작성된 po 파일의 텍스트를 가져오기 위해 Unity에서 API를 제공한다.
@@ -96,8 +87,6 @@ tags: ["Unity", "Editor Localization", "Localization", "Editor", "L10n", "*.po"]
   - 공식문서 : [https://docs.unity3d.com/ScriptReference/L10n.html](https://docs.unity3d.com/ScriptReference/L10n.html)
 
     ![image-20220912130043742](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20220912130043742.png)
-
-
 
 ## 6. Localization API를 사용해 Custom Editor 만들기
 
@@ -117,8 +106,6 @@ tags: ["Unity", "Editor Localization", "Localization", "Editor", "L10n", "*.po"]
 
   ![image-20220912132959140](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20220912132959140.png)
 
-
-
 ## 7. 정리 및 나머지
 
 - Unity는 Unity Editor의 언어 설정에 따른 Custom Editor Localization 기능을 제공한다.
@@ -134,9 +121,7 @@ tags: ["Unity", "Editor Localization", "Localization", "Editor", "L10n", "*.po"]
     - 언어 변경시 엔진의 언어가 정상적으로 변경되지 않는 경우가 있으며 이 경우 CustomEditor도 변경되지 않음
     - Editor를 재실행하면 해결됨
 
-
-
-# Ref
+## 참고
 
 - [https://forum.unity.com/threads/package-ui-localization-is-available-in-2020-2.957173/](https://forum.unity.com/threads/package-ui-localization-is-available-in-2020-2.957173/)
 - [https://caitsithware.com/wordpress/archives/2227#Localization](https://caitsithware.com/wordpress/archives/2227#Localization)

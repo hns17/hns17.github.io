@@ -5,9 +5,10 @@ tags: ["Jekyll"]
 
 ---
 
-
-
-# Jekyll
+> 핵심 요약
+> - 이 글은 `GitPage 사용을 위한 Jekyll 환경설정` 설정 과정을 정리한다.
+> - 적용 방법과 확인 포인트를 빠르게 볼 수 있게 구성한다.
+> - 필요한 경우 참고 링크와 주의점까지 함께 남긴다.
 
 - Jekyll은 정적 웹사이트 생성기(Static Site Generator)
 
@@ -23,23 +24,17 @@ tags: ["Jekyll"]
 
   - 오픈소스 프로젝트이며, Ruby 언어로 개발되었습니다.
 
-
-
-# GitPage와 Jekyll
+## GitPage와 Jekyll
 
 - GitHub Pages는 Jekyll을 기반으로 하는 정적 사이트 생성기를 기본적으로 지원하기 때문에 많은 사람들이 GitHub Pages와 함께 Jekyll을 사용
 
 - 로컬에 환경을 구축해놓으면 Posting 내용을 Repo에 push하기 전에 미리 확인이 가능하다.
 
-
-
-# Setting
+## 설정
 
 - 아래는 윈도우 환경에서 Jekyll 환경 구성을 요약합니다.
 
 - 맥의 경우 기본적으로 루비는 설치되어 있으며, RubyGems 등을 이용해 설치하시면 됩니다.
-
-  
 
 #### 1. Ruby 설치
 
@@ -61,23 +56,17 @@ tags: ["Jekyll"]
 
 ![image-20240707212840140](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20240707212840140.png)
 
-
-
 #### 2. Jekyll 설치
 
 - Ruby가 설치되었으면 패키지 서버에서 Jekyll을 설치한다.
   - gem install bundler 입력하여 bundler 설치
   - gem install jekyll 입력하여 Jekyll 설치
 
-
-
 #### 3. Local host로 확인하기
 
 - 이제 콘솔에서 github page 디렉토리로 이동 후 bundle install 을 입력하여 bundle을 설치합니다.
   - 만약 bundle install error가 뜨면 gemfile.lock 삭제 후 다시 설치
 - bundle exec jekyll serve 를 입력하여 jekyll 페이지를 로컬에 생성합니다.
-
-
 
 #### 4. 브라우저에서 확인
 

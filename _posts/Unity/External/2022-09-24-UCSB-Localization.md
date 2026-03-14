@@ -1,17 +1,16 @@
 ---
 title: "UnityChanSpringBone(UCSB) Localization"
 categories: [Unity/External(Asset/Lib/Etc)]
-tag : ["Unity", "UCSB", "SpringBone", "UnityChanSpringBone", "JiggleBone", "Localization"]
+tags: ["Unity", "UCSB", "SpringBone", "UnityChanSpringBone", "JiggleBone", "Localization"]
 
 ---
 
+> 핵심 요약
+> - 이 글은 `UnityChanSpringBone(UCSB) Localization` 기능이나 라이브러리의 사용 포인트를 정리한다.
+> - 핵심 개념과 적용 방법을 중심으로 살펴본다.
+> - 실제로 사용할 때 주의할 점도 함께 정리한다.
 
-
-# UnityChanSpringBone(UCSB) Localization
-
-- UCSB 1.21 version의 Localization을 바탕으로 EditorWindow 및 Component 한글화 
-
-
+- UCSB 1.21 version의 Localization을 바탕으로 EditorWindow 및 Component 한글화
 
 ### 1. Localization
 
@@ -21,11 +20,7 @@ tag : ["Unity", "UCSB", "SpringBone", "UnityChanSpringBone", "JiggleBone", "Loca
 
 - Unity Version : 2020~
 
-  
-
 ![image-20220912185817275](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20220912185817275.png)
-
-
 
 ### 2. 설치
 
@@ -49,8 +44,6 @@ tag : ["Unity", "UCSB", "SpringBone", "UnityChanSpringBone", "JiggleBone", "Loca
   - url : https://github.com/hns17/UnityChanSpringBone.git?path=Assets/ucsb_kor
 
 ![image-20220924115138007](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20220924115138007.png)
-
-
 
 ##### 마. SpringBone Editor Window 확인
 

@@ -1,12 +1,13 @@
 ---
 title: "Custom VisualElement Null Refference Exception"
 categories: [Unity/Issue]
-tag : ["Unity", "Custom VisualElement", "Null Refference Issue"]
+tags: ["Unity", "Custom VisualElement", "Null Refference Issue"]
 ---
 
-
-
-# Unity Custom VisualElement Null Refference Exception
+> 핵심 요약
+> - 이 글은 `Custom VisualElement Null Refference Exception` 문제의 원인과 해결 과정을 정리한다.
+> - 재현 상황, 해결 방법, 확인 결과를 중심으로 정리한다.
+> - 같은 문제가 다시 생겼을 때 빠르게 참고할 수 있게 기록한다.
 
 - Unity Version : 2021.3
 
@@ -55,13 +56,7 @@ tag : ["Unity", "Custom VisualElement", "Null Refference Issue"]
   UnityEngine.GUIUtility.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr, System.Boolean& result) (at <67dcbe01fcb94a00b87487037550ce1c>:0)
   ```
 
-  
-
-
-
-
-
-# 미해결
+## 미해결
 
 - 해당 문제는 아직 해결되지 않은 것 같다.
 
@@ -75,8 +70,6 @@ tag : ["Unity", "Custom VisualElement", "Null Refference Issue"]
 
 ![image-20230106214322819](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20230106214322819.png)
 
-
-
-# Ref
+## 참고
 
 [https://forum.unity.com/threads/bug-in-ui-builder-nullref-when-building-custom-element-tree-from-uxml-unity-2021-2-6f1.1217169/](https://forum.unity.com/threads/bug-in-ui-builder-nullref-when-building-custom-element-tree-from-uxml-unity-2021-2-6f1.1217169/)

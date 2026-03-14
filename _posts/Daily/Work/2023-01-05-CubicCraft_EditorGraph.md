@@ -1,17 +1,16 @@
 ---
 title: "CubicCraft - EditorGraph"
 categories: [Daily/Work]
-tag : ["Unity", "Project", "CubicCraft", "VisualElement", "CubicGraph"]
+tags: ["Unity", "Project", "CubicCraft", "VisualElement", "CubicGraph"]
 
 ---
 
-
-
-# CubicCraft - EditorGraph
+> 핵심 요약
+> - 이 글은 `CubicCraft - EditorGraph` 작업에서 진행한 내용을 기록한다.
+> - 구현한 기능, 확인한 결과, 남은 과제를 중심으로 정리한다.
+> - 프로젝트 로그를 빠르게 훑을 수 있게 핵심을 먼저 배치한다.
 
 - VisualElement 기반으로 Map Tool용 Editor 작업 중
-
-  
 
 ### 1차 작업내역
 
@@ -23,9 +22,7 @@ tag : ["Unity", "Project", "CubicCraft", "VisualElement", "CubicGraph"]
   - CubicVoxelGenerator Graph 생성
   - WorldNode, LayersNode, LayerNode, GenerateNode 추가
 
-
-
-#### [GenerateNode & PreviewContainer]
+#### GenerateNode & PreviewContainer
 
 ![Noise](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/Noise.gif)
 
@@ -34,9 +31,7 @@ Map Generate를 위한 Noise Node와 Preview 기능
 Noise Option이 많아서 NodeView가 상당히 복잡함
 ```
 
-
-
-#### [Blending Option]
+#### Blending Option
 
 ![Blend](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/Blend.gif)
 
@@ -45,9 +40,7 @@ Noise와 Noise Blending 기능
 BlendType에 따라 Child Noise를 Main에 Blending
 ```
 
-
-
-#### [Layers Node]
+#### Layers Node
 
 ![Layers](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/Layers.gif)
 
@@ -55,8 +48,6 @@ BlendType에 따라 Child Noise를 Main에 Blending
 Layers 분할
 높이 단위로 영역 분할
 ```
-
-
 
 ### 추가할 것들
 
@@ -66,4 +57,3 @@ Layers 분할
 - Area Node
 - VoxelMap 프로젝트와 통합하기
 - 계속 안하게 되네...
-

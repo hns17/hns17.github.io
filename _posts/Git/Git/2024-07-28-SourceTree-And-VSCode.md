@@ -5,22 +5,19 @@ tags: ["Git", "SourceTree", "vs-code", "diff-tool", "merge-tool"]
 
 ---
 
-
-
-# SourceTree에서 VS Code merge tool 사용하기
+> 핵심 요약
+> - 이 글은 `SourceTree에 VS Code merge tool 연결하기` 작업 절차를 정리한다.
+> - 설정 순서와 확인 방법을 단계별로 정리한다.
+> - 실행 중 막히기 쉬운 지점도 함께 확인할 수 있게 정리한다.
 
 - 소스트리의 diff, merge tool은 사용하기 불편하고 편리한 외부 병합 툴들은 유료
 - 무료 툴 중에서 가장 괜찮아 보이는 vs code merge tool을 연결해서 사용
 
 ![image-20240728105208484](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20240728105208484.png)
 
-
-
 ## 1. VS Code 설치
 
 - [VS Code]("https://code.visualstudio.com/") 를 다운로드 후 설치
-
-
 
 ## 2. VS Code 설정
 
@@ -30,20 +27,16 @@ tags: ["Git", "SourceTree", "vs-code", "diff-tool", "merge-tool"]
 
     ![image-20240728102549192](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20240728102549192.png)
 
-
-
-### ⚠️ Mac인 경우 터미널 코드 활성화가 필요
+### ️ Mac인 경우 터미널 코드 활성화가 필요
 
 - vs code 상단의 프롬프트 입력란에 >shell commmand 입력 후 code 설치
   - ref : https://code.visualstudio.com/docs/setup/mac
 
 ![image-20240728014034537](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20240728014034537.png)
 
-### 😒 Mac Permission Error
+### Mac Permission Error
 
 ![image-20240728014726361](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20240728014726361.png)
-
-
 
 - Mac에서 위와 같은 문제가 발생할 경우 터미널을 통해 bin 접근 후 code 삭제 후 다시 설치
 
@@ -51,8 +44,6 @@ tags: ["Git", "SourceTree", "vs-code", "diff-tool", "merge-tool"]
 cd /usr/local/bin
 sudo rm -rf code
 ```
-
-
 
 ## 3. SourceTree와 연결하기
 
@@ -86,8 +77,6 @@ sudo rm -rf code
       -n -w $MERGED
       ```
 
-
-
 #### (2) Mac
 
 - SourceTree - 설정 창 - 비교 탭으로 이동
@@ -116,19 +105,13 @@ sudo rm -rf code
       -n -w $MERGED
       ```
 
-
-
-
-
-## 🚀 확인하기
+## 확인하기
 
 #### 가. 외부 병합툴 시작하기
 
 - conflict가 발생한 항목에서 오른쪽 마우스 버튼을 클릭 후 충돌해결 - 외부 병합 툴 시작 선택
 
 ![image-20240728104704242](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20240728104704242.png)
-
-
 
 #### 나. 정상적으로 설정 되었으면 아래와 같이 vs code가 실행된다.
 
@@ -144,13 +127,9 @@ sudo rm -rf code
 
 ![image-20240728105208484](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20240728105208484.png)
 
-
-
-## 😒 Check box가 나오지 않는 경우 표시하기
+## Check box가 나오지 않는 경우 표시하기
 
 - VS Code merge tool에서 체크박스가 표시되지 않는 경우
-
-  
 
 #### 가. Setting 창에서 아래 표시된 버튼을 클릭하여 Json으로 전환
 
@@ -164,4 +143,3 @@ sudo rm -rf code
     "mergeEditor.showCheckboxes": true,
     "mergeEditor.showCodeLenses": false,
 ```
-

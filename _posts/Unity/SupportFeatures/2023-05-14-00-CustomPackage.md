@@ -4,14 +4,13 @@ categories: [Unity/SupportFeatures]
 tags: ["Unity", "CustomPackage", "PackageManager", "Install", "GitURL"]
 ---
 
-
-
-# Unity Custom Package
+> 핵심 요약
+> - 이 글은 `Unity CustomPackage` 기능이나 라이브러리의 사용 포인트를 정리한다.
+> - 핵심 개념과 적용 방법을 중심으로 살펴본다.
+> - 실제로 사용할 때 주의할 점도 함께 정리한다.
 
 - Unity PackageManager는 공식 패키지 뿐만 아니라 사용자가 만든 패키지의 관리도 지원한다.
 - 해당 문서에서는 PackageManager의 git url을 통해 추가하는 Custom Package를 만드는 방법을 작성한다.
-
-
 
 > # Custom Package 구성하는 방법
 
@@ -32,8 +31,6 @@ tags: ["Unity", "CustomPackage", "PackageManager", "Install", "GitURL"]
   - 어셈블리
   - 네이티브 플러그인
   - 모델, 텍스처, 애니메이션 및 오디오 클립, 기타 에셋.
-
-
 
 > # Git을 통해 배포되는 CustomPackge 만들어 보기
 
@@ -99,8 +96,6 @@ https://github.com/hns17/UpmTest.git?path=Assets/UpmTest
 
 ![image-20230514083747718](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20230514083747718.png)
 
-
-
 > # Package에 Script 추가하기
 
 - 스크립트를 작성 후 추가한다.
@@ -114,8 +109,6 @@ https://github.com/hns17/UpmTest.git?path=Assets/UpmTest
   - Ref : [https://docs.unity3d.com/kr/2021.3/Manual/cus-asmdef.html](https://docs.unity3d.com/kr/2021.3/Manual/cus-asmdef.html)
 
 ![image-20230514084505302](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20230514084505302.png)
-
-
 
 > # Update CustomPackage
 
@@ -133,8 +126,6 @@ https://github.com/hns17/UpmTest.git?path=Assets/UpmTest
 
 ![image-20230514085543405](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20230514085543405.png)
 
-
-
 > # Version 전환은?
 
 - git url을 통해 추가된 custom package는 버전 전환 기능을 제공하지 않는다.
@@ -143,13 +134,9 @@ https://github.com/hns17/UpmTest.git?path=Assets/UpmTest
 
 ![image-20230513234955200](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20230513234955200.png)
 
-
-
 > # 발생 할 수 있는 Issue
 
 - Custom Package를 만들때 발생 가능한 몇 가지 Issue들
-
-
 
 > ## Package Name Issue
 
@@ -168,8 +155,6 @@ package.json
 UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
 ```
 
-
-
 > ## Dependency Issue
 
 - package.json의 dependency 항목은 git 종속성을 지원하지 않는다.
@@ -183,8 +168,6 @@ UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
     com.cysharp.unitask (dependency): Version 'https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask' is invalid. Expected a 'SemVer' compatible value. [NotFound].
 UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
 ```
-
-
 
 > ## MetaFile Issue
 

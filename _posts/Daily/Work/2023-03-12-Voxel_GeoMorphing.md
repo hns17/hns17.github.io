@@ -1,10 +1,13 @@
 ---
 title: "Voxel GeoMorphing"
 categories: [Daily/Work]
-tag : ["Unity", "Project", "Voxel", "Vertex Morphing", "Morphing", "Geometry"]
+tags: ["Unity", "Project", "Voxel", "Vertex Morphing", "Morphing", "Geometry"]
 ---
 
-# Voxel GeoMorphing
+> 핵심 요약
+> - 이 글은 `Voxel GeoMorphing` 작업에서 진행한 내용을 기록한다.
+> - 구현한 기능, 확인한 결과, 남은 과제를 중심으로 정리한다.
+> - 프로젝트 로그를 빠르게 훑을 수 있게 핵심을 먼저 배치한다.
 
 ## 1. 개요
 
@@ -20,11 +23,9 @@ tag : ["Unity", "Project", "Voxel", "Vertex Morphing", "Morphing", "Geometry"]
 3. LOD 값 변경
 ```
 
-
-
 ## 1. 장점, 단점
 
-### [장점]
+### 장점
 
 - 쓰기 편함
 - 그렇게 무겁지 않음
@@ -32,9 +33,7 @@ tag : ["Unity", "Project", "Voxel", "Vertex Morphing", "Morphing", "Geometry"]
   - Shift 연산 두 번, frac, 사칙 연산을 좀 많이함(6번 정도)
 - 연출용으로 쓸만할 지도?
 
-
-
-### [단점]
+### 단점
 
 - 원하는 형태로 변경이 불가능
   - 일부가 납작한 평면으로 변환됨

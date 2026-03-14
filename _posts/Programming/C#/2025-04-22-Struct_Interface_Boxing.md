@@ -4,7 +4,11 @@ categories: [Programming/C#]
 tags: [Memory, Boxing, Interface, Struct, Heap]
 ---
 
-# C# Struct와 Interface의 Boxing 문제
+> 핵심 요약
+> - 이 글은 `Struct와 Interface의 Boxing 문제` 주제의 핵심 내용을 정리한다.
+> - 개념, 동작 원리, 적용 포인트를 중심으로 살펴본다.
+> - 필요한 경우 예시와 참고 자료까지 함께 정리한다.
+
 ## 1. C# Struct와 Class의 상속
 
 C#에서 `struct`와 `class`는 모두 데이터를 저장하고 기능을 제공하는 데 사용되지만, 상속(inheritance) 측면에서 중요한 차이점을 갖습니다.
@@ -86,7 +90,7 @@ public void SetUp()
 public void CheckAllocIListForeach()
 {
     IList<int> dataList = _dataList;
-    Assert.That(() =>                
+    Assert.That(() =>
     {
         foreach (var data in dataList)
         {
@@ -99,7 +103,7 @@ public void CheckAllocIListForeach()
 public void CheckAllocIReadOnlyListForeach()
 {
     IReadOnlyList<int> dataList = _dataList;
-    Assert.That(() =>                
+    Assert.That(() =>
     {
         foreach (var data in dataList)
         {
@@ -112,7 +116,7 @@ public void CheckAllocIReadOnlyListForeach()
 public void CheckAllocListForeach()
 {
     List<int> dataList = _dataList;
-    Assert.That(() =>                
+    Assert.That(() =>
     {
         foreach (var data in dataList)
         {
@@ -127,44 +131,38 @@ public void CheckAllocListForeach()
 `List`를 제외한 `IList`와 `IReadOnlyList`의 경우 `foreach`를 이용해 순회할 시 GC 할당이 발생하는 걸 확인할 수 있습니다.
 
 #### 위 내용의 IL 코드 비교
-### ✅ `List<int>`
+### `List<int>`
 - 반환 타입: `List<int>.Enumerator` (구조체)
 - **Boxing 발생 없음**
 
 ```c#
-IL_0002: ldarg.0      // this  
-IL_0003: ldfld        class System.Collections.Generic.List<int32> AllocationTest/'<>c__DisplayClass2_0'::dataList  
-IL_0008: callvirt     instance valuetype System.Collections.Generic.List<int32>.Enumerator System.Collections.Generic.List<int32>::GetEnumerator()  
-IL_000D: stloc.0      // V_0  
+IL_0002: ldarg.0      // this
+IL_0003: ldfld        class System.Collections.Generic.List<int32> AllocationTest/'<>c__DisplayClass2_0'::dataList
+IL_0008: callvirt     instance valuetype System.Collections.Generic.List<int32>.Enumerator System.Collections.Generic.List<int32>::GetEnumerator()
+IL_000D: stloc.0      // V_0
 ```
 
-------
-
-### ⚠️ `IList<int>`
+### ️ `IList<int>`
 - 반환 타입: `IEnumerator<int>` (인터페이스)
 - **Boxing 발생**: `List<int>.Enumerator` 구조체가 `IEnumerator<int>` 인터페이스 타입으로 변환될 때 Boxing이 발생하여 힙에 할당됩니다.
 
 ```c#
-IL_0002: ldarg.0      // this  
-IL_0003: ldfld        class System.Collections.Generic.IList<int32> AllocationTest/'<>c__DisplayClass3_0'::dataList  
-IL_0008: callvirt     instance class System.Collections.Generic.IEnumerator<int32> System.Collections.Generic.IEnumerable<int32>::GetEnumerator()  
-IL_000D: stloc.0      // V_0  
+IL_0002: ldarg.0      // this
+IL_0003: ldfld        class System.Collections.Generic.IList<int32> AllocationTest/'<>c__DisplayClass3_0'::dataList
+IL_0008: callvirt     instance class System.Collections.Generic.IEnumerator<int32> System.Collections.Generic.IEnumerable<int32>::GetEnumerator()
+IL_000D: stloc.0      // V_0
 ```
 
-------
-
-### ⚠️ `IReadOnlyList<int>`
+### ️ `IReadOnlyList<int>`
 - 반환 타입: `IEnumerator<int>` (인터페이스)
 - **Boxing 발생**: `List<int>.Enumerator` 구조체가 `IEnumerator<int>` 인터페이스 타입으로 변환될 때 Boxing이 발생하여 힙에 할당됩니다.
 
 ```c#
-IL_0002: ldarg.0      // this  
-IL_0003: ldfld        class System.Collections.Generic.IReadOnlyList<int32> AllocationTest/'<>c__DisplayClass4_0'::dataList  
-IL_0008: callvirt     instance class System.Collections.Generic.IEnumerator<int32> System.Collections.Generic.IEnumerable<int32>::GetEnumerator()  
-IL_000D: stloc.0      // V_0  
+IL_0002: ldarg.0      // this
+IL_0003: ldfld        class System.Collections.Generic.IReadOnlyList<int32> AllocationTest/'<>c__DisplayClass4_0'::dataList
+IL_0008: callvirt     instance class System.Collections.Generic.IEnumerator<int32> System.Collections.Generic.IEnumerable<int32>::GetEnumerator()
+IL_000D: stloc.0      // V_0
 ```
-
-------
 
 ## Boxing 발생 원인
 - `List<T>.Enumerator`는 구조체 (`struct`, value type)입니다.
@@ -179,8 +177,6 @@ IL_000D: stloc.0      // V_0
 | `IList<int>`         | `IEnumerator<int>` (interface)  | ⚠️ 발생           | 구조체 → 인터페이스 변환 |
 | `IReadOnlyList<int>` | `IEnumerator<int>` (interface)  | ⚠️ 발생           | 구조체 → 인터페이스 변환 |
 
-------
-
-## Ref
+## 참고
 - https://tsgcpp.hateblo.jp/entry/2021/11/21/001927
 - https://referencesource.microsoft.com/#mscorlib/system/collections/generic/list.cs,574

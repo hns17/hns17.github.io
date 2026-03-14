@@ -85,6 +85,7 @@
   line-height: 1.82;
   letter-spacing: -0.006em;
   font-weight: 400;
+  overflow-wrap: anywhere;
 }
 
 .page.is-post-reading .page__content p {
@@ -165,6 +166,8 @@
 
 .page.is-post-reading .page__content a:not(.btn) {
   color: var(--docs-post-link);
+  overflow-wrap: anywhere;
+  word-break: break-word;
   text-decoration-color: rgba(47, 102, 112, 0.24);
   text-decoration-thickness: 0.08em;
   text-underline-offset: 0.14em;

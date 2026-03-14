@@ -1,12 +1,13 @@
 ---
 title: "Unity Android Build Issue ~dynamic_array"
 categories: [Unity/Issue]
-tag : ["Unity", "Android_Build_Issue"]
+tags: ["Unity", "Android_Build_Issue"]
 ---
 
-
-
-# Unity 2021 Android Build Issue
+> 핵심 요약
+> - 이 글은 `Unity Android Build Issue ~dynamic_array` 문제의 원인과 해결 과정을 정리한다.
+> - 재현 상황, 해결 방법, 확인 결과를 중심으로 정리한다.
+> - 같은 문제가 다시 생겼을 때 빠르게 참고할 수 있게 기록한다.
 
 - Unity Version : 2021.3
 - Build Platform : Android
@@ -40,20 +41,16 @@ tag : ["Unity", "Android_Build_Issue"]
   C:/Program Files\Unity\Hub\Editor\2021.3.8f1\Editor\Data\il2cpp\libil2cpp\vm/Class.cpp:468:(.text._ZN6il2cpp2vm5Class28GetMethodFromNameFlagsAndSigEP11Il2CppClassPKciiPPK10Il2CppType+0x9c): additional relocation overflows omitted from the output
   clang++: error: linker command failed with exit code 1 (use -v to see invocation)
   UnityEngine.GUIUtility:ProcessEvent (int,intptr,bool&)
-  
+
   ```
 
 - 구글링 한 결과 빌드시 스크립트 디버깅을 활성화하면 Android NDK에서 문제가 발생한다는 내용을 확인함.
 
-
-
-# 해결방법
+## 해결 방법
 
 -  IL2CPP 코드 생성을 더 빠른(작은)빌드로 변형 후 빌드하기
 - ![image-20220814220535257](https://raw.githubusercontent.com/hns17/ImageContainer/main/img/image-20220814220535257.png)
 
-
-
-# Ref
+## 참고
 
 [https://forum.unity.com/threads/im-able-to-build-both-production-and-development-but-not-script-debugging-on.1187170/](https://forum.unity.com/threads/im-able-to-build-both-production-and-development-but-not-script-debugging-on.1187170/)

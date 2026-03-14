@@ -1,12 +1,15 @@
 ---
 title: "CubicPuzzle - Start PuzzleProject"
 categories: [Daily/Work]
-tag : ["Unity", "Project", "Puzzle", "CubicPuzzle", "CubicGraph"]
+tags: ["Unity", "Project", "Puzzle", "CubicPuzzle", "CubicGraph"]
 ---
 
+> 핵심 요약
+> - 이 글은 `CubicPuzzle - Start PuzzleProject` 작업에서 진행한 내용을 기록한다.
+> - 구현한 기능, 확인한 결과, 남은 과제를 중심으로 정리한다.
+> - 프로젝트 로그를 빠르게 훑을 수 있게 핵심을 먼저 배치한다.
 
-
-# 1. 목적
+## 1. 목적
 
 - 아래의 목적을 위해 간단한 Puzzel Project 진행
   - Dependency Injection을 위해 Zenject 사용하기
@@ -15,9 +18,7 @@ tag : ["Unity", "Project", "Puzzle", "CubicPuzzle", "CubicGraph"]
   - ReactiveProgramming을 위해 UniRx 사용하기
   - VisualElement를 바탕으로 Editor 기능 제작하기
 
-
-
-# 2. Work
+## 2. 진행 내용
 
 ### 1. 구현
 
@@ -69,16 +70,12 @@ tag : ["Unity", "Project", "Puzzle", "CubicPuzzle", "CubicGraph"]
 
   - NativeArray는 기능적으로 불편하고 대용량 메모리 사용 같은 특정 상황이 아닌 경우 크게 의미가 없어 보이므로 다음 프로젝트 진행시에는 잡 시스템 사용을 제외하면 사용하지 않을 생각.
 
-
-
 ### 2. Editor
 
-- Stage 제작용 Editor 
+- Stage 제작용 Editor
 
 <img src = "https://raw.githubusercontent.com/hns17/ImageContainer/main/img/CubicPuzzleEdit.gif" allign = "left" />
 
-
-
-# Ref
+## 참고
 
 - Youtube : [https://www.youtube.com/watch?v=yKh607hPXl0&ab_channel=JSH](https://www.youtube.com/watch?v=yKh607hPXl0&ab_channel=JSH)
