@@ -16,7 +16,16 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/woff2/PretendardVariable.woff2') format('woff2-variations');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
 @import "hns-docs/tokens";
 @import "hns-docs/typography";
 @import "hns-docs/navigation";
 @import "hns-docs/archive";
+@import "hns-docs/posts";
