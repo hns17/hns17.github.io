@@ -1,0 +1,13 @@
+{% assign archive_posts = site.categories[page.title] %}
+
+{% if page.archive_intro %}
+  <div class="archive__lead" role="note" aria-label="페이지 소개">
+    <p class="archive__lead-label">이 페이지 소개</p>
+    <p class="archive__lead-text">{{ page.archive_intro }}</p>
+    <p class="archive__lead-meta">총 {{ archive_posts | size }}개의 글이 있습니다.</p>
+  </div>
+{% endif %}
+
+{% for post in archive_posts %}
+  {% include archive-single.html type=page.entries_layout %}
+{% endfor %}

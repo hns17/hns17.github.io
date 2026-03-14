@@ -2,17 +2,8 @@
 title: "Daily/Work"
 permalink: /category/daily/work/
 layout: archive
+archive_intro: "작업 중에 남긴 개발 로그와 시행착오, 구현 메모를 모아 둔 페이지입니다."
 ---
 
-
-
-{% assign title = page.title %}
-
-{% assign posts = site.categories[title] %} 
-
-{% for post in posts %} 
-
-  {% include archive-single.html type=page.entries_layout %}
-
-{% endfor %}
+{% include category-archive-list.html %}
 

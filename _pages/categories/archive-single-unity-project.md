@@ -2,17 +2,8 @@
 title: "Project/Portfolio"
 permalink: /category/project/portfolio/
 layout: archive
+archive_intro: "진행했던 프로젝트와 포트폴리오 관련 기록을 모아 둔 페이지입니다."
 ---
 
-
-
-{% assign title = page.title %}
-
-{% assign posts = site.categories[title] %} 
-
-{% for post in posts %} 
-
-  {% include archive-single.html type=page.entries_layout %}
-
-{% endfor %}
+{% include category-archive-list.html %}
 
