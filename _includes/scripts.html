@@ -28,6 +28,48 @@
 {% include analytics.html %}
 {% include /comments-providers/scripts.html %}
 
+{% if page.collection == "posts" and page.layout == "single" %}
+  <script>
+    (function() {
+      function normalizeHeadingText(value) {
+        return (value || "").replace(/\s+/g, " ").trim().toLowerCase();
+      }
+
+      function enablePostReadingMode() {
+        var postPage = document.querySelector("article.page");
+        var relatedSection = document.querySelector(".page__related");
+        var pageTitle = document.querySelector("#page-title");
+        var contentHeading = document.querySelector(".layout--single .page__content > h1:first-child");
+
+        if (postPage) {
+          postPage.classList.add("is-post-reading");
+        }
+
+        if (relatedSection) {
+          relatedSection.classList.add("is-post-reading");
+        }
+
+        if (!pageTitle || !contentHeading) {
+          return;
+        }
+
+        if (normalizeHeadingText(pageTitle.textContent) !== normalizeHeadingText(contentHeading.textContent)) {
+          return;
+        }
+
+        contentHeading.classList.add("page__content-heading--demoted");
+      }
+
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", enablePostReadingMode, { once: true });
+        return;
+      }
+
+      enablePostReadingMode();
+    })();
+  </script>
+{% endif %}
+
 {% if site.after_footer_scripts %}
   {% for script in site.after_footer_scripts %}
     <script src="{{ script | relative_url }}"></script>
