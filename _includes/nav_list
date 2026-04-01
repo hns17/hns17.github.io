@@ -1,4 +1,5 @@
-{% assign sum = site.posts | size %}
+{% assign sum = page.sidebar.summary_count | default: site.posts.size %}
+{% assign summary_label = page.sidebar.summary_label | default: "전체 글 수" %}
 {% assign navigation = site.data.navigation[include.nav] %}
 
 <nav class="nav__list">
@@ -7,29 +8,36 @@
   <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle Menu" }}</label>
   <ul class="nav__items">
     <li class="nav__summary">
-      📂 전체 글 수 <span class="nav__summary-count">{{ sum }}</span>개
+      📂 {{ summary_label }} <span class="nav__summary-count">{{ sum }}</span>개
     </li>
 
     {% for nav in navigation %}
       <li>
-        {% if nav.url %}
+        {% if nav.children != null %}
+          <details class="nav__fold" open>
+            <summary class="nav__fold-summary">
+              <span class="nav__sub-title">{{ nav.title }}</span>
+            </summary>
+            <ul>
+              {% for child in nav.children %}
+                {% assign index_key = nav.title | append: "/" | append: child.title %}
+                {% assign category = site.categories[index_key] %}
+                {% assign item_count = child.count %}
+                {% if item_count == nil %}
+                  {% if category %}
+                    {% assign item_count = category.size %}
+                  {% else %}
+                    {% assign item_count = 0 %}
+                  {% endif %}
+                {% endif %}
+                <li><a href="{{ child.url | relative_url }}"{% if child.url == page.url %} class="active"{% endif %}>{{ child.title }}({{ item_count }})</a></li>
+              {% endfor %}
+            </ul>
+          </details>
+        {% elsif nav.url %}
           <a href="{{ nav.url | relative_url }}"><span class="nav__sub-title">{{ nav.title }}</span></a>
         {% else %}
           <span class="nav__sub-title">{{ nav.title }}</span>
-        {% endif %}
-
-        {% if nav.children != null %}
-        <ul>
-          {% for child in nav.children %}
-            {% assign index_key = nav.title | append: "/" | append: child.title %}
-            {% assign category = site.categories[index_key] %}
-            {% if category %}
-              <li><a href="{{ child.url | relative_url }}"{% if child.url == page.url %} class="active"{% endif %}>{{ child.title }}({{ category.size }})</a></li>
-            {% else %}
-              <li><a href="{{ child.url | relative_url }}"{% if child.url == page.url %} class="active"{% endif %}>{{ child.title }}(0)</a></li>
-            {% endif %}
-          {% endfor %}
-        </ul>
         {% endif %}
       </li>
     {% endfor %}

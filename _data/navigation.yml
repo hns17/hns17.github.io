@@ -1,4 +1,6 @@
 main:
+  - title: "Clobie"
+    url: /clobie/
   - title: "Recents"
     url: /recents/
   - title: "Categories"
@@ -40,3 +42,19 @@ _posts:
       children:
       - title: "Portfolio"
         url: /category/project/portfolio/
+
+_clobie:
+    - title: "창작"
+      children:
+      - title: "글"
+        url: /clobie/writing/
+        count: 0
+      - title: "그림"
+        url: /clobie/art/
+        count: 0
+      - title: "음악"
+        url: /clobie/music/
+        count: 0
+      - title: "영상"
+        url: /clobie/video/
+        count: 0

@@ -16,14 +16,70 @@
   color: var(--docs-heading);
 }
 
+.nav__items > li + li {
+  margin-top: 0.85rem;
+}
+
 .nav__items > li > ul {
   margin-top: 0.35rem;
   padding-left: 0.3rem;
 }
 
+.nav__fold {
+  display: block;
+}
+
+.nav__fold-summary {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.1rem 0 0.2rem;
+  cursor: pointer;
+  list-style: none;
+  border-bottom: 1px solid var(--docs-border);
+}
+
+.nav__fold-summary::-webkit-details-marker {
+  display: none;
+}
+
+.nav__fold-summary::before {
+  content: "−";
+  display: inline-grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 1rem;
+  height: 1rem;
+  margin-top: -0.02rem;
+  font-size: 0.88rem;
+  line-height: 1;
+  color: var(--docs-heading);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--docs-border);
+  border-radius: 999px;
+}
+
+.nav__fold:not([open]) > .nav__fold-summary::before {
+  content: "+";
+}
+
+.nav__fold > ul {
+  margin-top: 0.45rem;
+  padding-left: 0.45rem;
+}
+
 .nav__items > li > ul > li > a {
   display: block;
   padding-left: 0;
+  font-size: 0.96rem;
+  line-height: 1.6;
+}
+
+.nav__fold > ul > li > a {
+  display: block;
+  padding-left: 0;
+  font-size: 0.96rem;
+  line-height: 1.6;
 }
 
 .nav__items > li > a {
@@ -31,10 +87,20 @@
 }
 
 .nav__items > li > a > .nav__sub-title,
-.nav__items > li > .nav__sub-title {
+.nav__items > li > .nav__sub-title,
+.nav__fold-summary > .nav__sub-title {
   display: block;
   width: 100%;
   margin-left: 0;
+}
+
+.nav__fold-summary > .nav__sub-title {
+  margin: 0;
+  padding: 0;
+  font-size: 0.98rem;
+  line-height: 1.5;
+  color: var(--docs-heading);
+  border-bottom: 0;
 }
 
 .sidebar.sticky,
