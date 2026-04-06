@@ -44,17 +44,35 @@ _posts:
         url: /category/project/portfolio/
 
 _clobie:
+    - title: "개요"
+      children:
+      - title: "작업실 소개"
+        url: /clobie/
     - title: "창작"
       children:
       - title: "글"
         url: /clobie/writing/
-        count: 0
       - title: "그림"
         url: /clobie/art/
-        count: 0
       - title: "음악"
         url: /clobie/music/
-        count: 0
       - title: "영상"
         url: /clobie/video/
-        count: 0
+    - title: "글 분류"
+      children:
+      - title: "설정"
+        url: /clobie/writing/settings/
+      - title: "스토리"
+        url: /clobie/writing/stories/
+      - title: "메모"
+        url: /clobie/writing/notes/
+    - title: "그림 분류"
+      children:
+      - title: "갤러리"
+        url: /clobie/art/
+      - title: "캐릭터"
+        url: /clobie/art/characters/
+      - title: "배경/풍경"
+        url: /clobie/art/backgrounds/
+      - title: "콘셉트/러프"
+        url: /clobie/art/concepts/

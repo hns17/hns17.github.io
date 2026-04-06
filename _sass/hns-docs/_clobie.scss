@@ -1,0 +1,107 @@
+.clobie-hero,
+.clobie-grid,
+.clobie-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.clobie-grid--2 {
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.clobie-grid--3 {
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+}
+
+.clobie-card {
+  padding: 1.1rem 1.15rem;
+  background: var(--docs-surface);
+  border: 1px solid var(--docs-border);
+  border-radius: 16px;
+  box-shadow: var(--docs-card-shadow);
+}
+
+.clobie-card h2,
+.clobie-card h3,
+.clobie-card p,
+.clobie-card ul {
+  margin-top: 0;
+}
+
+.clobie-card--link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.clobie-card--link:hover {
+  color: inherit;
+  border-color: var(--docs-border-strong);
+  background: var(--docs-surface-strong);
+  text-decoration: none;
+}
+
+.clobie-eyebrow,
+.clobie-meta {
+  margin-bottom: 0.45rem;
+  font-size: 0.82rem;
+  line-height: 1.55;
+  color: var(--docs-text-muted);
+}
+
+.clobie-empty {
+  padding: 1rem 1.05rem;
+  color: var(--docs-text-soft);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px dashed var(--docs-border-strong);
+  border-radius: 14px;
+}
+
+.clobie-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+  gap: 1rem;
+}
+
+.clobie-gallery__item {
+  overflow: hidden;
+  background: var(--docs-surface);
+  border: 1px solid var(--docs-border);
+  border-radius: 16px;
+  box-shadow: var(--docs-card-shadow);
+}
+
+.clobie-gallery__item:hover {
+  border-color: var(--docs-border-strong);
+  text-decoration: none;
+}
+
+.clobie-gallery__item img,
+.clobie-gallery__placeholder {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.clobie-gallery__placeholder {
+  display: grid;
+  place-items: center;
+  color: var(--docs-text-muted);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.clobie-gallery__caption {
+  display: grid;
+  gap: 0.2rem;
+  padding: 0.85rem 0.9rem 0.95rem;
+}
+
+.clobie-gallery__caption strong {
+  color: var(--docs-heading);
+}
+
+.clobie-gallery__caption span {
+  font-size: 0.82rem;
+  color: var(--docs-text-muted);
+}

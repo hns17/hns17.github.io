@@ -1,0 +1,38 @@
+writing_types:
+  - key: settings
+    title: 설정
+    description: 세계관, 조직, 규칙, 시스템, 캐릭터 프로필 같은 구조적 자료
+  - key: stories
+    title: 스토리
+    description: 짧은 이야기, 장면 스케치, 에피소드, 독립 단편
+  - key: notes
+    title: 메모
+    description: 아이디어 파편, 제목 후보, 짧은 컨셉 기록
+
+art_types:
+  - key: characters
+    title: 캐릭터
+    description: 인물 중심 일러스트, 캐릭터 디자인, 표정/의상 탐색
+  - key: backgrounds
+    title: 배경/풍경
+    description: 장소, 환경, 도시, 실내외 배경 중심 작업
+  - key: concepts
+    title: 콘셉트/러프
+    description: 분위기 탐색, 프롬프트 실험, 콘셉트 스케치, 거친 초안
+
+writing_genres:
+  - fantasy
+  - sf
+  - mystery
+  - horror
+  - daily
+  - emotional
+  - romance
+
+art_moods:
+  - warm
+  - dreamy
+  - dark
+  - cyberpunk
+  - fantasy
+  - quiet
