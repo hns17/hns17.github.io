@@ -29,6 +29,45 @@ writing_genres:
   - emotional
   - romance
 
+writing_type_labels:
+  settings: 설정
+  stories: 스토리
+  notes: 메모
+
+writing_genre_labels:
+  fantasy: 판타지
+  sf: SF
+  mystery: 미스터리
+  horror: 공포
+  daily: 일상
+  emotional: 감성
+  romance: 로맨스
+  drama: 드라마
+
+writing_tag_labels:
+  설정: 설정
+  이야기: 이야기
+  스토리: 스토리
+  판타지: 판타지
+  SF: SF
+  미스터리: 미스터리
+  공포: 공포
+  드라마: 드라마
+  힐링: 힐링
+  어반판타지: 어반 판타지
+  도시판타지: 도시 판타지
+  다크판타지: 다크 판타지
+  스팀펑크: 스팀펑크
+  솔라펑크: 솔라펑크
+  디젤펑크: 디젤펑크
+  사이버펑크: 사이버펑크
+  생존어드벤처: 생존 어드벤처
+  힐링어드벤처: 힐링 어드벤처
+  비행시뮬레이션: 비행 시뮬레이션
+  전략경영: 전략 경영
+  도시시뮬레이션: 도시 시뮬레이션
+  로우매직: 로우 매직
+
 art_moods:
   - warm
   - dreamy

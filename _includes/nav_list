@@ -1,6 +1,19 @@
-{% assign sum = page.sidebar.summary_count | default: site.posts.size %}
 {% assign summary_label = page.sidebar.summary_label | default: "전체 글 수" %}
 {% assign navigation = site.data.navigation[include.nav] %}
+
+{% assign sum = page.sidebar.summary_count %}
+{% if include.nav == "_clobie" and sum == nil %}
+  {% assign clobie_writing_count = site.clobie_writing | size %}
+  {% assign clobie_art_count = site.clobie_art | size %}
+  {% if page.url contains '/clobie/writing' %}
+    {% assign sum = clobie_writing_count %}
+  {% elsif page.url contains '/clobie/art' %}
+    {% assign sum = clobie_art_count %}
+  {% elsif page.url contains '/clobie/' %}
+    {% assign sum = clobie_writing_count | plus: clobie_art_count %}
+  {% endif %}
+{% endif %}
+{% assign sum = sum | default: site.posts.size %}
 
 <nav class="nav__list">
   {% if page.sidebar.title %}<h3 class="nav__title" style="padding-left: 0;">{{ page.sidebar.title }}</h3>{% endif %}
@@ -23,14 +36,34 @@
                 {% assign index_key = nav.title | append: "/" | append: child.title %}
                 {% assign category = site.categories[index_key] %}
                 {% assign item_count = child.count %}
+                {% if include.nav == "_clobie" and item_count == nil %}
+                  {% if child.url == '/clobie/writing/' %}
+                    {% assign item_count = site.clobie_writing | size %}
+                  {% elsif child.url == '/clobie/art/' %}
+                    {% assign item_count = site.clobie_art | size %}
+                  {% elsif child.url == '/clobie/writing/settings/' %}
+                    {% assign item_count = site.clobie_writing | where: 'clobie_type', 'settings' | size %}
+                  {% elsif child.url == '/clobie/writing/stories/' %}
+                    {% assign item_count = site.clobie_writing | where: 'clobie_type', 'stories' | size %}
+                  {% elsif child.url == '/clobie/writing/notes/' %}
+                    {% assign item_count = site.clobie_writing | where: 'clobie_type', 'notes' | size %}
+                  {% elsif child.url == '/clobie/art/characters/' %}
+                    {% assign item_count = site.clobie_art | where: 'clobie_type', 'characters' | size %}
+                  {% elsif child.url == '/clobie/art/backgrounds/' %}
+                    {% assign item_count = site.clobie_art | where: 'clobie_type', 'backgrounds' | size %}
+                  {% elsif child.url == '/clobie/art/concepts/' %}
+                    {% assign item_count = site.clobie_art | where: 'clobie_type', 'concepts' | size %}
+                  {% endif %}
+                {% endif %}
                 {% if item_count == nil %}
-                  {% if category %}
+                  {% if include.nav == "_clobie" and child.url == '/clobie/' %}
+                  {% elsif category %}
                     {% assign item_count = category.size %}
                   {% else %}
                     {% assign item_count = 0 %}
                   {% endif %}
                 {% endif %}
-                <li><a href="{{ child.url | relative_url }}"{% if child.url == page.url %} class="active"{% endif %}>{{ child.title }}({{ item_count }})</a></li>
+                <li><a href="{{ child.url | relative_url }}"{% if child.url == page.url %} class="active"{% endif %}>{{ child.title }}{% if item_count != nil %}({{ item_count }}){% endif %}</a></li>
               {% endfor %}
             </ul>
           </details>

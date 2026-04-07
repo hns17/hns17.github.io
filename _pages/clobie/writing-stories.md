@@ -13,8 +13,9 @@ sidebar:
 {% if items.size > 0 %}
 <div class="clobie-list">
   {% for post in items %}
+  {% assign genre_label = site.data.clobie.writing_genre_labels[post.genre] | default: post.genre %}
   <article class="clobie-card">
-    <p class="clobie-meta">{{ post.date | date: "%Y-%m-%d" }}{% if post.genre %} · {{ post.genre }}{% endif %}</p>
+    <p class="clobie-meta">{{ post.date | date: "%Y-%m-%d" }}{% if post.genre %} · {{ genre_label }}{% endif %}</p>
     <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
     {% if post.summary %}<p>{{ post.summary }}</p>{% endif %}
   </article>

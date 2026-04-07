@@ -49,8 +49,9 @@ classes: wide
 
 ## 추천 메타데이터
 
-- `clobie_type`: characters / backgrounds / concepts
-- `mood`: warm / dreamy / dark / cyberpunk / fantasy 등
-- `series`: 같은 시리즈/세계관 식별자
-- `image`: 대표 이미지 경로
-- `prompt`, `source_channel`, `source_message_id`: 원본 기록용
+- `클로비 타입`: 캐릭터 / 배경·풍경 / 콘셉트·러프
+- `감성`: 따뜻함 / 몽환 / 어두움 / 사이버펑크 / 판타지 등
+- `시리즈`: 같은 시리즈/세계관 식별자
+- `대표 이미지`: 대표 이미지 경로
+- `프롬프트`, `source_channel`, `source_message_id`: 원본 기록용
+- `source_path`: 원본 md 문서 경로 (중복 이관 방지용)

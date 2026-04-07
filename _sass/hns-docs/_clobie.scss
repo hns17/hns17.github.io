@@ -105,3 +105,28 @@
   font-size: 0.82rem;
   color: var(--docs-text-muted);
 }
+
+.clobie-date-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  gap: 0.9rem;
+}
+
+.clobie-tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 0 0 0.8rem;
+}
+
+.clobie-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.24rem 0.62rem;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: var(--docs-text-soft);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--docs-border);
+  border-radius: 999px;
+}

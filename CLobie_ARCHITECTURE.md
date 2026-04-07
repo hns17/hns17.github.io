@@ -46,9 +46,14 @@
 - `/clobie/art/backgrounds/`
 - `/clobie/art/concepts/`
 
+## Dedup Rule
+- 원본 문서 이관 시 `source_path`를 반드시 기록한다.
+- 같은 `source_path`가 이미 `_clobie_writing` 또는 `_clobie_art` 안에 존재하면 중복 생성하지 않는다.
+- 보조 검증으로 `title + date` 조합도 함께 확인한다.
+
 ## Recommended Next Steps
-1. 디스코드 글 채널 저장물 3~5개 실제 이관
+1. 원본 md 5개 샘플 이관
 2. 디스코드 그림 채널 저장물 3~5개 실제 이관
 3. 카드/갤러리 UI 미세조정
 4. 시리즈 페이지 필요 여부 검토
-5. Discord → Markdown 변환 자동화 검토
+5. Markdown → Clobie 변환 자동화 검토

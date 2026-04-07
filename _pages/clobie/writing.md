@@ -9,29 +9,77 @@ sidebar:
 classes: wide
 ---
 
-글 작업실은 디스코드 글 채널에서 올라오는 창작물을 **유형 중심 아카이브**로 다시 묶는 공간입니다.
+글 작업실은 디스코드 글 채널과 원본 md 문서에서 올라온 창작물을 **유형 중심 아카이브**로 다시 묶는 공간입니다.
+
+{% assign all_writings = site.clobie_writing | sort: 'date' | reverse %}
+{% assign date_groups = all_writings | group_by_exp: 'item', 'item.date | date: "%Y-%m-%d"' %}
+{% assign setting_count = site.clobie_writing | where: 'clobie_type', 'settings' | size %}
+{% assign story_count = site.clobie_writing | where: 'clobie_type', 'stories' | size %}
+{% assign note_count = site.clobie_writing | where: 'clobie_type', 'notes' | size %}
+
+<div class="clobie-grid clobie-grid--3">
+  <div class="clobie-card">
+    <p class="clobie-eyebrow">전체 문서</p>
+    <h3>{{ all_writings | size }}개</h3>
+    <p>현재 클로비 글 작업실에 정리된 전체 글 수입니다.</p>
+  </div>
+  <div class="clobie-card">
+    <p class="clobie-eyebrow">유형 분포</p>
+    <h3>설정 {{ setting_count }} · 스토리 {{ story_count }}{% if note_count > 0 %} · 메모 {{ note_count }}{% endif %}</h3>
+    <p>기본 탐색 축은 유형 기준입니다.</p>
+  </div>
+  <a class="clobie-card clobie-card--link" href="{{ '/clobie/writing/archive/' | relative_url }}">
+    <p class="clobie-eyebrow">날짜별 보기</p>
+    <h3>{{ date_groups | size }}일치 아카이브</h3>
+    <p>날짜 기준으로 문서를 묶어 확인할 수 있습니다.</p>
+  </a>
+</div>
+
+## 유형별 보기
 
 <div class="clobie-grid clobie-grid--3">
   {% for item in site.data.clobie.writing_types %}
-  {% assign count = site.clobie_writing | where: "clobie_type", item.key | size %}
+  {% assign count = site.clobie_writing | where: 'clobie_type', item.key | size %}
   <a class="clobie-card clobie-card--link" href="{{ '/clobie/writing/' | append: item.key | append: '/' | relative_url }}">
-    <p class="clobie-eyebrow">{{ count }} items</p>
+    <p class="clobie-eyebrow">{{ count }}개 문서</p>
     <h3>{{ item.title }}</h3>
     <p>{{ item.description }}</p>
   </a>
   {% endfor %}
 </div>
 
+## 최근 날짜
+
+{% if date_groups.size > 0 %}
+<div class="clobie-date-grid">
+  {% for date_group in date_groups limit: 8 %}
+  <a class="clobie-card clobie-card--link" href="{{ '/clobie/writing/archive/' | relative_url }}#date-{{ date_group.name }}">
+    <p class="clobie-eyebrow">{{ date_group.items | size }}개 문서</p>
+    <h3>{{ date_group.name }}</h3>
+  </a>
+  {% endfor %}
+</div>
+{% endif %}
+
 ## 최근 글
 
-{% assign recent_writings = site.clobie_writing | sort: 'date' | reverse %}
-{% if recent_writings.size > 0 %}
+{% if all_writings.size > 0 %}
 <div class="clobie-list">
-  {% for post in recent_writings limit: 6 %}
+  {% for post in all_writings limit: 12 %}
+  {% assign type_label = site.data.clobie.writing_type_labels[post.clobie_type] | default: post.clobie_type | default: '미분류' %}
+  {% assign genre_label = site.data.clobie.writing_genre_labels[post.genre] | default: post.genre %}
   <article class="clobie-card">
-    <p class="clobie-meta">{{ post.date | date: "%Y-%m-%d" }} · {{ post.clobie_type | default: '미분류' }}{% if post.genre %} · {{ post.genre }}{% endif %}</p>
+    <p class="clobie-meta">{{ post.date | date: "%Y-%m-%d" }} · {{ type_label }}{% if post.genre %} · {{ genre_label }}{% endif %}</p>
     <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-    {% if post.summary %}<p>{{ post.summary }}</p>{% elsif post.excerpt %}<p>{{ post.excerpt | strip_html | truncate: 120 }}</p>{% endif %}
+    {% if post.tags and post.tags.size > 0 %}
+    <div class="clobie-tag-row">
+      {% for tag in post.tags limit: 5 %}
+      {% assign tag_label = site.data.clobie.writing_tag_labels[tag] | default: tag %}
+      <span class="clobie-tag">{{ tag_label }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
+    {% if post.summary %}<p>{{ post.summary }}</p>{% elsif post.excerpt %}<p>{{ post.excerpt | strip_html | truncate: 140 }}</p>{% endif %}
   </article>
   {% endfor %}
 </div>
@@ -43,8 +91,9 @@ classes: wide
 
 ## 추천 메타데이터
 
-- `clobie_type`: settings / stories / notes
-- `genre`: fantasy / sf / mystery / horror / daily / emotional 등
-- `series`: 같은 세계관/연작 식별자
-- `tags`: 탐색용 키워드
+- `클로비 타입`: 설정 / 스토리 / 메모
+- `장르`: 판타지 / SF / 미스터리 / 공포 / 일상 / 감성 / 드라마 등
+- `시리즈`: 같은 세계관/연작 식별자
+- `태그`: 탐색용 키워드
 - `source_channel`, `source_message_id`: 디스코드 원본 추적용
+- `source_path`: 원본 md 문서 경로 (중복 이관 방지용)
