@@ -130,3 +130,9 @@
   border: 1px solid var(--docs-border);
   border-radius: 999px;
 }
+
+.clobie-tag-cloud {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 0.9rem;
+}

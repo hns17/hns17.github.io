@@ -12,10 +12,10 @@ classes: wide
 글 작업실은 디스코드 글 채널과 원본 md 문서에서 올라온 창작물을 **유형 중심 아카이브**로 다시 묶는 공간입니다.
 
 {% assign all_writings = site.clobie_writing | sort: 'date' | reverse %}
-{% assign date_groups = all_writings | group_by_exp: 'item', 'item.date | date: "%Y-%m-%d"' %}
 {% assign setting_count = site.clobie_writing | where: 'clobie_type', 'settings' | size %}
 {% assign story_count = site.clobie_writing | where: 'clobie_type', 'stories' | size %}
 {% assign note_count = site.clobie_writing | where: 'clobie_type', 'notes' | size %}
+{% assign series_count = site.clobie_writing | map: 'series' | uniq | compact | size %}
 
 <div class="clobie-grid clobie-grid--3">
   <div class="clobie-card">
@@ -28,11 +28,11 @@ classes: wide
     <h3>설정 {{ setting_count }} · 스토리 {{ story_count }}{% if note_count > 0 %} · 메모 {{ note_count }}{% endif %}</h3>
     <p>기본 탐색 축은 유형 기준입니다.</p>
   </div>
-  <a class="clobie-card clobie-card--link" href="{{ '/clobie/writing/archive/' | relative_url }}">
-    <p class="clobie-eyebrow">날짜별 보기</p>
-    <h3>{{ date_groups | size }}일치 아카이브</h3>
-    <p>날짜 기준으로 문서를 묶어 확인할 수 있습니다.</p>
-  </a>
+  <div class="clobie-card">
+    <p class="clobie-eyebrow">시리즈</p>
+    <h3>{{ series_count }}개</h3>
+    <p>같은 세계관과 연작 단위로 묶인 시리즈 수입니다.</p>
+  </div>
 </div>
 
 ## 유형별 보기
@@ -48,18 +48,20 @@ classes: wide
   {% endfor %}
 </div>
 
-## 최근 날짜
+## 탐색 허브
 
-{% if date_groups.size > 0 %}
-<div class="clobie-date-grid">
-  {% for date_group in date_groups limit: 8 %}
-  <a class="clobie-card clobie-card--link" href="{{ '/clobie/writing/archive/' | relative_url }}#date-{{ date_group.name }}">
-    <p class="clobie-eyebrow">{{ date_group.items | size }}개 문서</p>
-    <h3>{{ date_group.name }}</h3>
+<div class="clobie-grid clobie-grid--2">
+  <a class="clobie-card clobie-card--link" href="{{ '/clobie/writing/tags/' | relative_url }}">
+    <p class="clobie-eyebrow">분류 기준</p>
+    <h3>태그별 보기</h3>
+    <p>태그 단위로 자주 반복되는 주제와 분위기를 모아볼 수 있습니다.</p>
   </a>
-  {% endfor %}
+  <a class="clobie-card clobie-card--link" href="{{ '/clobie/writing/series/' | relative_url }}">
+    <p class="clobie-eyebrow">연작 기준</p>
+    <h3>시리즈별 보기</h3>
+    <p>같은 세계관과 연속된 컨셉을 시리즈 단위로 살펴봅니다.</p>
+  </a>
 </div>
-{% endif %}
 
 ## 최근 글
 

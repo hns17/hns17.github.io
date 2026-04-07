@@ -5,11 +5,32 @@ layout: single
 sidebar:
   title: "Clobie"
   nav: "_clobie"
+classes: wide
 ---
 
 짧은 이야기, 장면 스케치, 에피소드 중심의 글을 모아두는 영역입니다.
 
-{% assign items = site.clobie_writing | where: "clobie_type", "stories" | sort: 'date' | reverse %}
+{% assign items = site.clobie_writing | where: 'clobie_type', 'stories' | sort: 'date' | reverse %}
+{% assign series_count = items | map: 'series' | uniq | compact | size %}
+
+<div class="clobie-grid clobie-grid--3">
+  <div class="clobie-card">
+    <p class="clobie-eyebrow">스토리 문서</p>
+    <h3>{{ items | size }}개</h3>
+    <p>클로비 작업실에 정리된 스토리 문서 수입니다.</p>
+  </div>
+  <div class="clobie-card">
+    <p class="clobie-eyebrow">시리즈</p>
+    <h3>{{ series_count }}개</h3>
+    <p>연결된 이야기와 설정 세계관을 함께 추적할 수 있습니다.</p>
+  </div>
+  <a class="clobie-card clobie-card--link" href="{{ '/clobie/writing/tags/' | relative_url }}">
+    <p class="clobie-eyebrow">주제 보기</p>
+    <h3>태그 허브</h3>
+    <p>미스터리, 어반 판타지, 드라마 같은 주제축으로 모아볼 수 있습니다.</p>
+  </a>
+</div>
+
 {% if items.size > 0 %}
 <div class="clobie-list">
   {% for post in items %}
@@ -17,7 +38,15 @@ sidebar:
   <article class="clobie-card">
     <p class="clobie-meta">{{ post.date | date: "%Y-%m-%d" }}{% if post.genre %} · {{ genre_label }}{% endif %}</p>
     <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-    {% if post.summary %}<p>{{ post.summary }}</p>{% endif %}
+    {% if post.tags and post.tags.size > 0 %}
+    <div class="clobie-tag-row">
+      {% for tag in post.tags limit: 5 %}
+      {% assign tag_label = site.data.clobie.writing_tag_labels[tag] | default: tag %}
+      <span class="clobie-tag">{{ tag_label }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
+    {% if post.summary %}<p>{{ post.summary }}</p>{% elsif post.excerpt %}<p>{{ post.excerpt | strip_html | truncate: 140 }}</p>{% endif %}
   </article>
   {% endfor %}
 </div>
