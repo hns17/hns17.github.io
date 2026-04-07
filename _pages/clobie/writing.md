@@ -64,8 +64,11 @@ classes: wide
   {% for post in all_writings limit: 12 %}
   {% assign type_label = site.data.clobie.writing_type_labels[post.clobie_type] | default: post.clobie_type | default: '미분류' %}
   {% assign genre_label = site.data.clobie.writing_genre_labels[post.genre] | default: post.genre %}
-  <article class="clobie-card">
-    <p class="clobie-meta">{{ post.date | date: "%Y-%m-%d" }} · {{ type_label }}{% if post.genre %} · {{ genre_label }}{% endif %}</p>
+  <article class="clobie-card clobie-card--timed" data-published-at="{{ post.date | date_to_xmlschema }}">
+    <div class="clobie-meta-row">
+      <p class="clobie-meta">{{ post.date | date: "%Y-%m-%d" }} · {{ type_label }}{% if post.genre %} · {{ genre_label }}{% endif %}</p>
+      <span class="clobie-age" aria-label="작성 후 경과 시간"></span>
+    </div>
     <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
     {% if post.tags and post.tags.size > 0 %}
     <div class="clobie-tag-row">

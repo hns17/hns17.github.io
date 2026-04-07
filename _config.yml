@@ -177,7 +177,7 @@ defaults:
       path: ""
       type: clobie_art
     values:
-      layout: single
+      layout: clobie-art
       author_profile: false
       share: false
       comments: false

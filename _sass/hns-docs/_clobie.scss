@@ -53,6 +53,20 @@
   color: var(--docs-text-muted);
 }
 
+.clobie-meta-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.clobie-age {
+  flex: 0 0 auto;
+  white-space: nowrap;
+  font-size: 0.78rem;
+  color: var(--docs-text-muted);
+}
+
 .clobie-empty {
   padding: 1rem 1.05rem;
   color: var(--docs-text-soft);
@@ -86,6 +100,7 @@
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+  object-position: top center;
 }
 
 .clobie-gallery__placeholder {
@@ -166,4 +181,49 @@
 .clobie-pagination__status {
   font-size: 0.86rem;
   color: var(--docs-text-muted);
+}
+
+.clobie-entry .page__content > h1:first-child {
+  display: none;
+}
+
+.clobie-art-hero {
+  display: block;
+  margin-bottom: 1.25rem;
+  overflow: hidden;
+  border: 1px solid var(--docs-border);
+  border-radius: 18px;
+  background: var(--docs-surface);
+  box-shadow: var(--docs-card-shadow);
+}
+
+.clobie-art-hero:hover {
+  border-color: var(--docs-border-strong);
+}
+
+.clobie-art-hero img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 72vh;
+  margin: 0 auto;
+  object-fit: contain;
+  background: rgba(255,255,255,0.02);
+}
+
+.clobie-art-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.clobie-art-body {
+  display: grid;
+  gap: 1rem;
+}
+
+.clobie-art-body p {
+  margin-top: 0;
 }

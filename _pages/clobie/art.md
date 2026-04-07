@@ -17,7 +17,7 @@ classes: wide
 {% assign background_count = site.clobie_art | where: 'clobie_type', 'background' | size %}
 {% assign mecha_count = site.clobie_art | where: 'clobie_type', 'mecha' | size %}
 
-<div class="clobie-grid clobie-grid--3 clobie-section-gap">
+<div class="clobie-grid clobie-grid--2 clobie-section-gap">
   <div class="clobie-card">
     <p class="clobie-eyebrow">전체 이미지</p>
     <h3>{{ all_art | size }}개</h3>
@@ -27,11 +27,6 @@ classes: wide
     <p class="clobie-eyebrow">유형 분포</p>
     <h3>캐릭터 {{ character_count }} · 생물 {{ creature_count }} · 배경 {{ background_count }}{% if mecha_count > 0 %} · 메카 {{ mecha_count }}{% endif %}</h3>
     <p>기본 탐색 축은 그림 유형 기준입니다.</p>
-  </div>
-  <div class="clobie-card">
-    <p class="clobie-eyebrow">보관 방식</p>
-    <h3>Container + MD</h3>
-    <p>원본 이미지는 clobie-image-container, 페이지 레포에는 메타 문서만 저장합니다.</p>
   </div>
 </div>
 

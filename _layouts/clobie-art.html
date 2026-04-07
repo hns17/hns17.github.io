@@ -1,0 +1,35 @@
+---
+layout: single
+---
+
+<div class="clobie-art-body clobie-section-gap">
+{{ content }}
+</div>
+
+{% if page.prompt %}
+<div class="clobie-card clobie-section-gap">
+  <p class="clobie-eyebrow">프롬프트</p>
+  <p>{{ page.prompt }}</p>
+</div>
+{% endif %}
+
+{% if page.image_url %}
+<a class="clobie-art-hero" href="{{ page.image_url }}" target="_blank" rel="noopener noreferrer">
+  <img src="{{ page.image_url }}" alt="{{ page.title }}">
+</a>
+{% endif %}
+
+<div class="clobie-art-meta">
+  <span class="clobie-tag">{{ page.clobie_type | default: 'art' }}</span>
+  {% if page.genre %}<span class="clobie-tag">{{ page.genre }}</span>{% endif %}
+  {% if page.mood %}<span class="clobie-tag">{{ page.mood }}</span>{% endif %}
+  <span class="clobie-tag">{{ page.date | date: "%Y-%m-%d %H:%M" }}</span>
+</div>
+
+{% if page.tags and page.tags.size > 0 %}
+<div class="clobie-tag-row clobie-section-gap">
+  {% for tag in page.tags %}
+  <span class="clobie-tag">{{ tag }}</span>
+  {% endfor %}
+</div>
+{% endif %}

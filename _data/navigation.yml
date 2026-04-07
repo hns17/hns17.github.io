@@ -52,10 +52,6 @@ _clobie:
       children:
       - title: "글"
         url: /clobie/writing/
-      - title: "날짜별 아카이브"
-        url: /clobie/writing/archive/
-      - title: "태그별 보기"
-        url: /clobie/writing/tags/
       - title: "그림"
         url: /clobie/art/
       - title: "음악"

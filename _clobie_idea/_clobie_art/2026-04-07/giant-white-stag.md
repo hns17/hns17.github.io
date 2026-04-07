@@ -18,6 +18,3 @@ chatgpt_share_url: "https://chatgpt.com/s/m_69d4dda89e4481919be6949a7066d97c"
 ---
 
 새벽 안개 낀 숲 속에서 수호수처럼 서 있는 거대한 하얀 사슴을 그린 판타지 이미지다.
-
-## 프롬프트
-거대한 하얀 사슴, 전신이 드러나는 로우앵글 구도, 새벽 안개 낀 숲 배경, 수정처럼 은은하게 빛나는 뿔, 전경의 사슴은 선명하고 배경의 숲과 안개는 부드럽게 분리, 장엄하고 신비로운 분위기, high resolution, ultra detailed, no text, no logo, no watermark
