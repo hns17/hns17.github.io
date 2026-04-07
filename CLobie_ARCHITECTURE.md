@@ -29,7 +29,8 @@
 - `mood`
 - `series`
 - `tags`
-- `image`
+- `image_url`
+- `image_urls` (optional, for multi-image posts)
 - `summary`
 - `source_channel`
 - `source_message_id`

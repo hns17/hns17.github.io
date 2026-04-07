@@ -212,6 +212,16 @@
   background: rgba(255,255,255,0.02);
 }
 
+.clobie-art-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1rem;
+}
+
+.clobie-art-hero--gallery {
+  margin-bottom: 0;
+}
+
 .clobie-art-meta {
   display: flex;
   flex-wrap: wrap;

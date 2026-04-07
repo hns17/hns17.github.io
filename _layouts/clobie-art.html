@@ -13,7 +13,16 @@ layout: single
 </div>
 {% endif %}
 
-{% if page.image_url %}
+{% assign art_images = page.image_urls | default: empty %}
+{% if art_images and art_images.size > 0 %}
+<div class="clobie-art-gallery clobie-section-gap">
+  {% for image in art_images %}
+  <a class="clobie-art-hero clobie-art-hero--gallery" href="{{ image }}" target="_blank" rel="noopener noreferrer">
+    <img src="{{ image }}" alt="{{ page.title }} - {{ forloop.index }}">
+  </a>
+  {% endfor %}
+</div>
+{% elsif page.image_url %}
 <a class="clobie-art-hero" href="{{ page.image_url }}" target="_blank" rel="noopener noreferrer">
   <img src="{{ page.image_url }}" alt="{{ page.title }}">
 </a>
