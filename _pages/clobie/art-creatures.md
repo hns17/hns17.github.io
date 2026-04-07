@@ -1,6 +1,6 @@
 ---
-title: "Clobie - 배경"
-permalink: /clobie/art/backgrounds/
+title: "Clobie - 생물"
+permalink: /clobie/art/creatures/
 layout: single
 sidebar:
   title: "Clobie"
@@ -8,9 +8,9 @@ sidebar:
 classes: wide
 ---
 
-배경, 풍경, 공간 중심의 그림을 모아보는 영역입니다.
+동물, 수호수, 몬스터 같은 비인간 존재를 모아보는 영역입니다.
 
-{% assign items = site.clobie_art | where: 'clobie_type', 'background' | sort: 'date' | reverse %}
+{% assign items = site.clobie_art | where: 'clobie_type', 'creature' | sort: 'date' | reverse %}
 {% if items.size > 0 %}
 <div class="clobie-gallery">
   {% for item in items %}
@@ -21,5 +21,5 @@ classes: wide
   {% endfor %}
 </div>
 {% else %}
-<div class="clobie-empty">아직 등록된 배경 작업이 없습니다.</div>
+<div class="clobie-empty">아직 등록된 생물 작업이 없습니다.</div>
 {% endif %}
