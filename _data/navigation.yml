@@ -56,8 +56,6 @@ _clobie:
         url: /clobie/writing/archive/
       - title: "태그별 보기"
         url: /clobie/writing/tags/
-      - title: "시리즈별 보기"
-        url: /clobie/writing/series/
       - title: "그림"
         url: /clobie/art/
       - title: "음악"

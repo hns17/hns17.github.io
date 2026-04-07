@@ -11,7 +11,6 @@ classes: wide
 세계관, 시스템, 조직, 캐릭터 프로필 같은 구조적 자료를 모아두는 영역입니다.
 
 {% assign items = site.clobie_writing | where: 'clobie_type', 'settings' | sort: 'date' | reverse %}
-{% assign series_count = items | map: 'series' | uniq | compact | size %}
 
 <div class="clobie-grid clobie-grid--3">
   <div class="clobie-card">
@@ -19,15 +18,15 @@ classes: wide
     <h3>{{ items | size }}개</h3>
     <p>클로비 작업실에 정리된 설정 문서 수입니다.</p>
   </div>
-  <div class="clobie-card">
-    <p class="clobie-eyebrow">시리즈</p>
-    <h3>{{ series_count }}개</h3>
-    <p>같은 세계관이나 연작으로 묶인 설정 시리즈 수입니다.</p>
-  </div>
-  <a class="clobie-card clobie-card--link" href="{{ '/clobie/writing/series/' | relative_url }}">
-    <p class="clobie-eyebrow">연결 보기</p>
-    <h3>시리즈 허브</h3>
-    <p>설정과 스토리를 시리즈 단위로 이어서 볼 수 있습니다.</p>
+  <a class="clobie-card clobie-card--link" href="{{ '/clobie/writing/archive/' | relative_url }}">
+    <p class="clobie-eyebrow">시간 흐름</p>
+    <h3>날짜별 아카이브</h3>
+    <p>어느 시기에 어떤 설정이 쌓였는지 날짜 기준으로 볼 수 있습니다.</p>
+  </a>
+  <a class="clobie-card clobie-card--link" href="{{ '/clobie/writing/tags/' | relative_url }}">
+    <p class="clobie-eyebrow">주제 탐색</p>
+    <h3>태그 허브</h3>
+    <p>자주 쓰인 주제 키워드 기준으로 설정을 찾아볼 수 있습니다.</p>
   </a>
 </div>
 

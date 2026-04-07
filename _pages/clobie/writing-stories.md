@@ -11,7 +11,6 @@ classes: wide
 짧은 이야기, 장면 스케치, 에피소드 중심의 글을 모아두는 영역입니다.
 
 {% assign items = site.clobie_writing | where: 'clobie_type', 'stories' | sort: 'date' | reverse %}
-{% assign series_count = items | map: 'series' | uniq | compact | size %}
 
 <div class="clobie-grid clobie-grid--3">
   <div class="clobie-card">
@@ -19,11 +18,11 @@ classes: wide
     <h3>{{ items | size }}개</h3>
     <p>클로비 작업실에 정리된 스토리 문서 수입니다.</p>
   </div>
-  <div class="clobie-card">
-    <p class="clobie-eyebrow">시리즈</p>
-    <h3>{{ series_count }}개</h3>
-    <p>연결된 이야기와 설정 세계관을 함께 추적할 수 있습니다.</p>
-  </div>
+  <a class="clobie-card clobie-card--link" href="{{ '/clobie/writing/archive/' | relative_url }}">
+    <p class="clobie-eyebrow">시간 흐름</p>
+    <h3>날짜별 아카이브</h3>
+    <p>언제 어떤 분위기의 이야기가 쓰였는지 흐름으로 볼 수 있습니다.</p>
+  </a>
   <a class="clobie-card clobie-card--link" href="{{ '/clobie/writing/tags/' | relative_url }}">
     <p class="clobie-eyebrow">주제 보기</p>
     <h3>태그 허브</h3>

@@ -15,7 +15,6 @@ classes: wide
 {% assign setting_count = site.clobie_writing | where: 'clobie_type', 'settings' | size %}
 {% assign story_count = site.clobie_writing | where: 'clobie_type', 'stories' | size %}
 {% assign note_count = site.clobie_writing | where: 'clobie_type', 'notes' | size %}
-{% assign series_count = site.clobie_writing | map: 'series' | uniq | compact | size %}
 
 <div class="clobie-grid clobie-grid--3">
   <div class="clobie-card">
@@ -28,11 +27,11 @@ classes: wide
     <h3>설정 {{ setting_count }} · 스토리 {{ story_count }}{% if note_count > 0 %} · 메모 {{ note_count }}{% endif %}</h3>
     <p>기본 탐색 축은 유형 기준입니다.</p>
   </div>
-  <div class="clobie-card">
-    <p class="clobie-eyebrow">시리즈</p>
-    <h3>{{ series_count }}개</h3>
-    <p>같은 세계관과 연작 단위로 묶인 시리즈 수입니다.</p>
-  </div>
+  <a class="clobie-card clobie-card--link" href="{{ '/clobie/writing/tags/' | relative_url }}">
+    <p class="clobie-eyebrow">주제 탐색</p>
+    <h3>태그별 보기</h3>
+    <p>반복되는 분위기와 주제 키워드로 글을 찾아볼 수 있습니다.</p>
+  </a>
 </div>
 
 ## 유형별 보기
@@ -51,15 +50,15 @@ classes: wide
 ## 탐색 허브
 
 <div class="clobie-grid clobie-grid--2">
-  <a class="clobie-card clobie-card--link" href="{{ '/clobie/writing/tags/' | relative_url }}">
-    <p class="clobie-eyebrow">분류 기준</p>
-    <h3>태그별 보기</h3>
-    <p>태그 단위로 자주 반복되는 주제와 분위기를 모아볼 수 있습니다.</p>
+  <a class="clobie-card clobie-card--link" href="{{ '/clobie/writing/archive/' | relative_url }}">
+    <p class="clobie-eyebrow">시간 기준</p>
+    <h3>날짜별 아카이브</h3>
+    <p>작성 날짜를 기준으로 문서를 묶어 확인할 수 있습니다.</p>
   </a>
-  <a class="clobie-card clobie-card--link" href="{{ '/clobie/writing/series/' | relative_url }}">
-    <p class="clobie-eyebrow">연작 기준</p>
-    <h3>시리즈별 보기</h3>
-    <p>같은 세계관과 연속된 컨셉을 시리즈 단위로 살펴봅니다.</p>
+  <a class="clobie-card clobie-card--link" href="{{ '/clobie/writing/tags/' | relative_url }}">
+    <p class="clobie-eyebrow">주제 기준</p>
+    <h3>태그별 보기</h3>
+    <p>미스터리, 어반 판타지, 드라마 같은 주제축으로 모아볼 수 있습니다.</p>
   </a>
 </div>
 
@@ -95,7 +94,6 @@ classes: wide
 
 - `클로비 타입`: 설정 / 스토리 / 메모
 - `장르`: 판타지 / SF / 미스터리 / 공포 / 일상 / 감성 / 드라마 등
-- `시리즈`: 같은 세계관/연작 식별자
 - `태그`: 탐색용 키워드
 - `source_channel`, `source_message_id`: 디스코드 원본 추적용
 - `source_path`: 원본 md 문서 경로 (중복 이관 방지용)
