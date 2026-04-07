@@ -27,6 +27,7 @@
 
 {% include analytics.html %}
 {% include /comments-providers/scripts.html %}
+<script src="{{ '/assets/js/clobie-pagination.js' | relative_url }}"></script>
 
 {% if page.collection == "posts" and page.layout == "single" %}
   <script>

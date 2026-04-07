@@ -38,7 +38,7 @@ classes: wide
 {% for tag in uniq_tags %}
   {% assign tag_label = site.data.clobie.writing_tag_labels[tag] | default: tag %}
   <h2 id="tag-{{ tag | slugify }}">{{ tag_label }}</h2>
-  <div class="clobie-list">
+  <div class="clobie-list" data-page-size="5">
     {% for post in site.clobie_writing %}
       {% if post.tags contains tag %}
       {% assign type_label = site.data.clobie.writing_type_labels[post.clobie_type] | default: post.clobie_type %}

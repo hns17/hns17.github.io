@@ -10,8 +10,9 @@ sidebar:
 아이디어 조각, 컨셉 문장, 짧은 기록을 모아두는 영역입니다.
 
 {% assign items = site.clobie_writing | where: "clobie_type", "notes" | sort: 'date' | reverse %}
+
 {% if items.size > 0 %}
-<div class="clobie-list">
+<div class="clobie-list" data-page-size="5">
   {% for post in items %}
   {% assign genre_label = site.data.clobie.writing_genre_labels[post.genre] | default: post.genre %}
   <article class="clobie-card">

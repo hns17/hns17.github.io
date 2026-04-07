@@ -27,7 +27,7 @@ classes: wide
 {% for date_group in dates %}
 ## <span id="date-{{ date_group.name }}">{{ date_group.name }}</span>
 
-<div class="clobie-list">
+<div class="clobie-list" data-page-size="5">
   {% for post in date_group.items %}
   {% assign type_label = site.data.clobie.writing_type_labels[post.clobie_type] | default: post.clobie_type | default: '미분류' %}
   {% assign genre_label = site.data.clobie.writing_genre_labels[post.genre] | default: post.genre %}

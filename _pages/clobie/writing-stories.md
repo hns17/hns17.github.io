@@ -12,7 +12,7 @@ classes: wide
 
 {% assign items = site.clobie_writing | where: 'clobie_type', 'stories' | sort: 'date' | reverse %}
 
-<div class="clobie-grid clobie-grid--3">
+<div class="clobie-grid clobie-grid--3 clobie-section-gap">
   <div class="clobie-card">
     <p class="clobie-eyebrow">스토리 문서</p>
     <h3>{{ items | size }}개</h3>
@@ -31,7 +31,7 @@ classes: wide
 </div>
 
 {% if items.size > 0 %}
-<div class="clobie-list">
+<div class="clobie-list" data-page-size="5">
   {% for post in items %}
   {% assign genre_label = site.data.clobie.writing_genre_labels[post.genre] | default: post.genre %}
   <article class="clobie-card">

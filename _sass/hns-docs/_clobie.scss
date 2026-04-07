@@ -5,6 +5,10 @@
   gap: 1rem;
 }
 
+.clobie-section-gap {
+  margin-bottom: 1.8rem;
+}
+
 .clobie-grid--2 {
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 }
@@ -135,4 +139,31 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
   gap: 0.9rem;
+}
+
+.clobie-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.clobie-pagination__btn {
+  padding: 0.42rem 0.8rem;
+  color: var(--docs-text-soft);
+  background: var(--docs-surface);
+  border: 1px solid var(--docs-border);
+  border-radius: 999px;
+}
+
+.clobie-pagination__btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.clobie-pagination__status {
+  font-size: 0.86rem;
+  color: var(--docs-text-muted);
 }

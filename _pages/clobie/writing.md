@@ -16,7 +16,7 @@ classes: wide
 {% assign story_count = site.clobie_writing | where: 'clobie_type', 'stories' | size %}
 {% assign note_count = site.clobie_writing | where: 'clobie_type', 'notes' | size %}
 
-<div class="clobie-grid clobie-grid--3">
+<div class="clobie-grid clobie-grid--2">
   <div class="clobie-card">
     <p class="clobie-eyebrow">전체 문서</p>
     <h3>{{ all_writings | size }}개</h3>
@@ -27,11 +27,6 @@ classes: wide
     <h3>설정 {{ setting_count }} · 스토리 {{ story_count }}{% if note_count > 0 %} · 메모 {{ note_count }}{% endif %}</h3>
     <p>기본 탐색 축은 유형 기준입니다.</p>
   </div>
-  <a class="clobie-card clobie-card--link" href="{{ '/clobie/writing/tags/' | relative_url }}">
-    <p class="clobie-eyebrow">주제 탐색</p>
-    <h3>태그별 보기</h3>
-    <p>반복되는 분위기와 주제 키워드로 글을 찾아볼 수 있습니다.</p>
-  </a>
 </div>
 
 ## 유형별 보기
@@ -65,7 +60,7 @@ classes: wide
 ## 최근 글
 
 {% if all_writings.size > 0 %}
-<div class="clobie-list">
+<div class="clobie-list" data-page-size="5">
   {% for post in all_writings limit: 12 %}
   {% assign type_label = site.data.clobie.writing_type_labels[post.clobie_type] | default: post.clobie_type | default: '미분류' %}
   {% assign genre_label = site.data.clobie.writing_genre_labels[post.genre] | default: post.genre %}
