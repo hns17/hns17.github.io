@@ -1,6 +1,6 @@
 ---
-title: "Clobie - 캐릭터"
-permalink: /clobie/art/characters/
+title: "Clobie - 장면"
+permalink: /clobie/art/scenes/
 layout: single
 sidebar:
   title: "Clobie"
@@ -8,12 +8,9 @@ sidebar:
 classes: wide
 ---
 
-캐릭터 중심의 그림을 모아보는 영역입니다.
+인물이나 사물보다 특정 장면의 분위기와 구성이 중심인 그림을 모아보는 영역입니다.
 
-{% assign items = site.clobie_art | where: 'clobie_type', 'character' %}
-{% assign items_plural = site.clobie_art | where: 'clobie_type', 'characters' %}
-{% assign items_human = site.clobie_art | where: 'clobie_type', 'human' %}
-{% assign items = items | concat: items_plural | concat: items_human | sort: 'date' | reverse %}
+{% assign items = site.clobie_art | where: 'clobie_type', 'scene' | sort: 'date' | reverse %}
 {% if items.size > 0 %}
 <div class="clobie-gallery clobie-list" data-page-size="24">
   {% for item in items %}
@@ -24,5 +21,5 @@ classes: wide
   {% endfor %}
 </div>
 {% else %}
-<div class="clobie-empty">아직 등록된 캐릭터 작업이 없습니다.</div>
+<div class="clobie-empty">아직 등록된 장면 작업이 없습니다.</div>
 {% endif %}
