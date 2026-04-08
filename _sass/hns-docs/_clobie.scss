@@ -156,6 +156,52 @@
   gap: 0.9rem;
 }
 
+.clobie-type-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.clobie-type-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.55rem 0.9rem;
+  color: var(--docs-text-soft);
+  background: var(--docs-surface);
+  border: 1px solid var(--docs-border);
+  border-radius: 999px;
+  box-shadow: var(--docs-card-shadow);
+  text-decoration: none;
+}
+
+.clobie-type-pill:hover {
+  color: inherit;
+  text-decoration: none;
+  border-color: var(--docs-border-strong);
+  background: var(--docs-surface-strong);
+}
+
+.clobie-type-pill strong {
+  color: var(--docs-heading);
+  font-size: 0.92rem;
+}
+
+.clobie-type-pill span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.8rem;
+  height: 1.8rem;
+  padding: 0 0.45rem;
+  font-size: 0.78rem;
+  line-height: 1;
+  color: var(--docs-text-muted);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--docs-border);
+  border-radius: 999px;
+}
+
 .clobie-pagination {
   display: flex;
   align-items: center;

@@ -27,26 +27,22 @@ classes: wide
 
 ## 유형별 보기
 
-<div class="clobie-grid clobie-grid--2">
-  <a class="clobie-card clobie-card--link" href="{{ '/clobie/art/characters/' | relative_url }}">
-    <p class="clobie-eyebrow">{{ character_items | size }}개 이미지</p>
-    <h3>캐릭터</h3>
-    <p>인물 중심 이미지와 캐릭터 컨셉을 모아봅니다.</p>
+<div class="clobie-type-nav clobie-section-gap">
+  <a class="clobie-type-pill" href="{{ '/clobie/art/characters/' | relative_url }}">
+    <strong>캐릭터</strong>
+    <span>{{ character_items | size }}</span>
   </a>
-  <a class="clobie-card clobie-card--link" href="{{ '/clobie/art/creatures/' | relative_url }}">
-    <p class="clobie-eyebrow">{{ creature_items | size }}개 이미지</p>
-    <h3>생물</h3>
-    <p>동물, 수호수, 괴수 같은 비인간 존재를 모아봅니다.</p>
+  <a class="clobie-type-pill" href="{{ '/clobie/art/creatures/' | relative_url }}">
+    <strong>생물</strong>
+    <span>{{ creature_items | size }}</span>
   </a>
-  <a class="clobie-card clobie-card--link" href="{{ '/clobie/art/scenes/' | relative_url }}">
-    <p class="clobie-eyebrow">{{ scene_items | size }}개 이미지</p>
-    <h3>장면</h3>
-    <p>특정 순간의 구도와 분위기가 중심인 장면형 이미지를 모아봅니다.</p>
+  <a class="clobie-type-pill" href="{{ '/clobie/art/scenes/' | relative_url }}">
+    <strong>장면</strong>
+    <span>{{ scene_items | size }}</span>
   </a>
-  <a class="clobie-card clobie-card--link" href="{{ '/clobie/art/sf/' | relative_url }}">
-    <p class="clobie-eyebrow">{{ sf_items | size }}개 이미지</p>
-    <h3>SF</h3>
-    <p>우주선, 배경, 메카, 콘셉트 러프를 포함한 SF 계열 이미지를 모아봅니다.</p>
+  <a class="clobie-type-pill" href="{{ '/clobie/art/sf/' | relative_url }}">
+    <strong>SF</strong>
+    <span>{{ sf_items | size }}</span>
   </a>
 </div>
 
