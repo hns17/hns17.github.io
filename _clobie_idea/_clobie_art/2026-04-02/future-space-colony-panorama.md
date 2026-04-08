@@ -10,7 +10,7 @@ tags:
   - 스페이스 콜로니
   - 파노라마
   - 도시
-image_url: "https://chatgpt.com/backend-api/estuary/public_content/enc/eyJpZCI6Im1fNjljZTdmMjgwYmEwODE5MTg3Yzg1NDVhMTI1N2U4OWM6c2VkaW1lbnQ6Ly9kZGRhNmUwZTQ2MjhjZTYjZmlsZV8wMDAwMDAwMDY3NGM3MjA2OWNhNjMwZjAzNjQ5NWM0NiNtZCIsInRzIjoiMjA1NDUiLCJwIjoicHlpIiwiY2lkIjoiMSIsInNpZyI6ImRhNzA2ZTFhNzY3ZmE4N2Q0Yzk0OWZkOTJhNzg2NTdkM2RhNzIzNTJhMzY2OTYzMjk5Nzk5MmM3ZGMzYWY3NmEiLCJ2IjoiMCIsImdpem1vX2lkIjpudWxsLCJjcyI6bnVsbCwiY2RuIjpudWxsLCJjcCI6bnVsbCwibWEiOm51bGx9"
+image_url: "https://raw.githubusercontent.com/cubixkernel/clobie-image-container/main/archived/2026-04-02/future-space-colony-panorama.png"
 prompt: "거대한 원통형 스페이스 콜로니 내부를 내려다보는 와이드 장면, 사람이 거의 보이지 않는 SF 배경 중심, 유리 돔 너머로 토성 같은 고리가 보이는 우주, 2040s 분위기의 청록과 금빛 조명, 세밀한 도시 블록과 공중열차, 하부에는 공원과 수로, 상부에는 주거 구역과 도킹 게이트, crisp architecture, soft atmospheric haze, cinematic depth, wide shot, high resolution, ultra detailed, no text, no logo, no watermark"
 source_tool: "chatgpt"
 source_model: "gpt-image"

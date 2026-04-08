@@ -10,7 +10,7 @@ tags:
   - 파일럿
   - 전함
   - 격납고
-image_url: "https://chatgpt.com/backend-api/estuary/public_content/enc/eyJpZCI6Im1fNjljZWI3NzBhN2Q0ODE5MWFiNDY1MjNlZTBmYmI3ZDQ6c2VkaW1lbnQ6Ly8wYmExYTI3YWRmOTI1NDcjZmlsZV8wMDAwMDAwMGZlMTQ3MjBiYjMxYTkxZmZkMTI4MTM3YyNtZCIsInRzIjoiMjA1NDUiLCJwIjoicHlpIiwiY2lkIjoiMSIsInNpZyI6ImE4YWUzNmUwNTBhYjYyODVmYzRjOTJlYWI5OGQxMTlhODIwZDFlMmVmYmY0N2VlYzc5Y2JjYTA1ODczNTI5YmEiLCJ2IjoiMCIsImdpem1vX2lkIjpudWxsLCJjcyI6bnVsbCwiY2RuIjpudWxsLCJjcCI6bnVsbCwibWEiOm51bGx9"
+image_url: "https://raw.githubusercontent.com/cubixkernel/clobie-image-container/main/archived/2026-04-02/warship-hangar-pilot.png"
 prompt: "20대 여성 파일럿, 짧은 은청색 보브컷, 날카로운 청록색 눈과 선명한 하이라이트, 흰색과 남색의 하이칼라 파일럿 슈트에 주황 포인트, 슬림한 실루엣의 장갑 슈트와 유틸리티 벨트, 홀로그램 항법 장치와 통신 이어셋을 착용한 SF 우주 오페라 캐릭터. thigh-up 3/4 view, 거대한 우주 전함 격납고와 정박 중인 전투함이 보이는 새벽 배경, 차가운 블루와 오렌지 경고등 팔레트, 인물은 또렷하고 배경은 부드럽고 대기감 있게 분리, cinematic cel-style anime illustration, high resolution, ultra detailed, no text, no logo, no watermark"
 source_tool: "chatgpt"
 source_model: "gpt-image"

@@ -10,7 +10,7 @@ tags:
   - 스페이스 콜로니
   - 지구
   - 아침
-image_url: "https://chatgpt.com/backend-api/estuary/public_content/enc/eyJpZCI6Im1fNjljYWQwZjExYzIwODE5MWIzMDcxOWQ5OTBhNjdmYmI6c2VkaW1lbnQ6Ly9iNjBlMWIxY2I0OWQwYTMjZmlsZV8wMDAwMDAwMDU5ODQ3MjA5OTgxZWUyYjc5ZmI3NGU2ZCNtZCIsInRzIjoiMjA1NDIiLCJwIjoicHlpIiwiY2lkIjoiMSIsInNpZyI6ImVmNmQ4Y2MzMzNjMWVmZWFjMjYyMTBhZDhkN2FlOTljZTMzOWFlYjljMzVkMjcyZmZjZjI1ODI4N2Y4NzNmNzgiLCJ2IjoiMCIsImdpem1vX2lkIjpudWxsLCJjcyI6bnVsbCwiY2RuIjpudWxsLCJjcCI6bnVsbCwibWEiOm51bGx9"
+image_url: "https://raw.githubusercontent.com/cubixkernel/clobie-image-container/main/archived/2026-03-30/future-city-and-earth-morning.png"
 prompt: "거대한 원통형 스페이스 콜로니 내부를 보여주는 SF 배경 일러스트, 사람 없는 장면, 새벽빛이 스며드는 22세기 거주 구역과 공중 트램, 투명 돔 너머로 보이는 지구와 별빛, 흰색과 민트 블루 중심의 미래적 건축, 유리 브리지와 수직 정원, 깊은 원근감의 와이드 구도, 전경 구조물은 선명하고 배경 도시는 부드럽고 안개 낀 듯한 분위기, soft atmospheric anime background, crisp foreground architecture, soft luminous distance, high resolution, ultra detailed, no text, no logo, no watermark"
 source_tool: "chatgpt"
 source_model: "gpt-image"

@@ -10,7 +10,7 @@ tags:
   - 탐사선
   - 성운
   - 우주
-image_url: "https://chatgpt.com/backend-api/estuary/public_content/enc/eyJpZCI6Im1fNjljZThkNjhjY2U4ODE5MTkzNzU4ZWEyNGNjNDE3MzE6c2VkaW1lbnQ6Ly9mZjNlNjA2YzMyY2E1ZDgjZmlsZV8wMDAwMDAwMDY3Yjg3MjBiYjU3ZDlkYTlkM2IyZTUxMSNtZCIsInRzIjoiMjA1NDUiLCJwIjoicHlpIiwiY2lkIjoiMSIsInNpZyI6ImFkNGQ1NWVlNmQ4ZTJkYjMyYmYwMmJjNTIzZTY2ODdjNGNlYjNiYWU0ZWQ3Nzk4MmQ1MDAzY2VkMDE2OWMxY2MiLCJ2IjoiMCIsImdpem1vX2lkIjpudWxsLCJjcyI6bnVsbCwiY2RuIjpudWxsLCJjcCI6bnVsbCwibWEiOm51bGx9"
+image_url: "https://raw.githubusercontent.com/cubixkernel/clobie-image-container/main/archived/2026-04-02/shining-moment-of-space-exploration.png"
 prompt: "슬림한 심우주 탐사선이 푸른 가스 성운 앞에서 스캔을 수행하는 장면, cinematic anime cel style, blue and purple sci-fi palette, strong rim light, crisp foreground subject, soft atmospheric background, wide shot, deep perspective, highly readable silhouette, high resolution, ultra detailed, no text, no logo, no watermark"
 source_tool: "chatgpt"
 source_model: "gpt-image"

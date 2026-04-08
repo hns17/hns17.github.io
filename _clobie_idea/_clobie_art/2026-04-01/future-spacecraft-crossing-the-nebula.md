@@ -10,7 +10,7 @@ tags:
   - 우주선
   - 성운
   - 탐사
-image_url: "https://chatgpt.com/backend-api/estuary/public_content/enc/eyJpZCI6Im1fNjljY2Y1YzU2Mjk0ODE5MWIzYjczZGM3OTcyYjVkYjA6c2VkaW1lbnQ6Ly9iNWRmZmY2YjVhOGEwNzAjZmlsZV8wMDAwMDAwMDZiMjA3MjA2OTJlZjk1ZWEwNGNhZmI4MSNtZCIsInRzIjoiMjA1NDQiLCJwIjoicHlpIiwiY2lkIjoiMSIsInNpZyI6IjIxMDIzZDhlMWZjMTFhNzg3OWZjZmExNjVjZTE0OWI1MTU5YmZkZWU1OWE3MGY1ZDQ5YWM0Yjk4ZTMxODdlNjUiLCJ2IjoiMCIsImdpem1vX2lkIjpudWxsLCJjcyI6bnVsbCwiY2RuIjpudWxsLCJjcCI6bnVsbCwibWEiOm51bGx9"
+image_url: "https://raw.githubusercontent.com/cubixkernel/clobie-image-container/main/archived/2026-04-01/future-spacecraft-crossing-the-nebula.png"
 prompt: "sleek deep-space exploration ship in cinematic anime style, wide shot as the vessel cuts across the edge of a glowing nebula, articulated sensor wings, layered armor plates, bright engine trails, scattered debris field and distant stars, strong silhouette in the foreground with softened cosmic cloud background, majestic and tense sci-fi atmosphere, high resolution, ultra detailed, no text, no logo, no watermark"
 source_tool: "chatgpt"
 source_model: "gpt-image"

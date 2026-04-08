@@ -10,7 +10,7 @@ tags:
   - 햇살
   - 손
   - 관계
-image_url: "https://chatgpt.com/backend-api/estuary/public_content/enc/eyJpZCI6Im1fNjlkMjg5OGFhZTEwODE5MTgzNThmY2M1ODcyMDc0Yjk6c2VkaW1lbnQ6Ly8zNDg0ZjAwM2EzZTRmMmIjZmlsZV8wMDAwMDAwMDU2ODg3MjA5YTc3YTgxYjQ0Y2Y4YmQxMyNtZCIsInRzIjoiMjA1NDgiLCJwIjoicHlpIiwiY2lkIjoiMSIsInNpZyI6ImEyNDQ2YWJkNDRlZmUyNGVhOGY1NmM0MTA1MDZlMDE5N2U0MTk4MjM4ZmU1MmYyMTI4YmJhNjhhOGU5NzJmODYiLCJ2IjoiMCIsImdpem1vX2lkIjpudWxsLCJjcyI6bnVsbCwiY2RuIjpudWxsLCJjcCI6bnVsbCwibWEiOm51bGx9"
+image_url: "https://raw.githubusercontent.com/cubixkernel/clobie-image-container/main/archived/2026-04-05/holding-hands-under-warm-sunlight.png"
 source_tool: "chatgpt"
 source_model: "gpt-image"
 source_channel: "discord-art"

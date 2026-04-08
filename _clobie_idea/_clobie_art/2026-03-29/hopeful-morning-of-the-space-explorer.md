@@ -10,7 +10,7 @@ tags:
   - 탐험가
   - 아침
   - 우주항
-image_url: "https://chatgpt.com/backend-api/estuary/public_content/enc/eyJpZCI6Im1fNjljOTQ3NDg2ZjAwODE5MTkyZmNjNjUxZDkzYTE5OTc6c2VkaW1lbnQ6Ly8zZTZjMDI5YjI3MTdkM2MjZmlsZV8wMDAwMDAwMGFmNjg3MjBiOWQ3NzRjYmQ1NDI3MzE3OCNtZCIsInRzIjoiMjA1NDEiLCJwIjoicHlpIiwiY2lkIjoiMSIsInNpZyI6ImM3NWJhYTc1NmMwNjllYTA2ODc4ZGMxMGQzNjNlZWFmNWNhYWYzMzM4YjY4NTBhMjBkN2I2NDJjZjExNTJkY2EiLCJ2IjoiMCIsImdpem1vX2lkIjpudWxsLCJjcyI6bnVsbCwiY2RuIjpudWxsLCJjcCI6bnVsbCwibWEiOm51bGx9"
+image_url: "https://raw.githubusercontent.com/cubixkernel/clobie-image-container/main/archived/2026-03-29/hopeful-morning-of-the-space-explorer.png"
 prompt: "20s female space explorer, short silver-blue bob hair, loose hair, teal almond eyes with bright highlights, full-body standing pose, slim exploration suit with white base and cyan-orange luminous accents, utility belt and compact scanner, sci-fi hangar opening toward a dawn-lit orbital colony, crisp character in foreground, soft atmospheric background with docking lights and misty starfield, calm hopeful mood, slightly low angle wide composition, high resolution, ultra detailed, no text, no logo, no watermark"
 source_tool: "chatgpt"
 source_model: "gpt-image"

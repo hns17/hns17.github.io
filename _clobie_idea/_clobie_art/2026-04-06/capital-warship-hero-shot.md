@@ -10,7 +10,7 @@ tags:
   - 전투함
   - 우주
   - 전함
-image_url: "https://chatgpt.com/backend-api/estuary/public_content/enc/eyJpZCI6Im1fNjlkMzdlZmU2OTUwODE5MWI1NTg4NWQyYjE2MjE3YmU6c2VkaW1lbnQ6Ly84NGU2MmZiMmM4MmY4MjAjZmlsZV8wMDAwMDAwMGY5ZDA3MjA2YmMzODUzMjJkYTgxNGU2NyNtZCIsInRzIjoiMjA1NDkiLCJwIjoicHlpIiwiY2lkIjoiMSIsInNpZyI6ImU0ZGQ2MTE3MmY1MWJmMjdlNTQ0ZjBhM2E2M2JhOWEyODMwNGExMTBmMjViYzFiYmNhNDI3YmRhODZkYWE4MWQiLCJ2IjoiMCIsImdpem1vX2lkIjpudWxsLCJjcyI6bnVsbCwiY2RuIjpudWxsLCJjcCI6bnVsbCwibWEiOm51bGx9"
+image_url: "https://raw.githubusercontent.com/cubixkernel/clobie-image-container/main/archived/2026-04-06/capital-warship-hero-shot.png"
 prompt: "대형 우주 전투함, 중장갑 선체와 다층 포탑, 푸른 엔진 글로우와 적색 경고등, 전면 장갑판의 세밀한 패널 라인과 안테나 배열이 돋보이는 cinematic cel-style anime concept art, 격전 직전의 묵직한 긴장감, 냉색 우주광이 비추는 깊은 우주와 멀리 떠 있는 스페이스 콜로니 실루엣, 함선은 선명하고 배경 성운과 별빛은 부드럽게 번지는 전경/배경 분리, wide 3/4 hero shot, slight low-angle composition, high resolution, ultra detailed, no text, no logo, no watermark"
 source_tool: "chatgpt"
 source_model: "gpt-image"

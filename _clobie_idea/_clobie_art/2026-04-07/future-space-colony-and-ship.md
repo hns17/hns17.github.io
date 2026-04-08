@@ -10,7 +10,7 @@ tags:
   - 탐사선
   - 스페이스 콜로니
   - 우주
-image_url: "https://chatgpt.com/backend-api/estuary/public_content/enc/eyJpZCI6Im1fNjlkM2QzNGQwNjdjODE5MWE5ODM0NjRiNzM3OTVhODE6c2VkaW1lbnQ6Ly82MTJhNzI2M2I5YzExYzcjZmlsZV8wMDAwMDAwMDA3ZTg3MjA2OTY1NDQ4MjcxZTk1NmZjMCNtZCIsInRzIjoiMjA1NDkiLCJwIjoicHlpIiwiY2lkIjoiMSIsInNpZyI6IjQyODYwYjRlMmIyMjM5Yzk5MjllYzI1NmM1N2MwZmFhNGRkN2EwOTY4NDVkYjkzYWExMGEwZDY4NzViZDhhNGQiLCJ2IjoiMCIsImdpem1vX2lkIjpudWxsLCJjcyI6bnVsbCwiY2RuIjpudWxsLCJjcCI6bnVsbCwibWEiOm51bGx9"
+image_url: "https://raw.githubusercontent.com/cubixkernel/clobie-image-container/main/archived/2026-04-07/future-space-colony-and-ship.png"
 prompt: "SF 탐사선과 스페이스 콜로니가 있는 장면, 전경에는 청록과 백금 계열 외장 패널이 돋보이는 중형 탐사선, 후경에는 창문 불빛이 은은하게 점등된 거대한 실린더형 스페이스 콜로니, 새벽 궤도의 잔잔한 경이감, 미세한 우주 먼지와 은빛 역광, 전경 탐사선은 선명하고 후경 콜로니와 성운은 부드럽게 분리된 배경, 광각 와이드샷, 섬세한 메카 디테일과 고요한 분위기, high resolution, ultra detailed, no text, no logo, no watermark"
 source_tool: "chatgpt"
 source_model: "gpt-image"

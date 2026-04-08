@@ -10,7 +10,7 @@ tags:
   - 탐사선
   - 스페이스 콜로니
   - 우주
-image_url: "https://chatgpt.com/backend-api/estuary/public_content/enc/eyJpZCI6Im1fNjljZTQ2ZDhkOGZjODE5MWE2YWRkOWQ3MWQxNjlhMGQ6c2VkaW1lbnQ6Ly9jYWY4ZDRmMTVkZGQ1NDkjZmlsZV8wMDAwMDAwMDQyMzQ3MjA5ODJkMDU2Yzg1M2RkOWY5MCNtZCIsInRzIjoiMjA1NDUiLCJwIjoicHlpIiwiY2lkIjoiMSIsInNpZyI6IjEzZjI2YmJkYTI2MzczYzA1ZDcyZGJhZTQyYjgyMjg1OThiMmNhNGQzYzExM2ZlN2VlZTA4OTRkNWMzYmMyYzIiLCJ2IjoiMCIsImdpem1vX2lkIjpudWxsLCJjcyI6bnVsbCwiY2RuIjpudWxsLCJjcCI6bnVsbCwibWEiOm51bGx9"
+image_url: "https://raw.githubusercontent.com/cubixkernel/clobie-image-container/main/archived/2026-04-01/future-space-voyage.png"
 prompt: "sleek deep-space exploration ship gliding past a gigantic cylindrical space colony, anime sci-fi concept art, wide cinematic shot, detailed hull panels, antenna arrays, blue-white engine glow, service lights along colony rings, drifting cargo pods, distant nebula clouds, soft atmospheric starscape, crisp foreground ship and softly rendered monumental background, quiet awe with subtle tension, high resolution, ultra detailed, no text, no logo, no watermark"
 source_tool: "chatgpt"
 source_model: "gpt-image"

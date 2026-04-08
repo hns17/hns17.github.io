@@ -10,7 +10,7 @@ tags:
   - 전투함
   - 스페이스 콜로니
   - 우주
-image_url: "https://chatgpt.com/backend-api/estuary/public_content/enc/eyJpZCI6Im1fNjljYWRmMjQ1YzMwODE5MTk5Y2MwNDZlZjQwNjVlZTI6c2VkaW1lbnQ6Ly8wNTY3YTEzOTk5MTBjZGMjZmlsZV8wMDAwMDAwMDhlZTg3MjA2OWE3MjFlZjk2OTc1ODVhOSNtZCIsInRzIjoiMjA1NDIiLCJwIjoicHlpIiwiY2lkIjoiMSIsInNpZyI6IjI2MjFlOTcwYzhiMzhhYWE2ZWFlM2MyMDlkYmY4OTAxNmVkYWViMWQ2YzA3NGZiYzBkMDUxNzFmZGY0M2U3MmMiLCJ2IjoiMCIsImdpem1vX2lkIjpudWxsLCJjcyI6bnVsbCwiY2RuIjpudWxsLCJjcCI6bnVsbCwibWEiOm51bGx9"
+image_url: "https://raw.githubusercontent.com/cubixkernel/clobie-image-container/main/archived/2026-03-30/battleship-and-rotating-space-colony.png"
 prompt: "거대한 SF 전투함 함대의 기함, 각진 장갑과 발광 엔진, 복수의 포탑과 안테나 실루엣, 메카닉 디테일이 풍부한 선체, 푸른 이온 광과 붉은 경고등 포인트, 하드 SF 테마의 짙은 남색과 강철 회색 팔레트, 배경에는 회전하는 스페이스 콜로니와 성운, 멀리 호위 수송선들이 보이는 우주 전장, 주력 전투함은 선명하고 배경은 부드러운 대기감으로 분리, 와이드 시네마 원경 구도, cinematic cel anime style, high resolution, ultra detailed, no text, no logo, no watermark"
 source_tool: "chatgpt"
 source_model: "gpt-image"

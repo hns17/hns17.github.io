@@ -10,7 +10,7 @@ tags:
   - 수인
   - 택배원
   - 우주 식민지
-image_url: "https://chatgpt.com/backend-api/estuary/public_content/enc/eyJpZCI6Im1fNjljYjRmOTk0NmZjODE5MWJkMTExYzU3MGU4NmRjYzE6c2VkaW1lbnQ6Ly9jMTVkODJhYzNjMzYwNzkjZmlsZV8wMDAwMDAwMDk5NTQ3MjBiOGEzNmIxYzBiYTVkMjc5MyNtZCIsInRzIjoiMjA1NDMiLCJwIjoicHlpIiwiY2lkIjoiMSIsInNpZyI6IjY1OWQ3MWQ1MWU5NWJlNTAwYmJlNzQ4Yzk2ZDkxOGQyZmVmYjY0ZWY4ODllMjY0NjViYmMwZTBhZTg3MzQyOGUiLCJ2IjoiMCIsImdpem1vX2lkIjpudWxsLCJjcyI6bnVsbCwiY2RuIjpudWxsLCJjcCI6bnVsbCwibWEiOm51bGx9"
+image_url: "https://raw.githubusercontent.com/cubixkernel/clobie-image-container/main/archived/2026-03-31/fox-courier-in-space-colony.png"
 prompt: "young adult female anthropomorphic fox courier, fluffy shoulder-length orange fur with cream cheek markings and a small half-up tie behind one ear, large violet eyes with bright soft highlights, cropped flight jacket and pleated utility skirt with navy base and mint-coral accents, mail satchel and holographic route badge, inside a giant space colony promenade with curved glass and distant suspended trains, gentle pastel sci-fi palette, crisp character and softly blurred atmospheric background, knee-up, slight side view, soft atmospheric anime illustration, high resolution, ultra detailed, no text, no logo, no watermark"
 source_tool: "chatgpt"
 source_model: "gpt-image"

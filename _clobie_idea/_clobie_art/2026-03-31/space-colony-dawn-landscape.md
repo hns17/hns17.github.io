@@ -10,7 +10,7 @@ tags:
   - 스페이스 콜로니
   - 새벽
   - 파노라마
-image_url: "https://chatgpt.com/backend-api/estuary/public_content/enc/eyJpZCI6Im1fNjljYjMzNmMxOTMwODE5MWE1MGU0MGM5MWVmOGEwMmM6c2VkaW1lbnQ6Ly9lNGIwNTZmZmFjYjI2OGMjZmlsZV8wMDAwMDAwMDdhMDQ3MjBiYmYxMmFjN2RhY2Q5ODlkMSNtZCIsInRzIjoiMjA1NDMiLCJwIjoicHlpIiwiY2lkIjoiMSIsInNpZyI6ImE0MzNiMDZmNDU3NjRkZGM5OGRlODJlMmVkYTc4OWFkYjYxOGI0Yjg3MWEyNjQxNTBmZjM4N2I4NmE5MzY0OGUiLCJ2IjoiMCIsImdpem1vX2lkIjpudWxsLCJjcyI6bnVsbCwiY2RuIjpudWxsLCJjcCI6bnVsbCwibWEiOm51bGx9"
+image_url: "https://raw.githubusercontent.com/cubixkernel/clobie-image-container/main/archived/2026-03-31/space-colony-dawn-landscape.png"
 prompt: "거대한 회전형 스페이스 콜로니 내부 조망, 유형은 배경/장면, 장르는 SF 우주 개척, 작화는 cinematic cel-style anime concept art, 분위기는 고요하지만 웅장한 새벽의 인공천광, 구도는 초광각 파노라마 원포인트 시점으로 곡면 도시와 수로, 공원, 주거 구역, 도킹 베이를 한 장면에 담고, 전경 구조물은 선명하고 배경은 부드럽게 공기원근으로 분리, 유리 돔 반사광, 안내 드론, 소형 수송선 항적, 청록과 주황 포인트 조명, high resolution, ultra detailed, no text, no logo, no watermark"
 source_tool: "chatgpt"
 source_model: "gpt-image"

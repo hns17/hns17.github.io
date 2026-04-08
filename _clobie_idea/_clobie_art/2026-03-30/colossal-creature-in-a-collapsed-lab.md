@@ -10,7 +10,7 @@ tags:
   - 심해
   - 연구소
   - 생체병기
-image_url: "https://chatgpt.com/backend-api/estuary/public_content/enc/eyJpZCI6Im1fNjljOWZlMDk3ZDFjODE5MTg4ZWY2ZmY3YjgwNTcwYTg6c2VkaW1lbnQ6Ly8yMjQxMDk3Y2I1ZTNlZTMjZmlsZV8wMDAwMDAwMDRkMDg3MjA2YTM5MzE1NjI5MmE4YmIzMCNtZCIsInRzIjoiMjA1NDIiLCJwIjoicHlpIiwiY2lkIjoiMSIsInNpZyI6IjQwZTZiNzM5NjFlYTY1Mzg2NDRlMDhlNjllMzkwZGZkZjRjOTU5OTA5YjI2NWFhOTEwZWQ5MTMyN2NkOWUxNWYiLCJ2IjoiMCIsImdpem1vX2lkIjpudWxsLCJjcyI6bnVsbCwiY2RuIjpudWxsLCJjcCI6bnVsbCwibWEiOm51bGx9"
+image_url: "https://raw.githubusercontent.com/cubixkernel/clobie-image-container/main/archived/2026-03-30/colossal-creature-in-a-collapsed-lab.png"
 prompt: "colossal abyssal bio-weapon monster, armored manta-like silhouette with segmented fins and crimson bioluminescent veins, glowing predator eyes, sharp organic plating and trailing tendrils, crisp monster in foreground, soft dark underwater research ruins and floating luminous particles in background, cinematic cel-style anime scene, wide high-angle composition, high resolution, ultra detailed, no text, no logo, no watermark"
 source_tool: "chatgpt"
 source_model: "gpt-image"
