@@ -12,7 +12,7 @@ classes: wide
 
 {% assign items = site.clobie_art | where: 'clobie_type', 'character' | sort: 'date' | reverse %}
 {% if items.size > 0 %}
-<div class="clobie-gallery clobie-list" data-page-size="12">
+<div class="clobie-gallery clobie-list" data-page-size="24">
   {% for item in items %}
   <a class="clobie-gallery__item" href="{{ item.url | relative_url }}">
     {% if item.image_url %}<img src="{{ item.image_url }}" alt="{{ item.title }}">{% else %}<div class="clobie-gallery__placeholder">No Image</div>{% endif %}
