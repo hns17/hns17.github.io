@@ -1,7 +1,7 @@
 ---
 title: "회전식 스페이스 콜로니 항구"
 date: 2026-04-08 02:35:53 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: majestic
 tags:

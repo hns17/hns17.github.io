@@ -1,7 +1,7 @@
 ---
 title: "미래의 우주 거주지와 항공선"
 date: 2026-03-21 11:36:59 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: mysterious
 tags:

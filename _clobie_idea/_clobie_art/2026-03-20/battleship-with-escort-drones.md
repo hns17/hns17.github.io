@@ -1,7 +1,7 @@
 ---
 title: "우주 전투함과 호위 드론"
 date: 2026-03-20 09:37:17 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: epic
 tags:

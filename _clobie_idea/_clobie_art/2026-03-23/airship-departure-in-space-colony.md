@@ -1,7 +1,7 @@
 ---
 title: "우주 식민지의 항공선 출발 준비"
 date: 2026-03-23 20:37:22 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: majestic
 tags:

@@ -1,7 +1,7 @@
 ---
 title: "미래의 우주 식민지와 항해"
 date: 2026-03-27 16:38:03 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: majestic
 tags:

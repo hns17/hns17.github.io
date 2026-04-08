@@ -1,7 +1,7 @@
 ---
 title: "미래의 우주 탐사선과 행성 고리"
 date: 2026-03-27 13:37:58 +0900
-clobie_type: concept
+clobie_type: sf
 genre: sf
 mood: solemn
 tags:

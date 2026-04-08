@@ -10,10 +10,7 @@ classes: wide
 
 캐릭터 중심의 그림을 모아보는 영역입니다.
 
-{% assign items = site.clobie_art | where: 'clobie_type', 'character' %}
-{% assign items_plural = site.clobie_art | where: 'clobie_type', 'characters' %}
-{% assign items_human = site.clobie_art | where: 'clobie_type', 'human' %}
-{% assign items = items | concat: items_plural | concat: items_human | sort: 'date' | reverse %}
+{% assign items = site.clobie_art | where: 'clobie_type', 'character' | sort: 'date' | reverse %}
 {% if items.size > 0 %}
 <div class="clobie-gallery clobie-list" data-page-size="24">
   {% for item in items %}

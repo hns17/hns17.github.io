@@ -1,7 +1,7 @@
 ---
 title: "도킹 트래픽이 흐르는 궤도 거주 콜로니"
 date: 2026-04-07 21:36:00 +0900
-clobie_type: background
+clobie_type: sf
 genre: sci-fi
 mood: awe-struck
 tags:

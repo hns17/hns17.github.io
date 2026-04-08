@@ -1,7 +1,7 @@
 ---
 title: "미래 도시와 지구의 아침"
 date: 2026-03-31 04:37:38 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: dreamy
 tags:

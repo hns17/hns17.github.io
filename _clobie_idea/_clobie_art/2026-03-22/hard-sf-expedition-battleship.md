@@ -1,7 +1,7 @@
 ---
 title: "미래의 우주 탐험 전투함"
 date: 2026-03-22 15:37:26 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: epic
 tags:

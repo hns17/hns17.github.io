@@ -1,7 +1,7 @@
 ---
 title: "붉은 룬의 늑대 전사"
 date: 2026-03-22 05:37:37 +0900
-clobie_type: monster
+clobie_type: creature
 genre: dark-fantasy
 mood: ominous
 tags:

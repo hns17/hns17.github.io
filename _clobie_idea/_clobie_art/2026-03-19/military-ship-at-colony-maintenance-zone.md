@@ -1,7 +1,7 @@
 ---
 title: "우주 식민지와 정박한 우주선"
 date: 2026-03-19 16:37:46 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf-military
 mood: tense
 tags:

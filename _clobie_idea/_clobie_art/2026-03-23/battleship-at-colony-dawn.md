@@ -1,7 +1,7 @@
 ---
 title: "우주 전투함과 식민지의 여명"
 date: 2026-03-23 14:37:16 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: epic
 tags:

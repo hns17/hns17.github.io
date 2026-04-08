@@ -1,7 +1,7 @@
 ---
 title: "미래의 우주 식민지 격납고"
 date: 2026-03-20 23:37:58 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: tense
 tags:

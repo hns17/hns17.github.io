@@ -1,7 +1,7 @@
 ---
 title: "미래 도시와 우주 콜로니의 도킹장"
 date: 2026-03-29 21:37:23 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: dreamy
 tags:

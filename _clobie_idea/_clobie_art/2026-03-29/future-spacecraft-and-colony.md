@@ -1,7 +1,7 @@
 ---
 title: "미래의 우주 탐험선과 식민지"
 date: 2026-03-29 16:37:29 +0900
-clobie_type: concept
+clobie_type: sf
 genre: sf
 mood: majestic
 tags:

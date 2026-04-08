@@ -1,7 +1,7 @@
 ---
 title: "우주의 거대한 우주 거주지"
 date: 2026-03-28 04:38:15 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: majestic
 tags:

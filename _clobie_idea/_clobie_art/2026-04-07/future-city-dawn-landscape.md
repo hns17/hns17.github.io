@@ -1,7 +1,7 @@
 ---
 title: "미래 도시의 새벽 풍경"
 date: 2026-04-07 22:37:52 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: calm
 tags:

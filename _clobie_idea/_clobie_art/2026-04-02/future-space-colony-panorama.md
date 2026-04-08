@@ -1,7 +1,7 @@
 ---
 title: "미래적 우주 식민지 전망"
 date: 2026-04-02 23:37:57 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: dreamy
 tags:

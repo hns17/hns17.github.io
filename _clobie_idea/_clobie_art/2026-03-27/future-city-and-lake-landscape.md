@@ -1,7 +1,7 @@
 ---
 title: "미래 도시와 호수의 풍경"
 date: 2026-03-28 03:37:58 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: dreamy
 tags:

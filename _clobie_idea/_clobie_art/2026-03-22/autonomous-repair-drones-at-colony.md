@@ -1,7 +1,7 @@
 ---
 title: "우주 정거장에서 드론 작업 중"
 date: 2026-03-23 07:37:06 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: tense
 tags:

@@ -1,7 +1,7 @@
 ---
 title: "샘플 - 비 오는 도시의 메신저"
 date: 2026-04-06 15:40:00 +0900
-clobie_type: characters
+clobie_type: character
 mood: cyberpunk
 series: rain-city
 tags: [비, 도시, 메신저]

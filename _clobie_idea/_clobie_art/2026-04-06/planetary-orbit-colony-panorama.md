@@ -1,7 +1,7 @@
 ---
 title: "미래 도시의 우주 컬로니"
 date: 2026-04-06 16:37:55 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: dreamy
 tags:

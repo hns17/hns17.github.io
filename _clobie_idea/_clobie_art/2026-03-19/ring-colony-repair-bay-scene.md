@@ -1,7 +1,7 @@
 ---
 title: "미래적인 우주 정비 장면"
 date: 2026-03-19 14:37:03 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: industrial
 tags:

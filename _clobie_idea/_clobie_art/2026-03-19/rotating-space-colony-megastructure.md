@@ -1,7 +1,7 @@
 ---
 title: "거대한 회전하는 우주 식민지"
 date: 2026-03-19 17:38:38 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: majestic
 tags:

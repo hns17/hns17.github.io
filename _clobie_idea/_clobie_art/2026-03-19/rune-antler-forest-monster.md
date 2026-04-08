@@ -1,7 +1,7 @@
 ---
 title: "어두운 숲속의 신비로운 존재"
 date: 2026-03-20 06:38:25 +0900
-clobie_type: monster
+clobie_type: creature
 genre: dark-fantasy
 mood: ominous
 tags:

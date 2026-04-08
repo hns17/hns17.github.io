@@ -1,7 +1,7 @@
 ---
 title: "미래의 우주 정거장과 우주선"
 date: 2026-03-28 23:38:22 +0900
-clobie_type: concept
+clobie_type: sf
 genre: sf
 mood: calm
 stags:

@@ -1,7 +1,7 @@
 ---
 title: "우주 식민지와 항구의 여정"
 date: 2026-04-07 07:37:58 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: mystical
 tags:

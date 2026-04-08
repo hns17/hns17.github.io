@@ -1,7 +1,7 @@
 ---
 title: "미래 도시를 지키는 거대 로봇"
 date: 2026-03-25 08:37:59 +0900
-clobie_type: concept
+clobie_type: sf
 genre: sf
 mood: tense-calm
 tags:

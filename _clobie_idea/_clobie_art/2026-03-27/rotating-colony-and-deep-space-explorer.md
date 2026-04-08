@@ -1,7 +1,7 @@
 ---
 title: "우주 탐사선과 회전하는 식민지"
 date: 2026-03-28 01:39:15 +0900
-clobie_type: concept
+clobie_type: sf
 genre: sf
 mood: majestic
 tags:

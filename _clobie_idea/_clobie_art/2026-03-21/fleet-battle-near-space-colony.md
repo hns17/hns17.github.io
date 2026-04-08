@@ -1,7 +1,7 @@
 ---
 title: "우주 전투와 공간 식민지"
 date: 2026-03-22 03:37:18 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: epic
 tags:

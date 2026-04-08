@@ -1,7 +1,7 @@
 ---
 title: "미래의 우주 전함과 지휘관"
 date: 2026-03-24 19:38:29 +0900
-clobie_type: concept
+clobie_type: sf
 genre: sf
 mood: dark
 tags:

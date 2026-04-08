@@ -1,7 +1,7 @@
 ---
 title: "After School Spell Notebook"
 date: 2026-04-08 13:37:37 +0900
-clobie_type: "human"
+clobie_type: character
 genre: "현대 마법 학원"
 mood: "따뜻하고 반짝이는 방과 후 분위기"
 tags:

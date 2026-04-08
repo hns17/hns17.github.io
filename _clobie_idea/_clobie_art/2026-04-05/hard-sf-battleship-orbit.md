@@ -1,7 +1,7 @@
 ---
 title: "우주를 항해하는 거대한 전함"
 date: 2026-04-06 05:38:18 +0900
-clobie_type: concept
+clobie_type: sf
 genre: sf
 mood: dark
 tags:

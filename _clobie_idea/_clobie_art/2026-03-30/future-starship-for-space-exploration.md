@@ -1,7 +1,7 @@
 ---
 title: "우주 탐사를 위한 미래의 함선"
 date: 2026-03-30 11:39:22 +0900
-clobie_type: concept
+clobie_type: sf
 genre: sf
 mood: majestic
 tags:

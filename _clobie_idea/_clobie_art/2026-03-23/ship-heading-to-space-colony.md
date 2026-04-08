@@ -1,7 +1,7 @@
 ---
 title: "우주 식민지로 향하는 우주선"
 date: 2026-03-24 05:38:38 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: majestic
 tags:

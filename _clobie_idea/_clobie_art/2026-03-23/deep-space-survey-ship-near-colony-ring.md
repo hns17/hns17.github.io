@@ -1,7 +1,7 @@
 ---
 title: "우주 탐사의 거대한 만남"
 date: 2026-03-23 12:37:08 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: wondrous
 tags:

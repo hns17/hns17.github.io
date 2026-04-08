@@ -1,7 +1,7 @@
 ---
 title: "우주 식민지와 탐사선의 도킹"
 date: 2026-04-01 17:37:25 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: majestic
 tags:

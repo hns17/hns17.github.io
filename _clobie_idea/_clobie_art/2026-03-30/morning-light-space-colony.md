@@ -1,7 +1,7 @@
 ---
 title: "아침 햇살 속 우주 식민지"
 date: 2026-03-31 06:37:44 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: dreamy
 tags:

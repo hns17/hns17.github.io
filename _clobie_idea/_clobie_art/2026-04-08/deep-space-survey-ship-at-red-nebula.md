@@ -1,7 +1,7 @@
 ---
 title: "붉은 성운을 가르는 심우주 탐사선"
 date: 2026-04-08 12:38:16 +0900
-clobie_type: concept
+clobie_type: sf
 genre: sf
 mood: solemn-tense
 tags:

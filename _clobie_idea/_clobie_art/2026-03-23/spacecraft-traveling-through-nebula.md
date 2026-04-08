@@ -1,7 +1,7 @@
 ---
 title: "우주 탐사선과 성운 속 여행"
 date: 2026-03-24 04:37:38 +0900
-clobie_type: concept
+clobie_type: sf
 genre: sf
 mood: tense-calm
 tags:

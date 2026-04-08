@@ -1,7 +1,7 @@
 ---
 title: "우주 콜로니의 평화로운 아침"
 date: 2026-03-30 01:37:35 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: dreamy
 tags:

@@ -1,7 +1,7 @@
 ---
 title: "미래의 우주 전투함"
 date: 2026-03-29 12:37:43 +0900
-clobie_type: concept
+clobie_type: sf
 genre: sf
 mood: dark
 tags:

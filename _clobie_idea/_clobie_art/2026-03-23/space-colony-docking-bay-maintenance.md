@@ -1,7 +1,7 @@
 ---
 title: "우주 식민지 내 우주선과 정비 작업"
 date: 2026-03-23 15:37:56 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: majestic
 tags:

@@ -1,7 +1,7 @@
 ---
 title: "우주 콜로니와 도킹 링"
 date: 2026-03-27 12:37:44 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: majestic
 tags:

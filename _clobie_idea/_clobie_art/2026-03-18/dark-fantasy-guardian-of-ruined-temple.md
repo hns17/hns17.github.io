@@ -1,7 +1,7 @@
 ---
 title: "고대 사원의 수호자"
 date: 2026-03-19 04:35:26 +0900
-clobie_type: monster
+clobie_type: creature
 genre: dark-fantasy
 mood: ominous
 tags:

@@ -1,7 +1,7 @@
 ---
 title: "Sentinel Cruiser over the Colony Ring"
 date: 2026-04-08 05:38:54 +0900
-clobie_type: "scene"
+clobie_type: scene
 genre: "hard sci-fi anime"
 mood: "majestic, silent, cinematic"
 tags: ["spaceship", "battlecruiser", "space colony", "nonhuman", "anime"]

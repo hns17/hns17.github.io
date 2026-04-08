@@ -1,7 +1,7 @@
 ---
 title: "우주 탐사선과 거대한 우주 식민지"
 date: 2026-03-20 07:37:04 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: majestic
 tags:

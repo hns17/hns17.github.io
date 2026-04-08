@@ -1,7 +1,7 @@
 ---
 title: "우주에서 항해하는 거대한 우주선"
 date: 2026-03-19 22:37:32 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: majestic
 tags:

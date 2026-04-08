@@ -1,7 +1,7 @@
 ---
 title: "우주 전투의 거대한 전투함"
 date: 2026-03-22 06:37:05 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: epic
 tags:

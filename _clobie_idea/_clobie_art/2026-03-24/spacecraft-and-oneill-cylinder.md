@@ -1,7 +1,7 @@
 ---
 title: "우주선과 오닐 실린더의 만남"
 date: 2026-03-24 12:37:13 +0900
-clobie_type: concept
+clobie_type: sf
 genre: sf
 mood: majestic
 tags:

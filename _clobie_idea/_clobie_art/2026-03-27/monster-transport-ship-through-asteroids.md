@@ -1,7 +1,7 @@
 ---
 title: "우주를 가로지르는 괴물선"
 date: 2026-03-28 05:38:00 +0900
-clobie_type: concept
+clobie_type: sf
 genre: sf
 mood: dark
 tags:

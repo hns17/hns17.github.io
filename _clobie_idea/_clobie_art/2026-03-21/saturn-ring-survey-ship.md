@@ -1,7 +1,7 @@
 ---
 title: "새턴의 고리 근처의 우주 탐사선"
 date: 2026-03-22 08:37:31 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: tense
 tags:

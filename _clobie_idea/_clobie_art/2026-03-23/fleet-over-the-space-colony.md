@@ -1,7 +1,7 @@
 ---
 title: "우주 식민지 위의 전투 함대"
 date: 2026-03-23 21:37:53 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: dark
 tags:

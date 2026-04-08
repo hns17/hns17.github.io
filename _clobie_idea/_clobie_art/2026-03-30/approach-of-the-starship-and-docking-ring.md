@@ -1,7 +1,7 @@
 ---
 title: "우주선과 도킹 링의 접근"
 date: 2026-03-30 20:37:50 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: majestic
 tags:

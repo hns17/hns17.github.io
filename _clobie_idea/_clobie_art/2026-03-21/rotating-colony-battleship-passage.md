@@ -1,7 +1,7 @@
 ---
 title: "우주 기함과 회전하는 우주 식민지"
 date: 2026-03-21 20:37:11 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: majestic
 tags:

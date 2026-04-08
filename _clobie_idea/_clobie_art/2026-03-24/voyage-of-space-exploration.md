@@ -1,7 +1,7 @@
 ---
 title: "우주 탐사의 여정"
 date: 2026-03-24 18:37:21 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: majestic
 tags:

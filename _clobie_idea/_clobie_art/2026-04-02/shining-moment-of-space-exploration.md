@@ -1,7 +1,7 @@
 ---
 title: "우주 탐사의 빛나는 순간"
 date: 2026-04-03 00:38:33 +0900
-clobie_type: concept
+clobie_type: sf
 genre: sf
 mood: majestic
 tags:

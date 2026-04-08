@@ -1,7 +1,7 @@
 ---
 title: "우주 속 거대한 화물선과 우주 콜로니"
 date: 2026-03-19 03:35:09 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf-opera
 mood: majestic
 tags:

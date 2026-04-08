@@ -1,7 +1,7 @@
 ---
 title: "미래의 우주 탐험선"
 date: 2026-03-21 03:38:11 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: majestic
 tags:

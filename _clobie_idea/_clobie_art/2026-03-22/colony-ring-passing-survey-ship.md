@@ -1,7 +1,7 @@
 ---
 title: "우주 탐사의 순간"
 date: 2026-03-22 23:37:23 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: majestic
 tags:

@@ -1,7 +1,7 @@
 ---
 title: "우주를 가로지르는 탐사선"
 date: 2026-04-03 02:38:03 +0900
-clobie_type: concept
+clobie_type: sf
 genre: sf
 mood: calm
 tags:

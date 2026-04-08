@@ -1,7 +1,7 @@
 ---
 title: "우주 항공기 수리 작업 중"
 date: 2026-03-25 01:37:27 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: tense-calm
 tags:

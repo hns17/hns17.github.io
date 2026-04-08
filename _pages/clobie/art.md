@@ -13,15 +13,9 @@ classes: wide
 
 {% assign all_art = site.clobie_art | sort: 'date' | reverse %}
 {% assign character_items = site.clobie_art | where: 'clobie_type', 'character' %}
-{% assign character_items_plural = site.clobie_art | where: 'clobie_type', 'characters' %}
-{% assign character_items_human = site.clobie_art | where: 'clobie_type', 'human' %}
-{% assign character_items = character_items | concat: character_items_plural | concat: character_items_human | sort: 'date' | reverse %}
 {% assign creature_items = site.clobie_art | where: 'clobie_type', 'creature' %}
-{% assign monster_items = site.clobie_art | where: 'clobie_type', 'monster' %}
-{% assign background_items = site.clobie_art | where: 'clobie_type', 'background' %}
-{% assign concept_items = site.clobie_art | where: 'clobie_type', 'concept' %}
 {% assign scene_items = site.clobie_art | where: 'clobie_type', 'scene' %}
-{% assign mecha_items = site.clobie_art | where: 'clobie_type', 'mecha' %}
+{% assign sf_items = site.clobie_art | where: 'clobie_type', 'sf' %}
 
 <div class="clobie-grid clobie-grid--2 clobie-section-gap">
   <div class="clobie-card">
@@ -33,7 +27,7 @@ classes: wide
 
 ## 유형별 보기
 
-<div class="clobie-grid clobie-grid--3">
+<div class="clobie-grid clobie-grid--2">
   <a class="clobie-card clobie-card--link" href="{{ '/clobie/art/characters/' | relative_url }}">
     <p class="clobie-eyebrow">{{ character_items | size }}개 이미지</p>
     <h3>캐릭터</h3>
@@ -42,32 +36,17 @@ classes: wide
   <a class="clobie-card clobie-card--link" href="{{ '/clobie/art/creatures/' | relative_url }}">
     <p class="clobie-eyebrow">{{ creature_items | size }}개 이미지</p>
     <h3>생물</h3>
-    <p>동물, 수호수, 몬스터가 아닌 비인간 존재를 모아봅니다.</p>
-  </a>
-  <a class="clobie-card clobie-card--link" href="{{ '/clobie/art/monsters/' | relative_url }}">
-    <p class="clobie-eyebrow">{{ monster_items | size }}개 이미지</p>
-    <h3>몬스터</h3>
-    <p>괴수, 위협적인 비인간 존재, 다크 판타지 계열 작업을 모아봅니다.</p>
-  </a>
-  <a class="clobie-card clobie-card--link" href="{{ '/clobie/art/backgrounds/' | relative_url }}">
-    <p class="clobie-eyebrow">{{ background_items | size }}개 이미지</p>
-    <h3>배경</h3>
-    <p>풍경, 공간, 도시와 환경 중심 이미지를 모아봅니다.</p>
-  </a>
-  <a class="clobie-card clobie-card--link" href="{{ '/clobie/art/concepts/' | relative_url }}">
-    <p class="clobie-eyebrow">{{ concept_items | size }}개 이미지</p>
-    <h3>콘셉트/러프</h3>
-    <p>실험적인 프롬프트, 콘셉트 스케치, 러프 성격의 작업을 모아봅니다.</p>
+    <p>동물, 수호수, 괴수 같은 비인간 존재를 모아봅니다.</p>
   </a>
   <a class="clobie-card clobie-card--link" href="{{ '/clobie/art/scenes/' | relative_url }}">
     <p class="clobie-eyebrow">{{ scene_items | size }}개 이미지</p>
     <h3>장면</h3>
     <p>특정 순간의 구도와 분위기가 중심인 장면형 이미지를 모아봅니다.</p>
   </a>
-  <a class="clobie-card clobie-card--link" href="{{ '/clobie/art/mecha/' | relative_url }}">
-    <p class="clobie-eyebrow">{{ mecha_items | size }}개 이미지</p>
-    <h3>메카</h3>
-    <p>우주선, 장비, 기계적 구조물이 중심인 이미지를 모아봅니다.</p>
+  <a class="clobie-card clobie-card--link" href="{{ '/clobie/art/sf/' | relative_url }}">
+    <p class="clobie-eyebrow">{{ sf_items | size }}개 이미지</p>
+    <h3>SF</h3>
+    <p>우주선, 배경, 메카, 콘셉트 러프를 포함한 SF 계열 이미지를 모아봅니다.</p>
   </a>
 </div>
 
@@ -97,7 +76,7 @@ classes: wide
 
 ## 추천 메타데이터
 
-- `클로비 타입`: character / creature / monster / background / concept / scene / mecha / object
+- `클로비 타입`: character / creature / scene / sf
 - `장르`: fantasy / sf / mystery / horror / daily 등
 - `감성`: warm / calm / mystical / dreamy / dark / epic 등
 - `태그`: 탐색용 키워드

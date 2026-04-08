@@ -1,7 +1,7 @@
 ---
 title: "거대한 늑대 괴물과 폐허가 된 우주 식민지"
 date: 2026-03-22 16:37:43 +0900
-clobie_type: monster
+clobie_type: creature
 genre: dark-fantasy
 mood: ominous
 tags:

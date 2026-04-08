@@ -1,7 +1,7 @@
 ---
 title: "미래의 우주 식민지와 우주선"
 date: 2026-04-07 00:38:08 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: calm
 tags:

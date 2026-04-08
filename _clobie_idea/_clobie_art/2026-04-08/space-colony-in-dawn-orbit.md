@@ -1,7 +1,7 @@
 ---
 title: "새벽 궤도의 스페이스 콜로니"
 date: 2026-04-08 07:39:01 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: calm
 tags:

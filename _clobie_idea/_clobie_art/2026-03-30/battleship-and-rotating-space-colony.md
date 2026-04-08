@@ -1,7 +1,7 @@
 ---
 title: "우주 전함과 회전하는 우주 식민지"
 date: 2026-03-31 05:38:12 +0900
-clobie_type: concept
+clobie_type: sf
 genre: sf
 mood: dark
 tags:

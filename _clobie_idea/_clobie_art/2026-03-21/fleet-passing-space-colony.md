@@ -1,7 +1,7 @@
 ---
 title: "우주 함대와 거대한 우주 식민지"
 date: 2026-03-21 15:37:33 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: epic
 tags:

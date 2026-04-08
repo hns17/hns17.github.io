@@ -1,7 +1,7 @@
 ---
 title: "환승 허브 스페이스 콜로니 야경"
 date: 2026-04-08 14:38:59 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: dreamy
 tags:

@@ -1,7 +1,7 @@
 ---
 title: "우주를 가로지르는 미래형 우주선"
 date: 2026-04-01 19:39:19 +0900
-clobie_type: concept
+clobie_type: sf
 genre: sf
 mood: majestic
 tags:

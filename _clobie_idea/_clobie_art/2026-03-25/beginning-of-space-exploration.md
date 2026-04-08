@@ -1,7 +1,7 @@
 ---
 title: "우주 탐사의 시작"
 date: 2026-03-25 09:37:32 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: majestic
 tags:

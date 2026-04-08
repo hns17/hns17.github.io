@@ -1,7 +1,7 @@
 ---
 title: "우주 전투함의 위엄있는 비행"
 date: 2026-04-06 18:38:22 +0900
-clobie_type: concept
+clobie_type: sf
 genre: sf
 mood: dark
 tags:

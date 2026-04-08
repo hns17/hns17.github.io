@@ -1,7 +1,7 @@
 ---
 title: "우주 식민지의 도킹 베이"
 date: 2026-04-03 01:37:57 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: majestic
 tags:

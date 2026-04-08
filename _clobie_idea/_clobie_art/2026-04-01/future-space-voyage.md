@@ -1,7 +1,7 @@
 ---
 title: "미래의 우주 항해"
 date: 2026-04-02 19:37:26 +0900
-clobie_type: concept
+clobie_type: sf
 genre: sf
 mood: majestic
 tags:

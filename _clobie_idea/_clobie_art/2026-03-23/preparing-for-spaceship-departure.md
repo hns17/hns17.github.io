@@ -1,7 +1,7 @@
 ---
 title: "우주선의 출발 준비"
 date: 2026-03-24 00:37:07 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: tense-calm
 tags:

@@ -1,7 +1,7 @@
 ---
 title: "하드 SF 전투 직전의 전투함"
 date: 2026-03-22 22:38:43 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: tense
 tags:

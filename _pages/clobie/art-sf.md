@@ -1,15 +1,16 @@
 ---
-title: "Clobie - 콘셉트/러프"
-permalink: /clobie/art/concepts/
+title: "Clobie - SF"
+permalink: /clobie/art/sf/
 layout: single
 sidebar:
   title: "Clobie"
   nav: "_clobie"
+classes: wide
 ---
 
-콘셉트 스케치, 프롬프트 실험, 러프 작업을 모아보는 영역입니다.
+배경, 콘셉트/러프, 메카를 포함한 SF 계열 그림을 모아보는 영역입니다.
 
-{% assign items = site.clobie_art | where: "clobie_type", "concept" | sort: 'date' | reverse %}
+{% assign items = site.clobie_art | where: 'clobie_type', 'sf' | sort: 'date' | reverse %}
 {% if items.size > 0 %}
 <div class="clobie-gallery clobie-list" data-page-size="24">
   {% for item in items %}
@@ -20,5 +21,5 @@ sidebar:
   {% endfor %}
 </div>
 {% else %}
-<div class="clobie-empty">아직 등록된 콘셉트/러프 작업이 없습니다.</div>
+<div class="clobie-empty">아직 등록된 SF 작업이 없습니다.</div>
 {% endif %}

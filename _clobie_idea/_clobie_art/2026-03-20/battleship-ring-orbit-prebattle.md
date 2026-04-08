@@ -1,7 +1,7 @@
 ---
 title: "우주 전투함과 우주 거주지 링"
 date: 2026-03-20 15:37:38 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: tense
 tags:

@@ -1,7 +1,7 @@
 ---
 title: "우주를 가로지르는 전투함과 드론"
 date: 2026-03-27 14:37:52 +0900
-clobie_type: concept
+clobie_type: sf
 genre: sf
 mood: dark
 tags:

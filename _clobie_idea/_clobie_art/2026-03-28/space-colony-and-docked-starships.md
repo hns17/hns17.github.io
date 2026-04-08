@@ -1,7 +1,7 @@
 ---
 title: "우주식민지와 우주선의 만남"
 date: 2026-03-29 03:37:20 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: majestic
 tags:

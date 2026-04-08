@@ -1,7 +1,7 @@
 ---
 title: "우주도킹과 드론의 작업"
 date: 2026-03-24 15:37:11 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: tense-calm
 tags:

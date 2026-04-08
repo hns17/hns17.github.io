@@ -1,7 +1,7 @@
 ---
 title: "우주 탐사선과 드론의 여정"
 date: 2026-03-22 17:37:22 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: wondrous
 tags:

@@ -1,7 +1,7 @@
 ---
 title: "미래의 전투 로봇"
 date: 2026-03-25 03:37:53 +0900
-clobie_type: concept
+clobie_type: sf
 genre: sf
 mood: dark
 tags:
