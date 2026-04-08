@@ -1,7 +1,7 @@
 ---
 title: "Dawn Survey Ship Passing the Colony Ring"
 date: 2026-04-08 09:38:43 +0900
-clobie_type: scene
+clobie_type: sf
 genre: "hard sci-fi anime"
 mood: "majestic, calm, dawn"
 tags: ["spaceship", "space colony", "survey ship", "scene", "anime", "nonhuman"]
