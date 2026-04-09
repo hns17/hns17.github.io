@@ -30,8 +30,24 @@ document.addEventListener('DOMContentLoaded', () => {
     const items = Array.from(list.children).filter((el) => el.matches('article, .clobie-card, .clobie-gallery__item, a, div'));
     if (items.length <= pageSize) return;
 
-    let currentPage = 1;
+    const pageParam = `page-${listIndex + 1}`;
+    const readPageFromUrl = () => {
+      const params = new URLSearchParams(window.location.search);
+      const raw = parseInt(params.get(pageParam) || '1', 10);
+      return Number.isFinite(raw) && raw > 0 ? raw : 1;
+    };
+    const writePageToUrl = (page) => {
+      const url = new URL(window.location.href);
+      if (page <= 1) {
+        url.searchParams.delete(pageParam);
+      } else {
+        url.searchParams.set(pageParam, String(page));
+      }
+      window.history.replaceState({ ...(window.history.state || {}), [pageParam]: page }, '', url);
+    };
+
     const totalPages = Math.ceil(items.length / pageSize);
+    let currentPage = Math.min(readPageFromUrl(), totalPages);
 
     const nav = document.createElement('div');
     nav.className = 'clobie-pagination';
@@ -54,6 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
     list.after(nav);
 
     const render = () => {
+      currentPage = Math.max(1, Math.min(currentPage, totalPages));
       const start = (currentPage - 1) * pageSize;
       const end = start + pageSize;
       items.forEach((item, idx) => {
@@ -62,6 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
       prevBtn.disabled = currentPage === 1;
       nextBtn.disabled = currentPage === totalPages;
       status.textContent = `${currentPage} / ${totalPages}`;
+      writePageToUrl(currentPage);
     };
 
     prevBtn.addEventListener('click', () => {
@@ -78,6 +96,11 @@ document.addEventListener('DOMContentLoaded', () => {
         render();
         list.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
+    });
+
+    window.addEventListener('popstate', () => {
+      currentPage = Math.min(readPageFromUrl(), totalPages);
+      render();
     });
 
     render();
