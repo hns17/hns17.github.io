@@ -70,21 +70,29 @@ document.addEventListener('DOMContentLoaded', () => {
     nav.className = 'clobie-pagination';
     nav.setAttribute('data-list-index', String(listIndex));
 
-    const prevBtn = document.createElement('button');
-    prevBtn.type = 'button';
+    const prevBtn = document.createElement('a');
     prevBtn.className = 'clobie-pagination__btn';
     prevBtn.textContent = '이전';
 
     const status = document.createElement('span');
     status.className = 'clobie-pagination__status';
 
-    const nextBtn = document.createElement('button');
-    nextBtn.type = 'button';
+    const nextBtn = document.createElement('a');
     nextBtn.className = 'clobie-pagination__btn';
     nextBtn.textContent = '다음';
 
     nav.append(prevBtn, status, nextBtn);
     list.after(nav);
+
+    const buildPageUrl = (page) => {
+      const url = new URL(window.location.href);
+      if (page <= 1) {
+        url.searchParams.delete(pageParam);
+      } else {
+        url.searchParams.set(pageParam, String(page));
+      }
+      return url.toString();
+    };
 
     const render = () => {
       currentPage = Math.max(1, Math.min(currentPage, totalPages));
@@ -93,28 +101,30 @@ document.addEventListener('DOMContentLoaded', () => {
       items.forEach((item, idx) => {
         item.style.display = idx >= start && idx < end ? '' : 'none';
       });
-      prevBtn.disabled = currentPage === 1;
-      nextBtn.disabled = currentPage === totalPages;
+      prevBtn.classList.toggle('disabled', currentPage === 1);
+      nextBtn.classList.toggle('disabled', currentPage === totalPages);
+      prevBtn.setAttribute('aria-disabled', currentPage === 1 ? 'true' : 'false');
+      nextBtn.setAttribute('aria-disabled', currentPage === totalPages ? 'true' : 'false');
+      prevBtn.href = buildPageUrl(Math.max(1, currentPage - 1));
+      nextBtn.href = buildPageUrl(Math.min(totalPages, currentPage + 1));
       status.textContent = `${currentPage} / ${totalPages}`;
       writePageState(currentPage);
     };
 
-    prevBtn.addEventListener('click', () => {
-      if (currentPage > 1) {
-        currentPage -= 1;
-        writePageState(currentPage, 'push');
-        render();
-        list.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    prevBtn.addEventListener('click', (event) => {
+      if (currentPage === 1) {
+        event.preventDefault();
+        return;
       }
+      writePageState(Math.max(1, currentPage - 1));
     });
 
-    nextBtn.addEventListener('click', () => {
-      if (currentPage < totalPages) {
-        currentPage += 1;
-        writePageState(currentPage, 'push');
-        render();
-        list.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    nextBtn.addEventListener('click', (event) => {
+      if (currentPage === totalPages) {
+        event.preventDefault();
+        return;
       }
+      writePageState(Math.min(totalPages, currentPage + 1));
     });
 
     window.addEventListener('popstate', () => {
