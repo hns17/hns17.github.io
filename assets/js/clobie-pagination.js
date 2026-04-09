@@ -31,23 +31,40 @@ document.addEventListener('DOMContentLoaded', () => {
     if (items.length <= pageSize) return;
 
     const pageParam = `page-${listIndex + 1}`;
-    const readPageFromUrl = () => {
+    const storageKey = `clobie-pagination:${window.location.pathname}:${pageParam}`;
+    const readStoredPage = () => {
+      try {
+        const raw = parseInt(window.sessionStorage.getItem(storageKey) || '1', 10);
+        return Number.isFinite(raw) && raw > 0 ? raw : 1;
+      } catch {
+        return 1;
+      }
+    };
+    const readPageState = () => {
       const params = new URLSearchParams(window.location.search);
-      const raw = parseInt(params.get(pageParam) || '1', 10);
+      const raw = parseInt(params.get(pageParam) || `${readStoredPage()}`, 10);
       return Number.isFinite(raw) && raw > 0 ? raw : 1;
     };
-    const writePageToUrl = (page) => {
+    const writePageState = (page, mode = 'replace') => {
       const url = new URL(window.location.href);
       if (page <= 1) {
         url.searchParams.delete(pageParam);
       } else {
         url.searchParams.set(pageParam, String(page));
       }
-      window.history.replaceState({ ...(window.history.state || {}), [pageParam]: page }, '', url);
+      try {
+        window.sessionStorage.setItem(storageKey, String(page));
+      } catch {}
+      const state = { ...(window.history.state || {}), [pageParam]: page };
+      if (mode === 'push') {
+        window.history.pushState(state, '', url);
+      } else {
+        window.history.replaceState(state, '', url);
+      }
     };
 
     const totalPages = Math.ceil(items.length / pageSize);
-    let currentPage = Math.min(readPageFromUrl(), totalPages);
+    let currentPage = Math.min(readPageState(), totalPages);
 
     const nav = document.createElement('div');
     nav.className = 'clobie-pagination';
@@ -79,12 +96,13 @@ document.addEventListener('DOMContentLoaded', () => {
       prevBtn.disabled = currentPage === 1;
       nextBtn.disabled = currentPage === totalPages;
       status.textContent = `${currentPage} / ${totalPages}`;
-      writePageToUrl(currentPage);
+      writePageState(currentPage);
     };
 
     prevBtn.addEventListener('click', () => {
       if (currentPage > 1) {
         currentPage -= 1;
+        writePageState(currentPage, 'push');
         render();
         list.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
@@ -93,13 +111,14 @@ document.addEventListener('DOMContentLoaded', () => {
     nextBtn.addEventListener('click', () => {
       if (currentPage < totalPages) {
         currentPage += 1;
+        writePageState(currentPage, 'push');
         render();
         list.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
     });
 
     window.addEventListener('popstate', () => {
-      currentPage = Math.min(readPageFromUrl(), totalPages);
+      currentPage = Math.min(readPageState(), totalPages);
       render();
     });
 
