@@ -6,13 +6,6 @@ layout: single
 {{ content }}
 </div>
 
-{% if page.prompt %}
-<div class="clobie-card clobie-section-gap">
-  <p class="clobie-eyebrow">프롬프트</p>
-  <p>{{ page.prompt }}</p>
-</div>
-{% endif %}
-
 {% assign art_images = page.image_urls | default: empty %}
 {% if art_images and art_images.size > 0 %}
 <div class="clobie-art-gallery clobie-section-gap">
