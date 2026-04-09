@@ -112,19 +112,19 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     prevBtn.addEventListener('click', (event) => {
-      if (currentPage === 1) {
-        event.preventDefault();
-        return;
-      }
-      writePageState(Math.max(1, currentPage - 1));
+      event.preventDefault();
+      if (currentPage === 1) return;
+      const targetPage = Math.max(1, currentPage - 1);
+      writePageState(targetPage);
+      window.location.assign(buildPageUrl(targetPage));
     });
 
     nextBtn.addEventListener('click', (event) => {
-      if (currentPage === totalPages) {
-        event.preventDefault();
-        return;
-      }
-      writePageState(Math.min(totalPages, currentPage + 1));
+      event.preventDefault();
+      if (currentPage === totalPages) return;
+      const targetPage = Math.min(totalPages, currentPage + 1);
+      writePageState(targetPage);
+      window.location.assign(buildPageUrl(targetPage));
     });
 
     window.addEventListener('popstate', () => {
