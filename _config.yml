@@ -199,7 +199,6 @@ permalink: /:categories/:title/
 # paginate_path: /page:num/
 timezone: Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-collections_dir: _clobie_idea
 collections:
   clobie_writing:
     output: true
