@@ -21,7 +21,7 @@
   <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle Menu" }}</label>
   <ul class="nav__items">
     <li class="nav__summary">
-      📂 {{ summary_label }}
+      📂 {{ summary_label }} <span class="nav__summary-count">{{ sum }}</span>개
     </li>
 
     {% for nav in navigation %}
@@ -63,7 +63,7 @@
                     {% assign item_count = 0 %}
                   {% endif %}
                 {% endif %}
-                <li><a href="{{ child.url | relative_url }}"{% if child.url == page.url %} class="active"{% endif %}>{{ child.title }}{% unless include.nav == "_clobie" %}{% if item_count != nil %}({{ item_count }}){% endif %}{% endunless %}</a></li>
+                <li><a href="{{ child.url | relative_url }}"{% if child.url == page.url %} class="active"{% endif %}>{{ child.title }}{% if item_count != nil %}({{ item_count }}){% endif %}</a></li>
               {% endfor %}
             </ul>
           </details>
