@@ -1,7 +1,7 @@
 ---
 title: "오로라 궤도의 스페이스 콜로니와 수송선"
 date: 2026-04-09 12:42:40 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: serene-majestic
 tags:

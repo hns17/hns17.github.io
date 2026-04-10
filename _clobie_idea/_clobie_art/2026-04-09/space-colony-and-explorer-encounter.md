@@ -1,7 +1,7 @@
 ---
 title: "우주 식민지와 탐사선의 만남"
 date: 2026-04-09 07:38:40 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: majestic-mysterious
 tags:

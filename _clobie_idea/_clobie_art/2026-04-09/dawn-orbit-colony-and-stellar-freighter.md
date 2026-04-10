@@ -1,7 +1,7 @@
 ---
 title: "새벽 궤도 식민지와 항성 수송선"
 date: 2026-04-09 05:38:53 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: majestic-calm
 tags:

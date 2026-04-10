@@ -1,7 +1,7 @@
 ---
 title: "비 오는 아침의 강변 산책로"
 date: 2026-04-10 09:12:00 +0900
-clobie_type: background
+clobie_type: scene
 genre: daily
 mood: calm
 tags:

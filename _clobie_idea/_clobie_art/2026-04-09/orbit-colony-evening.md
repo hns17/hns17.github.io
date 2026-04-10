@@ -1,7 +1,7 @@
 ---
 title: "Orbit Colony Evening"
 date: 2026-04-09 02:39:00 +0900
-clobie_type: background-space-colony
+clobie_type: sf
 genre: sci-fi
 mood: majestic lonely everyday life
 tags:

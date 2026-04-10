@@ -1,7 +1,7 @@
 ---
 title: "황혼 성운의 탐사선과 링 콜로니"
 date: 2026-04-09 14:41:00 +0900
-clobie_type: background
+clobie_type: sf
 genre: sf
 mood: serene-wondrous
 tags:
