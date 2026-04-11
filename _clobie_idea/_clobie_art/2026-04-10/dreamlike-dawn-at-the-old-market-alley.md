@@ -1,7 +1,7 @@
 ---
 title: "새벽 구시장 골목의 몽환"
 date: 2026-04-10 20:45:00 +0900
-clobie_type: "archive"
+clobie_type: "scene"
 genre: "어반 느와르"
 mood: "몽환적인 공기감"
 tags:

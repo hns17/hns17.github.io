@@ -1,7 +1,7 @@
 ---
 title: "구름바다 망루의 어린 천사"
 date: 2026-04-10 20:45:00 +0900
-clobie_type: "archive"
+clobie_type: "character"
 genre: "스카이 판타지"
 mood: "차분한 결의"
 tags:

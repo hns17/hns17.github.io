@@ -1,7 +1,7 @@
 ---
 title: "비 갠 밤의 유리 아케이드 엘프"
 date: 2026-04-10 20:45:00 +0900
-clobie_type: "archive"
+clobie_type: "character"
 genre: "도시 판타지"
 mood: "잔잔한 긴장감"
 tags:

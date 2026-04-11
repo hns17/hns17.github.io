@@ -1,7 +1,7 @@
 ---
 title: "비 오는 오후의 강변 산책로"
 date: 2026-04-10 20:45:00 +0900
-clobie_type: "archive"
+clobie_type: "scene"
 genre: "일상/학원물"
 mood: "분주하지만 절제된 분위기"
 tags:

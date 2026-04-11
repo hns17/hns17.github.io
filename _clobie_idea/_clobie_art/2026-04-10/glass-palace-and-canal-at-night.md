@@ -1,7 +1,7 @@
 ---
 title: "밤의 유리 궁전과 운하"
 date: 2026-04-10 20:45:00 +0900
-clobie_type: "archive"
+clobie_type: "scene"
 genre: "도시 판타지"
 mood: "고요한 긴장감"
 tags:

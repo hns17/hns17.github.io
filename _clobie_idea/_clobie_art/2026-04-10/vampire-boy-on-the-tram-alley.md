@@ -1,7 +1,7 @@
 ---
 title: "트램 골목의 흡혈귀 소년"
 date: 2026-04-10 20:45:00 +0900
-clobie_type: "archive"
+clobie_type: "character"
 genre: "어반 느와르"
 mood: "차분한 결의"
 tags:
