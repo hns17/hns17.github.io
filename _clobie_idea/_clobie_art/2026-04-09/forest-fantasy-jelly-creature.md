@@ -17,10 +17,4 @@ source_model: "art-director-soft-atmospheric-anime"
 chatgpt_share_url: "https://chatgpt.com/s/m_69d7588b0cd48191b917a415ebf354e2"
 ---
 
-프롬프트 입력 템플릿
-- 유형: 생물
-- 장르/테마: 숲 판타지/이슬 맺힌 수목원 오솔길
-- 작화/스타일: 2D anime creature/nature illustration(비실사), cinematic creature key visual, 개체 중심, clear cel shading 2~3단
-- 분위기: 사냥 직전의 정적
-- 구도: wide establishing shot, eye-level
-- 옵션: 단일 개체 중심 + 분류/체형/질감/특징기관/서식 환경 랜덤 조합 + high resolution, ultra detailed, no text, no logo, no watermark
+Forest Fantasy Jelly Creature의 분위기와 공간감을 담아 정리한 클로비 창작 이미지 사냥 직전의 정적 분위기를 중심으로 정리했다.
