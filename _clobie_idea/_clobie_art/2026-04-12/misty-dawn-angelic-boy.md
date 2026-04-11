@@ -1,5 +1,5 @@
 ---
-title: "동양 판타지 소년·소녀 남성 천사형의 초상"
+title: "안개 새벽의 천사형 소년"
 date: "2026-04-12 00:43:14 +0900"
 clobie_type: "character"
 genre: "동양 판타지"
@@ -16,5 +16,5 @@ source_model: "Art Director Cinematic Cel Style"
 chatgpt_share_url: "https://chatgpt.com/g/g-699cd04b3fe88191813f60ecabf64a38-art-director-cinematic-cel-style/c/69da6bdf-48fc-83e8-85ec-eda08e181bae"
 ---
 
-동양 판타지의 결을 입은 천사형 캐릭터를 중심에 세운 작품이다.
+안개 낀 새벽의 나루터 회랑을 배경으로 천사형 소년의 고요한 존재감을 담아낸 작품이다.
 전경의 선명함과 후경의 부드러운 대기감을 분리해 장면의 몰입감을 강조했다.
