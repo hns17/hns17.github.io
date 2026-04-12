@@ -1,5 +1,5 @@
 ---
-title: "스팀펑크의 식물/덩굴"
+title: "황동빛 부유 덩굴"
 date: "2026-04-12 16:42:59 +0900"
 clobie_type: "creature"
 genre: "스팀펑크"
