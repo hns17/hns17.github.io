@@ -1,5 +1,5 @@
 ---
-title: "설원 절벽의 식물/꽃"
+title: "설원 절벽에 핀 스팀펑크 꽃"
 date: "2026-04-14 08:43:34 +0900"
 clobie_type: "creature"
 genre: "스팀펑크"
@@ -16,5 +16,5 @@ source_tool: "ChatGPT Art Director GPT"
 source_model: "art-director-soft-atmospheric-anime"
 chatgpt_share_url: ""
 ---
-스팀펑크 무드가 스민 공간 속에서 식물/꽃이 또렷한 실루엣으로 떠오르며 낯설고도 아름다운 생명감을 만든다.
+스팀펑크 무드가 스민 설원 절벽 위에 한 송이 꽃이 또렷한 실루엣으로 떠오르며 낯설고도 아름다운 생명감을 만든다.
 질감과 공기층의 대비가 살아 있어 한순간의 조우를 기록한 듯한 분위기를 남긴다.
