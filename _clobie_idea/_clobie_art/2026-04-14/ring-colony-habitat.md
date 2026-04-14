@@ -1,5 +1,5 @@
 ---
-title: "콜로니 SF의 스페이스 콜로니"
+title: "도킹 링 너머의 환형 콜로니"
 date: 2026-04-14 18:43:18 +0900
 clobie_type: sf
 genre: "콜로니 SF"
