@@ -28,6 +28,10 @@ classes: wide
 ## 유형별 보기
 
 <div class="clobie-type-nav clobie-section-gap">
+  <a class="clobie-type-pill" href="{{ '/clobie/art/' | relative_url }}">
+    <strong>전체</strong>
+    <span>{{ all_art | size }}</span>
+  </a>
   <a class="clobie-type-pill" href="{{ '/clobie/art/characters/' | relative_url }}">
     <strong>캐릭터</strong>
     <span>{{ character_items | size }}</span>
@@ -70,11 +74,3 @@ classes: wide
 </div>
 {% endif %}
 
-## 추천 메타데이터
-
-- `클로비 타입`: character / creature / scene / sf
-- `장르`: fantasy / sf / mystery / horror / daily 등
-- `감성`: warm / calm / mystical / dreamy / dark / epic 등
-- `태그`: 탐색용 키워드
-- `image_url`: clobie-image-container의 최종 PNG URL
-- `prompt`, `source_tool`, `source_model`, `chatgpt_share_url`: 생성 기록용
