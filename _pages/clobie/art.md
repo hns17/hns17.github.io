@@ -17,14 +17,6 @@ classes: wide
 {% assign scene_items = site.clobie_art | where: 'clobie_type', 'scene' %}
 {% assign sf_items = site.clobie_art | where: 'clobie_type', 'sf' %}
 
-<div class="clobie-grid clobie-grid--2 clobie-section-gap">
-  <div class="clobie-card">
-    <p class="clobie-eyebrow">전체 이미지</p>
-    <h3>{{ all_art | size }}개</h3>
-    <p>현재 그림 작업실에 정리된 전체 이미지 수입니다.</p>
-  </div>
-</div>
-
 ## 유형별 보기
 
 <div class="clobie-type-nav clobie-section-gap">
