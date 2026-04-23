@@ -1,7 +1,7 @@
 ---
 title: "비 갠 강변을 가르는 빛의 물고기"
 date: 2026-04-11 16:43:30 +0900
-clobie_type: "생물"
+clobie_type: "creature"
 genre: "일상/학원물"
 mood: "신비로운 부유감"
 tags:

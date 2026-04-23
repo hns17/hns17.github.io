@@ -1,4 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const resetTypeNavPageState = () => {
+    document.querySelectorAll('.clobie-type-nav a[href]').forEach((link) => {
+      link.addEventListener('click', () => {
+        try {
+          Object.keys(window.sessionStorage).forEach((key) => {
+            if (key.startsWith('clobie-pagination:')) {
+              window.sessionStorage.removeItem(key);
+            }
+          });
+        } catch {}
+      });
+    });
+  };
+
   const formatRelativeTime = (isoString) => {
     const target = new Date(isoString).getTime();
     if (Number.isNaN(target)) return '';
@@ -134,4 +148,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     render();
   });
+
+  resetTypeNavPageState();
 });
