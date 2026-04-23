@@ -53,7 +53,7 @@ classes: wide
 ## 최근 이미지
 
 {% if all_art.size > 0 %}
-<div class="clobie-gallery clobie-list" data-page-size="24">
+<div class="clobie-gallery clobie-list" data-page-size="9">
   {% for item in all_art %}
   <a class="clobie-gallery__item" href="{{ item.url | relative_url }}">
     {% if item.image_url %}
