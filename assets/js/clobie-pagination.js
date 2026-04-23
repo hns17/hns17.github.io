@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
   const resetTypeNavPageState = () => {
     document.querySelectorAll('.clobie-type-nav a[href]').forEach((link) => {
-      link.addEventListener('click', () => {
+      link.addEventListener('click', (event) => {
+        event.preventDefault();
         try {
           Object.keys(window.sessionStorage).forEach((key) => {
             if (key.startsWith('clobie-pagination:')) {
@@ -9,6 +10,15 @@ document.addEventListener('DOMContentLoaded', () => {
             }
           });
         } catch {}
+
+        const targetUrl = new URL(link.href, window.location.origin);
+        Array.from(targetUrl.searchParams.keys()).forEach((key) => {
+          if (/^page-\d+$/.test(key)) {
+            targetUrl.searchParams.delete(key);
+          }
+        });
+
+        window.location.assign(targetUrl.pathname + targetUrl.search + targetUrl.hash);
       });
     });
   };
