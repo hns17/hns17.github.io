@@ -1,0 +1,13 @@
+{
+  "template": "프롬프트 입력 템플릿\n- 유형: 생물\n- 장르/테마: 해양 고딕/해무 낀 절벽 등대 산책로\n- 작화/스타일: 2D anime creature/nature illustration(비실사), cinematic creature key visual, 개체 중심, clear cel shading 2~3단\n- 분위기: 온순하지만 낯선 아름다움\n- 구도: full-body, eye-level\n- 옵션: 단일 개체 중심 + 분류/체형/질감/특징기관/서식 환경 랜덤 조합 + high resolution, ultra detailed, no text, no logo, no watermark",
+  "prompt": "2D anime botanical illustration(비실사), cinematic nature key visual, full-body, eye-level. 해양 고딕 분위기의 식물 / 버섯, 단일 개체 중심. Growth scale/form: 중형. Surface/leaf/petal texture: rubbery stem. Distinct traits: layered cap rings, spore halo. Accent color: silver. Habitat: 온실 수로. Background keywords: sea fog, wet stone railing, distant lighthouse beam. Mood: 온순하지만 낯선 아름다움. Plant morphology, leaf/petal structure, stem growth pattern, and silhouette readability prioritized. No large colony/field composition; focus on one main botanical subject. clear cel shading 2~3단, ambient lighting + ambient occlusion, high resolution, ultra detailed, no text, no logo, no watermark",
+  "imageLinks": [
+    "https://raw.githubusercontent.com/cubixkernel/clobie-image-container/main/generated/2026/04/28/2d-anime-botanical-illustration-비실사-cinematic-nature-key-visual-full-body-eye-le-a6adc048d9-a231a9efb5.png"
+  ],
+  "imageLink": "https://raw.githubusercontent.com/cubixkernel/clobie-image-container/main/generated/2026/04/28/2d-anime-botanical-illustration-비실사-cinematic-nature-key-visual-full-body-eye-le-a6adc048d9-a231a9efb5.png",
+  "selectedUrl": "https://chatgpt.com/g/g-699d949806988191b9354c13ffd805b5-art-director-soft-atmospheric-anime",
+  "docPath": "/Users/cubix/Desktop/git/hns17.github.io/_clobie_idea/_clobie_art/2026-04-28/creature-ocean-gothic-plant-mushroom-full-body.md",
+  "title": "해양 고딕의 식물/버섯",
+  "slug": "creature-ocean-gothic-plant-mushroom-full-body",
+  "chatgptShareUrl": ""
+}
