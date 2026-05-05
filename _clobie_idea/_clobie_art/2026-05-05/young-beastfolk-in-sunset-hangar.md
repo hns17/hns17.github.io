@@ -1,5 +1,5 @@
 ---
-title: "스팀펑크의 청춘의 수인"
+title: "노을빛 격납고의 젊은 수인"
 date: 2026-05-05 23:46:47 +0900
 clobie_type: character
 genre: 스팀펑크
