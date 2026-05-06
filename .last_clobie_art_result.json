@@ -1,13 +1,13 @@
 {
-  "template": "프롬프트 입력 템플릿\n- 유형: 생물\n- 장르/테마: 해양 고딕/해무 낀 절벽 등대 산책로\n- 작화/스타일: 2D anime creature/nature illustration(비실사), cinematic creature key visual, 개체 중심, clear cel shading 2~3단\n- 분위기: 온순하지만 낯선 아름다움\n- 구도: full-body, eye-level\n- 옵션: 단일 개체 중심 + 분류/체형/질감/특징기관/서식 환경 랜덤 조합 + high resolution, ultra detailed, no text, no logo, no watermark",
-  "prompt": "2D anime botanical illustration(비실사), cinematic nature key visual, full-body, eye-level. 해양 고딕 분위기의 식물 / 버섯, 단일 개체 중심. Growth scale/form: 중형. Surface/leaf/petal texture: rubbery stem. Distinct traits: layered cap rings, spore halo. Accent color: silver. Habitat: 온실 수로. Background keywords: sea fog, wet stone railing, distant lighthouse beam. Mood: 온순하지만 낯선 아름다움. Plant morphology, leaf/petal structure, stem growth pattern, and silhouette readability prioritized. No large colony/field composition; focus on one main botanical subject. clear cel shading 2~3단, ambient lighting + ambient occlusion, high resolution, ultra detailed, no text, no logo, no watermark",
+  "template": "프롬프트 입력 템플릿\n- 유형: 장면\n- 장르/테마: 어반 느와르/트램이 지나는 구시장 골목\n- 작화/스타일: 2D anime environment illustration(비실사), cinematic environmental key visual, 공간감 중심, clear cel shading 2~3단\n- 분위기: 몽환적인 공기감\n- 구도: eye-level environmental shot\n- 옵션: 장소/시간/날씨/광원/랜드마크 랜덤 조합 + 장면 모드=인물/생물 소수 포함 장면 + high resolution, ultra detailed, no text, no logo, no watermark",
+  "prompt": "2D anime environment illustration(비실사), cinematic environmental key visual, eye-level environmental shot. 어반 느와르 장르의 심야 플랫폼. Weather: 맑음. Lighting: warm lantern glow. Core theme: 트램이 지나는 구시장 골목. Background keywords: old tram street, pale daylight reflections, light dust haze. Environmental landmarks: 현수 깃발, 유리돔, 난간. Mood: 몽환적인 공기감. Scene mode: 인물/생물 소수 포함 장면 — 장면 보조용 인물이나 생물 1~3개체를 작게 포함 가능, 또는 꽃밭이 넓게 퍼져 있음. Group elements like schools of fish, flocks of birds, mushroom fields, flower meadows, or creature clusters belong here when they support the environment as a scene. strong sense of place, layered depth, soft atmospheric separation, clear cel shading 2~3단, ambient lighting + ambient occlusion, high resolution, ultra detailed, no text, no logo, no watermark",
   "imageLinks": [
-    "https://raw.githubusercontent.com/cubixkernel/clobie-image-container/main/generated/2026/04/28/2d-anime-botanical-illustration-비실사-cinematic-nature-key-visual-full-body-eye-le-a6adc048d9-a231a9efb5.png"
+    "https://raw.githubusercontent.com/cubixkernel/clobie-image-container/main/generated/2026/05/06/2d-anime-environment-illustration-비실사-cinematic-environmental-key-visual-eye-lev-500af11e69-d7de2a5e55.png"
   ],
-  "imageLink": "https://raw.githubusercontent.com/cubixkernel/clobie-image-container/main/generated/2026/04/28/2d-anime-botanical-illustration-비실사-cinematic-nature-key-visual-full-body-eye-le-a6adc048d9-a231a9efb5.png",
-  "selectedUrl": "https://chatgpt.com/g/g-699d949806988191b9354c13ffd805b5-art-director-soft-atmospheric-anime",
-  "docPath": "/Users/cubix/Desktop/git/hns17.github.io/_clobie_idea/_clobie_art/2026-04-28/creature-ocean-gothic-plant-mushroom-full-body.md",
-  "title": "해양 고딕의 식물/버섯",
-  "slug": "creature-ocean-gothic-plant-mushroom-full-body",
+  "imageLink": "https://raw.githubusercontent.com/cubixkernel/clobie-image-container/main/generated/2026/05/06/2d-anime-environment-illustration-비실사-cinematic-environmental-key-visual-eye-lev-500af11e69-d7de2a5e55.png",
+  "selectedUrl": "https://chatgpt.com/g/g-699cd04b3fe88191813f60ecabf64a38-art-director-cinematic-cel-style",
+  "docPath": "/Users/cubix/Desktop/git/hns17.github.io/_clobie_idea/_clobie_art/2026-05-06/midnight-platform-of-the-old-tram-market.md",
+  "title": "심야 플랫폼의 오래된 트램 시장",
+  "slug": "midnight-platform-of-the-old-tram-market",
   "chatgptShareUrl": ""
 }
