@@ -1,9 +1,9 @@
 ---
-title: "해양 고딕의 인간"
+title: "등대 안개 앞의 젊은 남자"
 date: 2026-05-07 12:47:41 +0900
 clobie_type: "character"
 genre: "해양 고딕"
-mood: ""
+mood: "조용한 자신감"
 tags:
   - 캐릭터
   - 해양 고딕
@@ -14,5 +14,5 @@ source_tool: "chatgpt"
 source_model: "art-director-cinematic-cel-style"
 chatgpt_share_url: ""
 ---
-해양 고딕 특유의 공기 속에 선 인간 캐릭터가 화면 중심에서 또렷한 존재감을 남긴다.
-선명한 전경과 부드럽게 물러난 배경의 대비가 thigh-up 구도 안에서 조용한 몰입감을 만든다.
+해무와 젖은 석조 난간, 멀리 스치는 등대 빛 사이로 젊은 남자가 조용하지만 분명한 존재감을 남긴다.
+해양 고딕의 서늘한 공기와 절제된 자신감이 맞물리며, 짧은 순간 안에 한 편의 서사를 응축해낸다.
