@@ -12,7 +12,7 @@ tags:
 image_url: "https://raw.githubusercontent.com/cubixkernel/clobie-image-container/main/generated/2026/05/10/2d-anime-illustration-비실사-cinematic-key-visual-full-body-eye-level-10대-여성-수인-캐릭터-23e91439c7-7490cca91f.png"
 prompt: "2D anime illustration(비실사), cinematic key visual, full-body, eye-level. 10대 여성 수인 캐릭터 1명. Genre/theme: 스카이 판타지, 구름바다 위 성채 망루. Background keywords: floating bastion deck, cloud sea, dawn haze, character crisp and background soft atmospheric. Mood: 잔잔한 긴장감. clear cel shading 2~3단, ambient lighting + ambient occlusion, high resolution, ultra detailed, no text, no logo, no watermark"
 source_tool: "ChatGPT image flow"
-source_model: "anime"
+source_model: "art-director-soft-atmospheric-anime"
 chatgpt_share_url: ""
 ---
 
