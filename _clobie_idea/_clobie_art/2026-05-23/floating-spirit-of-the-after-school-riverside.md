@@ -1,5 +1,5 @@
 ---
-title: "일상/학원물의 환상 생물/정령체"
+title: "방과후 강변의 부유 정령"
 date: 2026-05-23 22:28:35 +0900
 clobie_type: "creature"
 genre: "일상/학원물"
@@ -15,5 +15,5 @@ source_tool: "chatgpt-art-director"
 source_model: "art-director-soft-atmospheric-anime"
 chatgpt_share_url: ""
 ---
-일상/학원물의 환상 생물/정령체은(는) 낯선 개체의 질감과 실루엣을 또렷하게 세운 작품이다.
-배경의 대기감은 한 발 물러서고, 중심 피사체의 생명감만 잔잔하게 떠오른다.
+비 그친 방과후 강변의 공기 위로 작은 정령이 조용히 떠오르는 순간을 붙잡은 작품이다.
+가벼운 빛의 결로 드러난 실루엣과 부드럽게 물러나는 배경이 차분한 환상을 남긴다.
