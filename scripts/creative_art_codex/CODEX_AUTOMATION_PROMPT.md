@@ -26,6 +26,20 @@ fails, report the failing step and stderr, then rerun only the publish command
 when appropriate. The publisher reads the Discord webhook from
 `CREATIVE_ART_DISCORD_WEBHOOK_URL` or the macOS Keychain service
 `creative-art-discord-webhook-url`. Do not regenerate the image for the same run.
+After the publisher completes successfully, archive the successful Codex session
+by running:
+
+```bash
+python3 scripts/creative_art_codex/archive_successful_session.py
+```
+
+Run that archive command with `sandbox_permissions="require_escalated"`, a
+justification asking to allow moving the successful Codex session into
+`~/.codex/archived_sessions`, and
+`prefix_rule=["python3", "scripts/creative_art_codex/archive_successful_session.py"]`.
+If the workflow ultimately fails, do not run the archive command; leave a concise
+failure report with the failing step and stderr so it remains visible for
+follow-up.
 
 ## Metadata Shape
 
