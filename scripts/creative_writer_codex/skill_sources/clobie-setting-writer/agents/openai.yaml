@@ -1,0 +1,4 @@
+interface:
+  display_name: "Clobie Setting Writer"
+  short_description: "Write deep Clobie setting concept drafts"
+  default_prompt: "Use this to write one Clobie setting concept draft JSON from the current creative writer run."

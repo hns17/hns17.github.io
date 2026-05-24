@@ -1,5 +1,5 @@
 ---
-title: "Clobie - 스토리"
+title: "Clobie - 이야기 조각"
 permalink: /clobie/writing/stories/
 layout: single
 sidebar:
@@ -8,15 +8,15 @@ sidebar:
 classes: wide
 ---
 
-짧은 이야기, 장면 스케치, 에피소드 중심의 글을 모아두는 영역입니다.
+짧은 이야기, 장면 스케치, 에피소드 중심의 이야기 조각을 모아두는 영역입니다.
 
 {% assign items = site.clobie_writing | where: 'clobie_type', 'stories' | sort: 'date' | reverse %}
 
 <div class="clobie-grid clobie-grid--3 clobie-section-gap">
   <div class="clobie-card">
-    <p class="clobie-eyebrow">스토리 문서</p>
+    <p class="clobie-eyebrow">이야기 조각 문서</p>
     <h3>{{ items | size }}개</h3>
-    <p>클로비 작업실에 정리된 스토리 문서 수입니다.</p>
+    <p>클로비 작업실에 정리된 이야기 조각 문서 수입니다.</p>
   </div>
   <a class="clobie-card clobie-card--link" href="{{ '/clobie/writing/archive/' | relative_url }}">
     <p class="clobie-eyebrow">시간 흐름</p>
@@ -50,5 +50,5 @@ classes: wide
   {% endfor %}
 </div>
 {% else %}
-<div class="clobie-empty">아직 등록된 스토리 글이 없습니다.</div>
+<div class="clobie-empty">아직 등록된 이야기 조각 글이 없습니다.</div>
 {% endif %}

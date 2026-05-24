@@ -11,10 +11,9 @@ classes: wide
 
 글 작업실은 디스코드 글 채널과 원본 md 문서에서 올라온 창작물을 **유형 중심 아카이브**로 다시 묶는 공간입니다.
 
-{% assign all_writings = site.clobie_writing | sort: 'date' | reverse %}
+{% assign all_writings = site.clobie_writing | where_exp: 'item', 'item.clobie_type != "notes"' | sort: 'date' | reverse %}
 {% assign setting_count = site.clobie_writing | where: 'clobie_type', 'settings' | size %}
 {% assign story_count = site.clobie_writing | where: 'clobie_type', 'stories' | size %}
-{% assign note_count = site.clobie_writing | where: 'clobie_type', 'notes' | size %}
 
 <div class="clobie-grid clobie-grid--2">
   <div class="clobie-card">
@@ -24,7 +23,7 @@ classes: wide
   </div>
   <div class="clobie-card">
     <p class="clobie-eyebrow">유형 분포</p>
-    <h3>설정 {{ setting_count }} · 스토리 {{ story_count }}{% if note_count > 0 %} · 메모 {{ note_count }}{% endif %}</h3>
+    <h3>설정 {{ setting_count }} · 이야기 조각 {{ story_count }}</h3>
     <p>기본 탐색 축은 유형 기준입니다.</p>
   </div>
 </div>
@@ -84,13 +83,13 @@ classes: wide
 </div>
 {% else %}
 <div class="clobie-empty">
-  아직 등록된 글이 없습니다. 추후 디스코드 글 채널의 작업물을 설정 / 스토리 / 메모로 분류해 이곳에 연결할 예정입니다.
+  아직 등록된 글이 없습니다. 추후 디스코드 글 채널의 작업물을 설정 / 이야기 조각으로 분류해 이곳에 연결할 예정입니다.
 </div>
 {% endif %}
 
 ## 추천 메타데이터
 
-- `클로비 타입`: 설정 / 스토리 / 메모
+- `클로비 타입`: 설정 / 이야기 조각
 - `장르`: 판타지 / SF / 미스터리 / 공포 / 일상 / 감성 / 드라마 등
 - `태그`: 탐색용 키워드
 - `source_channel`, `source_message_id`: 디스코드 원본 추적용

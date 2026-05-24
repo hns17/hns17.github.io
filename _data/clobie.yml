@@ -3,11 +3,8 @@ writing_types:
     title: 설정
     description: 세계관, 조직, 규칙, 시스템, 캐릭터 프로필 같은 구조적 자료
   - key: stories
-    title: 스토리
+    title: 이야기 조각
     description: 짧은 이야기, 장면 스케치, 에피소드, 독립 단편
-  - key: notes
-    title: 메모
-    description: 아이디어 파편, 제목 후보, 짧은 컨셉 기록
 
 art_types:
   - key: characters
@@ -31,8 +28,7 @@ writing_genres:
 
 writing_type_labels:
   settings: 설정
-  stories: 스토리
-  notes: 메모
+  stories: 이야기 조각
 
 writing_genre_labels:
   fantasy: 판타지
@@ -47,7 +43,7 @@ writing_genre_labels:
 writing_tag_labels:
   설정: 설정
   이야기: 이야기
-  스토리: 스토리
+  스토리: 이야기 조각
   판타지: 판타지
   SF: SF
   미스터리: 미스터리

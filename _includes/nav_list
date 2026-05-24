@@ -45,8 +45,6 @@
                     {% assign item_count = site.clobie_writing | where: 'clobie_type', 'settings' | size %}
                   {% elsif child.url == '/clobie/writing/stories/' %}
                     {% assign item_count = site.clobie_writing | where: 'clobie_type', 'stories' | size %}
-                  {% elsif child.url == '/clobie/writing/notes/' %}
-                    {% assign item_count = site.clobie_writing | where: 'clobie_type', 'notes' | size %}
                   {% elsif child.url == '/clobie/art/characters/' %}
                     {% assign item_count = site.clobie_art | where: 'clobie_type', 'characters' | size %}
                   {% elsif child.url == '/clobie/art/backgrounds/' %}

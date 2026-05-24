@@ -11,7 +11,8 @@ classes: wide
 태그별 보기는 자주 반복되는 주제와 분위기를 기준으로 글을 모아보는 페이지입니다.
 
 {% assign tag_pool = '' | split: '' %}
-{% for post in site.clobie_writing %}
+{% assign writings = site.clobie_writing | where_exp: 'item', 'item.clobie_type != "notes"' | sort: 'date' | reverse %}
+{% for post in writings %}
   {% if post.tags %}
     {% assign tag_pool = tag_pool | concat: post.tags %}
   {% endif %}
@@ -23,7 +24,7 @@ classes: wide
   {% for tag in uniq_tags %}
     {% assign tag_label = site.data.clobie.writing_tag_labels[tag] | default: tag %}
     {% assign tag_count = 0 %}
-    {% for post in site.clobie_writing %}
+    {% for post in writings %}
       {% if post.tags contains tag %}
         {% assign tag_count = tag_count | plus: 1 %}
       {% endif %}
@@ -39,7 +40,7 @@ classes: wide
   {% assign tag_label = site.data.clobie.writing_tag_labels[tag] | default: tag %}
   <h2 id="tag-{{ tag | slugify }}">{{ tag_label }}</h2>
   <div class="clobie-list" data-page-size="5">
-    {% for post in site.clobie_writing %}
+    {% for post in writings %}
       {% if post.tags contains tag %}
       {% assign type_label = site.data.clobie.writing_type_labels[post.clobie_type] | default: post.clobie_type %}
       <article class="clobie-card">

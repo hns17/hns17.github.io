@@ -11,7 +11,7 @@ classes: wide
 
 날짜별 아카이브는 클로비 글 작업실의 문서를 **작성일 기준으로 묶어** 보는 페이지입니다.
 
-{% assign all_writings = site.clobie_writing | sort: 'date' | reverse %}
+{% assign all_writings = site.clobie_writing | where_exp: 'item', 'item.clobie_type != "notes"' | sort: 'date' | reverse %}
 {% assign dates = all_writings | group_by_exp: 'item', 'item.date | date: "%Y-%m-%d"' %}
 
 {% if dates.size > 0 %}

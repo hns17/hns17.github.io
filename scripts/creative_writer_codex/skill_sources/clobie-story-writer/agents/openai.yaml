@@ -1,0 +1,4 @@
+interface:
+  display_name: "Clobie Story Writer"
+  short_description: "Write lyrical Clobie story fragment drafts"
+  default_prompt: "Use this to write one deep Clobie story fragment draft JSON from the current creative writer run."
