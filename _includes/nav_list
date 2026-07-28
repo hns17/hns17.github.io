@@ -33,7 +33,8 @@
             </summary>
             <ul>
               {% for child in nav.children %}
-                {% assign index_key = nav.title | append: "/" | append: child.title %}
+                {% assign default_index_key = nav.title | append: "/" | append: child.title %}
+                {% assign index_key = child.category | default: default_index_key %}
                 {% assign category = site.categories[index_key] %}
                 {% assign item_count = child.count %}
                 {% if include.nav == "_clobie" and item_count == nil %}

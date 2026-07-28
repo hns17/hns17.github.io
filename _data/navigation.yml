@@ -10,38 +10,46 @@ main:
    
    
 _posts:
-    - title: "Git"
+    - title: "Graphics"
       children:
-      - title: "Git"
-        url: /category/git/git/
-      - title: "GitPage"
-        url: /category/git/gitpage/
+      - title: "Knowledge"
+        category: "Graphics/Knowledge"
+        url: /category/graphics/knowledge/
+      - title: "Unity"
+        category: "Graphics/Unity"
+        url: /category/graphics/unity/
     - title: "Programming"
       children:
       - title: "Knowledge"
+        category: "Programming/Knowledge"
         url: /category/programming/knowledge/
-      - title: C#
+      - title: "CSharp"
+        category: "Programming/CSharp"
         url: /category/programming/csharp/
-    - title: "Unity"
+      - title: "Unity"
+        category: "Programming/Unity"
+        url: /category/programming/unity/
+    - title: "Tools"
       children:
-      - title: "Knowledge"
-        url: /category/unity/knowledge/
-      - title: "SupportFeatures"
-        url: /category/unity/supportfeatures/
-      - title: "Issue"
-        url: /category/unity/issue
-      - title: "External(Asset/Lib/Etc)"
-        url: /category/unity/external/
-    - title: "Daily"
-      children:
-      - title: Life
-        url: /category/daily/life
-      - title: Work
-        url: /category/daily/work
-    - title: "Project"
+      - title: "Git"
+        category: "Tools/Git"
+        url: /category/tools/git/
+      - title: "Unity Editor"
+        category: "Tools/UnityEditor"
+        url: /category/tools/unity-editor/
+    - title: "Projects"
       children:
       - title: "Portfolio"
-        url: /category/project/portfolio/
+        category: "Projects/Portfolio"
+        url: /category/projects/portfolio/
+      - title: "Work Log"
+        category: "Projects/WorkLog"
+        url: /category/projects/work-log/
+    - title: "Daily"
+      children:
+      - title: "Life"
+        category: "Daily/Life"
+        url: /category/daily/life/
 
 _clobie:
     - title: "개요"
