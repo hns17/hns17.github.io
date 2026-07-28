@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+  <title id="title">.NET 실행 모델이 만들어진 흐름</title>
+  <desc id="desc">여러 프로그래밍 언어가 공통 중간 언어와 메타데이터를 생성하고 CLR이 운영체제와 CPU에 맞는 기계어로 실행하는 구조</desc>
+  <defs>
+    <linearGradient id="header" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#25364d"/>
+      <stop offset="1" stop-color="#176b87"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#162232" flood-opacity=".14"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#547085"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="430" rx="28" fill="#f6f8fb"/>
+  <rect x="30" y="24" width="1140" height="65" rx="18" fill="url(#header)"/>
+  <text x="600" y="65" text-anchor="middle" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="27" font-weight="700" fill="#fff">.NET의 핵심 발상: 언어와 CPU 사이에 공통 실행 계층을 둔다</text>
+
+  <g filter="url(#shadow)">
+    <rect x="50" y="133" width="200" height="238" rx="22" fill="#fff"/>
+    <rect x="325" y="133" width="250" height="238" rx="22" fill="#fff"/>
+    <rect x="650" y="133" width="215" height="238" rx="22" fill="#fff"/>
+    <rect x="940" y="133" width="210" height="238" rx="22" fill="#fff"/>
+  </g>
+
+  <text x="150" y="174" text-anchor="middle" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="22" font-weight="700" fill="#25364d">여러 언어</text>
+  <rect x="83" y="200" width="58" height="44" rx="10" fill="#7354b6"/><text x="112" y="229" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700" fill="#fff">C#</text>
+  <rect x="158" y="200" width="58" height="44" rx="10" fill="#3d78b8"/><text x="187" y="229" text-anchor="middle" font-family="Arial" font-size="18" font-weight="700" fill="#fff">VB</text>
+  <rect x="83" y="259" width="58" height="44" rx="10" fill="#347c62"/><text x="112" y="288" text-anchor="middle" font-family="Arial" font-size="18" font-weight="700" fill="#fff">F#</text>
+  <rect x="158" y="259" width="58" height="44" rx="10" fill="#9a6234"/><text x="187" y="288" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#fff">C++</text>
+  <text x="150" y="338" text-anchor="middle" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="17" fill="#5f6f7d">각 언어의 컴파일러</text>
+
+  <text x="450" y="174" text-anchor="middle" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="22" font-weight="700" fill="#25364d">공통 결과물</text>
+  <rect x="362" y="203" width="176" height="62" rx="14" fill="#e6f5fa" stroke="#2090ad" stroke-width="2"/>
+  <text x="450" y="242" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#176b87">CIL / IL</text>
+  <rect x="362" y="282" width="176" height="50" rx="14" fill="#eef0f8" stroke="#6f79a5" stroke-width="2"/>
+  <text x="450" y="314" text-anchor="middle" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="19" font-weight="700" fill="#4c577e">타입 메타데이터</text>
+
+  <text x="757" y="174" text-anchor="middle" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="22" font-weight="700" fill="#25364d">CLR 런타임</text>
+  <circle cx="757" cy="244" r="48" fill="#25364d"/>
+  <path d="M730 246h54M757 219v54" stroke="#65d1e9" stroke-width="8" stroke-linecap="round"/>
+  <text x="757" y="319" text-anchor="middle" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="17" fill="#5f6f7d">JIT · GC · 타입 · 예외</text>
+  <text x="757" y="344" text-anchor="middle" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="17" fill="#5f6f7d">관리 실행 서비스</text>
+
+  <text x="1045" y="174" text-anchor="middle" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="22" font-weight="700" fill="#25364d">실제 실행</text>
+  <rect x="974" y="205" width="142" height="54" rx="12" fill="#fff3df" stroke="#e28b2f" stroke-width="2"/>
+  <text x="1045" y="239" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700" fill="#a35a14">x64 / ARM64</text>
+  <rect x="974" y="278" width="142" height="54" rx="12" fill="#ebf5ed" stroke="#4f9864" stroke-width="2"/>
+  <text x="1045" y="312" text-anchor="middle" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="18" font-weight="700" fill="#347348">운영체제 환경</text>
+
+  <path d="M250 252 H315" stroke="#547085" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M575 252 H640" stroke="#547085" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M865 252 H930" stroke="#547085" stroke-width="4" marker-end="url(#arrow)"/>
+</svg>
