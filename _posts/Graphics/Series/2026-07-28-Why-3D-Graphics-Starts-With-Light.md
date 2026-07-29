@@ -1,8 +1,13 @@
 ---
-title: "왜 3D 그래픽스는 빛에서 시작하는가"
-categories: [Graphics/Knowledge]
+title: "[빛에서 픽셀까지 001] 왜 3D 그래픽스는 빛에서 시작하는가"
+categories: [Graphics/Series/Light-To-Pixel]
+redirect_from:
+  - "/graphics/knowledge/Why-3D-Graphics-Starts-With-Light/"
+  - "/graphics/series/Why-3D-Graphics-Starts-With-Light/"
 tags: ["Graphics", "Light", "Rendering", "Lighting", "Shading", "Shadow"]
 series: graphics-foundations
+series_title: "빛에서 픽셀까지"
+series_url: "/category/graphics/series/light-to-pixel/"
 series_id: G001
 series_order: 1
 ---

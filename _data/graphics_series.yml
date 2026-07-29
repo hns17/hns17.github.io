@@ -1,0 +1,5 @@
+- id: graphics-foundations
+  title: "빛에서 픽셀까지"
+  category: "Graphics/Series/Light-To-Pixel"
+  url: /category/graphics/series/light-to-pixel/
+  description: "사물을 인식하는 과정에서 출발해 빛과 색, 셰이딩과 그림자, 렌더링 파이프라인과 현대 렌더링 방식까지 원인과 결과로 연결하는 장기 연재입니다."

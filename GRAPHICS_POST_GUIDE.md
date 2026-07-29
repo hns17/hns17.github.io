@@ -1,6 +1,6 @@
 # Graphics Post Guide
 
-이 문서는 `_posts/Graphics/Knowledge`에 작성하는 엔진 독립적 그래픽스 연재의 전용 지침이다.
+이 문서는 `_posts/Graphics/Series`에 작성하는 엔진 독립적 그래픽스 연재의 전용 지침이다.
 일반적인 글 구조와 편집 원칙은 `POST_STYLE_GUIDE.md`를 따르고, 그래픽스 연재의 주제 순서,
 이미지, 역사 서술, 예약 작성 규칙은 이 문서를 따른다.
 
@@ -214,7 +214,7 @@ shading-shadow-comparison.png
 - 폴더에는 소문자 영문, 숫자와 하이픈만 사용한다.
 - `image1.png`, `final-final.png` 같은 의미 없는 이름을 사용하지 않는다.
 - 새 글의 이미지는 해당 글 전용 폴더에 보관한다.
-- `_posts/Graphics/Knowledge`의 글에서는 검증된 상대 경로를 사용한다.
+- `_posts/Graphics/Series`의 글에서는 검증된 상대 경로를 사용한다.
 
 예:
 
@@ -256,10 +256,12 @@ shading-shadow-comparison.png
 
 ```yaml
 ---
-title: "왜 3D 그래픽스는 빛에서 시작하는가"
-categories: [Graphics/Knowledge]
+title: "[빛에서 픽셀까지 001] 왜 3D 그래픽스는 빛에서 시작하는가"
+categories: [Graphics/Series/Light-To-Pixel]
 tags: ["Graphics", "Light", "Rendering"]
 series: graphics-foundations
+series_title: "빛에서 픽셀까지"
+series_url: "/category/graphics/series/light-to-pixel/"
 series_id: G001
 series_order: 1
 ---
@@ -267,6 +269,15 @@ series_order: 1
 
 규칙:
 
+- `Graphics/Series`는 여러 그래픽스 연재를 담는 개념적 상위 경로일 뿐, 글의 실제 카테고리로 사용하지 않는다.
+- 각 연재는 `Graphics/Series/<Series-Key>` 형식의 고유한 카테고리를 사용한다.
+- 각 연재는 `_data/graphics_series.yml`에 고유한 내부 ID, 표시 제목, 카테고리, 소개와 전용 페이지를 등록한다.
+- 각 연재는 다른 연재와 분리된 계획표를 사용한다.
+- 제목은 `[연재 제목 NNN] 주제` 형식을 사용한다.
+- `NNN`은 `series_order`를 세 자리 0 채움으로 표시한다. 예: `1 → 001`, `12 → 012`, `100 → 100`.
+- `series`, `series_title`과 `series_url`은 시리즈 등록 정보와 일치해야 한다.
+- 표시 번호와 `series_id`의 숫자는 일치해야 하며, 승인·게시된 번호는 이후 임의로 바꾸지 않는다.
+- 전체 시리즈 모음은 연재별로 글을 묶고, 각 연재 페이지는 `series_order` 오름차순으로 표시한다.
 - `series_id`와 `series_order`는 `GRAPHICS_SERIES_PLAN.md`와 일치해야 한다.
 - 실제 작성일을 파일 이름의 날짜로 사용한다.
 - 같은 `series_id`를 가진 글을 둘 이상 만들지 않는다.
@@ -311,6 +322,8 @@ series_order: 1
 아래 조건이 모두 충족되어야 계획표를 완료 처리하고 다음 글의 예약 작성을 허용할 수 있다.
 
 - [ ] 올바른 `series_id`와 순서가 사용되었다.
+- [ ] 카테고리가 시리즈 등록 정보의 고유 카테고리와 일치하고 제목에 연재 제목과 일치하는 세 자리 번호가 있다.
+- [ ] `series`, `series_title`, `series_url`이 시리즈 등록 정보와 일치한다.
 - [ ] 앞선 미완료 글을 건너뛰지 않았다.
 - [ ] 첫 부분에서 그래픽스에서 이 주제가 필요한 이유를 설명했다.
 - [ ] 역사적 배경이 문제와 기술 변화에 연결된다.

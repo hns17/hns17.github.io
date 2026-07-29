@@ -10,6 +10,7 @@ Read these files completely before editing:
 2. `POST_STYLE_GUIDE.md`
 3. `GRAPHICS_POST_GUIDE.md`
 4. `GRAPHICS_SERIES_PLAN.md`
+5. `_data/graphics_series.yml`
 
 Treat `GRAPHICS_SERIES_PLAN.md` as the source of truth for topic order and
 `GRAPHICS_POST_GUIDE.md` as the source of truth for writing, research, image and validation rules.
@@ -18,7 +19,7 @@ Treat `GRAPHICS_SERIES_PLAN.md` as the source of truth for topic order and
 
 1. Find the earliest unchecked item in `GRAPHICS_SERIES_PLAN.md`.
 2. Do not select a later item.
-3. Search `_posts/Graphics/Knowledge` for the selected `series_id`.
+3. Search `_posts/Graphics/Series` for the selected `series_id`.
 4. If a matching draft or image folder already exists, treat the item as under user review.
 5. In that case, make no file changes, do not resume the draft, and report that explicit user approval is required.
 6. Create a draft only when every earlier item is checked and the selected item has no existing draft.
@@ -50,9 +51,12 @@ Treat `GRAPHICS_SERIES_PLAN.md` as the source of truth for topic order and
 
 ## Writing
 
-- Create the post under `_posts/Graphics/Knowledge`.
+- Create the post under `_posts/Graphics/Series`.
 - Use the actual run date in the filename.
-- Add `series: graphics-foundations`, the selected `series_id`, and matching `series_order`.
+- Read the current series ID, display title, unique category and page URL from the plan and `_data/graphics_series.yml`.
+- Use the registered `Graphics/Series/<Series-Key>` value as the category. Never use the shared `Graphics/Series` path as a post category.
+- Prefix the title with `[연재 제목 NNN]`, where `NNN` is the zero-padded three-digit `series_order`.
+- Add the registered `series`, `series_title`, `series_url`, the selected `series_id`, and matching `series_order`.
 - Do not repeat the front-matter title as a body `#` heading.
 - End with `정리`, a question leading to the next planned article, and `참고`.
 

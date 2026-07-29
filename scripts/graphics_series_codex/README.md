@@ -10,7 +10,8 @@
 2. `POST_STYLE_GUIDE.md`
 3. `GRAPHICS_POST_GUIDE.md`
 4. `GRAPHICS_SERIES_PLAN.md`
-5. `scripts/graphics_series_codex/CODEX_AUTOMATION_PROMPT.md`
+5. `_data/graphics_series.yml`
+6. `scripts/graphics_series_codex/CODEX_AUTOMATION_PROMPT.md`
 
 ## 실행 단위
 

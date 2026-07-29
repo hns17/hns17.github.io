@@ -12,6 +12,9 @@ main:
 _posts:
     - title: "Graphics"
       children:
+      - title: "Series · 빛에서 픽셀까지"
+        category: "Graphics/Series/Light-To-Pixel"
+        url: /category/graphics/series/light-to-pixel/
       - title: "Knowledge"
         category: "Graphics/Knowledge"
         url: /category/graphics/knowledge/

@@ -88,7 +88,7 @@
 
 ## 그래픽스 연재
 
-- `_posts/Graphics/Knowledge`의 장기 그래픽스 연재는 `GRAPHICS_POST_GUIDE.md`를 추가로 따른다.
+- `_posts/Graphics/Series`의 장기 그래픽스 연재는 `GRAPHICS_POST_GUIDE.md`를 추가로 따른다.
 - 연재 주제와 작성 순서는 `GRAPHICS_SERIES_PLAN.md`를 유일한 기준으로 삼는다.
 - 그래픽스 글은 엔진 독립적인 원리와 역사를 다루며, 엔진별 구현 글은 별도 연재로 분리한다.
 - 예약 작성은 모든 앞 글이 사용자 승인, 커밋과 원격 푸시까지 완료된 경우에만 다음 글 하나를 작성한다.
