@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+  <title id="title">파면에서 광선으로 단순화하고 광선을 매개변수로 표현하는 과정</title>
+  <desc id="desc">왼쪽에는 이동하는 파면과 그 수직 방향 광선, 오른쪽에는 시작점 O와 방향 D와 P(t) 점이 있는 반직선이 있다.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0f172a"/><stop offset="1" stop-color="#172554"/></linearGradient>
+    <marker id="blueArrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0 0L0 6L9 3Z" fill="#60a5fa"/></marker>
+    <marker id="goldArrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0 0L0 6L9 3Z" fill="#fde68a"/></marker>
+    <style>
+      .panel{fill:#fff;fill-opacity:.055;stroke:#94a3b8;stroke-width:2}
+      .head{font:700 29px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#f8fafc}
+      .sub{font:500 18px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#cbd5e1}
+      .label{font:700 20px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#f8fafc}
+      .math{font:700 26px "Consolas","Noto Sans KR",monospace;fill:#fde68a}
+      .small{font:500 16px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#cbd5e1}
+    </style>
+  </defs>
+  <rect width="1200" height="620" rx="28" fill="url(#bg)"/>
+  <text x="600" y="52" text-anchor="middle" class="head">파동의 세부에서 장면을 지나는 선으로</text>
+  <text x="600" y="84" text-anchor="middle" class="sub">파면의 수직 방향을 남기면 교차와 가시성을 계산할 수 있다</text>
+
+  <g transform="translate(45 120)">
+    <rect class="panel" width="530" height="445" rx="22"/>
+    <text x="265" y="45" text-anchor="middle" class="head">파면과 진행 방향</text>
+    <path d="M110 115 C145 145 145 275 110 305" fill="none" stroke="#c084fc" stroke-width="6"/>
+    <path d="M210 100 C250 140 250 280 210 320" fill="none" stroke="#a78bfa" stroke-width="6"/>
+    <path d="M315 85 C360 135 360 285 315 335" fill="none" stroke="#818cf8" stroke-width="6"/>
+    <path d="M425 70 C475 130 475 290 425 350" fill="none" stroke="#60a5fa" stroke-width="6"/>
+    <line x1="115" y1="210" x2="455" y2="210" stroke="#fde68a" stroke-width="6" marker-end="url(#goldArrow)"/>
+    <line x1="210" y1="145" x2="455" y2="125" stroke="#fde68a" stroke-width="3" marker-end="url(#goldArrow)"/>
+    <line x1="210" y1="275" x2="455" y2="295" stroke="#fde68a" stroke-width="3" marker-end="url(#goldArrow)"/>
+    <text x="78" y="385" class="label">파면</text>
+    <line x1="130" y1="378" x2="190" y2="318" stroke="#c084fc" stroke-width="3"/>
+    <text x="315" y="385" class="label">수직 방향 = 광선</text>
+  </g>
+
+  <g transform="translate(625 120)">
+    <rect class="panel" width="530" height="445" rx="22"/>
+    <text x="265" y="45" text-anchor="middle" class="head">렌더러의 광선</text>
+    <circle cx="90" cy="245" r="10" fill="#f8fafc"/>
+    <line x1="90" y1="245" x2="455" y2="115" stroke="#60a5fa" stroke-width="7" marker-end="url(#blueArrow)"/>
+    <circle cx="292" cy="173" r="11" fill="#fde68a"/>
+    <line x1="90" y1="245" x2="195" y2="208" stroke="#fde68a" stroke-width="5" marker-end="url(#goldArrow)"/>
+    <text x="61" y="280" class="label">O</text>
+    <text x="158" y="190" class="label">D</text>
+    <text x="305" y="163" class="label">P(t)</text>
+    <text x="265" y="342" text-anchor="middle" class="math">P(t) = O + tD</text>
+    <text x="265" y="378" text-anchor="middle" class="small">t ≥ 0 · D를 정규화하면 t를 거리처럼 사용</text>
+  </g>
+</svg>

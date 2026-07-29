@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Ray Tracing의 광선 추적과 Rasterization의 모델 투영 비교</title>
+  <desc id="desc">Ray Tracing은 카메라에서 Pixel Sample 방향으로 광선을 만들어 삼각형 교차점을 추적하고, Rasterization은 삼각형을 화면에 투영해 덮이는 Sample과 Fragment 후보를 찾는다. 두 방식 모두 이후 조명 계산에 빛 방향 벡터를 사용할 수 있다.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#172554"/>
+    </linearGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <rect width="36" height="36" fill="#111c38"/>
+      <path d="M36 0H0V36" fill="none" stroke="#64748b" stroke-width="1.5"/>
+      <circle cx="18" cy="18" r="2.5" fill="#94a3b8"/>
+    </pattern>
+    <marker id="blueArrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0 0L0 6L9 3Z" fill="#60a5fa"/>
+    </marker>
+    <marker id="goldArrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0 0L0 6L9 3Z" fill="#fde68a"/>
+    </marker>
+    <marker id="greenArrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0 0L0 6L9 3Z" fill="#86efac"/>
+    </marker>
+    <style>
+      .panel{fill:#fff;fill-opacity:.055;stroke:#94a3b8;stroke-width:2}
+      .head{font:700 29px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#f8fafc}
+      .sub{font:500 18px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#cbd5e1}
+      .label{font:700 19px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#f8fafc}
+      .small{font:500 16px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#cbd5e1}
+      .step{font:700 16px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#0f172a}
+    </style>
+  </defs>
+
+  <rect width="1200" height="700" rx="28" fill="url(#bg)"/>
+  <text x="600" y="52" text-anchor="middle" class="head">보이는 표면을 찾는 두 계산 순서</text>
+  <text x="600" y="84" text-anchor="middle" class="sub">Ray Tracing은 광선을 추적하고, Rasterization은 모델을 투영한다</text>
+
+  <g transform="translate(45 120)">
+    <rect class="panel" width="530" height="525" rx="22"/>
+    <text x="265" y="44" text-anchor="middle" class="head">Ray Tracing</text>
+    <text x="265" y="76" text-anchor="middle" class="sub">카메라가 이 Sample 방향에서 무엇을 보는가?</text>
+
+    <path d="M70 235L30 215V285L70 265Z" fill="#94a3b8"/>
+    <rect x="70" y="226" width="34" height="48" rx="5" fill="#cbd5e1"/>
+    <rect x="120" y="145" width="126" height="180" fill="url(#grid)" stroke="#94a3b8" stroke-width="2"/>
+    <rect x="174" y="217" width="36" height="36" fill="#2563eb" fill-opacity=".85" stroke="#bfdbfe" stroke-width="3"/>
+    <polygon points="365,125 485,270 335,355" fill="#f97316" fill-opacity=".45" stroke="#fdba74" stroke-width="5"/>
+    <line x1="104" y1="250" x2="394" y2="233" stroke="#60a5fa" stroke-width="7" marker-end="url(#blueArrow)"/>
+    <circle cx="394" cy="233" r="10" fill="#f8fafc" stroke="#60a5fa" stroke-width="3"/>
+
+    <circle cx="86" cy="390" r="17" fill="#93c5fd"/><text x="86" y="396" text-anchor="middle" class="step">1</text>
+    <text x="112" y="396" class="small">Sample을 지나는 Camera Ray 생성</text>
+    <circle cx="86" cy="430" r="17" fill="#93c5fd"/><text x="86" y="436" text-anchor="middle" class="step">2</text>
+    <text x="112" y="436" class="small">광선과 삼각형의 교차 추적</text>
+    <circle cx="86" cy="470" r="17" fill="#93c5fd"/><text x="86" y="476" text-anchor="middle" class="step">3</text>
+    <text x="112" y="476" class="small">가장 가까운 Hit를 표면으로 선택</text>
+    <text x="265" y="510" text-anchor="middle" class="sub">가시성 계산: 광선 교차 추적</text>
+  </g>
+
+  <g transform="translate(625 120)">
+    <rect class="panel" width="530" height="525" rx="22"/>
+    <text x="265" y="44" text-anchor="middle" class="head">Rasterization</text>
+    <text x="265" y="76" text-anchor="middle" class="sub">이 삼각형은 어떤 Sample을 덮는가?</text>
+
+    <polygon points="55,150 190,105 155,270" fill="#f97316" fill-opacity=".45" stroke="#fdba74" stroke-width="5"/>
+    <circle cx="55" cy="150" r="6" fill="#f8fafc"/><circle cx="190" cy="105" r="6" fill="#f8fafc"/><circle cx="155" cy="270" r="6" fill="#f8fafc"/>
+    <line x1="200" y1="185" x2="264" y2="185" stroke="#fde68a" stroke-width="6" marker-end="url(#goldArrow)"/>
+
+    <rect x="282" y="105" width="180" height="216" fill="url(#grid)" stroke="#94a3b8" stroke-width="2"/>
+    <polygon points="304,142 431,119 405,288" fill="#f97316" fill-opacity=".28" stroke="#fdba74" stroke-width="4"/>
+    <g fill="#86efac" stroke="#14532d" stroke-width="2">
+      <circle cx="336" cy="159" r="7"/><circle cx="372" cy="159" r="7"/><circle cx="408" cy="159" r="7"/>
+      <circle cx="336" cy="195" r="7"/><circle cx="372" cy="195" r="7"/><circle cx="408" cy="195" r="7"/>
+      <circle cx="372" cy="231" r="7"/><circle cx="408" cy="231" r="7"/><circle cx="408" cy="267" r="7"/>
+    </g>
+
+    <circle cx="78" cy="390" r="17" fill="#fde68a"/><text x="78" y="396" text-anchor="middle" class="step">1</text>
+    <text x="104" y="396" class="small">세 정점을 화면에 투영</text>
+    <circle cx="78" cy="430" r="17" fill="#fde68a"/><text x="78" y="436" text-anchor="middle" class="step">2</text>
+    <text x="104" y="436" class="small">삼각형 안의 Sample 탐색</text>
+    <circle cx="78" cy="470" r="17" fill="#fde68a"/><text x="78" y="476" text-anchor="middle" class="step">3</text>
+    <text x="104" y="476" class="small">Fragment 후보 생성 → Depth Test</text>
+    <rect x="316" y="374" width="170" height="33" rx="16" fill="#14532d"/>
+    <text x="401" y="397" text-anchor="middle" class="small">Fragment ≠ 최종 Pixel</text>
+    <text x="265" y="510" text-anchor="middle" class="sub">가시성 계산: 투영과 Sample Coverage</text>
+  </g>
+  <text x="600" y="681" text-anchor="middle" class="sub">두 방식 모두 셰이딩 단계에서는 N · L 같은 빛 방향 관계를 사용할 수 있다</text>
+</svg>

@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">빛을 설명하는 전자기파, 광자와 광선 모델</title>
+  <desc id="desc">전자기파는 간섭과 회절을, 광자는 에너지 교환을, 광선은 경로와 가시성을 설명하는 세 패널 도해다.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#172554"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#60a5fa"/>
+      <stop offset=".5" stop-color="#c084fc"/>
+      <stop offset="1" stop-color="#f472b6"/>
+    </linearGradient>
+    <radialGradient id="photon" cx="35%" cy="30%">
+      <stop offset="0" stop-color="#fff7cc"/>
+      <stop offset=".45" stop-color="#fde68a"/>
+      <stop offset="1" stop-color="#f59e0b"/>
+    </radialGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0 0L0 6L9 3Z" fill="#fde68a"/>
+    </marker>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="8" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .panel{fill:#fff;fill-opacity:.055;stroke:#94a3b8;stroke-width:2}
+      .head{font:700 30px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#f8fafc}
+      .sub{font:500 18px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#cbd5e1}
+      .label{font:700 20px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#f8fafc}
+      .small{font:500 16px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#cbd5e1}
+      .chip{font:700 16px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#0f172a}
+    </style>
+  </defs>
+  <rect width="1200" height="700" rx="28" fill="url(#bg)"/>
+  <text x="600" y="54" text-anchor="middle" class="head">하나의 빛, 서로 다른 세 가지 질문</text>
+  <text x="600" y="87" text-anchor="middle" class="sub">모델은 필요한 현상을 남기고 다른 세부를 잠시 생략한다</text>
+
+  <g transform="translate(45 125)">
+    <rect class="panel" width="350" height="520" rx="22"/>
+    <rect x="24" y="22" width="94" height="32" rx="16" fill="#93c5fd"/>
+    <text x="71" y="44" text-anchor="middle" class="chip">파동</text>
+    <text x="175" y="90" text-anchor="middle" class="head">전자기파</text>
+    <path d="M35 225 C70 145 105 305 140 225 S210 145 245 225 S315 305 335 225" fill="none" stroke="url(#wave)" stroke-width="7"/>
+    <line x1="35" y1="225" x2="335" y2="225" stroke="#64748b" stroke-width="2" stroke-dasharray="6 8"/>
+    <path d="M85 330 C105 295 125 365 145 330 S185 295 205 330 S245 365 265 330" fill="none" stroke="#67e8f9" stroke-width="4"/>
+    <path d="M85 330 C105 365 125 295 145 330 S185 365 205 330 S245 295 265 330" fill="none" stroke="#f9a8d4" stroke-width="4"/>
+    <text x="175" y="405" text-anchor="middle" class="label">간섭 · 회절 · 편광</text>
+    <text x="175" y="441" text-anchor="middle" class="small">장과 위상의 변화가 필요한 질문</text>
+    <rect x="66" y="473" width="218" height="30" rx="15" fill="#1e3a8a"/>
+    <text x="175" y="494" text-anchor="middle" class="small">진행 방향만으로는 부족</text>
+  </g>
+
+  <g transform="translate(425 125)">
+    <rect class="panel" width="350" height="520" rx="22"/>
+    <rect x="24" y="22" width="94" height="32" rx="16" fill="#fde68a"/>
+    <text x="71" y="44" text-anchor="middle" class="chip">양자</text>
+    <text x="175" y="90" text-anchor="middle" class="head">광자</text>
+    <circle cx="78" cy="230" r="18" fill="url(#photon)" filter="url(#glow)"/>
+    <circle cx="135" cy="190" r="13" fill="url(#photon)" filter="url(#glow)"/>
+    <circle cx="185" cy="246" r="21" fill="url(#photon)" filter="url(#glow)"/>
+    <circle cx="245" cy="205" r="15" fill="url(#photon)" filter="url(#glow)"/>
+    <circle cx="288" cy="266" r="11" fill="url(#photon)" filter="url(#glow)"/>
+    <path d="M70 330 H280" stroke="#64748b" stroke-width="5"/>
+    <path d="M100 330 v-32M150 330v-52M200 330v-30M250 330v-66" stroke="#fbbf24" stroke-width="7"/>
+    <text x="175" y="405" text-anchor="middle" class="label">흡수 · 방출 · 검출</text>
+    <text x="175" y="441" text-anchor="middle" class="small">불연속 에너지 교환의 질문</text>
+    <rect x="66" y="473" width="218" height="30" rx="15" fill="#78350f"/>
+    <text x="175" y="494" text-anchor="middle" class="small">작은 단단한 공은 아님</text>
+  </g>
+
+  <g transform="translate(805 125)">
+    <rect class="panel" width="350" height="520" rx="22"/>
+    <rect x="24" y="22" width="94" height="32" rx="16" fill="#86efac"/>
+    <text x="71" y="44" text-anchor="middle" class="chip">기하</text>
+    <text x="175" y="90" text-anchor="middle" class="head">광선</text>
+    <circle cx="72" cy="250" r="9" fill="#f8fafc"/>
+    <line x1="72" y1="250" x2="300" y2="172" stroke="#fde68a" stroke-width="6" marker-end="url(#arrow)"/>
+    <line x1="72" y1="250" x2="300" y2="250" stroke="#60a5fa" stroke-width="4" marker-end="url(#arrow)"/>
+    <line x1="72" y1="250" x2="300" y2="328" stroke="#f472b6" stroke-width="4" marker-end="url(#arrow)"/>
+    <rect x="220" y="132" width="50" height="236" rx="8" fill="#334155" stroke="#94a3b8" stroke-width="2"/>
+    <circle cx="220" cy="250" r="8" fill="#ef4444"/>
+    <text x="175" y="405" text-anchor="middle" class="label">교차 · 가시성 · 경로</text>
+    <text x="175" y="441" text-anchor="middle" class="small">장면 규모의 방향 질문</text>
+    <rect x="66" y="473" width="218" height="30" rx="15" fill="#14532d"/>
+    <text x="175" y="494" text-anchor="middle" class="small">위상과 회절은 생략</text>
+  </g>
+</svg>
