@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="840" viewBox="0 0 1600 840" role="img" aria-labelledby="title desc">
+  <title id="title">광원에서 표면을 거쳐 카메라와 픽셀로 이어지는 빛의 흐름</title>
+  <desc id="desc">왼쪽의 광원에서 나온 빛이 중앙의 구 표면에 닿고, 반사된 빛이 오른쪽 카메라를 거쳐 픽셀로 기록되는 과정을 네 단계로 보여 준다.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset="1" stop-color="#eef2ff"/>
+    </linearGradient>
+    <radialGradient id="sphere" cx="34%" cy="25%" r="75%">
+      <stop offset="0" stop-color="#fef3c7"/>
+      <stop offset="0.32" stop-color="#60a5fa"/>
+      <stop offset="1" stop-color="#1e3a8a"/>
+    </radialGradient>
+    <linearGradient id="sensor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a7f3d0"/>
+      <stop offset="1" stop-color="#0f766e"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#0f172a" flood-opacity="0.14"/>
+    </filter>
+    <marker id="arrowGold" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#f59e0b"/>
+    </marker>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2563eb"/>
+    </marker>
+    <style>
+      .title { font: 700 40px "Segoe UI", "Noto Sans KR", sans-serif; fill: #0f172a; }
+      .subtitle { font: 400 22px "Segoe UI", "Noto Sans KR", sans-serif; fill: #475569; }
+      .stage { font: 700 24px "Segoe UI", "Noto Sans KR", sans-serif; fill: #0f172a; }
+      .body { font: 500 19px "Segoe UI", "Noto Sans KR", sans-serif; fill: #334155; }
+      .small { font: 600 17px "Segoe UI", "Noto Sans KR", sans-serif; fill: #475569; }
+      .card { fill: #ffffff; stroke: #cbd5e1; stroke-width: 2; rx: 18; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="840" rx="32" fill="url(#bg)"/>
+  <text x="80" y="78" class="title">물체가 아니라, 물체에서 도달한 빛이 이미지가 된다</text>
+  <text x="80" y="116" class="subtitle">광원과 표면의 상호작용을 카메라가 기록해 최종 픽셀 값으로 바꾼다.</text>
+
+  <g filter="url(#shadow)">
+    <circle cx="210" cy="315" r="76" fill="#fbbf24" stroke="#d97706" stroke-width="5"/>
+    <g stroke="#f59e0b" stroke-width="9" stroke-linecap="round">
+      <line x1="210" y1="205" x2="210" y2="166"/>
+      <line x1="210" y1="425" x2="210" y2="464"/>
+      <line x1="100" y1="315" x2="61" y2="315"/>
+      <line x1="320" y1="315" x2="359" y2="315"/>
+      <line x1="132" y1="237" x2="104" y2="209"/>
+      <line x1="288" y1="393" x2="316" y2="421"/>
+      <line x1="288" y1="237" x2="316" y2="209"/>
+      <line x1="132" y1="393" x2="104" y2="421"/>
+    </g>
+    <text x="210" y="324" text-anchor="middle" class="stage">광원</text>
+  </g>
+
+  <line x1="330" y1="290" x2="605" y2="338" stroke="#f59e0b" stroke-width="10" stroke-linecap="round" marker-end="url(#arrowGold)"/>
+  <text x="458" y="270" text-anchor="middle" class="small">입사하는 빛</text>
+
+  <g filter="url(#shadow)">
+    <ellipse cx="735" cy="482" rx="176" ry="35" fill="#0f172a" opacity="0.14"/>
+    <circle cx="735" cy="342" r="143" fill="url(#sphere)" stroke="#1e40af" stroke-width="5"/>
+    <circle cx="680" cy="292" r="18" fill="#fff7cc" opacity="0.92"/>
+    <line x1="660" y1="270" x2="594" y2="196" stroke="#0f766e" stroke-width="7" stroke-linecap="round" marker-end="url(#arrowBlue)"/>
+    <text x="574" y="181" class="small">표면 법선</text>
+    <text x="735" y="355" text-anchor="middle" class="stage" fill="#ffffff">표면과 재질</text>
+  </g>
+
+  <line x1="850" y1="292" x2="1106" y2="244" stroke="#2563eb" stroke-width="10" stroke-linecap="round" marker-end="url(#arrowBlue)"/>
+  <text x="972" y="246" text-anchor="middle" class="small">카메라로 나가는 빛</text>
+
+  <g transform="translate(1120 188)" filter="url(#shadow)">
+    <rect x="0" y="36" width="190" height="145" rx="20" fill="#334155"/>
+    <path d="M190 72 L265 40 L265 177 L190 145 Z" fill="#475569" stroke="#1e293b" stroke-width="4"/>
+    <circle cx="84" cy="108" r="50" fill="#0f172a" stroke="#94a3b8" stroke-width="8"/>
+    <circle cx="84" cy="108" r="27" fill="#38bdf8" opacity="0.82"/>
+    <rect x="35" y="0" width="70" height="44" rx="10" fill="#475569"/>
+    <text x="96" y="224" text-anchor="middle" class="stage">카메라</text>
+  </g>
+
+  <line x1="1391" y1="316" x2="1452" y2="316" stroke="#0f766e" stroke-width="10" stroke-linecap="round" marker-end="url(#arrowBlue)"/>
+
+  <g transform="translate(1460 240)" filter="url(#shadow)">
+    <rect width="92" height="152" rx="12" fill="url(#sensor)" stroke="#115e59" stroke-width="4"/>
+    <g stroke="#d1fae5" stroke-width="2" opacity="0.9">
+      <line x1="23" y1="0" x2="23" y2="152"/>
+      <line x1="46" y1="0" x2="46" y2="152"/>
+      <line x1="69" y1="0" x2="69" y2="152"/>
+      <line x1="0" y1="38" x2="92" y2="38"/>
+      <line x1="0" y1="76" x2="92" y2="76"/>
+      <line x1="0" y1="114" x2="92" y2="114"/>
+    </g>
+    <rect x="46" y="38" width="23" height="38" fill="#fde68a"/>
+    <text x="46" y="195" text-anchor="middle" class="stage">픽셀</text>
+  </g>
+
+  <g transform="translate(80 590)">
+    <rect class="card" width="320" height="160"/>
+    <circle cx="44" cy="43" r="23" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+    <text x="44" y="51" text-anchor="middle" class="stage" font-size="20">1</text>
+    <text x="80" y="50" class="stage">빛을 만든다</text>
+    <text x="32" y="96" class="body">광원의 방향·세기·색</text>
+    <text x="32" y="128" class="body">또는 표면의 자체 발광</text>
+  </g>
+  <g transform="translate(440 590)">
+    <rect class="card" width="320" height="160"/>
+    <circle cx="44" cy="43" r="23" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <text x="44" y="51" text-anchor="middle" class="stage" font-size="20">2</text>
+    <text x="80" y="50" class="stage">표면이 반응한다</text>
+    <text x="32" y="96" class="body">법선·재질·입사 방향이</text>
+    <text x="32" y="128" class="body">반사되는 빛을 바꾼다</text>
+  </g>
+  <g transform="translate(800 590)">
+    <rect class="card" width="320" height="160"/>
+    <circle cx="44" cy="43" r="23" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+    <text x="44" y="51" text-anchor="middle" class="stage" font-size="20">3</text>
+    <text x="80" y="50" class="stage">카메라에 도달한다</text>
+    <text x="32" y="96" class="body">방향과 가시성에 따라</text>
+    <text x="32" y="128" class="body">기록할 빛이 달라진다</text>
+  </g>
+  <g transform="translate(1160 590)">
+    <rect class="card" width="360" height="160"/>
+    <circle cx="44" cy="43" r="23" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+    <text x="44" y="51" text-anchor="middle" class="stage" font-size="20">4</text>
+    <text x="80" y="50" class="stage">화면 값으로 기록한다</text>
+    <text x="32" y="96" class="body">노출·샘플링·색 변환을 거쳐</text>
+    <text x="32" y="128" class="body">제한된 픽셀에 담는다</text>
+  </g>
+</svg>

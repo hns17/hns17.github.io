@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">한 픽셀을 결정하는 렌더링의 다섯 질문</title>
+  <desc id="desc">기하와 투영, 카메라 가시성, 표면 셰이딩, 빛의 가시성과 그림자, 카메라와 샘플링이라는 다섯 질문이 최종 픽셀로 모이는 구조도다.</desc>
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset="1" stop-color="#eff6ff"/>
+    </linearGradient>
+    <radialGradient id="litSphere" cx="32%" cy="26%" r="75%">
+      <stop offset="0" stop-color="#fff7cc"/>
+      <stop offset="0.3" stop-color="#60a5fa"/>
+      <stop offset="1" stop-color="#1e3a8a"/>
+    </radialGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="135%">
+      <feDropShadow dx="0" dy="9" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/>
+    </marker>
+    <style>
+      .title { font: 700 40px "Segoe UI", "Noto Sans KR", sans-serif; fill: #0f172a; }
+      .subtitle { font: 400 22px "Segoe UI", "Noto Sans KR", sans-serif; fill: #475569; }
+      .num { font: 700 20px "Segoe UI", "Noto Sans KR", sans-serif; fill: #ffffff; }
+      .question { font: 700 24px "Segoe UI", "Noto Sans KR", sans-serif; fill: #0f172a; }
+      .term { font: 700 18px "Segoe UI", "Noto Sans KR", sans-serif; fill: #2563eb; }
+      .body { font: 500 17px "Segoe UI", "Noto Sans KR", sans-serif; fill: #475569; }
+      .output { font: 700 28px "Segoe UI", "Noto Sans KR", sans-serif; fill: #0f172a; }
+      .card { fill: #ffffff; stroke: #cbd5e1; stroke-width: 2; rx: 22; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" rx="32" fill="url(#bg2)"/>
+  <text x="80" y="76" class="title">한 픽셀을 만들기 위해 렌더링이 답하는 다섯 질문</text>
+  <text x="80" y="114" class="subtitle">빛은 중심에 있지만, 기하·가시성·카메라와 함께 계산될 때 비로소 이미지가 된다.</text>
+
+  <g transform="translate(65 185)" filter="url(#cardShadow)">
+    <rect class="card" width="270" height="340"/>
+    <circle cx="42" cy="43" r="23" fill="#7c3aed"/>
+    <text x="42" y="50" text-anchor="middle" class="num">1</text>
+    <text x="78" y="50" class="question">어디에 놓이는가?</text>
+    <text x="28" y="86" class="term">기하 · Transform · 투영</text>
+    <g transform="translate(38 118)">
+      <polygon points="20,142 100,24 198,142" fill="#ddd6fe" stroke="#6d28d9" stroke-width="5"/>
+      <circle cx="20" cy="142" r="8" fill="#6d28d9"/>
+      <circle cx="100" cy="24" r="8" fill="#6d28d9"/>
+      <circle cx="198" cy="142" r="8" fill="#6d28d9"/>
+      <line x1="8" y1="176" x2="218" y2="176" stroke="#94a3b8" stroke-width="3"/>
+      <line x1="28" y1="188" x2="28" y2="110" stroke="#94a3b8" stroke-width="3"/>
+      <text x="111" y="222" text-anchor="middle" class="body">3D 표면을 화면 위치로</text>
+    </g>
+  </g>
+
+  <line x1="346" y1="355" x2="376" y2="355" stroke="#64748b" stroke-width="6" marker-end="url(#arrow)"/>
+
+  <g transform="translate(385 185)" filter="url(#cardShadow)">
+    <rect class="card" width="270" height="340"/>
+    <circle cx="42" cy="43" r="23" fill="#0f766e"/>
+    <text x="42" y="50" text-anchor="middle" class="num">2</text>
+    <text x="78" y="50" class="question">무엇이 보이는가?</text>
+    <text x="28" y="86" class="term" fill="#0f766e">카메라 가시성</text>
+    <g transform="translate(34 122)">
+      <rect x="24" y="50" width="136" height="118" rx="16" fill="#a7f3d0" stroke="#0f766e" stroke-width="5"/>
+      <rect x="80" y="22" width="136" height="118" rx="16" fill="#bfdbfe" stroke="#2563eb" stroke-width="5"/>
+      <path d="M111 80 l19 20 l42 -48" fill="none" stroke="#166534" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M32 190 L214 190" stroke="#94a3b8" stroke-width="3"/>
+      <text x="121" y="228" text-anchor="middle" class="body">앞면과 가려진 면을 구분</text>
+    </g>
+  </g>
+
+  <line x1="666" y1="355" x2="696" y2="355" stroke="#64748b" stroke-width="6" marker-end="url(#arrow)"/>
+
+  <g transform="translate(705 185)" filter="url(#cardShadow)">
+    <rect class="card" width="270" height="340"/>
+    <circle cx="42" cy="43" r="23" fill="#2563eb"/>
+    <text x="42" y="50" text-anchor="middle" class="num">3</text>
+    <text x="78" y="50" class="question">어떤 색인가?</text>
+    <text x="28" y="86" class="term">빛 · 재질 · 셰이딩</text>
+    <g transform="translate(52 118)">
+      <ellipse cx="84" cy="174" rx="83" ry="19" fill="#0f172a" opacity="0.14"/>
+      <circle cx="84" cy="92" r="78" fill="url(#litSphere)" stroke="#1e40af" stroke-width="5"/>
+      <circle cx="53" cy="63" r="12" fill="#fff7cc"/>
+      <text x="84" y="224" text-anchor="middle" class="body">표면에서 나가는 빛</text>
+    </g>
+  </g>
+
+  <line x1="986" y1="355" x2="1016" y2="355" stroke="#64748b" stroke-width="6" marker-end="url(#arrow)"/>
+
+  <g transform="translate(1025 185)" filter="url(#cardShadow)">
+    <rect class="card" width="270" height="340"/>
+    <circle cx="42" cy="43" r="23" fill="#d97706"/>
+    <text x="42" y="50" text-anchor="middle" class="num">4</text>
+    <text x="78" y="50" class="question">빛이 닿는가?</text>
+    <text x="28" y="86" class="term" fill="#d97706">빛의 가시성 · 그림자</text>
+    <g transform="translate(30 119)">
+      <circle cx="38" cy="50" r="28" fill="#fbbf24" stroke="#d97706" stroke-width="4"/>
+      <line x1="66" y1="62" x2="111" y2="84" stroke="#f59e0b" stroke-width="7"/>
+      <rect x="108" y="64" width="42" height="100" rx="8" fill="#475569"/>
+      <path d="M150 126 L218 164 L218 190 L150 161 Z" fill="#0f172a" opacity="0.35"/>
+      <line x1="16" y1="190" x2="220" y2="190" stroke="#64748b" stroke-width="4"/>
+      <text x="121" y="229" text-anchor="middle" class="body">광원과 표면 사이의 가림</text>
+    </g>
+  </g>
+
+  <line x1="1306" y1="355" x2="1336" y2="355" stroke="#64748b" stroke-width="6" marker-end="url(#arrow)"/>
+
+  <g transform="translate(1345 185)" filter="url(#cardShadow)">
+    <rect class="card" width="190" height="340"/>
+    <circle cx="42" cy="43" r="23" fill="#be123c"/>
+    <text x="42" y="50" text-anchor="middle" class="num">5</text>
+    <text x="77" y="50" class="question">어떻게</text>
+    <text x="28" y="80" class="question">기록하는가?</text>
+    <text x="28" y="112" class="term" fill="#be123c">카메라 · 샘플링</text>
+    <g transform="translate(35 139)">
+      <rect width="120" height="120" rx="12" fill="#0f172a"/>
+      <g>
+        <rect x="8" y="8" width="30" height="30" fill="#93c5fd"/>
+        <rect x="45" y="8" width="30" height="30" fill="#60a5fa"/>
+        <rect x="82" y="8" width="30" height="30" fill="#3b82f6"/>
+        <rect x="8" y="45" width="30" height="30" fill="#60a5fa"/>
+        <rect x="45" y="45" width="30" height="30" fill="#fde68a"/>
+        <rect x="82" y="45" width="30" height="30" fill="#2563eb"/>
+        <rect x="8" y="82" width="30" height="30" fill="#1d4ed8"/>
+        <rect x="45" y="82" width="30" height="30" fill="#2563eb"/>
+        <rect x="82" y="82" width="30" height="30" fill="#1e40af"/>
+      </g>
+      <text x="60" y="166" text-anchor="middle" class="body">제한된 픽셀 값</text>
+    </g>
+  </g>
+
+  <g transform="translate(270 625)">
+    <rect width="1060" height="176" rx="28" fill="#ffffff" stroke="#93c5fd" stroke-width="3" filter="url(#cardShadow)"/>
+    <g transform="translate(54 38)">
+      <rect width="104" height="104" rx="15" fill="#0f172a"/>
+      <g>
+        <rect x="8" y="8" width="26" height="26" fill="#bfdbfe"/>
+        <rect x="39" y="8" width="26" height="26" fill="#93c5fd"/>
+        <rect x="70" y="8" width="26" height="26" fill="#60a5fa"/>
+        <rect x="8" y="39" width="26" height="26" fill="#93c5fd"/>
+        <rect x="39" y="39" width="26" height="26" fill="#fde68a"/>
+        <rect x="70" y="39" width="26" height="26" fill="#3b82f6"/>
+        <rect x="8" y="70" width="26" height="26" fill="#3b82f6"/>
+        <rect x="39" y="70" width="26" height="26" fill="#2563eb"/>
+        <rect x="70" y="70" width="26" height="26" fill="#1e3a8a"/>
+      </g>
+    </g>
+    <text x="202" y="73" class="output">최종 픽셀은 다섯 질문의 답이 합쳐진 결과다</text>
+    <text x="202" y="113" class="subtitle">빛만으로도, 기하만으로도 이미지는 완성되지 않는다.</text>
+    <text x="202" y="145" class="subtitle">그래픽스는 장면의 구조와 빛의 이동을 카메라가 기록할 값으로 바꾸는 과정이다.</text>
+  </g>
+</svg>
