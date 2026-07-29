@@ -12,12 +12,12 @@ archive_intro: "그래픽스에 관한 여러 장기 연재를 모아 둔 페이
 </div>
 
 {% for series_info in site.data.graphics_series %}
-  {% assign series_posts = site.categories[series_info.category] | sort: "series_order" %}
+  {% assign series_posts = site.categories[series_info.category] | sort: "series_order" | reverse %}
   {% if series_posts.size > 0 %}
     <section class="archive__series">
       <h2><a href="{{ series_info.url | relative_url }}">{{ series_info.title }}</a></h2>
       <p>{{ series_info.description }}</p>
-      <p>총 {{ series_posts | size }}개의 글 · 제목 번호 순서로 읽기</p>
+      <p>총 {{ series_posts | size }}개의 글 · 최신 글부터 표시 · 제목 번호는 읽기 순서</p>
 
       {% for post in series_posts %}
         {% include archive-single.html type=page.entries_layout %}

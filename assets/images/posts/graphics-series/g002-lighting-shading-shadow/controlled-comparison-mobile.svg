@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="1590" viewBox="0 0 720 1590" role="img" aria-labelledby="title desc">
+  <title id="title">Lighting, Shading과 Shadow의 단계별 모바일 비교</title>
+  <desc id="desc">같은 구와 바닥에서 Lighting 정보만 있는 경우, Shading을 적용한 경우, Shadow까지 계산한 경우를 세로로 비교한다.</desc>
+  <defs>
+    <linearGradient id="cm-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset="1" stop-color="#dbeafe"/>
+    </linearGradient>
+    <radialGradient id="cm-lit" cx="31%" cy="25%" r="72%">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset=".32" stop-color="#93c5fd"/>
+      <stop offset="1" stop-color="#1e3a8a"/>
+    </radialGradient>
+    <radialGradient id="cm-lamp">
+      <stop offset="0" stop-color="#fff7cc"/>
+      <stop offset=".55" stop-color="#fde68a"/>
+      <stop offset="1" stop-color="#f59e0b"/>
+    </radialGradient>
+    <filter id="cm-blur" x="-30%" y="-60%" width="160%" height="220%">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+    <style>
+      .head{font:800 37px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#0f172a}
+      .sub{font:500 25px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#475569}
+      .card{fill:#fff;stroke:#94a3b8;stroke-width:3}
+      .label{font:700 30px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#0f172a}
+      .body{font:500 24px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#475569}
+      .tag{font:700 23px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#fff}
+    </style>
+  </defs>
+  <rect width="720" height="1590" rx="30" fill="url(#cm-bg)"/>
+  <text x="360" y="60" text-anchor="middle" class="head">하나씩 계산을 더해 보기</text>
+  <text x="360" y="102" text-anchor="middle" class="sub">구, 바닥, 카메라와 광원은 그대로 둔다</text>
+
+  <g transform="translate(50 145)">
+    <rect class="card" width="620" height="420" rx="25"/>
+    <rect x="24" y="22" width="172" height="40" rx="20" fill="#2563eb"/>
+    <text x="110" y="50" text-anchor="middle" class="tag">Lighting 정보</text>
+    <circle cx="130" cy="145" r="32" fill="url(#cm-lamp)"/>
+    <polygon points="235,300 555,300 530,355 255,355" fill="#cbd5e1"/>
+    <circle cx="395" cy="235" r="86" fill="#6b8fc9" stroke="#475569" stroke-width="3"/>
+    <text x="310" y="385" text-anchor="middle" class="label">빛의 위치만 안다</text>
+    <text x="310" y="415" text-anchor="middle" class="body">표면은 아직 한 색으로 보인다</text>
+  </g>
+
+  <g transform="translate(50 600)">
+    <rect class="card" width="620" height="420" rx="25"/>
+    <rect x="24" y="22" width="160" height="40" rx="20" fill="#15803d"/>
+    <text x="104" y="50" text-anchor="middle" class="tag">+ Shading</text>
+    <circle cx="130" cy="145" r="32" fill="url(#cm-lamp)"/>
+    <polygon points="235,300 555,300 530,355 255,355" fill="#dbeafe"/>
+    <circle cx="395" cy="235" r="86" fill="url(#cm-lit)" stroke="#1e3a8a" stroke-width="3"/>
+    <text x="310" y="385" text-anchor="middle" class="label">구의 형태가 보인다</text>
+    <text x="310" y="415" text-anchor="middle" class="body">바닥은 아직 빛의 가림을 모른다</text>
+  </g>
+
+  <g transform="translate(50 1055)">
+    <rect class="card" width="620" height="420" rx="25"/>
+    <rect x="24" y="22" width="164" height="40" rx="20" fill="#b91c1c"/>
+    <text x="106" y="50" text-anchor="middle" class="tag">+ Shadow</text>
+    <circle cx="130" cy="145" r="32" fill="url(#cm-lamp)"/>
+    <polygon points="235,300 555,300 530,355 255,355" fill="#dbeafe"/>
+    <ellipse cx="450" cy="315" rx="105" ry="26" fill="#334155" fill-opacity=".5" filter="url(#cm-blur)"/>
+    <ellipse cx="450" cy="315" rx="82" ry="18" fill="#334155" fill-opacity=".58"/>
+    <circle cx="395" cy="235" r="86" fill="url(#cm-lit)" stroke="#1e3a8a" stroke-width="3"/>
+    <text x="310" y="385" text-anchor="middle" class="label">공간 관계가 보인다</text>
+    <text x="310" y="415" text-anchor="middle" class="body">구가 막은 직접광이 바닥에서 사라진다</text>
+  </g>
+
+  <text x="360" y="1535" text-anchor="middle" class="sub">형태를 만드는 Shading · 빛의 가림을 연결하는 Shadow</text>
+</svg>

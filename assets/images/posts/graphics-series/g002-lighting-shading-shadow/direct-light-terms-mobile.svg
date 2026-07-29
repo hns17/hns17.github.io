@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="1540" viewBox="0 0 720 1540" role="img" aria-labelledby="title desc">
+  <title id="title">직접광을 구성하는 Lighting, Shading과 Shadow 항의 모바일 도식</title>
+  <desc id="desc">들어오는 빛 Li, 표면 반사와 방향 관계, 가시성 V가 차례로 결합되어 카메라로 나가는 빛 Lo에 기여한다.</desc>
+  <defs>
+    <linearGradient id="dm-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111827"/>
+      <stop offset="1" stop-color="#1e293b"/>
+    </linearGradient>
+    <style>
+      .head{font:800 36px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#f8fafc}
+      .sub{font:500 24px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#cbd5e1}
+      .name{font:700 31px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#f8fafc}
+      .body{font:500 25px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#cbd5e1}
+      .term{font:800 38px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#0f172a}
+      .op{font:800 48px "Noto Sans",sans-serif;fill:#f8fafc}
+    </style>
+  </defs>
+  <rect width="720" height="1540" rx="30" fill="url(#dm-bg)"/>
+  <text x="360" y="58" text-anchor="middle" class="head">직접광을 만드는 세 항</text>
+  <text x="360" y="98" text-anchor="middle" class="sub">Lₒ = Lₑ + V × Lᵢ × fᵣ × max(0, N · L)</text>
+
+  <g transform="translate(65 145)">
+    <rect width="590" height="330" rx="26" fill="#1d4ed8" fill-opacity=".28" stroke="#60a5fa" stroke-width="4"/>
+    <circle cx="65" cy="62" r="38" fill="#93c5fd"/><text x="65" y="75" text-anchor="middle" class="term">Lᵢ</text>
+    <text x="125" y="73" class="name">Lighting</text>
+    <text x="295" y="130" text-anchor="middle" class="body">광원에서 표면으로 들어오는 빛</text>
+    <circle cx="140" cy="215" r="22" fill="#fef3c7"/>
+    <line x1="165" y1="215" x2="435" y2="215" stroke="#fde68a" stroke-width="8"/>
+    <path d="M435 215 L407 198 L407 232 Z" fill="#fde68a"/>
+    <text x="295" y="292" text-anchor="middle" class="body">방향 · 세기 · 색 · 거리</text>
+  </g>
+  <text x="360" y="525" text-anchor="middle" class="op">×</text>
+
+  <g transform="translate(65 565)">
+    <rect width="590" height="340" rx="26" fill="#15803d" fill-opacity=".24" stroke="#4ade80" stroke-width="4"/>
+    <circle cx="65" cy="62" r="38" fill="#86efac"/><text x="65" y="74" text-anchor="middle" class="term">fᵣ</text>
+    <text x="125" y="73" class="name">Shading</text>
+    <text x="295" y="130" text-anchor="middle" class="body">재질의 반사 × 빛과 표면의 방향</text>
+    <circle cx="295" cy="225" r="68" fill="#475569"/>
+    <line x1="295" y1="225" x2="295" y2="145" stroke="#86efac" stroke-width="7"/>
+    <path d="M295 145 L281 169 L309 169 Z" fill="#86efac"/>
+    <line x1="295" y1="225" x2="225" y2="170" stroke="#fde68a" stroke-width="7"/>
+    <path d="M225 170 L253 175 L237 194 Z" fill="#fde68a"/>
+    <text x="295" y="315" text-anchor="middle" class="body">fᵣ × max(0, N · L)</text>
+  </g>
+  <text x="360" y="955" text-anchor="middle" class="op">×</text>
+
+  <g transform="translate(65 995)">
+    <rect width="590" height="340" rx="26" fill="#b91c1c" fill-opacity=".24" stroke="#f87171" stroke-width="4"/>
+    <circle cx="65" cy="62" r="38" fill="#fca5a5"/><text x="65" y="75" text-anchor="middle" class="term">V</text>
+    <text x="125" y="73" class="name">Shadow</text>
+    <text x="295" y="130" text-anchor="middle" class="body">표면에서 광원까지의 가시성</text>
+    <circle cx="145" cy="220" r="23" fill="#fef3c7"/>
+    <line x1="170" y1="220" x2="455" y2="270" stroke="#fde68a" stroke-width="6" stroke-dasharray="12 9"/>
+    <rect x="285" y="175" width="68" height="130" rx="10" fill="#ef4444"/>
+    <circle cx="455" cy="270" r="12" fill="#f8fafc"/>
+    <text x="295" y="320" text-anchor="middle" class="body">보이면 1 · 다른 물체가 가리면 0</text>
+  </g>
+
+  <path d="M360 1350 L360 1405" stroke="#94a3b8" stroke-width="7"/>
+  <path d="M360 1405 L344 1378 L376 1378 Z" fill="#94a3b8"/>
+  <circle cx="360" cy="1465" r="45" fill="#f8fafc"/>
+  <text x="360" y="1478" text-anchor="middle" class="term">Lₒ</text>
+  <text x="430" y="1475" class="sub">카메라로 나가는 빛</text>
+</svg>

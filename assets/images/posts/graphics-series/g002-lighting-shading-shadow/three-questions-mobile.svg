@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="1460" viewBox="0 0 720 1460" role="img" aria-labelledby="title desc">
+  <title id="title">Lighting, Shading과 Shadow의 세 가지 질문 모바일 도식</title>
+  <desc id="desc">Lighting은 표면으로 오는 빛, Shading은 표면과 재질의 반응, Shadow는 광원까지의 가시성을 담당한다.</desc>
+  <defs>
+    <linearGradient id="m-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#172554"/>
+    </linearGradient>
+    <radialGradient id="m-sphere" cx="32%" cy="28%" r="70%">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset=".35" stop-color="#93c5fd"/>
+      <stop offset="1" stop-color="#1e3a8a"/>
+    </radialGradient>
+    <marker id="m-arrow" markerWidth="12" markerHeight="12" refX="10" refY="4" orient="auto">
+      <path d="M0 0 L0 8 L11 4 Z" fill="#fde68a"/>
+    </marker>
+    <filter id="m-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .card{fill:#fff;fill-opacity:.06;stroke:#94a3b8;stroke-width:3}
+      .head{font:800 38px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#f8fafc}
+      .sub{font:500 27px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#cbd5e1}
+      .label{font:700 29px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#f8fafc}
+      .small{font:500 24px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#cbd5e1}
+      .num{font:800 30px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#0f172a}
+    </style>
+  </defs>
+  <rect width="720" height="1460" rx="30" fill="url(#m-bg)"/>
+  <text x="360" y="62" text-anchor="middle" class="head">같은 장면의 세 가지 질문</text>
+  <text x="360" y="105" text-anchor="middle" class="sub">한 픽셀에서 만나지만 원인은 다르다</text>
+
+  <g transform="translate(45 145)">
+    <rect class="card" width="630" height="380" rx="25"/>
+    <circle cx="55" cy="54" r="30" fill="#fde68a"/><text x="55" y="65" text-anchor="middle" class="num">1</text>
+    <text x="102" y="66" class="head">Lighting</text>
+    <text x="315" y="112" text-anchor="middle" class="sub">어떤 빛이 오는가?</text>
+    <circle cx="145" cy="225" r="38" fill="#fef3c7" filter="url(#m-glow)"/>
+    <g stroke="#fde68a" stroke-width="5">
+      <line x1="145" y1="170" x2="145" y2="145"/><line x1="90" y1="225" x2="65" y2="225"/>
+      <line x1="106" y1="186" x2="87" y2="167"/><line x1="184" y1="186" x2="203" y2="167"/>
+    </g>
+    <path d="M184 242 C250 260 310 275 390 287" fill="none" stroke="#fde68a" stroke-width="6" marker-end="url(#m-arrow)"/>
+    <ellipse cx="475" cy="310" rx="72" ry="18" fill="#334155"/>
+    <circle cx="475" cy="270" r="58" fill="#64748b" stroke="#94a3b8" stroke-width="3"/>
+    <text x="315" y="352" text-anchor="middle" class="label">방향 · 세기 · 색 · 거리</text>
+  </g>
+
+  <g transform="translate(45 555)">
+    <rect class="card" width="630" height="380" rx="25"/>
+    <circle cx="55" cy="54" r="30" fill="#86efac"/><text x="55" y="65" text-anchor="middle" class="num">2</text>
+    <text x="102" y="66" class="head">Shading</text>
+    <text x="315" y="112" text-anchor="middle" class="sub">표면은 어떻게 반응하는가?</text>
+    <circle cx="315" cy="238" r="105" fill="url(#m-sphere)" stroke="#bfdbfe" stroke-width="3"/>
+    <line x1="263" y1="190" x2="205" y2="145" stroke="#fde68a" stroke-width="6" marker-end="url(#m-arrow)"/>
+    <line x1="263" y1="190" x2="263" y2="125" stroke="#86efac" stroke-width="6" marker-end="url(#m-arrow)"/>
+    <text x="145" y="158" class="small">빛 L</text>
+    <text x="280" y="140" class="small">법선 N</text>
+    <text x="465" y="215" class="small">재질</text>
+    <text x="315" y="355" text-anchor="middle" class="label">빛 × 방향 × 재질 × 시점</text>
+  </g>
+
+  <g transform="translate(45 965)">
+    <rect class="card" width="630" height="430" rx="25"/>
+    <circle cx="55" cy="54" r="30" fill="#fca5a5"/><text x="55" y="65" text-anchor="middle" class="num">3</text>
+    <text x="102" y="66" class="head">Shadow</text>
+    <text x="315" y="112" text-anchor="middle" class="sub">빛까지의 길이 열려 있는가?</text>
+    <circle cx="145" cy="205" r="35" fill="#fef3c7" filter="url(#m-glow)"/>
+    <line x1="177" y1="220" x2="500" y2="340" stroke="#fde68a" stroke-width="5" stroke-dasharray="12 9"/>
+    <rect x="300" y="195" width="78" height="150" rx="12" fill="#ef4444" stroke="#fecaca" stroke-width="3"/>
+    <path d="M339 345 L530 375 L440 375 Z" fill="#0f172a" fill-opacity=".72"/>
+    <line x1="95" y1="375" x2="535" y2="375" stroke="#94a3b8" stroke-width="6"/>
+    <circle cx="500" cy="375" r="10" fill="#f8fafc"/>
+    <text x="339" y="182" text-anchor="middle" class="small">차폐물</text>
+    <text x="515" y="330" class="small">V = 0</text>
+    <text x="315" y="414" text-anchor="middle" class="label">광원 가시성 · 직접광 차단</text>
+  </g>
+</svg>
