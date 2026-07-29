@@ -23,7 +23,7 @@ series_order: 1
 
 3D 그래픽스가 해야 하는 첫 번째 일도 여기에 있다. 단순히 삼각형을 화면에 표시하는 것을 넘어, 사람이 하나의 물체와 공간으로 받아들일 수 있는 시각적 단서를 만들어야 한다.
 
-![윤곽, 색, 셰이딩과 그림자가 차례로 더해지며 물체의 형태와 공간 관계가 분명해지는 과정](../../../assets/images/posts/graphics-series/g001-why-graphics-starts-with-light/object-recognition-cues.svg)
+![윤곽, 색, 셰이딩과 그림자가 차례로 더해지며 물체의 형태와 공간 관계가 분명해지는 과정](/assets/images/posts/graphics-series/g001-why-graphics-starts-with-light/object-recognition-cues.svg)
 
 *그림 1. 윤곽에서 시작해 색, 셰이딩과 그림자가 더해질수록 물체를 해석할 정보가 늘어난다. 직접 제작.*
 
@@ -108,7 +108,7 @@ series_order: 1
 
 컴퓨터 그래픽스는 이 과정을 수치로 재구성한다.
 
-![광원에서 나온 빛이 표면에서 반사되어 카메라와 픽셀에 도달하는 과정](../../../assets/images/posts/graphics-series/g001-why-graphics-starts-with-light/light-surface-camera-flow.svg)
+![광원에서 나온 빛이 표면에서 반사되어 카메라와 픽셀에 도달하는 과정](/assets/images/posts/graphics-series/g001-why-graphics-starts-with-light/light-surface-camera-flow.svg)
 
 *그림 2. 색, 셰이딩과 그림자의 공통 원인인 광원, 표면, 카메라의 관계. 직접 제작.*
 
@@ -129,7 +129,7 @@ series_order: 1
 
 한 프레임을 그리는 방식은 기술마다 다르지만, 인식 가능한 픽셀을 만들기 위해 답해야 하는 질문은 크게 다르지 않다.
 
-![기하, 가시성, 셰이딩, 그림자와 카메라가 최종 픽셀을 결정하는 질문 지도](../../../assets/images/posts/graphics-series/g001-why-graphics-starts-with-light/rendering-question-map.svg)
+![기하, 가시성, 셰이딩, 그림자와 카메라가 최종 픽셀을 결정하는 질문 지도](/assets/images/posts/graphics-series/g001-why-graphics-starts-with-light/rendering-question-map.svg)
 
 *그림 3. 장면의 원인으로부터 한 픽셀을 만들기 위해 렌더러가 답하는 다섯 가지 질문. 직접 제작.*
 

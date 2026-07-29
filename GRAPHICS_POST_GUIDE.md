@@ -214,12 +214,13 @@ shading-shadow-comparison.png
 - 폴더에는 소문자 영문, 숫자와 하이픈만 사용한다.
 - `image1.png`, `final-final.png` 같은 의미 없는 이름을 사용하지 않는다.
 - 새 글의 이미지는 해당 글 전용 폴더에 보관한다.
-- `_posts/Graphics/Series`의 글에서는 검증된 상대 경로를 사용한다.
+- `_posts/Graphics/Series`의 글에서는 카테고리 깊이가 바뀌어도 깨지지 않도록 `/assets/...` 형식의
+  사이트 루트 기준 경로를 사용한다.
 
 예:
 
 ```markdown
-![물체에서 반사된 빛이 카메라에 도달해 픽셀이 되는 흐름](../../../assets/images/posts/graphics-series/g001-why-graphics-starts-with-light/scene-light-eye-flow.svg)
+![물체에서 반사된 빛이 카메라에 도달해 픽셀이 되는 흐름](/assets/images/posts/graphics-series/g001-why-graphics-starts-with-light/scene-light-eye-flow.svg)
 
 *그림 1. 3D 그래픽스가 물체 자체가 아니라 카메라에 도달하는 빛을 계산한다는 관계. 직접 제작.*
 ```
