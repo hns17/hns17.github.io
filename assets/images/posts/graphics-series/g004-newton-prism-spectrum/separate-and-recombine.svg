@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">프리즘으로 빛을 분리하고 렌즈로 재결합하는 실험</title>
+  <desc id="desc">흰빛을 프리즘으로 분리한 뒤 모든 색 성분을 렌즈로 모으면 흰빛이 되지만 일부 성분을 차단하면 결과 색이 달라진다.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#172554"/>
+    </linearGradient>
+    <linearGradient id="mix" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#ef4444"/>
+      <stop offset=".2" stop-color="#f97316"/>
+      <stop offset=".4" stop-color="#facc15"/>
+      <stop offset=".58" stop-color="#22c55e"/>
+      <stop offset=".78" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <radialGradient id="whiteGlow">
+      <stop stop-color="#fff"/>
+      <stop offset=".45" stop-color="#f8fafc"/>
+      <stop offset="1" stop-color="#f8fafc" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      .head{font:700 30px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#f8fafc}
+      .sub{font:500 18px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#cbd5e1}
+      .label{font:700 19px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#f8fafc}
+      .small{font:500 16px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#cbd5e1}
+      .panel{fill:#fff;fill-opacity:.05;stroke:#64748b;stroke-width:2}
+      .prism{fill:#bfdbfe;fill-opacity:.2;stroke:#93c5fd;stroke-width:4}
+    </style>
+  </defs>
+  <rect width="1200" height="700" rx="28" fill="url(#bg)"/>
+  <text x="600" y="53" text-anchor="middle" class="head">갈라진 빛을 다시 모으면 무엇이 될까?</text>
+  <text x="600" y="85" text-anchor="middle" class="sub">재결합은 흰빛이 여러 성분의 조합이라는 설명을 반대 방향에서 시험한다</text>
+
+  <g transform="translate(45 120)">
+    <rect width="1110" height="230" rx="22" class="panel"/>
+    <rect x="22" y="18" width="205" height="38" rx="19" fill="#166534"/>
+    <text x="124" y="44" text-anchor="middle" class="label">모든 성분을 모은다</text>
+    <path d="M35 132H130" stroke="#f8fafc" stroke-width="10"/>
+    <polygon points="135,75 235,132 135,189" class="prism"/>
+    <g fill="none" stroke-width="6">
+      <path d="M190 132L410 76L655 132" stroke="#8b5cf6"/>
+      <path d="M190 132L410 94L655 132" stroke="#3b82f6"/>
+      <path d="M190 132L410 113L655 132" stroke="#22c55e"/>
+      <path d="M190 132L410 133L655 132" stroke="#facc15"/>
+      <path d="M190 132L410 153L655 132" stroke="#f97316"/>
+      <path d="M190 132L410 174L655 132" stroke="#ef4444"/>
+    </g>
+    <path d="M394 61Q435 132 394 203Q430 190 451 132Q430 74 394 61Z" fill="#dbeafe" fill-opacity=".28" stroke="#93c5fd" stroke-width="4"/>
+    <text x="422" y="220" text-anchor="middle" class="small">렌즈</text>
+    <path d="M655 132H882" stroke="#f8fafc" stroke-width="10"/>
+    <circle cx="902" cy="132" r="65" fill="url(#whiteGlow)"/>
+    <rect x="935" y="57" width="28" height="150" rx="6" fill="#334155" stroke="#64748b" stroke-width="3"/>
+    <circle cx="949" cy="132" r="18" fill="#f8fafc"/>
+    <text x="1015" y="126" class="label">흰빛</text>
+    <text x="1015" y="153" class="small">성분이 다시 겹침</text>
+  </g>
+
+  <g transform="translate(45 382)">
+    <rect width="1110" height="230" rx="22" class="panel"/>
+    <rect x="22" y="18" width="205" height="38" rx="19" fill="#9a3412"/>
+    <text x="124" y="44" text-anchor="middle" class="label">일부 성분을 가린다</text>
+    <path d="M35 132H130" stroke="#f8fafc" stroke-width="10"/>
+    <polygon points="135,75 235,132 135,189" class="prism"/>
+    <g fill="none" stroke-width="6">
+      <path d="M190 132L410 76L655 132" stroke="#8b5cf6"/>
+      <path d="M190 132L410 94L655 132" stroke="#3b82f6"/>
+      <path d="M190 132L410 113L655 132" stroke="#22c55e"/>
+      <path d="M190 132L410 133L655 132" stroke="#facc15"/>
+      <path d="M190 132L410 153L655 132" stroke="#f97316"/>
+      <path d="M190 132L410 174L655 132" stroke="#ef4444" stroke-dasharray="11 9" opacity=".26"/>
+    </g>
+    <rect x="276" y="156" width="88" height="35" rx="7" fill="#020617" stroke="#94a3b8" stroke-width="3"/>
+    <text x="320" y="181" text-anchor="middle" class="small">차단</text>
+    <path d="M394 61Q435 132 394 203Q430 190 451 132Q430 74 394 61Z" fill="#dbeafe" fill-opacity=".28" stroke="#93c5fd" stroke-width="4"/>
+    <text x="422" y="220" text-anchor="middle" class="small">렌즈</text>
+    <path d="M655 132H882" stroke="#c4b5fd" stroke-width="10"/>
+    <rect x="935" y="57" width="28" height="150" rx="6" fill="#334155" stroke="#64748b" stroke-width="3"/>
+    <circle cx="949" cy="132" r="18" fill="#c4b5fd"/>
+    <text x="1015" y="126" class="label">다른 혼합색</text>
+    <text x="1015" y="153" class="small">조합이 달라짐</text>
+  </g>
+
+  <rect x="323" y="638" width="554" height="40" rx="20" fill="#1e3a8a"/>
+  <text x="600" y="664" text-anchor="middle" class="label">흰빛은 하나의 흰 파장이 아니라 여러 성분의 조합이다</text>
+</svg>

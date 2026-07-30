@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">기하 광선과 스펙트럼 운반 정보의 비교</title>
+  <desc id="desc">시작점과 방향만 있는 광선은 위치를 계산하지만 빛의 구성을 알 수 없고, 스펙트럼 정보를 함께 가진 광선은 파장별 양과 분산 뒤 방향을 계산할 수 있다.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#172554"/>
+    </linearGradient>
+    <linearGradient id="spectrum" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#7c3aed"/>
+      <stop offset=".18" stop-color="#2563eb"/>
+      <stop offset=".38" stop-color="#22c55e"/>
+      <stop offset=".62" stop-color="#facc15"/>
+      <stop offset=".82" stop-color="#f97316"/>
+      <stop offset="1" stop-color="#ef4444"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0 0L0 6L9 3Z" fill="#f8fafc"/>
+    </marker>
+    <style>
+      .head{font:700 30px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#f8fafc}
+      .sub{font:500 18px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#cbd5e1}
+      .label{font:700 19px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#f8fafc}
+      .small{font:500 16px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#cbd5e1}
+      .panel{fill:#fff;fill-opacity:.05;stroke:#64748b;stroke-width:2}
+      .note{fill:#172554;stroke:#60a5fa;stroke-width:2}
+    </style>
+  </defs>
+
+  <rect width="1200" height="720" rx="28" fill="url(#bg)"/>
+  <text x="600" y="53" text-anchor="middle" class="head">광선의 방향만 알면 빛의 색도 알 수 있을까?</text>
+  <text x="600" y="85" text-anchor="middle" class="sub">기하 정보는 경로를, 스펙트럼 정보는 그 경로로 이동하는 빛의 구성을 설명한다</text>
+
+  <g transform="translate(45 122)">
+    <rect width="530" height="510" rx="22" class="panel"/>
+    <rect x="30" y="24" width="218" height="40" rx="20" fill="#334155"/>
+    <text x="139" y="51" text-anchor="middle" class="label">1 · 기하 광선만 기록</text>
+    <text x="265" y="96" text-anchor="middle" class="label">P(t) = O + tD</text>
+
+    <circle cx="85" cy="180" r="13" fill="#f8fafc"/>
+    <text x="85" y="215" text-anchor="middle" class="small">시작점 O</text>
+    <path d="M102 180H444" stroke="#f8fafc" stroke-width="8" marker-end="url(#arrow)"/>
+    <text x="280" y="160" text-anchor="middle" class="small">방향 D</text>
+    <rect x="452" y="125" width="25" height="110" rx="5" fill="#334155" stroke="#64748b" stroke-width="3"/>
+    <circle cx="464" cy="180" r="10" fill="#f8fafc"/>
+    <text x="265" y="264" text-anchor="middle" class="label">어디를 지나는지는 계산할 수 있다</text>
+
+    <text x="52" y="315" class="small">하지만 같은 O와 D에도 서로 다른 빛이 올 수 있다</text>
+    <g transform="translate(52 340)">
+      <path d="M0 22H132" stroke="#f8fafc" stroke-width="5"/>
+      <rect x="152" y="7" width="265" height="30" rx="15" fill="url(#spectrum)"/>
+      <text x="430" y="27" class="small">흰빛</text>
+    </g>
+    <g transform="translate(52 392)">
+      <path d="M0 22H132" stroke="#f8fafc" stroke-width="5"/>
+      <rect x="152" y="7" width="265" height="30" rx="15" fill="#f59e0b"/>
+      <text x="430" y="27" class="small">따뜻한 빛</text>
+    </g>
+    <g transform="translate(52 444)">
+      <path d="M0 22H132" stroke="#f8fafc" stroke-width="5"/>
+      <rect x="152" y="7" width="265" height="30" rx="15" fill="#3b82f6"/>
+      <text x="430" y="27" class="small">푸른 빛</text>
+    </g>
+  </g>
+
+  <g transform="translate(625 122)">
+    <rect width="530" height="510" rx="22" class="panel"/>
+    <rect x="30" y="24" width="268" height="40" rx="20" fill="#1e3a8a"/>
+    <text x="164" y="51" text-anchor="middle" class="label">2 · 빛의 운반 정보도 기록</text>
+
+    <rect x="54" y="94" width="422" height="86" rx="16" class="note"/>
+    <text x="265" y="125" text-anchor="middle" class="label">광선 = 경로 {O, D} + 스펙트럼 S(λ)</text>
+    <rect x="103" y="143" width="324" height="18" rx="9" fill="url(#spectrum)"/>
+
+    <circle cx="75" cy="256" r="11" fill="#f8fafc"/>
+    <g transform="translate(88 249)">
+      <path d="M0 0H210" stroke="#ef4444" stroke-width="3"/>
+      <path d="M0 7H210" stroke="#22c55e" stroke-width="3"/>
+      <path d="M0 14H210" stroke="#8b5cf6" stroke-width="3"/>
+    </g>
+    <text x="185" y="232" text-anchor="middle" class="small">한 경로에 여러 파장 Sample</text>
+
+    <polygon points="320,204 420,256 320,308" fill="#bfdbfe" fill-opacity=".2" stroke="#93c5fd" stroke-width="4"/>
+    <path d="M372 256L485 230" stroke="#ef4444" stroke-width="6"/>
+    <path d="M372 256L485 270" stroke="#22c55e" stroke-width="6"/>
+    <path d="M372 256L485 318" stroke="#8b5cf6" stroke-width="6"/>
+    <text x="404" y="342" text-anchor="middle" class="small">분산 뒤 D(λ)</text>
+
+    <rect x="54" y="374" width="422" height="92" rx="16" fill="#312e81" stroke="#a5b4fc" stroke-width="2"/>
+    <text x="265" y="407" text-anchor="middle" class="label">S(λ): 어떤 빛이 얼마나 있는가</text>
+    <text x="265" y="439" text-anchor="middle" class="label">D(λ): 그 파장이 어디로 가는가</text>
+  </g>
+
+  <rect x="258" y="658" width="684" height="42" rx="21" fill="#1e3a8a"/>
+  <text x="600" y="685" text-anchor="middle" class="label">경로와 운반 정보는 서로 다른 질문에 답한다</text>
+</svg>

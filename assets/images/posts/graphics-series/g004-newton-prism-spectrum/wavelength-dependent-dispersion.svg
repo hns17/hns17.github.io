@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">파장별 굴절률 차이로 생기는 프리즘 분산</title>
+  <desc id="desc">같은 흰빛이 프리즘에 들어가면 빨강 초록 보라 성분이 서로 다른 굴절률 때문에 다른 각도로 나가고, 보라 성분이 가장 크게 편향된다.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#172554"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#dbeafe" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#60a5fa" stop-opacity=".12"/>
+    </linearGradient>
+    <marker id="white-arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0 0L0 6L9 3Z" fill="#f8fafc"/>
+    </marker>
+    <style>
+      .head{font:700 30px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#f8fafc}
+      .sub{font:500 18px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#cbd5e1}
+      .label{font:700 19px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#f8fafc}
+      .small{font:500 16px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#cbd5e1}
+      .chip{fill:#fff;fill-opacity:.06;stroke:#64748b;stroke-width:2}
+    </style>
+  </defs>
+
+  <rect width="1200" height="700" rx="28" fill="url(#bg)"/>
+  <text x="600" y="53" text-anchor="middle" class="head">같은 입사 경로가 왜 여러 출사 방향으로 갈라질까?</text>
+  <text x="600" y="85" text-anchor="middle" class="sub">프리즘의 굴절률이 파장마다 다르기 때문에 같은 경계에서도 굴절각이 달라진다</text>
+
+  <g>
+    <circle cx="85" cy="330" r="30" fill="#fff" fill-opacity=".16" stroke="#e2e8f0" stroke-width="3"/>
+    <circle cx="85" cy="330" r="12" fill="#f8fafc"/>
+    <text x="85" y="382" text-anchor="middle" class="small">흰빛</text>
+    <path d="M120 330H380" stroke="#f8fafc" stroke-width="10" marker-end="url(#white-arrow)"/>
+    <text x="250" y="306" text-anchor="middle" class="small">모든 성분의 입사 경로는 같다</text>
+
+    <polygon points="500,130 300,550 740,550" fill="url(#glass)" stroke="#93c5fd" stroke-width="5"/>
+    <text x="500" y="525" text-anchor="middle" class="label">유리 프리즘 · n(λ)</text>
+
+    <path d="M380 330L430 343" stroke="#f8fafc" stroke-width="9" fill="none"/>
+    <circle cx="430" cy="343" r="7" fill="#f8fafc"/>
+    <line x1="392" y1="305" x2="468" y2="381" stroke="#94a3b8" stroke-width="2" stroke-dasharray="8 7"/>
+    <line x1="583" y1="424" x2="657" y2="348" stroke="#94a3b8" stroke-width="2" stroke-dasharray="8 7"/>
+    <text x="372" y="287" class="small">법선</text>
+    <text x="654" y="338" class="small">법선</text>
+
+    <path d="M430 343L620 374L1010 420" stroke="#ef4444" stroke-width="7" fill="none"/>
+    <path d="M430 343L620 386L1010 474" stroke="#22c55e" stroke-width="7" fill="none"/>
+    <path d="M430 343L620 400L1010 536" stroke="#8b5cf6" stroke-width="7" fill="none"/>
+    <circle cx="620" cy="374" r="6" fill="#ef4444"/>
+    <circle cx="620" cy="386" r="6" fill="#22c55e"/>
+    <circle cx="620" cy="400" r="6" fill="#8b5cf6"/>
+    <text x="520" y="325" text-anchor="middle" class="small">첫 경계부터 방향 차이</text>
+
+    <rect x="1024" y="330" width="30" height="245" rx="7" fill="#334155" stroke="#64748b" stroke-width="3"/>
+    <circle cx="1039" cy="422" r="13" fill="#ef4444"/>
+    <circle cx="1039" cy="476" r="13" fill="#22c55e"/>
+    <circle cx="1039" cy="538" r="13" fill="#8b5cf6"/>
+    <text x="1080" y="428" class="label">빨강 · 덜 편향</text>
+    <text x="1080" y="482" class="label">초록</text>
+    <text x="1080" y="544" class="label">보라 · 더 편향</text>
+
+    <path d="M715 391A95 95 0 0 1 714 452" fill="none" stroke="#f8fafc" stroke-width="2"/>
+    <text x="735" y="425" class="small">편향각 δ(λ)</text>
+  </g>
+
+  <g transform="translate(135 596)">
+    <rect width="930" height="66" rx="22" class="chip"/>
+    <text x="225" y="40" text-anchor="middle" class="label" fill="#ef4444">n(빨강) &lt; n(초록) &lt; n(보라)</text>
+    <text x="695" y="40" text-anchor="middle" class="label">δ(빨강) &lt; δ(초록) &lt; δ(보라)</text>
+  </g>
+</svg>

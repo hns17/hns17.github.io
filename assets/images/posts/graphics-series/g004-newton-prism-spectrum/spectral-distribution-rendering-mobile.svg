@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="1220" viewBox="0 0 640 1220" role="img" aria-labelledby="title desc">
+  <title id="title">연속 스펙트럼 표본화와 렌더링 모바일 개념도</title>
+  <desc id="desc">연속 함수 S 람다에서 여러 파장을 표본화한 뒤 광원, 재질, 경로를 계산하고 RGB로 변환하는 흐름을 세로 화면에 나타낸다.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#172554"/>
+    </linearGradient>
+    <linearGradient id="spectrum" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#7c3aed"/>
+      <stop offset=".18" stop-color="#2563eb"/>
+      <stop offset=".36" stop-color="#06b6d4"/>
+      <stop offset=".51" stop-color="#22c55e"/>
+      <stop offset=".68" stop-color="#facc15"/>
+      <stop offset=".83" stop-color="#f97316"/>
+      <stop offset="1" stop-color="#ef4444"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0 0L0 6L9 3Z" fill="#94a3b8"/>
+    </marker>
+    <style>
+      .head{font:700 27px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#f8fafc}
+      .sub{font:500 17px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#cbd5e1}
+      .label{font:700 18px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#f8fafc}
+      .small{font:500 15px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#cbd5e1}
+      .panel{fill:#fff;fill-opacity:.05;stroke:#64748b;stroke-width:2}
+      .box{fill:#172554;stroke:#60a5fa;stroke-width:2}
+    </style>
+  </defs>
+  <rect width="640" height="1220" rx="26" fill="url(#bg)"/>
+  <text x="320" y="48" text-anchor="middle" class="head">스펙트럼은 파장에 따른 함수다</text>
+  <text x="320" y="79" text-anchor="middle" class="sub">연속적인 빛을 Sample해 화면 색까지 계산한다</text>
+
+  <g transform="translate(30 108)">
+    <rect width="580" height="474" rx="22" class="panel"/>
+    <text x="290" y="40" text-anchor="middle" class="label">연속 분포 S(λ)와 파장 Sample</text>
+    <line x1="58" y1="309" x2="522" y2="309" stroke="#94a3b8" stroke-width="2"/>
+    <line x1="58" y1="309" x2="58" y2="74" stroke="#94a3b8" stroke-width="2"/>
+    <path d="M58 286C98 264 120 192 160 220C203 251 219 137 267 164C312 190 348 102 391 135C436 169 459 219 522 272L522 309L58 309Z" fill="url(#spectrum)" opacity=".28"/>
+    <path d="M58 286C98 264 120 192 160 220C203 251 219 137 267 164C312 190 348 102 391 135C436 169 459 219 522 272" fill="none" stroke="url(#spectrum)" stroke-width="7"/>
+    <g stroke="#f8fafc" stroke-width="2" stroke-dasharray="5 6" opacity=".8">
+      <line x1="104" y1="309" x2="104" y2="255"/>
+      <line x1="181" y1="309" x2="181" y2="212"/>
+      <line x1="264" y1="309" x2="264" y2="163"/>
+      <line x1="345" y1="309" x2="345" y2="126"/>
+      <line x1="426" y1="309" x2="426" y2="159"/>
+      <line x1="487" y1="309" x2="487" y2="242"/>
+    </g>
+    <g fill="#f8fafc">
+      <circle cx="104" cy="255" r="6"/>
+      <circle cx="181" cy="212" r="6"/>
+      <circle cx="264" cy="163" r="6"/>
+      <circle cx="345" cy="126" r="6"/>
+      <circle cx="426" cy="159" r="6"/>
+      <circle cx="487" cy="242" r="6"/>
+    </g>
+    <text x="58" y="336" text-anchor="middle" class="small">380</text>
+    <text x="522" y="336" text-anchor="middle" class="small">780 nm</text>
+    <rect x="58" y="356" width="464" height="30" rx="15" fill="url(#spectrum)"/>
+    <text x="290" y="423" text-anchor="middle" class="small">색 이름은 연속 변화의 이정표</text>
+    <text x="290" y="447" text-anchor="middle" class="small">점은 계산을 위해 고른 유한한 Sample</text>
+  </g>
+
+  <g transform="translate(30 610)">
+    <rect width="580" height="490" rx="22" class="panel"/>
+    <text x="290" y="40" text-anchor="middle" class="label">스펙트럼 렌더링의 계산 흐름</text>
+
+    <rect x="80" y="67" width="420" height="62" rx="15" class="box"/>
+    <text x="290" y="93" text-anchor="middle" class="label">광원 E(λ)</text>
+    <text x="290" y="116" text-anchor="middle" class="small">파장별 방출량</text>
+    <line x1="290" y1="129" x2="290" y2="154" stroke="#94a3b8" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <rect x="80" y="161" width="420" height="62" rx="15" class="box"/>
+    <text x="290" y="187" text-anchor="middle" class="label">재질 R(λ)</text>
+    <text x="290" y="210" text-anchor="middle" class="small">파장별 반사와 흡수</text>
+    <line x1="290" y1="223" x2="290" y2="248" stroke="#94a3b8" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <rect x="80" y="255" width="420" height="62" rx="15" class="box"/>
+    <text x="290" y="281" text-anchor="middle" class="label">경로 D(λ), 굴절률 n(λ)</text>
+    <text x="290" y="304" text-anchor="middle" class="small">파장별 이동 방향</text>
+    <line x1="290" y1="317" x2="290" y2="342" stroke="#94a3b8" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <rect x="80" y="349" width="420" height="62" rx="15" fill="#312e81" stroke="#a5b4fc" stroke-width="2"/>
+    <text x="290" y="375" text-anchor="middle" class="label">눈·센서 반응 → 화면 RGB</text>
+    <text x="290" y="398" text-anchor="middle" class="small">계산 결과를 표시할 색으로 변환</text>
+    <text x="290" y="452" text-anchor="middle" class="small">입력은 스펙트럼, 픽셀은 결과 표현</text>
+  </g>
+
+  <rect x="64" y="1135" width="512" height="56" rx="28" fill="#1e3a8a"/>
+  <text x="320" y="1170" text-anchor="middle" class="label">연속 현상 → 유한 Sample → 화면의 세 채널</text>
+</svg>

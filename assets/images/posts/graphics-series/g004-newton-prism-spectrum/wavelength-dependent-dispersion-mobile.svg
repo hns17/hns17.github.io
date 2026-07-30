@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="980" viewBox="0 0 640 980" role="img" aria-labelledby="title desc">
+  <title id="title">파장별 굴절률 차이로 생기는 프리즘 분산 모바일 도해</title>
+  <desc id="desc">같은 입사 경로의 흰빛이 프리즘을 지나며 빨강 초록 보라 방향으로 갈라지고 보라 성분이 가장 크게 편향되는 과정을 세로로 나타낸다.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#172554"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#dbeafe" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#60a5fa" stop-opacity=".12"/>
+    </linearGradient>
+    <style>
+      .head{font:700 27px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#f8fafc}
+      .sub{font:500 17px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#cbd5e1}
+      .label{font:700 18px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#f8fafc}
+      .small{font:500 15px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#cbd5e1}
+      .chip{fill:#fff;fill-opacity:.06;stroke:#64748b;stroke-width:2}
+    </style>
+  </defs>
+
+  <rect width="640" height="980" rx="26" fill="url(#bg)"/>
+  <text x="320" y="48" text-anchor="middle" class="head">프리즘의 분산</text>
+  <text x="320" y="79" text-anchor="middle" class="sub">같은 입사 경로, 다른 n(λ), 다른 출사 방향</text>
+
+  <circle cx="205" cy="133" r="25" fill="#fff" fill-opacity=".16" stroke="#e2e8f0" stroke-width="3"/>
+  <circle cx="205" cy="133" r="10" fill="#f8fafc"/>
+  <path d="M205 164V246" stroke="#f8fafc" stroke-width="9"/>
+  <text x="246" y="141" class="small">흰빛</text>
+  <text x="320" y="205" text-anchor="middle" class="small">모든 파장 성분이 같은 방향으로 입사</text>
+
+  <polygon points="92,248 548,248 320,590" fill="url(#glass)" stroke="#93c5fd" stroke-width="5"/>
+  <text x="397" y="303" text-anchor="middle" class="label">유리 · n(λ)</text>
+  <circle cx="205" cy="248" r="7" fill="#f8fafc"/>
+  <line x1="154" y1="384" x2="260" y2="456" stroke="#94a3b8" stroke-width="2" stroke-dasharray="8 7"/>
+  <text x="119" y="376" class="small">출사면 법선</text>
+
+  <path d="M205 248L229 441L257 750" stroke="#ef4444" stroke-width="7" fill="none"/>
+  <path d="M205 248L205 418L191 750" stroke="#22c55e" stroke-width="7" fill="none"/>
+  <path d="M205 248L190 396L113 750" stroke="#8b5cf6" stroke-width="7" fill="none"/>
+  <circle cx="229" cy="441" r="6" fill="#ef4444"/>
+  <circle cx="205" cy="418" r="6" fill="#22c55e"/>
+  <circle cx="190" cy="396" r="6" fill="#8b5cf6"/>
+  <text x="386" y="369" text-anchor="middle" class="small">첫 경계부터</text>
+  <text x="386" y="391" text-anchor="middle" class="small">경로가 갈라진다</text>
+  <line x1="70" y1="765" x2="300" y2="765" stroke="#64748b" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="257" cy="765" r="13" fill="#ef4444"/>
+  <circle cx="191" cy="765" r="13" fill="#22c55e"/>
+  <circle cx="113" cy="765" r="13" fill="#8b5cf6"/>
+  <text x="330" y="705" class="label" fill="#ef4444">빨강 · 덜 편향</text>
+  <text x="330" y="743" class="label" fill="#22c55e">초록</text>
+  <text x="330" y="781" class="label" fill="#c4b5fd">보라 · 더 편향</text>
+
+  <rect x="53" y="832" width="534" height="110" rx="22" class="chip"/>
+  <text x="320" y="870" text-anchor="middle" class="label">n(빨강) &lt; n(초록) &lt; n(보라)</text>
+  <text x="320" y="906" text-anchor="middle" class="label">δ(빨강) &lt; δ(초록) &lt; δ(보라)</text>
+  <text x="320" y="931" text-anchor="middle" class="small">정상 분산을 보이는 일반적인 가시광 유리</text>
+</svg>

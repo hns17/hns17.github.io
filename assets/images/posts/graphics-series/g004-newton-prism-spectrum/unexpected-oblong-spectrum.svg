@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">둥근 구멍을 지난 햇빛의 예상과 프리즘 스펙트럼 관찰 비교</title>
+  <desc id="desc">모든 빛이 같은 각도로 굴절되면 둥근 흰 상이 이동해야 하지만, 실제로는 파장마다 다르게 굴절되어 길쭉한 색 스펙트럼이 벽에 나타난다.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#172554"/>
+    </linearGradient>
+    <linearGradient id="spectrum" x1="0" y1="1" x2="0" y2="0">
+      <stop stop-color="#ef4444"/>
+      <stop offset=".18" stop-color="#f97316"/>
+      <stop offset=".35" stop-color="#facc15"/>
+      <stop offset=".52" stop-color="#22c55e"/>
+      <stop offset=".68" stop-color="#06b6d4"/>
+      <stop offset=".84" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <marker id="whiteArrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0 0L0 6L9 3Z" fill="#f8fafc"/>
+    </marker>
+    <style>
+      .panel{fill:#fff;fill-opacity:.055;stroke:#94a3b8;stroke-width:2}
+      .head{font:700 30px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#f8fafc}
+      .sub{font:500 18px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#cbd5e1}
+      .label{font:700 19px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#f8fafc}
+      .small{font:500 16px "Noto Sans KR","Malgun Gothic",sans-serif;fill:#cbd5e1}
+    </style>
+  </defs>
+
+  <rect width="1200" height="680" rx="28" fill="url(#bg)"/>
+  <text x="600" y="52" text-anchor="middle" class="head">둥근 구멍의 상이 왜 길게 늘어났을까?</text>
+  <text x="600" y="84" text-anchor="middle" class="sub">같은 굴절을 예상했지만 실제 빛은 성분마다 다른 방향으로 갈라졌다</text>
+
+  <g transform="translate(45 118)">
+    <rect class="panel" width="530" height="505" rx="22"/>
+    <text x="265" y="45" text-anchor="middle" class="head">예상</text>
+    <text x="265" y="76" text-anchor="middle" class="sub">모든 빛이 같은 정도로 굴절한다면</text>
+
+    <circle cx="66" cy="220" r="34" fill="#020617" stroke="#94a3b8" stroke-width="5"/>
+    <circle cx="66" cy="220" r="12" fill="#f8fafc"/>
+    <text x="66" y="279" text-anchor="middle" class="small">둥근 구멍</text>
+
+    <line x1="102" y1="220" x2="176" y2="220" stroke="#f8fafc" stroke-width="9"/>
+    <polygon points="190,135 290,220 190,305" fill="#bfdbfe" fill-opacity=".22" stroke="#93c5fd" stroke-width="5"/>
+    <line x1="245" y1="220" x2="392" y2="164" stroke="#f8fafc" stroke-width="9" marker-end="url(#whiteArrow)"/>
+
+    <rect x="425" y="105" width="34" height="235" rx="8" fill="#334155" stroke="#64748b" stroke-width="3"/>
+    <circle cx="442" cy="146" r="28" fill="#f8fafc" stroke="#cbd5e1" stroke-width="4"/>
+    <text x="442" y="376" text-anchor="middle" class="small">둥근 흰 상</text>
+
+    <rect x="100" y="419" width="330" height="48" rx="24" fill="#1e3a8a"/>
+    <text x="265" y="449" text-anchor="middle" class="label">모양은 유지되고 위치만 이동</text>
+  </g>
+
+  <g transform="translate(625 118)">
+    <rect class="panel" width="530" height="505" rx="22"/>
+    <text x="265" y="45" text-anchor="middle" class="head">실제 관찰</text>
+    <text x="265" y="76" text-anchor="middle" class="sub">한 빛이 여러 굴절 방향으로 펼쳐졌다</text>
+
+    <circle cx="66" cy="220" r="34" fill="#020617" stroke="#94a3b8" stroke-width="5"/>
+    <circle cx="66" cy="220" r="12" fill="#f8fafc"/>
+    <text x="66" y="279" text-anchor="middle" class="small">둥근 구멍</text>
+
+    <line x1="102" y1="220" x2="176" y2="220" stroke="#f8fafc" stroke-width="9"/>
+    <polygon points="190,135 290,220 190,305" fill="#bfdbfe" fill-opacity=".22" stroke="#93c5fd" stroke-width="5"/>
+
+    <g fill="none" stroke-width="5">
+      <path d="M245 220L410 264" stroke="#ef4444"/>
+      <path d="M245 220L410 229" stroke="#f59e0b"/>
+      <path d="M245 220L410 194" stroke="#22c55e"/>
+      <path d="M245 220L410 159" stroke="#3b82f6"/>
+      <path d="M245 220L410 124" stroke="#8b5cf6"/>
+    </g>
+
+    <rect x="425" y="88" width="34" height="270" rx="8" fill="#334155" stroke="#64748b" stroke-width="3"/>
+    <rect x="431" y="105" width="22" height="222" rx="11" fill="url(#spectrum)"/>
+    <text x="442" y="390" text-anchor="middle" class="small">길쭉한 색 상</text>
+
+    <rect x="92" y="419" width="346" height="48" rx="24" fill="#7c2d12"/>
+    <text x="265" y="449" text-anchor="middle" class="label">성분마다 다른 위치에 도착</text>
+  </g>
+</svg>
