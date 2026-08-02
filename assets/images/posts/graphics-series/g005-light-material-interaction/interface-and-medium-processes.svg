@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">빛과 물질의 상호작용은 경계와 내부의 두 단계로 일어난다</title>
+  <desc id="desc">입사광이 물질 경계에서 반사광과 굴절된 투과광으로 나뉘고, 내부의 빛이 흡수되거나 여러 방향으로 산란되는 과정</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#081426"/>
+      <stop offset="1" stop-color="#122b45"/>
+    </linearGradient>
+    <linearGradient id="medium" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#163d5b" stop-opacity=".82"/>
+      <stop offset="1" stop-color="#214d61" stop-opacity=".55"/>
+    </linearGradient>
+    <linearGradient id="light" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff6bc"/>
+      <stop offset=".5" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#8ee8ff"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <marker id="arrowLight" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0 0 12 6 0 12Z" fill="#fff4b0"/>
+    </marker>
+    <marker id="arrowCyan" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0 0 12 6 0 12Z" fill="#71dcff"/>
+    </marker>
+    <style>
+      text{font-family:"Noto Sans KR","Malgun Gothic",sans-serif;fill:#eaf5ff}
+      .label{font-size:25px;font-weight:700}
+      .body{font-size:21px;fill:#bdd2e4}
+      .small{font-size:18px;fill:#a9c1d5}
+    </style>
+  </defs>
+  <rect width="1200" height="720" rx="28" fill="url(#bg)"/>
+  <text x="60" y="66" font-size="32" font-weight="800">빛과 물질의 상호작용은 두 단계로 읽는다</text>
+  <rect x="55" y="100" width="410" height="46" rx="23" fill="#243955" stroke="#7292ae"/>
+  <text x="260" y="131" class="body" text-anchor="middle">1  물질의 경계에서 경로가 갈린다</text>
+  <rect x="545" y="100" width="600" height="46" rx="23" fill="#173f52" stroke="#4e9caf"/>
+  <text x="845" y="131" class="body" text-anchor="middle">2  물질 내부를 이동하며 양과 방향이 변한다</text>
+
+  <rect x="520" y="170" width="625" height="410" rx="24" fill="url(#medium)" stroke="#5d9bb0" stroke-width="2"/>
+  <text x="1098" y="207" class="small" text-anchor="end">물질 내부</text>
+  <line x1="520" y1="170" x2="520" y2="580" stroke="#a8e8f0" stroke-width="5"/>
+  <line x1="520" y1="170" x2="520" y2="580" stroke="#ffffff" stroke-width="1" stroke-dasharray="8 12"/>
+  <line x1="458" y1="360" x2="585" y2="360" stroke="#7996ae" stroke-width="2" stroke-dasharray="7 8"/>
+  <text x="476" y="392" class="small" text-anchor="end">법선</text>
+
+  <path d="M100 500 L520 360" fill="none" stroke="url(#light)" stroke-width="10" stroke-linecap="round" marker-end="url(#arrowLight)" filter="url(#glow)"/>
+  <text x="165" y="455" class="label">입사광</text>
+  <path d="M520 360 L250 205" fill="none" stroke="#fff4b0" stroke-width="7" stroke-linecap="round" marker-end="url(#arrowLight)"/>
+  <text x="232" y="191" class="label">반사</text>
+  <text x="232" y="220" class="small">입사한 쪽으로 되돌아간다</text>
+
+  <path d="M520 360 C630 390 690 419 770 447" fill="none" stroke="#71dcff" stroke-width="9" stroke-linecap="round" marker-end="url(#arrowCyan)" filter="url(#glow)"/>
+  <text x="607" y="348" class="label">투과 · 굴절</text>
+  <text x="607" y="376" class="small">경계를 넘으며 방향이 바뀐다</text>
+
+  <circle cx="790" cy="454" r="13" fill="#f5fbff" stroke="#71dcff" stroke-width="5"/>
+  <path d="M801 447 L994 302" fill="none" stroke="#71dcff" stroke-width="5" marker-end="url(#arrowCyan)"/>
+  <path d="M803 455 L1060 456" fill="none" stroke="#71dcff" stroke-width="5" marker-end="url(#arrowCyan)"/>
+  <path d="M800 463 L956 550" fill="none" stroke="#71dcff" stroke-width="5" marker-end="url(#arrowCyan)"/>
+  <text x="978" y="265" class="label" text-anchor="middle">산란</text>
+  <text x="978" y="292" class="small" text-anchor="middle">빛은 다른 방향에 남는다</text>
+
+  <path d="M790 454 L900 502" fill="none" stroke="#ffba74" stroke-width="5" stroke-dasharray="10 8"/>
+  <circle cx="918" cy="510" r="22" fill="#4f2a31" stroke="#ff9d65" stroke-width="3"/>
+  <path d="M908 499 l20 20 M928 499 l-20 20" stroke="#ffd1a7" stroke-width="4" stroke-linecap="round"/>
+  <text x="918" y="562" class="label" text-anchor="middle" fill="#ffd3b3">흡수</text>
+  <text x="918" y="588" class="small" text-anchor="middle">빛이 아닌 에너지로 전환된다</text>
+
+  <rect x="60" y="625" width="1080" height="55" rx="18" fill="#0b1d31" stroke="#355f7c"/>
+  <text x="600" y="660" font-size="22" font-weight="700" text-anchor="middle">경계에서 경로를 나누고, 내부 이동에서 빛의 양과 방향을 다시 바꾼다</text>
+</svg>

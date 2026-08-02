@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">입사각에 따라 달라지는 Fresnel 반사와 전달 비율</title>
+  <desc id="desc">공기와 굴절률 1.5 유리 경계에서 수직 입사는 약 4퍼센트, 80도 입사는 약 39퍼센트를 반사하는 비교</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071426"/><stop offset="1" stop-color="#162c45"/></linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#17445a" stop-opacity=".9"/><stop offset="1" stop-color="#1b5262" stop-opacity=".55"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <marker id="in" markerWidth="11" markerHeight="11" refX="9" refY="5.5" orient="auto"><path d="M0 0 11 5.5 0 11Z" fill="#fff2a6"/></marker>
+    <marker id="refl" markerWidth="11" markerHeight="11" refX="9" refY="5.5" orient="auto"><path d="M0 0 11 5.5 0 11Z" fill="#ffad70"/></marker>
+    <marker id="tran" markerWidth="11" markerHeight="11" refX="9" refY="5.5" orient="auto"><path d="M0 0 11 5.5 0 11Z" fill="#6fe0ff"/></marker>
+    <style>text{font-family:"Noto Sans KR","Malgun Gothic",sans-serif;fill:#edf8ff}.head{font-size:27px;font-weight:800}.label{font-size:22px;font-weight:700}.small{font-size:18px;fill:#aec6d8}</style>
+  </defs>
+  <rect width="1200" height="760" rx="28" fill="url(#bg)"/>
+  <text x="600" y="60" font-size="32" font-weight="800" text-anchor="middle">같은 유리도 보는 각도에 따라 반사가 달라진다</text>
+
+  <g>
+    <rect x="55" y="100" width="520" height="535" rx="24" fill="#0c2035" stroke="#385e78" stroke-width="2"/>
+    <text x="315" y="145" class="head" text-anchor="middle">거의 수직으로 들어올 때</text>
+    <text x="315" y="174" class="small" text-anchor="middle">공기 n₁=1.0 → 유리 n₂=1.5</text>
+    <rect x="80" y="360" width="470" height="245" rx="15" fill="url(#glass)"/>
+    <line x1="80" y1="360" x2="550" y2="360" stroke="#b9f1f4" stroke-width="4"/>
+    <line x1="315" y1="215" x2="315" y2="550" stroke="#7695ab" stroke-width="2" stroke-dasharray="7 9"/>
+    <path d="M315 220 L315 345" fill="none" stroke="#fff2a6" stroke-width="10" marker-end="url(#in)" filter="url(#glow)"/>
+    <path d="M300 350 L300 250" fill="none" stroke="#ffad70" stroke-width="4" marker-end="url(#refl)"/>
+    <path d="M330 370 L330 550" fill="none" stroke="#6fe0ff" stroke-width="15" marker-end="url(#tran)" filter="url(#glow)"/>
+    <rect x="105" y="245" width="150" height="72" rx="16" fill="#412c31" stroke="#ffad70"/>
+    <text x="180" y="275" class="label" text-anchor="middle">반사 R ≈ 4%</text>
+    <text x="180" y="302" class="small" text-anchor="middle">가느다란 경로</text>
+    <rect x="370" y="454" width="158" height="76" rx="16" fill="#123d50" stroke="#6fe0ff"/>
+    <text x="449" y="485" class="label" text-anchor="middle">전달 T ≈ 96%</text>
+    <text x="449" y="512" class="small" text-anchor="middle">대부분 통과</text>
+  </g>
+
+  <g>
+    <rect x="625" y="100" width="520" height="535" rx="24" fill="#0c2035" stroke="#385e78" stroke-width="2"/>
+    <text x="885" y="145" class="head" text-anchor="middle">스침각에 가까워질 때</text>
+    <text x="885" y="174" class="small" text-anchor="middle">법선 기준 입사각 θᵢ=80°</text>
+    <rect x="650" y="360" width="470" height="245" rx="15" fill="url(#glass)"/>
+    <line x1="650" y1="360" x2="1120" y2="360" stroke="#b9f1f4" stroke-width="4"/>
+    <line x1="885" y1="215" x2="885" y2="570" stroke="#7695ab" stroke-width="2" stroke-dasharray="7 9"/>
+    <path d="M660 320 L870 355" fill="none" stroke="#fff2a6" stroke-width="10" marker-end="url(#in)" filter="url(#glow)"/>
+    <path d="M890 355 L1105 319" fill="none" stroke="#ffad70" stroke-width="9" marker-end="url(#refl)" filter="url(#glow)"/>
+    <path d="M890 368 L1045 563" fill="none" stroke="#6fe0ff" stroke-width="12" marker-end="url(#tran)" filter="url(#glow)"/>
+    <path d="M885 360 A65 65 0 0 0 821 349" fill="none" stroke="#cbd9e6" stroke-width="2"/>
+    <text x="799" y="335" class="small">80°</text>
+    <rect x="900" y="223" width="205" height="74" rx="16" fill="#412c31" stroke="#ffad70"/>
+    <text x="1002" y="254" class="label" text-anchor="middle">반사 R ≈ 38.8%</text>
+    <text x="1002" y="281" class="small" text-anchor="middle">반사가 크게 증가</text>
+    <rect x="665" y="493" width="200" height="76" rx="16" fill="#123d50" stroke="#6fe0ff"/>
+    <text x="765" y="524" class="label" text-anchor="middle">전달 T ≈ 61.2%</text>
+    <text x="765" y="551" class="small" text-anchor="middle">나머지는 굴절</text>
+  </g>
+
+  <rect x="70" y="666" width="1060" height="57" rx="18" fill="#0a1c30" stroke="#355d79"/>
+  <text x="600" y="692" font-size="20" font-weight="700" text-anchor="middle">방향: 반사 법칙 · Snell의 법칙　│　양: Fresnel 반사율 F(θᵢ, λ)</text>
+  <text x="600" y="714" class="small" text-anchor="middle">흡수가 없는 경계의 비편광 에너지 흐름 근삿값 · 화살표 굵기는 비율을 개념적으로 표현</text>
+</svg>

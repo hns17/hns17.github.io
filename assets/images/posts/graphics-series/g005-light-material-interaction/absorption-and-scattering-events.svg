@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">흡수와 Out-scattering, In-scattering의 차이</title>
+  <desc id="desc">체적 내부에서 흡수는 빛을 제거하고 바깥 산란은 현재 경로의 빛을 다른 방향으로 보내며 안쪽 산란은 다른 경로의 빛을 현재 방향에 더하는 비교</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#081426"/><stop offset="1" stop-color="#152f48"/></linearGradient>
+    <linearGradient id="vol" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#1a3d52" stop-opacity=".82"/><stop offset="1" stop-color="#234d5a" stop-opacity=".54"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <marker id="cy" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#76ddff"/></marker>
+    <marker id="or" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#ffb16f"/></marker>
+    <style>text{font-family:"Noto Sans KR","Malgun Gothic",sans-serif;fill:#edf8ff}.head{font-size:25px;font-weight:800}.label{font-size:20px;font-weight:700}.small{font-size:17px;fill:#b3c9d9}.eq{font-family:Consolas,monospace;font-size:21px;fill:#dcefff}</style>
+  </defs>
+  <rect width="1200" height="760" rx="28" fill="url(#bg)"/>
+  <text x="600" y="58" font-size="32" font-weight="800" text-anchor="middle">현재 광선이 어두워지는 두 이유, 다시 밝아지는 한 이유</text>
+  <text x="600" y="88" class="small" text-anchor="middle">옅은 점선은 카메라가 바라보는 기준 방향</text>
+
+  <g>
+    <rect x="45" y="120" width="350" height="455" rx="22" fill="url(#vol)" stroke="#47788e" stroke-width="2"/>
+    <text x="220" y="161" class="head" text-anchor="middle">흡수 Absorption</text>
+    <text x="220" y="190" class="small" text-anchor="middle">빛 에너지가 다른 형태로 전환</text>
+    <line x1="80" y1="320" x2="355" y2="320" stroke="#7591a5" stroke-width="2" stroke-dasharray="7 9"/>
+    <path d="M80 320 L215 320" stroke="#76ddff" stroke-width="10" marker-end="url(#cy)" filter="url(#glow)"/>
+    <circle cx="235" cy="320" r="27" fill="#542d32" stroke="#ff9e66" stroke-width="3"/>
+    <path d="M222 307 l26 26 M248 307 l-26 26" stroke="#ffd0a7" stroke-width="5" stroke-linecap="round"/>
+    <text x="235" y="385" class="label" text-anchor="middle">현재 경로에서 제거</text>
+    <text x="235" y="415" class="small" text-anchor="middle">다른 빛의 방향으로 남지 않는다</text>
+    <rect x="80" y="462" width="280" height="72" rx="15" fill="#152a3b"/>
+    <text x="220" y="492" class="small" text-anchor="middle">단위 거리당 계수</text>
+    <text x="220" y="519" class="eq" text-anchor="middle">σₐ</text>
+  </g>
+
+  <g>
+    <rect x="425" y="120" width="350" height="455" rx="22" fill="url(#vol)" stroke="#47788e" stroke-width="2"/>
+    <text x="600" y="161" class="head" text-anchor="middle">Out-scattering</text>
+    <text x="600" y="190" class="small" text-anchor="middle">현재 방향의 빛을 다른 방향으로 보냄</text>
+    <line x1="460" y1="320" x2="735" y2="320" stroke="#7591a5" stroke-width="2" stroke-dasharray="7 9"/>
+    <path d="M460 320 L580 320" stroke="#76ddff" stroke-width="10" marker-end="url(#cy)" filter="url(#glow)"/>
+    <circle cx="600" cy="320" r="13" fill="#eefbff" stroke="#76ddff" stroke-width="4"/>
+    <path d="M610 311 L712 225" stroke="#76ddff" stroke-width="8" marker-end="url(#cy)" filter="url(#glow)"/>
+    <text x="600" y="385" class="label" text-anchor="middle">현재 경로는 어두워진다</text>
+    <text x="600" y="415" class="small" text-anchor="middle">그러나 빛은 다른 방향에 남는다</text>
+    <rect x="460" y="462" width="280" height="72" rx="15" fill="#152a3b"/>
+    <text x="600" y="492" class="small" text-anchor="middle">단위 거리당 계수</text>
+    <text x="600" y="519" class="eq" text-anchor="middle">σₛ</text>
+  </g>
+
+  <g>
+    <rect x="805" y="120" width="350" height="455" rx="22" fill="url(#vol)" stroke="#47788e" stroke-width="2"/>
+    <text x="980" y="161" class="head" text-anchor="middle">In-scattering</text>
+    <text x="980" y="190" class="small" text-anchor="middle">다른 방향의 빛을 현재 방향에 더함</text>
+    <line x1="840" y1="320" x2="1115" y2="320" stroke="#7591a5" stroke-width="2" stroke-dasharray="7 9"/>
+    <path d="M865 220 L966 308" stroke="#ffb16f" stroke-width="9" marker-end="url(#or)" filter="url(#glow)"/>
+    <circle cx="980" cy="320" r="13" fill="#fff6e9" stroke="#ffb16f" stroke-width="4"/>
+    <path d="M992 320 L1110 320" stroke="#ffb16f" stroke-width="11" marker-end="url(#or)" filter="url(#glow)"/>
+    <text x="980" y="385" class="label" text-anchor="middle">현재 경로가 밝아진다</text>
+    <text x="980" y="415" class="small" text-anchor="middle">안개 속 빛줄기가 옆에서도 보이는 이유</text>
+    <rect x="840" y="462" width="280" height="72" rx="15" fill="#152a3b"/>
+    <text x="980" y="492" class="small" text-anchor="middle">새 방향의 분포</text>
+    <text x="980" y="519" class="eq" text-anchor="middle">Phase Function</text>
+  </g>
+
+  <rect x="60" y="615" width="1080" height="98" rx="18" fill="#0a1d31" stroke="#355f7b"/>
+  <text x="600" y="648" class="eq" text-anchor="middle">σₜ(λ) = σₐ(λ) + σₛ(λ)　　Tᵣ(d, λ) = exp(−σₜ(λ)d)</text>
+  <text x="600" y="682" class="small" text-anchor="middle">Tᵣ은 현재 빔에 상호작용 없이 남은 비율이다. 산란되어 다른 방향에 남은 빛까지 사라졌다는 뜻은 아니다.</text>
+</svg>

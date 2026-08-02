@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 1150" role="img" aria-labelledby="title desc">
+  <title id="title">Fresnel 반사율의 입사각 비교</title>
+  <desc id="desc">공기와 유리 경계의 수직 입사와 80도 입사를 위아래로 비교한 모바일 그림</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#071426"/><stop offset="1" stop-color="#162c45"/></linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#17445a"/><stop offset="1" stop-color="#1b5262" stop-opacity=".65"/></linearGradient>
+    <filter id="g"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <marker id="y" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#fff2a6"/></marker>
+    <marker id="r" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#ffad70"/></marker>
+    <marker id="c" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#6fe0ff"/></marker>
+    <style>text{font-family:"Noto Sans KR","Malgun Gothic",sans-serif;fill:#edf8ff}.head{font-size:25px;font-weight:800}.label{font-size:20px;font-weight:700}.small{font-size:17px;fill:#b2c8d9}</style>
+  </defs>
+  <rect width="640" height="1150" rx="24" fill="url(#bg)"/>
+  <text x="320" y="53" font-size="27" font-weight="800" text-anchor="middle">각도에 따라 달라지는 Fresnel 반사</text>
+  <text x="320" y="82" class="small" text-anchor="middle">공기 n₁=1.0 → 유리 n₂=1.5</text>
+
+  <rect x="35" y="110" width="570" height="435" rx="22" fill="#0c2035" stroke="#3b6079" stroke-width="2"/>
+  <text x="320" y="150" class="head" text-anchor="middle">거의 수직 입사</text>
+  <rect x="60" y="310" width="520" height="205" rx="12" fill="url(#glass)"/>
+  <line x1="60" y1="310" x2="580" y2="310" stroke="#b9f1f4" stroke-width="4"/>
+  <line x1="320" y1="185" x2="320" y2="480" stroke="#7897ac" stroke-width="2" stroke-dasharray="7 8"/>
+  <path d="M320 185 L320 297" stroke="#fff2a6" stroke-width="9" marker-end="url(#y)" filter="url(#g)"/>
+  <path d="M303 303 L303 222" stroke="#ffad70" stroke-width="4" marker-end="url(#r)"/>
+  <path d="M337 323 L337 470" stroke="#6fe0ff" stroke-width="14" marker-end="url(#c)" filter="url(#g)"/>
+  <rect x="72" y="205" width="185" height="65" rx="14" fill="#412c31" stroke="#ffad70"/>
+  <text x="164" y="233" class="label" text-anchor="middle">반사 R ≈ 4%</text>
+  <text x="164" y="257" class="small" text-anchor="middle">약한 표면 반사</text>
+  <rect x="385" y="380" width="182" height="65" rx="14" fill="#123d50" stroke="#6fe0ff"/>
+  <text x="476" y="408" class="label" text-anchor="middle">전달 T ≈ 96%</text>
+  <text x="476" y="432" class="small" text-anchor="middle">대부분 통과</text>
+
+  <rect x="35" y="570" width="570" height="435" rx="22" fill="#0c2035" stroke="#3b6079" stroke-width="2"/>
+  <text x="320" y="610" class="head" text-anchor="middle">스침각에 가까운 80° 입사</text>
+  <rect x="60" y="780" width="520" height="195" rx="12" fill="url(#glass)"/>
+  <line x1="60" y1="780" x2="580" y2="780" stroke="#b9f1f4" stroke-width="4"/>
+  <line x1="320" y1="635" x2="320" y2="940" stroke="#7897ac" stroke-width="2" stroke-dasharray="7 8"/>
+  <path d="M75 738 L307 777" stroke="#fff2a6" stroke-width="9" marker-end="url(#y)" filter="url(#g)"/>
+  <path d="M325 777 L565 737" stroke="#ffad70" stroke-width="9" marker-end="url(#r)" filter="url(#g)"/>
+  <path d="M325 790 L472 951" stroke="#6fe0ff" stroke-width="12" marker-end="url(#c)" filter="url(#g)"/>
+  <rect x="346" y="652" width="225" height="66" rx="14" fill="#412c31" stroke="#ffad70"/>
+  <text x="458" y="680" class="label" text-anchor="middle">반사 R ≈ 38.8%</text>
+  <text x="458" y="704" class="small" text-anchor="middle">반사가 크게 증가</text>
+  <rect x="72" y="865" width="218" height="66" rx="14" fill="#123d50" stroke="#6fe0ff"/>
+  <text x="181" y="893" class="label" text-anchor="middle">전달 T ≈ 61.2%</text>
+  <text x="181" y="917" class="small" text-anchor="middle">나머지는 굴절</text>
+
+  <rect x="40" y="1030" width="560" height="82" rx="18" fill="#0a1c30" stroke="#355d79"/>
+  <text x="320" y="1060" class="label" text-anchor="middle">방향과 양은 서로 다른 질문이다</text>
+  <text x="320" y="1087" class="small" text-anchor="middle">방향은 반사·Snell 법칙, 양은 Fresnel 관계</text>
+</svg>

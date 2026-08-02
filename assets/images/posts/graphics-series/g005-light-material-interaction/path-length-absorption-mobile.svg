@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 1180" role="img" aria-labelledby="title desc">
+  <title id="title">이동 거리에 따라 누적되는 파장별 흡수</title>
+  <desc id="desc">같은 물질의 두께 d와 2d에서 파장별 빛이 다르게 감쇠하는 모바일 비교</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#081426"/><stop offset="1" stop-color="#152d45"/></linearGradient>
+    <linearGradient id="slab" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#24516a"/><stop offset=".5" stop-color="#2e6f78" stop-opacity=".65"/><stop offset="1" stop-color="#25485e"/></linearGradient>
+    <marker id="r" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0 9 4.5 0 9Z" fill="#ff6b72"/></marker>
+    <marker id="g" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0 9 4.5 0 9Z" fill="#7be58a"/></marker>
+    <marker id="b" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0 9 4.5 0 9Z" fill="#6ebcff"/></marker>
+    <style>text{font-family:"Noto Sans KR","Malgun Gothic",sans-serif;fill:#eef8ff}.head{font-size:25px;font-weight:800}.label{font-size:20px;font-weight:700}.small{font-size:17px;fill:#b3c9da}.eq{font-family:Consolas,monospace;font-size:19px;fill:#dcefff}</style>
+  </defs>
+  <rect width="640" height="1180" rx="24" fill="url(#bg)"/>
+  <text x="320" y="52" font-size="27" font-weight="800" text-anchor="middle">흡수는 이동 거리에 누적된다</text>
+  <text x="320" y="81" class="small" text-anchor="middle">같은 재질 · 같은 σₐ(λ)</text>
+
+  <rect x="35" y="110" width="570" height="440" rx="22" fill="#0d2034" stroke="#385f78" stroke-width="2"/>
+  <text x="320" y="150" class="head" text-anchor="middle">짧은 경로 d</text>
+  <line x1="65" y1="235" x2="175" y2="235" stroke="#ff6b72" stroke-width="8" marker-end="url(#r)"/>
+  <line x1="65" y1="285" x2="175" y2="285" stroke="#7be58a" stroke-width="8" marker-end="url(#g)"/>
+  <line x1="65" y1="335" x2="175" y2="335" stroke="#6ebcff" stroke-width="8" marker-end="url(#b)"/>
+  <rect x="190" y="195" width="230" height="180" rx="12" fill="url(#slab)" stroke="#77c5cf" stroke-width="3"/>
+  <path d="M190 235 H420" stroke="#ff6b72" stroke-width="8" opacity=".82"/>
+  <path d="M190 285 H420" stroke="#7be58a" stroke-width="7" opacity=".61"/>
+  <path d="M190 335 H420" stroke="#6ebcff" stroke-width="5" opacity=".35"/>
+  <line x1="435" y1="235" x2="575" y2="235" stroke="#ff6b72" stroke-width="8" opacity=".82" marker-end="url(#r)"/>
+  <line x1="435" y1="285" x2="575" y2="285" stroke="#7be58a" stroke-width="7" opacity=".61" marker-end="url(#g)"/>
+  <line x1="435" y1="335" x2="575" y2="335" stroke="#6ebcff" stroke-width="5" opacity=".35" marker-end="url(#b)"/>
+  <path d="M190 398 V425 M420 398 V425 M190 416 H420" stroke="#abc5d7" stroke-width="2"/>
+  <text x="305" y="450" class="label" text-anchor="middle">두께 d</text>
+  <rect x="105" y="472" width="430" height="55" rx="14" fill="#112b40"/>
+  <text x="320" y="506" class="eq" text-anchor="middle">Tₐ(d, λ) = exp(−σₐ(λ)d)</text>
+
+  <rect x="35" y="575" width="570" height="440" rx="22" fill="#0d2034" stroke="#385f78" stroke-width="2"/>
+  <text x="320" y="615" class="head" text-anchor="middle">두 배 긴 경로 2d</text>
+  <line x1="65" y1="700" x2="125" y2="700" stroke="#ff6b72" stroke-width="8" marker-end="url(#r)"/>
+  <line x1="65" y1="750" x2="125" y2="750" stroke="#7be58a" stroke-width="8" marker-end="url(#g)"/>
+  <line x1="65" y1="800" x2="125" y2="800" stroke="#6ebcff" stroke-width="8" marker-end="url(#b)"/>
+  <rect x="140" y="660" width="340" height="180" rx="12" fill="url(#slab)" stroke="#77c5cf" stroke-width="3"/>
+  <path d="M140 700 H480" stroke="#ff6b72" stroke-width="6" opacity=".67"/>
+  <path d="M140 750 H480" stroke="#7be58a" stroke-width="4" opacity=".37"/>
+  <path d="M140 800 H480" stroke="#6ebcff" stroke-width="2" opacity=".12"/>
+  <line x1="495" y1="700" x2="575" y2="700" stroke="#ff6b72" stroke-width="6" opacity=".67" marker-end="url(#r)"/>
+  <line x1="495" y1="750" x2="575" y2="750" stroke="#7be58a" stroke-width="4" opacity=".37" marker-end="url(#g)"/>
+  <line x1="495" y1="800" x2="575" y2="800" stroke="#6ebcff" stroke-width="2" opacity=".12" marker-end="url(#b)"/>
+  <path d="M140 863 V890 M480 863 V890 M140 881 H480" stroke="#abc5d7" stroke-width="2"/>
+  <text x="310" y="915" class="label" text-anchor="middle">두께 2d</text>
+  <rect x="85" y="937" width="470" height="56" rx="14" fill="#112b40"/>
+  <text x="320" y="960" class="eq" text-anchor="middle">Tₐ(2d, λ) = exp(−2σₐ(λ)d)</text>
+  <text x="320" y="983" class="small" text-anchor="middle">= Tₐ(d, λ)²</text>
+
+  <rect x="40" y="1045" width="560" height="102" rx="18" fill="#0a1d31" stroke="#355f7b"/>
+  <text x="320" y="1077" class="label" text-anchor="middle">남은 빛의 같은 비율이 줄어든다</text>
+  <text x="320" y="1107" class="small" text-anchor="middle">두께가 늘면 밝기와 스펙트럼이 함께 변한다</text>
+</svg>
